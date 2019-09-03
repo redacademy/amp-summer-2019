@@ -7,7 +7,7 @@
 
 get_header(); ?>
 
-   <h1> hello world</h1>
+   <h1> Alex's world</h1>
    
 
 	<div id="primary" class="content-area">
