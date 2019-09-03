@@ -7,7 +7,7 @@
 
 get_header(); ?>
 
-   <h1> Tal's World</h1>
+   
    
 
 	<div id="primary" class="content-area">
