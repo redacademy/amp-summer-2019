@@ -1,3 +1,14 @@
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
+@font-face {
+    font-family: 'Bambi';
+    src: url('../fonts/BambiBold.eot');
+    src: url('../fonts/BambiBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/BambiBold.woff2') format('woff2'),
+        url('../fonts/BambiBold.woff') format('woff'),
+        url('../fonts/BambiBold.ttf') format('truetype'),
+        url('../fonts/BambiBold.svg#BambiBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
