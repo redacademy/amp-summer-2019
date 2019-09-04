@@ -30,7 +30,7 @@
 				<p>425 Carrall Street<br>Vancouver,BC<br>V6B 6E3</p>
 				</div> <!-- .site-footer-name-address -->
 
-
+				<div class="testingesttest">	
 				<div class="contact-info">
 				<a href="604-343-4590"><span> <i class="fas fa-phone"> </i>604-343-4590</span></a>
 				<a href="mailto:info@theamp.space"><span> <i class="far fa-envelope"> </i>info@theamp.space</span></a>
@@ -41,8 +41,8 @@
 				<span><i class="fab fa-facebook-f"></i></span>
 				<span><i class="fab fa-twitter"></i></span>
 				<span><i class="fab fa-linkedin-in"></i></span>
-				
 				</div> <!-- .social-icon -->
+				</div>
 				
 				
 				<div class="site-info">
