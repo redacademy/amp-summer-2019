@@ -9,17 +9,17 @@
 
 			</div><!-- #content -->
 
-			<footer id="colophon" class="site-footer" role="contentinfo">
+			<footer id="colophon" class="site-footer container" role="contentinfo">
 				
 				
-				<div>
+				<div class="footer-newsletter-form">
 				<p>Sign up for our newsletter to learn more about our community!</p>
 				
 				<form action="/action_page.php">
 				
 				<input name="firstname" type="email" id="email-address" placeholder="Enter E-mail">
 				
-				<input type="submit">
+				<input type="submit" value="ok">
 				</form>
 				</div>
 				
