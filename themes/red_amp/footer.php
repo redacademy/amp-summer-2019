@@ -10,9 +10,30 @@
 			</div><!-- #content -->
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
+				
+				<div>
+
+				</div>
+
+
+				<div>
+
+				</div>
+
+
+				<div class="social-icon">
+				<span><i class="fab fa-facebook-f"></i></span>
+				<span><i class="fab fa-facebook-f"></i></span>
+				<span><i class="fab fa-facebook-f"></i></span>
+				</div> <!-- .social-icon -->
+				
+				
 				<div class="site-info">
-					<a href="<?php echo esc_url( 'https://wordpress.org/' ); ?>"><?php printf( esc_html( 'Proudly powered by %s' ), 'WordPress' ); ?></a>
+				<p>© All rights reserved - The Amp Vancouver 2014</p>	
 				</div><!-- .site-info -->
+
+
+
 			</footer><!-- #colophon -->
 		</div><!-- #page -->
 
