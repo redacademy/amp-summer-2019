@@ -1,9 +1,9 @@
 /*!
-Theme Name: red_amp 
+Theme Name: red_amp
 Theme URI: http://underscores.me/
-Author: RED Academy
+Author:  Callback Cats
 Author URI: http://www.redacademy.com
-Description: A WordPress starter theme for RED Academy students.
+Description: A WordPress theme for AMP Site.
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -225,6 +225,13 @@ th {
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
+@font-face {
+  font-family: 'Bambi';
+  src: url("../fonts/BambiBold.eot");
+  src: url("../fonts/BambiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/BambiBold.woff2") format("woff2"), url("../fonts/BambiBold.woff") format("woff"), url("../fonts/BambiBold.ttf") format("truetype"), url("../fonts/BambiBold.svg#BambiBold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -234,7 +241,7 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: sans-serif;
+  font-family: "Bambi";
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5; }
@@ -594,6 +601,10 @@ a {
   clear: both;
   margin: 0 0 1.5rem; }
 
+.container {
+  width: 1200px;
+  margin: 0 auto; }
+
 /* Asides */
 .blog .format-aside .entry-title,
 .archive .format-aside .entry-title {
@@ -668,5 +679,34 @@ object {
 
 /*--------------------------------------------------------------
 # Page Templates
+    Here is where all specific css per page template will go
 --------------------------------------------------------------*/
 /* Front page */
+/* Workspace */
+/* About */
+/* Events */
+/* Contact */
+/* Book a tour popup */
+/* Header */
+/* Footer */
+.site-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .site-footer .footer-newsletter-form {
+    width: 100%;
+    text-align: center; }
+  .site-footer .site-info {
+    width: 100%;
+    text-align: center; }
+
+.footer-newsletter-form input {
+  text-transform: uppercase; }
+
+.hidden-mobile {
+  display: none; }
+
+.show-desktop {
+  display: none; }

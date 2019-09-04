@@ -44,3 +44,5 @@ themes/red_amp/node_modules/*
 # ================== #
 themes/red_amp/gulpfile.js
 themes/red_amp/build/*
+
+package-lock.json
