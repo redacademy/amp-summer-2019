@@ -32,6 +32,12 @@
 	margin: 0 0 $base__space-unit;
 }
 
+.container {
+	width: $body_max_width;
+	margin: 0 auto;
+}
+
+
 /* Asides */
 
 .blog .format-aside .entry-title,

@@ -7,7 +7,11 @@
 
 get_header(); ?>
 
+<<<<<<< HEAD
+   <h1> Matt's World</h1>
+=======
    
+>>>>>>> 370df5e00432bbd4028e353385af453558720288
    
 
 	<div id="primary" class="content-area">

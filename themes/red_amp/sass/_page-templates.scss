@@ -37,3 +37,37 @@
 
 
 /* Book a tour popup */
+
+
+/* Header */
+
+
+
+/* Footer */
+.site-footer {
+    display: flex;
+    flex-wrap: wrap;
+    .footer-newsletter-form {
+    width: 100%;
+    text-align: center;
+    }
+    .site-info {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+.footer-newsletter-form {
+    input {
+    text-transform: uppercase;
+}
+}
+
+.hidden-mobile {
+    display: none;
+}
+
+.show-desktop {
+    display: none;
+}
