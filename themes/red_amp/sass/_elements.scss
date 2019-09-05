@@ -16,6 +16,9 @@ html {
 
 body {
   background: $color__background-body; /* Fallback for when there is no custom background color defined. */
+  font-family: $bodytext_font_family;
+  font-size: $bodytext_font_size;
+  color: $bodytext_color;
 }
 
 blockquote,
