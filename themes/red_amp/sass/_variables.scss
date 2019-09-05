@@ -11,6 +11,7 @@ $dark_green: #297373;
 $light_green: #b1ede8;
 
 $font_dark: #393939;
+$font_light: #fff;
 
 
 $color__background-body: #fff;
@@ -33,7 +34,7 @@ $color__link-hover: midnightblue;
 $font__main: 'Bambi';
 $font__secondary:'Muli', sans-serif; //google fonts
 
-$headline_color_white: #fff;
+$headline_color_white: $font_light;
 $headline_color_dark: $font_dark;
 $subhead_color: $font_dark;
 $bodytext_color: $font_dark;
