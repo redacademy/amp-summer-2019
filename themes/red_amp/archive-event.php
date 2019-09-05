@@ -9,14 +9,22 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
+	   
+		<div class="events-title">
+	<?php post_type_archive_title('<h1>','</h1>');?>
+</div>
 
-		<?php if ( have_posts() ) : ?>
+    <div class="events-description">
+	<p> Our community events are open to members and non-members. Come join us for special events to learn more about environmental and social causes. This is a great way to get involved with organizations that are making an impact in the local community.  Below is a list of our upcoming events that you are welcome to join!</p>
+</div>
+	<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
 				<?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
-					the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
+
+             
+
 			</header><!-- .page-header -->
 
 			<?php /* Start the Loop */ ?>
