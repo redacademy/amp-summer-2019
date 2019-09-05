@@ -19,6 +19,8 @@ body {
   font-family: $bodytext_font_family;
   font-size: $bodytext_font_size;
   color: $bodytext_color;
+  max-width: $body_max_width;
+  margin: 0 auto;
 }
 
 blockquote,
