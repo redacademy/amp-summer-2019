@@ -4,6 +4,21 @@
 
 /* Posts and pages */
 
+.headline{
+	font-family: $headline_font_family;
+	font-size: $headline_font_size;
+	color: $headline_color_dark;
+}
+
+.suhead{
+	font-family: $subhead_font_family;
+	font-size: $subhead_font_size;
+	color: $subhead_color;
+}
+
+
+
+
 .sticky {
 	display: block;
 }
