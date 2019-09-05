@@ -5,6 +5,14 @@ $body_max_width: 1200px;  // need to be set properly
 
 // Colors
 
+$dark_grey: #07393c;
+$light_grey: #cacfd6;
+$dark_green: #297373;
+$light_green: #b1ede8;
+
+$font_dark: #393939;
+
+
 $color__background-body: #fff;
 $color__text-main: #404040;
 
@@ -24,6 +32,23 @@ $color__link-hover: midnightblue;
 
 $font__main: 'Bambi';
 $font__secondary:'Muli', sans-serif; //google fonts
+
+$headline_color_white: #fff;
+$headline_color_dark: $font_dark;
+$subhead_color: $font_dark;
+$bodytext_color: $font_dark;
+
+$headline_font_family:'Bambi';
+$headline_font_size: 20px;
+
+$subhead_font_family:'Muli', sans-serif;
+$subhead_font_size: 16px;
+
+$bodytext_font_family:'Muli', sans-serif;
+$bodytext_font_size: 16px;
+$bodytext_font_size_smaller: 14px;
+
+
 
 $font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 $font__pre: "Courier 10 Pitch", Courier, monospace;
