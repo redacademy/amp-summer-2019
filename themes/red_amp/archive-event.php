@@ -23,7 +23,10 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php
+				   
+				   echo date( 'jS F Y' ,strtotime(CFS()-> get('event_date')));
 					get_template_part( 'template-parts/content' );
+					
 				?>
 
 			<?php endwhile; ?>
