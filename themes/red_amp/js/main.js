@@ -1,5 +1,6 @@
 (function($) {
-  // your code goes here
+  console.log('testing');
+
   $('.main-carousel').flickity({
     // options
     cellAlign: 'left',
