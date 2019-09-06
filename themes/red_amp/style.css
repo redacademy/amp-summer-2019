@@ -432,7 +432,7 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: royalblue; }
+  color: white; }
   a:visited {
     color: purple; }
   a:hover, a:focus, a:active {
@@ -633,6 +633,43 @@ a {
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
+.site-footer {
+  background: #297373;
+  display: block;
+  color: white; }
+  .site-footer .footer-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 100px; }
+    .site-footer .footer-content .contact {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      width: 50% 50%; }
+      .site-footer .footer-content .contact .contact-info {
+        padding: 100px 0px 0px 100px; }
+    .site-footer .footer-content .site-footer-name-address {
+      padding: 50px 0 0 50px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -ms-flex-line-pack: justify;
+          align-content: space-between; }
+    .site-footer .footer-content .footer-newsletter-form {
+      padding: 50px;
+      font-size: 10px; }
+  .site-footer .hidden-mobile {
+    display: none; }
+  .site-footer .show-desktop {
+    display: none; }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
@@ -698,7 +735,103 @@ object {
     Here is where all specific css per page template will go
 --------------------------------------------------------------*/
 /* Front page */
+.hero-banner {
+  position: relative; }
+
+.front-page-values {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+  padding: 40px;
+  background: #e3f8f7;
+  margin-top: 50px;
+  margin-bottom: 80px; }
+  .front-page-values img {
+    background: #fff;
+    margin: 15px; }
+
+.hr-line {
+  width: 30%;
+  margin: 0 auto; }
+  .hr-line hr {
+    border-top: 2px solid #297373; }
+
+.front-page-content-container .banner-text {
+  position: absolute;
+  top: 170px;
+  left: 150px;
+  font-size: 31px;
+  font-weight: 700;
+  width: 463px;
+  font-family: "Bambi"; }
+
+.front-page-content-container .button-arrow-container {
+  width: 100%;
+  text-align: center; }
+  .front-page-content-container .button-arrow-container .button-arrow {
+    margin: 0 auto;
+    width: 68px;
+    height: 67px;
+    border-radius: 50px;
+    font-size: 40px;
+    color: #297373;
+    text-align: center;
+    position: relative;
+    top: -30px; }
+    .front-page-content-container .button-arrow-container .button-arrow:focus {
+      outline: none; }
+
+.front-page-content-container .front-page-button-book {
+  position: absolute;
+  top: 296px;
+  left: 150px; }
+
+.front-page-content-container .button-book {
+  font-size: 25px;
+  color: #fff;
+  font-weight: 700;
+  width: 250px;
+  height: 80px;
+  font-family: "Muli", sans-serif;
+  background: #297373;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding: 0; }
+  .front-page-content-container .button-book:focus {
+    outline: none; }
+  .front-page-content-container .button-book:hover {
+    -webkit-box-shadow: 0 10px 10px 0 #07393c;
+            box-shadow: 0 10px 10px 0 #07393c; }
+
+.front-page-content-container .front-page-workspace {
+  font-family: "Bambi";
+  font-size: 23px;
+  text-align: center;
+  margin-top: 70px; }
+
+.front-page-content-container .front-page-workspace-text {
+  font-family: "Muli", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  max-width: 50%;
+  margin: 0 auto; }
+
 /* Workspace */
+.post-type-archive-workspace {
+  background-color: #fff;
+  text-align: center; }
+  .post-type-archive-workspace .page-title {
+    font-size: 20px; }
+    .post-type-archive-workspace .page-title .taxonomy-description {
+      font-size: 16px; }
+
 /* About */
 /* Events */
 /* Contact */
@@ -787,7 +920,7 @@ object {
       font-size: 16px;
       text-decoration: none;
       color: #393939;
-      font-weight: 700; }
+      font-weight: 900; }
     .main-navigation .menu-menu-1-container .current-menu-item li {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -801,26 +934,3 @@ object {
       width: fit-content;
       margin-bottom: 2px;
       border-bottom: red solid 4px; }
-
-/* Footer */
-.site-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
-  .site-footer .footer-newsletter-form {
-    width: 100%;
-    text-align: center; }
-  .site-footer .site-info {
-    width: 100%;
-    text-align: center; }
-
-.footer-newsletter-form input {
-  text-transform: uppercase; }
-
-.hidden-mobile {
-  display: none; }
-
-.show-desktop {
-  display: none; }

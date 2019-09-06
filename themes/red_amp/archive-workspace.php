@@ -8,14 +8,18 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+		<main id="main" class="site-main container" role="main">
 
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
+				
+				<div class="page-title">
 				<?php
-					post_type_archive_title('<h1 class="page-title">','</h1>');
-					the_archive_description( '<div class="taxonomy-description">', '</div>' );
+					post_type_archive_title('<h1>','</h1>');
+				?>
+				</div>	
+				<?php	the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
 			</header><!-- .page-header -->
 
@@ -25,23 +29,26 @@ get_header(); ?>
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php
-					get_template_part( 'template-parts/content' );
+					<div class="thumbnail-wrapper">	
+						<a href="<?php echo get_the_permalink(); ?>">
+							<?php the_post_thumbnail(); ?> 
+							<?php the_title(); ?>
+						</a>
+					</div>
 
-				?>
+				
 
 			<?php endwhile; ?>
 
 			
 
-		<?php else : ?>
-
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
+			<div class="primary-cta-block">
+			<a class="button-book" href="#">Book a Tour</a>
+			</div>
 
 		<?php endif; ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
