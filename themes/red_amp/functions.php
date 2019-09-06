@@ -86,7 +86,8 @@ function red_starter_scripts() {
 	wp_enqueue_style( 'red-starter-style', get_stylesheet_uri() );
 
 	wp_enqueue_style('red-starter-font-awesome', 'https://use.fontawesome.com/releases/v5.8.2/css/all.css');
-	wp_enqueue_style('red-starter-googlefont', 'https://fonts.googleapis.com/css?family=Muli&display=swap');
+	wp_enqueue_style('red-starter-googlefont-muli', 'https://fonts.googleapis.com/css?family=Muli&display=swap');
+	wp_enqueue_style('red-starter-googlefont-lusitana', 'https://fonts.googleapis.com/css?family=Lusitana:400,700&display=swap');
 
 	wp_enqueue_style('flickity', 'https://unpkg.com/flickity@2/dist/flickity.min.css');
 	wp_enqueue_script( 'flickity', 'https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js', array(), '', true );
