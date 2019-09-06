@@ -4,7 +4,7 @@
  *
  * @package RED_Starter_Theme
  * Template Name: Single-Event
- * Page Template: Single-Event
+ *
  */
 
 get_header(); ?>
@@ -14,19 +14,33 @@ get_header(); ?>
 
 		<div class="events-title">
 	  <h1>Events</h1>
+	  <?php echo CFS()->get('option_event_description', 134); ?>
 </div>
 
-    <div class="events-description">
-	<p> Our community events are open to members and non-members. Come join us for special events to learn more about environmental and social causes. This is a great way to get involved with organizations that are making an impact in the local community.  Below is a list of our upcoming events that you are welcome to join!</p>
-</div>
+		<?php while ( have_posts() ) : the_post(); ?>
 
+		<header class="entry-header">
+		<?php if ( has_post_thumbnail() ) : ?>
+			<?php the_post_thumbnail( 'large' ); ?>
+		<?php endif; ?>
 
-		<?php get_template_part( 'template-parts/content', 'single' ); ?>
+		<?php the_title( '<h1 class="entry-title">', '</h1>' ); 
+
+		?>
+
+		<?php endwhile; // End of the loop. ?>
+
 
 		<?php while ( have_posts() ) {
 
-			the_post();
-			
+			the_post(); ?>
+			<div class="events-description">
+			<?php the_content(); ?>
+		
+		</div>
+
+
+		<?php  
 			echo CFS()->get('event_start_time'); // we can try to add this as well
 			echo '<br>';
 			echo CFS()->get('event_end_time'); // we can try to add this as well
@@ -38,6 +52,7 @@ get_header(); ?>
 			$event_location = CFS()->get('event_location');
 			$event_date = date( 'Ymd', strtotime( CFS()->get('event_date') ) );
 			$event_offset = date( 'Ymd', strtotime( '+24 hours', strtotime($event_date) ) );
+			$event_button = CFS()->get('event_register_button');
 
 			echo "<a href='https://www.google.com/calendar/render?
 			action=TEMPLATE&
@@ -49,12 +64,13 @@ get_header(); ?>
 			details={$event_description}&
 			sf=true&
 			output=xml'/>add to calendar</a>";
+			
 		}
 		?>  
 
-		<?php the_excerpt(); ?>
-		<a href="<?= esc_url( get_permalink() );?>">
-		<button type="button" class="button-type">Register</button>
+		
+		<a href="<?= $event_button['url'] ?>">
+		<button type="button" class="button-type"><?php $event_button['text'] ?></button>
 		</a>
 		</main><!-- #main -->
 	</div><!-- #primary -->
