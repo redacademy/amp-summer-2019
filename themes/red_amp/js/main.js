@@ -7,4 +7,3 @@
     contain: true
   });
 })(jQuery);
-
