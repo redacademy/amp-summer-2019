@@ -124,7 +124,9 @@ get_header(); ?>
 
 		</div> <!-- End of workspace icons -->
 
-		
+		<div class="primary-cta-block">
+			<a class="primary-cta" href="#">Book a Tour</a>
+		</div>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

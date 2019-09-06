@@ -11,7 +11,18 @@
 
 /* Workspace */
 
+.post-type-archive-workspace {
+    background-color: $color__background-body;
+    text-align: center;
+    .page-title {
+    font-size: $headline_font_size;
+    
+    .taxonomy-description {
+    font-size: $bodytext_font_size;   
+    }
+}
 
+}
 
 
 

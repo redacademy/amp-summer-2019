@@ -699,6 +699,14 @@ object {
 --------------------------------------------------------------*/
 /* Front page */
 /* Workspace */
+.post-type-archive-workspace {
+  background-color: #fff;
+  text-align: center; }
+  .post-type-archive-workspace .page-title {
+    font-size: 20px; }
+    .post-type-archive-workspace .page-title .taxonomy-description {
+      font-size: 16px; }
+
 /* About */
 /* Events */
 /* Contact */
