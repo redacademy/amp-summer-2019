@@ -32,8 +32,9 @@ get_header(); ?>
 				<?php 	
 			endforeach;
 			?>
-			
+			</div> <!-- End of workspace content -->
 
+			<div class="workspace-icons">
 			<?php 
 			$icons = CFS()->get( 'workspace_icons' );
 			
@@ -119,10 +120,11 @@ get_header(); ?>
 				}
 			endforeach;
 			?>
-							
-		</div> 
-
 		<?php endwhile; ?> <!-- End of while loop -->
+
+		</div> <!-- End of workspace icons -->
+
+		
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
