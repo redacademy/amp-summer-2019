@@ -40,7 +40,9 @@ function amp_cpt_workspace() {
 	);
 	$args = array(
 		'label'                 => $name_post,
-		'description'           => 'A space that can be rented',
+		'description'           => 'The Amp welcomes mission and impact driven organizations and individuals. Sharing space with like-minded people provides opportunities for meaningful relationships and collaboration! We have dedicated desks and a private team office available now, as well as a smaller private office available from October 1st, 2019.
+ 
+		Click below for more details.',
 		'labels'                => $labels,
 		'supports'              => array( 'title', 'editor', 'thumbnail', 'revisions' ),
 		'hierarchical'          => false,
@@ -106,7 +108,7 @@ function amp_cpt_events() {
 	);
 	$args = array(
 		'label'                 => $name_post,
-		'description'           => 'An event where we can meet possible clients',
+		'description'           => 'Our community events are open to members and non-members. Come join us for special events to learn more about environmental and social causes. This is a great way to get involved with organizations that are making an impact in the local community.  Below is a list of our upcoming events that you are welcome to join!',
 		'labels'                => $labels,
 		'supports'              => array( 'title', 'editor', 'thumbnail', 'revisions' ),
 		'hierarchical'          => false,
