@@ -1,7 +1,7 @@
 // Structure
 
 $base__space-unit: 1.5rem;
-$body_max_width: 1400px;  // need to be set properly
+$body_max_width: 1400px; // need to be set properly
 
 // Colors
 
@@ -12,7 +12,6 @@ $light_green: #b1ede8;
 
 $font_dark: #393939;
 $font_light: #fff;
-
 
 $color__background-body: #fff;
 $color__text-main: #404040;
@@ -25,33 +24,31 @@ $color__background-pre: #eee;
 $color__background-ins: #fff9c0;
 $color__border-abbr: #666;
 
-$color__link: royalblue;
+$color__link: white;
 $color__link-visited: purple;
 $color__link-hover: midnightblue;
 
 // Typography
 
-$font__main:'Bambi';
-$font__secondary:'Muli', sans-serif; //google fonts
+$font__main: 'Bambi';
+$font__secondary: 'Muli', sans-serif; //google fonts
 
 $headline_color_white: $font_light;
 $headline_color_dark: $font_dark;
 $subhead_color: $font_dark;
 $bodytext_color: $font_dark;
 
-$headline_font_family:'Bambi';
+$headline_font_family: 'Bambi';
 $headline_font_size: 20px;
 
-$subhead_font_family:'Muli', sans-serif;
+$subhead_font_family: 'Muli', sans-serif;
 $subhead_font_size: 16px;
 
-$bodytext_font_family:'Muli', sans-serif;
+$bodytext_font_family: 'Muli', sans-serif;
 $bodytext_font_size: 16px;
 $bodytext_font_size_smaller: 14px;
 
-
-
-$font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-$font__pre: "Courier 10 Pitch", Courier, monospace;
+$font__code: Monaco, Consolas, 'Andale Mono', 'DejaVu Sans Mono', monospace;
+$font__pre: 'Courier 10 Pitch', Courier, monospace;
 $font__line-height-body: 1.5;
 $font__line-height-pre: 1.6;
