@@ -29,13 +29,15 @@ get_header(); ?>
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
-
+				
+			<?php echo	"<a href=".esc_url( get_permalink()). ">"; ?>
 				<?php
 				   
 				   echo date( 'jS F Y' ,strtotime(CFS()-> get('event_date')));
 					get_template_part( 'template-parts/content' );
 					
 				?>
+				<?php echo '</a>'?>
 
 			<?php endwhile; ?>
 
@@ -50,5 +52,4 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

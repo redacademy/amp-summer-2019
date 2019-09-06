@@ -10,6 +10,14 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
+		<div class="events-title">
+	  <h1>Events</h1>
+</div>
+
+    <div class="events-description">
+	<p> Our community events are open to members and non-members. Come join us for special events to learn more about environmental and social causes. This is a great way to get involved with organizations that are making an impact in the local community.  Below is a list of our upcoming events that you are welcome to join!</p>
+</div>
+
 		<?php while ( have_posts() ) : the_post(); ?>
 
 			<?php get_template_part( 'template-parts/content', 'single' ); ?>
@@ -25,8 +33,12 @@ get_header(); ?>
 
 		<?php endwhile; // End of the loop. ?>
 
+		<?php the_excerpt(); ?>
+		<a href="<?= esc_url( get_permalink() );?>">
+		<button type="button" class="button-type">Register</button>
+		</a>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
+
 <?php get_footer(); ?>
