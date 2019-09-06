@@ -14,8 +14,8 @@ get_header(); ?>
 
 			<header class="page-header">
 				<?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
-					// the_archive_description( '<div class="taxonomy-description">', '</div>' );
+					post_type_archive_title('<h1 class="page-title">','</h1>');
+					the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
 			</header><!-- .page-header -->
 
@@ -25,10 +25,14 @@ get_header(); ?>
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php
-					get_template_part( 'template-parts/content' );
+					<div class="thumbnail-wrapper">	
+						<a href="<?php echo get_the_permalink(); ?>">
+							<?php the_post_thumbnail(); ?> 
+							<?php the_title(); ?>
+						</a>
+					</div>
 
-				?>
+				
 
 			<?php endwhile; ?>
 
@@ -43,5 +47,4 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
