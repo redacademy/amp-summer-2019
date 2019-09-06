@@ -30,19 +30,19 @@ get_header(); ?>
 				<p>membership cost:</p></p>$<?php echo $field['workspace_cost'];  ?>/Month</p>
 				</div>
 				<?php 	
-
-
-
 			endforeach;
 			?>
-		</div>
 			
+			<?php 
+			$values = CFS()->get( 'workspace_icons' );
+			foreach ( $values as $key => $label ) :
+			echo $label; ?>
 
-			 
+				
+			<?php endforeach; ?>				
+		</div> 
 
-			
-
-		<?php endwhile; // End of the loop. ?>
+		<?php endwhile; ?> <!-- End of while loop -->
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
