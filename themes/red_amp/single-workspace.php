@@ -27,7 +27,7 @@ get_header(); ?>
 
 
 				<div>
-				<p>membership cost:</p></p>$<?php echo $field['workspace_cost'];  ?>/Month</p>
+				<p><?php echo $field['workspace_cost'];  ?></p>
 				</div>
 				<?php 	
 			endforeach;
