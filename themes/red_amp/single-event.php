@@ -13,47 +13,75 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 		<div class="events-title">
-	  <h1>Events</h1>
-	  <?php echo CFS()->get('option_event_description', 134); ?>
-</div>
+	 	<h1>Events</h1>
+	  	<?php echo CFS()->get('option_event_description', 134); ?>
+		</div>	
 
 		<?php while ( have_posts() ) : the_post(); ?>
-
-		<header class="entry-header">
+        
+		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+        <div class ="single-event">
+		<div class="event-thumbnail">
 		<?php if ( has_post_thumbnail() ) : ?>
 			<?php the_post_thumbnail( 'large' ); ?>
 		<?php endif; ?>
-
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); 
-
-		?>
-
+		</div>
 		<?php endwhile; // End of the loop. ?>
 
 
 		<?php while ( have_posts() ) {
 
 			the_post(); ?>
+			<div class ="event-details">
 			<div class="events-description">
+			<p>About the Event </p>
 			<?php the_content(); ?>
 		
-		</div>
+		     </div>
 
 
 		<?php  
-			echo CFS()->get('event_start_time'); // we can try to add this as well
-			echo '<br>';
-			echo CFS()->get('event_end_time'); // we can try to add this as well
-			echo '<br>';
+		   
 			
-			$event_title = get_the_title(); // or you can use a CFS field
+			
+		    $event_title = get_the_title(); // or you can use a CFS field
 			$event_description = CFS()->get('event_description');
 			$event_website = get_permalink();
 			$event_location = CFS()->get('event_location');
 			$event_date = date( 'Ymd', strtotime( CFS()->get('event_date') ) );
 			$event_offset = date( 'Ymd', strtotime( '+24 hours', strtotime($event_date) ) );
 			$event_button = CFS()->get('event_register_button');
+			$event_map_location =CFS()->get('event_map_location');
+			$event_date_1 = date( 'jS F Y' ,strtotime(CFS()-> get('event_date')));
+			
+			echo '<div class="event-location-time-details">';
+			echo '<div class="event-location">';
+			echo 'Location';
+			echo '<br>';
+			echo $event_location;
+			echo '<br>';
+			echo '</div>';
 
+			echo '<div class = "event-date-time">';
+			echo 'Date and Time';
+			echo '<br>';
+			echo $event_date_1;
+			echo '<br>';
+			echo CFS()->get('event_start_time'); // we can try to add this as well
+			echo '-';
+			echo CFS()->get('event_end_time');
+			echo 'PDT'; // we can try to add this as well
+			echo '<br>';
+			echo '</div>';
+
+			echo '</div>';
+
+			
+			
+			
+			
+			// echo $event_date;
+            echo '<br>';
 			echo "<a href='https://www.google.com/calendar/render?
 			action=TEMPLATE&
 			text={$event_title}&
@@ -66,13 +94,18 @@ get_header(); ?>
 			output=xml'/>add to calendar</a>";
 			
 		}
-		?>  
-
+		?>
 		
+		<br>
+		<a href="<?php echo CFS()->get('event_map_location')['url'];?>">View map</a>
+
+		<br>
 		<a href="<?= $event_button['url'] ?>">
-		<button type="button" class="button-type"><?php $event_button['text'] ?></button>
+		<button type="button" class="button-type">Register</button>
 		</a>
 		</main><!-- #main -->
+		</div>
+		</div>
 	</div><!-- #primary -->
 
 
