@@ -15,7 +15,7 @@ get_header(); ?>
 	
 
 	<?php if ( have_posts() ) : ?>
-
+            <div class ="events-wrapper">
 			<header class="page-header">
 			<div class="events-title">
 				<?php post_type_archive_title('<h1>','</h1>');?>
@@ -29,26 +29,76 @@ get_header(); ?>
 			
             </header><!-- .page-header -->
 
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
-				
-			<?php echo	"<a href=".esc_url( get_permalink()). ">"; ?>
+			
+           
+			<section class="custom-loop">
 				<?php
-				   
-				//    echo CFS()-> get('event_date', 127);
-				   $event_date = date( 'jS F Y' ,strtotime(CFS()-> get('event_date')));
-				//    var_dump( $event_date );
-				//    if(!empty($event_date)){
-					echo $event_date;
-				//    }
-					get_template_part( 'template-parts/content' );
-					
+					$list_events = array( 
+						'post_type' => 'event',
+						'orderby' => array(
+							'date' => 'ASC',
+						),
+						'posts_per_page' => -1,
+					);
+					$events = new WP_Query( $list_events );
+				    
 				?>
-				<?php echo '</a>'?>
+				
+				<!-- Start loop for events -->
+				<?php if ( $events->have_posts() ) : ?>
+					<div class="loop-type-events">		
+						<?php while ( $events->have_posts() ) : $events->the_post(); ?>
 
-			<?php endwhile; ?>
+							<div class="loop-item-container">
+								<a href="<?= esc_url(get_permalink()); ?>">
+									<div class="event-image"> 
+                                    	<img src="<?php echo get_the_post_thumbnail_url();?>">
+									</div>
+								
+								<div class="event-information">
+									<p class="event-name">
+										<?php the_title();?>
+									</p>
 
-			<?php the_posts_navigation(); ?>
+									<p class="event-date">
+										<?php	$event_date = date( 'jS F Y' ,strtotime(CFS()-> get('event_date')));
+				
+				                    	 echo $event_date; ?>
+									</p>
+									
+									<p class="event-content">	
+										<?php the_content();?>
+                                	</p>      
+								</div>
+								</a>
+							</div>
+
+						<?php endwhile; ?>
+						<?php wp_reset_postdata(); ?>
+					</div>
+				<!-- End loop for events -->
+
+				<?php else : ?>
+					<h2>Nothing found!</h2>
+				<?php endif; ?>
+
+			</section>
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 		<?php else : ?>
 
@@ -57,6 +107,7 @@ get_header(); ?>
 		<?php endif; ?>
 
 		</main><!-- #main -->
+		</div>
 	</div><!-- #primary -->
 
 <?php get_footer(); ?>
