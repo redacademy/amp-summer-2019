@@ -22,10 +22,10 @@
 							<p>425 Carrall Street<br>Vancouver,BC<br>V6B 6E3</p>
 						</div> 
 					
-						<div class="contact-info">
-							<a href="604-343-4590"><span> <img src="<?php echo get_template_directory_uri();?>/images/phone.svg" alt="logo"/>604-343-4590</span></a>
-							<a href="mailto:info@theamp.space"><span> <i class="far fa-envelope"> </i>info@theamp.space</span></a>
-						</div> 
+						<!-- <div class="contact-info">
+							<a href="604-343-4590"><span> <img src="<?php echo get_template_directory_uri();?>/images/noun_Phone_1916521.svg" alt="phone-logo"/>604-343-4590</span></a>
+							<a href="mailto:info@theamp.space"><span> <img src="<?php echo get_template_directory_uri();?>/images/noun_Email_2805535.svg" alt="email-logo"/>info@theamp.space</span></a>
+						</div>  -->
 					</div>
 				
 					<!-- .footer-newsletter-form -->
@@ -42,7 +42,7 @@
 
 					<!-- .social-icon -->	
 					<div class="social-icon">
-							<span><img src="<?php echo get_template_directory_uri();?>/images/Facebook.svg" alt="logo"/></span>
+							<span><img src="<?php echo get_template_directory_uri();?>/images/Facebook.svg" alt="logo"/></i></span>
 							<span><img src="<?php echo get_template_directory_uri();?>/images/LinkedIn.svg" alt="logo"/></span>
 							<span><img src="<?php echo get_template_directory_uri();?>/images/twitter.svg" alt="logo"/></span>
 						<div class="site-rights">
