@@ -83,7 +83,9 @@ $the_query = new WP_Query($args);
 <div class="front-page-workspace-button">
     <button class="button-book"> View Workspaces</button>
 </div>
-
+<div class="front-page-amp-community-division-line-top">
+    
+</div>
 <div class="front-page-amp-community">
     <div>
         <h2>
@@ -93,9 +95,9 @@ $the_query = new WP_Query($args);
     <div>
         <p>
             Our name, The Amp, is inspired by our location in the old BC Electric Building.
-             An Ampere is a unit of electric current named after a French mathematician. 
-             ‘Ampeer’ is the name we give to the many teams and individuals who
-              make The Amp their home for work in the heart of Vancouver. 
+            An Ampere is a unit of electric current named after a French mathematician.
+            ‘Ampeer’ is the name we give to the many teams and individuals who
+            make The Amp their home for work in the heart of Vancouver.
         </p>
     </div>
     <div class="front-page-amp-community-logos">
@@ -128,6 +130,15 @@ $the_query = new WP_Query($args);
         </div>
     </div>
 
+</div>
+<div class="front-page-button-arrow">
+    <button class="button-arrow-amp-community"><i class="fas fa-chevron-up"></i></button>
+</div>
+<div class="front-page-button-arrow">
+    <button class="button-arrow-amp-community"><i class="fas fa-chevron-down"></i></button>
+</div>
+<div class="front-page-amp-community-division-line">
+    
 </div>
 
 

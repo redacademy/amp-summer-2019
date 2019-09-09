@@ -660,6 +660,10 @@ a {
         padding: 100px 0px 0px 100px;
         position: relative;
         z-index: 20; }
+        .site-footer .footer-content .contact .contact-info .img {
+          height: 30px;
+          width: 24px;
+          background-color: #DAEFEC; }
     .site-footer .footer-content .site-footer-name-address {
       padding: 40px 0 0 50px;
       white-space: nowrap;
@@ -843,6 +847,12 @@ object {
           justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center; }
+  .front-page-amp-community h2 {
+    font-family: "Bambi";
+    padding: 60px 0; }
+  .front-page-amp-community p {
+    font-family: "Muli", sans-serif;
+    font-size: 18px; }
   .front-page-amp-community .front-page-amp-community-logos {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -863,6 +873,34 @@ object {
           align-content: center; }
       .front-page-amp-community .front-page-amp-community-logos div img {
         margin: auto; }
+
+.front-page-amp-community-division-line-top {
+  border-top: 2px solid #297373;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  margin-top: 80px;
+  height: 0.1px;
+  width: 25%; }
+
+.front-page-amp-community-division-line {
+  border-top: 2px solid #297373;
+  margin-bottom: 30px;
+  height: 0.1px; }
+
+.front-page-button-arrow {
+  text-align: center; }
+  .front-page-button-arrow .button-arrow-amp-community {
+    width: 68px;
+    height: 67px;
+    font-size: 30px;
+    color: #297373;
+    text-align: center;
+    border: none;
+    background: none;
+    -webkit-box-shadow: none;
+            box-shadow: none; }
+    .front-page-button-arrow .button-arrow-amp-community:focus {
+      outline: none; }
 
 .front-page-workspace {
   display: -webkit-box;
@@ -926,16 +964,10 @@ object {
     margin: 0 auto;
     letter-spacing: .3px; }
 
-.workspace-post-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-top: 40px;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  width: 80%; }
+.front-page-workspace-button {
+  text-align: center; }
+  .front-page-workspace-button button {
+    width: 300px; }
 
 .workspace-thumbnail-wrapper {
   display: -webkit-box;
@@ -961,11 +993,6 @@ object {
     padding-top: 50px; }
   .workspace-thumbnail-wrapper a {
     text-decoration: none; }
-
-.front-page-workspace-button {
-  text-align: center; }
-  .front-page-workspace-button button {
-    width: 300px; }
 
 /* About */
 /* Events */
@@ -996,7 +1023,8 @@ object {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      margin-bottom: 20px;
+      margin-bottom: 50px;
+      border-radius: 5px;
       -webkit-box-shadow: 0 12px 48px -12px #9DBEBE;
               box-shadow: 0 12px 48px -12px #9DBEBE; }
       .post-type-archive-event .custom-loop .loop-type-events a .loop-item-container .event-image {
@@ -1004,7 +1032,8 @@ object {
         width: 400px;
         -webkit-box-flex: 0;
             -ms-flex: none;
-                flex: none; }
+                flex: none;
+        border-radius: 5px; }
       .post-type-archive-event .custom-loop .loop-type-events a .loop-item-container .event-information {
         padding-left: 20px; }
         .post-type-archive-event .custom-loop .loop-type-events a .loop-item-container .event-information .event-name {
@@ -1033,7 +1062,12 @@ object {
           text-align: left; }
         .post-type-archive-event .custom-loop .loop-type-events a .loop-item-container .event-content-wrapper .button-arrow-container {
           width: 100%;
-          text-align: center;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
           -webkit-box-shadow: none;
                   box-shadow: none; }
           .post-type-archive-event .custom-loop .loop-type-events a .loop-item-container .event-content-wrapper .button-arrow-container .button-arrow {
@@ -1051,6 +1085,79 @@ object {
               outline: none;
               -webkit-box-shadow: none;
                       box-shadow: none; }
+
+/* Single Event */
+.single-event .events-title h1 {
+  text-align: center;
+  font-family: "Bambi"; }
+
+.single-event .events-description {
+  font-family: "Muli", sans-serif;
+  font-size: 16px;
+  width: 750px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  letter-spacing: 0.9;
+  line-height: 22px; }
+
+.single-event .event-title {
+  width: 1021px;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 2px solid #297373;
+  font-family: "Bambi"; }
+  .single-event .event-title .entry-title {
+    margin-bottom: 0;
+    margin-top: 50px; }
+
+.single-event .single-event {
+  width: 1021px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 37px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Muli", sans-serif; }
+  .single-event .single-event .event-thumbnail {
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+    width: 456px;
+    height: 305px; }
+  .single-event .single-event .event-details {
+    margin-left: 130px; }
+  .single-event .single-event .event-location-time-details {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .single-event .single-event a {
+    color: #297373;
+    font-weight: bold;
+    font-family: "Muli", sans-serif;
+    margin-bottom: 10px; }
+  .single-event .single-event .button-book {
+    margin-top: 30px;
+    margin-bottom: 60px;
+    font-size: 25px;
+    color: #fff;
+    font-weight: 700;
+    width: 250px;
+    height: 80px;
+    font-family: "Muli", sans-serif;
+    background: #297373;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    padding: 0; }
+    .single-event .single-event .button-book:focus {
+      outline: none; }
+    .single-event .single-event .button-book:hover {
+      -webkit-box-shadow: 0 10px 10px 0 #07393c;
+              box-shadow: 0 10px 10px 0 #07393c; }
 
 /* Contact */
 /* Book a tour popup */
