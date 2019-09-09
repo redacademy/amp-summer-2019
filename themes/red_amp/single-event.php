@@ -13,13 +13,18 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 		<div class="events-title">
-	 	<h1>Events</h1>
+		 <h1>Events</h1>
+		 </div>
+		 <div class="events-description">
 	  	<?php echo CFS()->get('option_event_description', 134); ?>
 		</div>	
 
 		<?php while ( have_posts() ) : the_post(); ?>
-        
+
+        <div class="event-title">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		</div>
+
         <div class ="single-event">
 		<div class="event-thumbnail">
 		<?php if ( has_post_thumbnail() ) : ?>
@@ -33,7 +38,7 @@ get_header(); ?>
 
 			the_post(); ?>
 			<div class ="event-details">
-			<div class="events-description">
+			<div class="events-description-details">
 			<p>About the Event </p>
 			<?php the_content(); ?>
 		
@@ -101,7 +106,7 @@ get_header(); ?>
 
 		<br>
 		<a href="<?= $event_button['url'] ?>">
-		<button type="button" class="button-type">Register</button>
+		<button type="button" class="button-book">Register</button>
 		</a>
 		</main><!-- #main -->
 		</div>
