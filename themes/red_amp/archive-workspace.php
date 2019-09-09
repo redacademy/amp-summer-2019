@@ -26,27 +26,30 @@ get_header(); ?>
 			<?php /* Start the Loop */ ?>
 
 			
-			<div class="workspace-post-content">
+			<div class="front-page-workspace"> 
 			<?php while ( have_posts() ) : the_post(); ?>
 
-					<div class="workspace-thumbnail-wrapper">	
-						<a href="<?php echo get_the_permalink(); ?>">
-							<?php the_post_thumbnail(); ?> 
-							
-							<h2>
-							<?php the_title(); ?>
-							</h2>
-						</a>
-					</div> <!-- #workspace-thumbnail-wrapper -->
-			<?php endwhile; ?>
+				<a class="front-page-each-workspace" href="<?php echo get_the_permalink(); ?>">
+					<div>
+						<div class="front-page-workspace-thumbnail"><?php the_post_thumbnail(); ?></div>
+						<div class="front-page-workspace-title">
+							<h1><?php the_title(); ?></h1>
+						</div>
+					</div>
+				</a>
+					
+			<?php endwhile; 
+			else : ?> <p>Please add a workspace</p>
+			<?php endif; ?>
+			<?php wp_reset_query(); ?>
 			</div> <!-- #workspace-post-content -->
 			
 
-			<div class="primary-cta-block workspace-cta">
-			<a class="button-book" href="#">Book a Tour</a>
+			<div class="primary-cta-block"> 
+			<button class="button-book" href="#">Book a Tour</button>
 			</div>
 
-		<?php endif; ?>
+		
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
