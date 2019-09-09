@@ -169,7 +169,121 @@
 
 
 /* Events */
+.post-type-archive-event{
+  
+    .event-wrap{
+        padding-top: 40px;
+        height:322px;
+    }
+    .events-title h1{
+        text-align: center;
+        font-family: $font__main;
+       
 
+    }
+
+    .events-description{
+    font-family: $font__secondary;
+    font-size:$bodytext_font_size;
+    width:750px;
+
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+    letter-spacing: 0.9;
+    line-height: 22px;
+   
+    }
+  
+  
+
+  .custom-loop{
+
+    .loop-type-events{
+        width:943px;
+        margin: 0 auto;
+       
+        a{
+            text-decoration: none;
+        
+
+        .loop-item-container{
+            display:flex;
+            margin-bottom:20px;
+            box-shadow: 0 12px 48px -12px $box_shadow_green;
+     
+      .event-image{
+          height:268px;
+          width:400px;
+          flex:none;
+      }
+      .event-information{
+            padding-left: 20px;
+            
+            .event-name{
+                margin:0;
+                font-family: $font__main;
+                font-size: 20px;	
+                
+                letter-spacing: 0.3px;	
+                line-height: 25px;
+                padding-top:10px;
+            }
+
+            .event-date{
+             font-family: $font__secondary;
+             font-weight: bold;
+              padding-top:10px;
+              font-size:16px;
+                margin:0;
+            }
+           
+      }
+      .event-content-wrapper{
+          display:flex;
+        .event-content {
+            font-family: $font__secondary;
+            font-size:16px;
+            margin-bottom: 0;
+            padding-top:10px;
+            padding-left:20px;
+            text-align: left;
+        }
+        .button-arrow-container {
+            width: 100%;
+            text-align: center;
+            // display: flex;
+            // align-items: center;
+            box-shadow: none;
+            // flex:none;
+
+            .button-arrow {
+                margin: 0 auto;
+                width: 68px;
+                height: 67px;
+                
+                font-size: 40px;
+                color: $dark_green;
+                background: transparent;
+                text-align: center;
+                border:none;
+                box-shadow: none;
+            
+
+            &:focus, &:hover {
+                outline: none;
+                box-shadow: none;
+            }
+        }
+    }
+
+}//end of event-content-wrapper
+   
+  }// end of loop container
+  }
+}
+  }// end of custom loop
+}
 
 
 
