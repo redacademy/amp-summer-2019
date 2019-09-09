@@ -277,6 +277,7 @@
     background-color: $color__background-body;
     text-align: center;
 
+    
     .page-title {
         font-size: $headline_font_size;
         font-family: $headline_font_family;
@@ -304,11 +305,8 @@
     flex-direction: row-reverse;
     width: 80%;
     margin: 0 auto;
-<<<<<<< HEAD
-=======
 .front-page-workspace-button {
     text-align: center;
->>>>>>> cfa42d4015f9240553e742001792a04360662123
 
     button {
         width: 300px;
