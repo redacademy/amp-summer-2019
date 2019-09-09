@@ -17,6 +17,7 @@ get_header(); ?>
 	<?php if ( have_posts() ) : ?>
             <div class ="events-wrapper">
 			<header class="page-header">
+				<div class="event-wrap">
 			<div class="events-title">
 				<?php post_type_archive_title('<h1>','</h1>');?>
 			</div>
@@ -26,7 +27,7 @@ get_header(); ?>
 			echo CFS()->get('option_event_description', 134); // TODO change id to match options page on staging site
 			?>
             </div>
-			
+           </div>
             </header><!-- .page-header -->
 
 			
@@ -48,31 +49,49 @@ get_header(); ?>
 				<?php if ( $events->have_posts() ) : ?>
 					<div class="loop-type-events">		
 						<?php while ( $events->have_posts() ) : $events->the_post(); ?>
-
+						<a href="<?= esc_url(get_permalink()); ?>">
 							<div class="loop-item-container">
-								<a href="<?= esc_url(get_permalink()); ?>">
-									<div class="event-image"> 
-                                    	<img src="<?php echo get_the_post_thumbnail_url();?>">
-									</div>
-								
-								<div class="event-information">
-									<p class="event-name">
-										<?php the_title();?>
-									</p>
+							
+								<div class="event-image" 
+									style="
+										background-image: url(<?php echo get_the_post_thumbnail_url();?>);
+										background-size: cover;
+										background-repeat: no-repeat;
+										background-position: center top;
 
-									<p class="event-date">
-										<?php	$event_date = date( 'jS F Y' ,strtotime(CFS()-> get('event_date')));
-				
-				                    	 echo $event_date; ?>
-									</p>
+										"> 
 									
-									<p class="event-content">	
-										<?php the_content();?>
-                                	</p>      
 								</div>
-								</a>
-							</div>
+								<div class="content-wrapper">
+									<div class="event-information">
+										<p class="event-name">
+											<?php the_title();?>
+										</p>
 
+										<p class="event-date">
+											<?php	$event_date = date( 'jS F Y' ,strtotime(CFS()-> get('event_date')));
+					
+											echo $event_date; ?>
+										</p>
+									</div>
+									
+									<div class="event-content-wrapper">
+										<div class="event-content">	
+											<?php $event_description = CFS()-> get('event_description');
+											
+											echo $event_description;
+											?>
+
+										</div>  
+										
+										<div class="button-arrow-container">
+											<button class="button-arrow"><i class="fas fa-chevron-right"></i></button>
+										</div>
+										
+									</div>
+								</div>
+							</div>
+							</a>
 						<?php endwhile; ?>
 						<?php wp_reset_postdata(); ?>
 					</div>
