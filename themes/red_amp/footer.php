@@ -23,7 +23,7 @@
 						</div> 
 					
 						<div class="contact-info">
-							<a href="604-343-4590"><span> <i class="fas fa-phone"> </i>604-343-4590</span></a>
+							<a href="604-343-4590"><span> <img src="<?php echo get_template_directory_uri();?>/images/phone.svg" alt="logo"/>604-343-4590</span></a>
 							<a href="mailto:info@theamp.space"><span> <i class="far fa-envelope"> </i>info@theamp.space</span></a>
 						</div> 
 					</div>
@@ -42,9 +42,9 @@
 
 					<!-- .social-icon -->	
 					<div class="social-icon">
-							<span><img src="Facebook.svg"></i></span>
-							<span><i class="fab fa-twitter"></i></span>
-							<span><i class="fab fa-linkedin-in"></i></span>
+							<span><img src="<?php echo get_template_directory_uri();?>/images/Facebook.svg" alt="logo"/></span>
+							<span><img src="<?php echo get_template_directory_uri();?>/images/LinkedIn.svg" alt="logo"/></span>
+							<span><img src="<?php echo get_template_directory_uri();?>/images/twitter.svg" alt="logo"/></span>
 						<div class="site-rights">
 							<p>© All rights reserved - The Amp Vancouver 2014</p>	
 						</div>
