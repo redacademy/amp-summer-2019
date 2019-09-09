@@ -635,14 +635,18 @@ a {
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
 .site-footer {
   background: #297373;
-  display: block;
   color: white; }
   .site-footer .footer-content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 100px; }
+    grid-column-gap: 10px;
+    justify-items: center; }
     .site-footer .footer-content .contact {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -653,20 +657,25 @@ a {
               flex-direction: row;
       width: 50% 50%; }
       .site-footer .footer-content .contact .contact-info {
-        padding: 100px 0px 0px 100px; }
+        padding: 100px 0px 0px 100px;
+        position: relative;
+        z-index: 20; }
     .site-footer .footer-content .site-footer-name-address {
-      padding: 50px 0 0 50px;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
+      padding: 40px 0 0 50px;
+      white-space: nowrap;
       -ms-flex-line-pack: justify;
           align-content: space-between; }
     .site-footer .footer-content .footer-newsletter-form {
+      -ms-flex-line-pack: center;
+          align-content: center;
       padding: 50px;
-      font-size: 10px; }
+      white-space: nowrap; }
+      .site-footer .footer-content .footer-newsletter-form .form {
+        height: 173px;
+        width: 1440px;
+        background-color: #297373; }
+    .site-footer .footer-content .social-icon {
+      margin: auto; }
   .site-footer .hidden-mobile {
     display: none; }
   .site-footer .show-desktop {
@@ -907,9 +916,51 @@ object {
   background-color: #fff;
   text-align: center; }
   .post-type-archive-workspace .page-title {
-    font-size: 20px; }
-    .post-type-archive-workspace .page-title .taxonomy-description {
-      font-size: 16px; }
+    font-size: 20px;
+    font-family: "Bambi"; }
+  .post-type-archive-workspace .taxonomy-description {
+    font-family: "Muli", sans-serif;
+    font-size: 16px;
+    text-align: center;
+    max-width: 50%;
+    margin: 0 auto;
+    letter-spacing: .3px; }
+
+.workspace-post-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 40px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  width: 80%; }
+
+.workspace-thumbnail-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 25%;
+  border: 1px solid #b1ede8;
+  -webkit-box-shadow: 1px 2px 1px 2px #b1ede8;
+          box-shadow: 1px 2px 1px 2px #b1ede8; }
+  .workspace-thumbnail-wrapper img {
+    width: 360px;
+    padding-top: 120px; }
+  .workspace-thumbnail-wrapper h2 {
+    font-size: 20px;
+    font-family: "Bambi";
+    color: #404040;
+    padding-top: 50px; }
+  .workspace-thumbnail-wrapper a {
+    text-decoration: none; }
 
 .front-page-workspace-button {
   text-align: center; }
