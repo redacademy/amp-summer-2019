@@ -259,7 +259,7 @@
             }
         }
 
-        .front-page-workspace-title {
+        .front-page-workspace-title{
             max-width: 100%;
             font-family: $headline_font_family;
             font-size: 10px;
@@ -271,14 +271,7 @@
     }
 }
 
-
-
-
-
-
-
-
-/* Workspace */
+/* Workspace Page Only */
 
 .post-type-archive-workspace {
     background-color: $color__background-body;
@@ -297,6 +290,10 @@
         margin: 0 auto;
         letter-spacing: .3px;
     }
+}
+
+.primary-cta-block {
+    padding-bottom: 100px;
 
 }
 
@@ -307,6 +304,11 @@
     flex-direction: row-reverse;
     width: 80%;
     margin: 0 auto;
+<<<<<<< HEAD
+=======
+.front-page-workspace-button {
+    text-align: center;
+>>>>>>> cfa42d4015f9240553e742001792a04360662123
 
     button {
         width: 300px;
@@ -475,10 +477,93 @@
     // end of custom loop
 }
 
+/* Single Event */
+.single-event{
 
+    .events-title h1{
+        text-align: center;
+        font-family: $font__main;
+    }
+    .events-description{
+        font-family: $font__secondary;
+        font-size:$bodytext_font_size;
+        width:750px;
+        text-align: center;
+        margin-left:auto;
+        margin-right:auto;
+        letter-spacing: 0.9;
+        line-height: 22px;
+       
+    }
 
+    .event-title{
+        width: 1021px;
+        margin-left: auto;
+        margin-right: auto;
+        border-bottom: 2px solid #297373;
+        font-family: $font__main;
 
+        .entry-title{
+            margin-bottom: 0;
+            margin-top:50px;
+        }
+        
+      
+    }
 
+    .single-event{
+        width: 1021px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 37px;
+        display: flex;
+        font-family: $font__secondary;
+
+        .event-thumbnail{
+
+            flex:none;
+            width:456px;
+            height:305px;
+        }
+
+        .event-details{
+            margin-left:130px;
+        }
+        .event-location-time-details{
+            display:flex;
+            justify-content:space-between;
+        }
+      a{
+        color: #297373;
+        font-weight:bold;
+        font-family: $font__secondary;
+        margin-bottom: 10px;
+      }
+
+.button-book {
+    margin-top: 30px;
+    margin-bottom: 60px;
+    font-size: 25px;
+    color: $font_light;
+    font-weight: 700;
+    width: 250px;
+    height: 80px;
+    font-family: $bodytext_font_family;
+    background: $dark_green;
+    box-shadow: none;
+    padding: 0;
+
+    &:focus {
+        outline: none;
+    }
+
+    &:hover {
+        box-shadow: 0 10px 10px 0 $dark_grey;
+    }
+}
+
+}
+}
 /* Contact */
 
 
