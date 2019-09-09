@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="16px" viewBox="0 0 20 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>Icon email</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mobile/Footer" transform="translate(-225.000000, -135.000000)">
+            <g id="Contact" transform="translate(226.000000, 106.000000)">
+                <g id="Icon-email" transform="translate(0.000000, 30.000000)">
+                    <polyline id="Path" fill-rule="nonzero" points="3.21428571 3.81818182 9.99139415 9.54545455 16.7142857 3.81818182"></polyline>
+                    <path d="M8.35714286,7.63636364 L3.21428571,12.7272727" id="Path" fill-rule="nonzero"></path>
+                    <path d="M12.2142857,7.63636364 L17.3571429,12.7272727" id="Path" fill="#CAE5E3" fill-rule="nonzero"></path>
+                    <path d="M9,0 L15.9668675,0 C17.5730422,0 17.9186747,1.10034602 18,1.58477509 L18,12.4152249 C17.9525602,12.899654 17.6069277,14 16.0143072,14 L9,14" id="Path" stroke="#DAEFEC"></path>
+                    <path d="M9,0 L1.99470499,0 C0.388048411,0 0.0408472012,1.10034602 0,1.58477509 L0,12.4152249 C0.0408472012,12.899654 0.388048411,14 1.99470499,14 L9,14" id="Path" stroke="#DAEFEC"></path>
+                    <polyline id="Path" stroke="#DAEFEC" stroke-linecap="round" stroke-linejoin="round" points="2.57142857 3.18181818 9.34853701 8.90909091 16.0714286 3.18181818"></polyline>
+                    <path d="M7.39285714,7.31818182 L2.57142857,12.0909091" id="Path" stroke="#DAEFEC" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M11.25,7.31818182 L16.0714286,12.0909091" id="Path" stroke="#DAEFEC" stroke-linecap="round" stroke-linejoin="round"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
