@@ -52,6 +52,12 @@
         padding: 100px 0px 0px 100px;
         position: relative;
         z-index: 20;
+
+        .img {
+          height: 30px;	
+          width: 24px;	
+          background-color: #DAEFEC;
+        }
       }
     }
     .site-footer-name-address {

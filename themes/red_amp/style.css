@@ -660,6 +660,10 @@ a {
         padding: 100px 0px 0px 100px;
         position: relative;
         z-index: 20; }
+        .site-footer .footer-content .contact .contact-info .img {
+          height: 30px;
+          width: 24px;
+          background-color: #DAEFEC; }
     .site-footer .footer-content .site-footer-name-address {
       padding: 40px 0 0 50px;
       white-space: nowrap;
