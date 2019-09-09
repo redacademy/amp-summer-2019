@@ -42,7 +42,7 @@
 
 					<!-- .social-icon -->	
 					<div class="social-icon">
-							<span><i class="fab fa-facebook-f"></i></span>
+							<span><img src="Facebook.svg"></i></span>
 							<span><i class="fab fa-twitter"></i></span>
 							<span><i class="fab fa-linkedin-in"></i></span>
 						<div class="site-rights">
