@@ -122,24 +122,69 @@
     text-align: center;
     justify-content: center;
     align-content: center;
-    .front-page-amp-community-logos{
+    h2{
+      font-family: $headline_font_family; 
+      padding: 60px 0;
+      
+    }
+    p{
+        font-family: $bodytext_font_family;
+        font-size: 18px;
+    }
+    
+
+    .front-page-amp-community-logos {
         display: flex;
         flex-flow: row wrap;
         margin-top: 50px;
         margin-bottom: 50px;
-        div{
+
+        div {
             width: 33%;
             height: 260px;
             display: flex;
             align-content: center;
-            img{
-              margin: auto;  
+
+            img {
+                margin: auto;
             }
-            
+
         }
     }
 }
+.front-page-amp-community-division-line-top{
+    border-top: 2px solid $dark_green;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 80px;
+    height: 0.1px;
+    width: 25%
+}
+.front-page-amp-community-division-line {
+    border-top: 2px solid $dark_green;
+    margin-bottom: 30px;
+    height: 0.1px;
+}
 
+.front-page-button-arrow {
+    text-align: center;
+
+    .button-arrow-amp-community {
+        width: 68px;
+        height: 67px;
+        font-size: 30px;
+        color: $dark_green;
+        text-align: center;
+        border: none;
+        background: none;
+        box-shadow: none;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+}
 
 
 .front-page-workspace {
@@ -207,14 +252,15 @@
     .page-title {
         font-size: $headline_font_size;
         font-family: $headline_font_family;
-    }   
-        .taxonomy-description {
-            font-family: $bodytext_font_family;
-            font-size: $bodytext_font_size;
-            text-align: center;
-            max-width: 50%;
-            margin: 0 auto;
-            letter-spacing: .3px;
+    }
+
+    .taxonomy-description {
+        font-family: $bodytext_font_family;
+        font-size: $bodytext_font_size;
+        text-align: center;
+        max-width: 50%;
+        margin: 0 auto;
+        letter-spacing: .3px;
     }
 
 }
@@ -234,16 +280,19 @@
     width: 25%;
     border: 1px solid $light_green;
     box-shadow: 1px 2px 1px 2px $light_green;
+
     img {
-       width: 360px; 
-       padding-top: 120px;
+        width: 360px;
+        padding-top: 120px;
     }
+
     h2 {
         font-size: $headline_font_size;
         font-family: $headline_font_family;
         color: $color__text-main;
         padding-top: 50px;
     }
+
     a {
         text-decoration: none;
     }

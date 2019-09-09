@@ -843,6 +843,12 @@ object {
           justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center; }
+  .front-page-amp-community h2 {
+    font-family: "Bambi";
+    padding: 60px 0; }
+  .front-page-amp-community p {
+    font-family: "Muli", sans-serif;
+    font-size: 18px; }
   .front-page-amp-community .front-page-amp-community-logos {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -863,6 +869,34 @@ object {
           align-content: center; }
       .front-page-amp-community .front-page-amp-community-logos div img {
         margin: auto; }
+
+.front-page-amp-community-division-line-top {
+  border-top: 2px solid #297373;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  margin-top: 80px;
+  height: 0.1px;
+  width: 25%; }
+
+.front-page-amp-community-division-line {
+  border-top: 2px solid #297373;
+  margin-bottom: 30px;
+  height: 0.1px; }
+
+.front-page-button-arrow {
+  text-align: center; }
+  .front-page-button-arrow .button-arrow-amp-community {
+    width: 68px;
+    height: 67px;
+    font-size: 30px;
+    color: #297373;
+    text-align: center;
+    border: none;
+    background: none;
+    -webkit-box-shadow: none;
+            box-shadow: none; }
+    .front-page-button-arrow .button-arrow-amp-community:focus {
+      outline: none; }
 
 .front-page-workspace {
   display: -webkit-box;
@@ -926,16 +960,10 @@ object {
     margin: 0 auto;
     letter-spacing: .3px; }
 
-.workspace-post-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-top: 40px;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  width: 80%; }
+.front-page-workspace-button {
+  text-align: center; }
+  .front-page-workspace-button button {
+    width: 300px; }
 
 .workspace-thumbnail-wrapper {
   display: -webkit-box;
@@ -961,11 +989,6 @@ object {
     padding-top: 50px; }
   .workspace-thumbnail-wrapper a {
     text-decoration: none; }
-
-.front-page-workspace-button {
-  text-align: center; }
-  .front-page-workspace-button button {
-    width: 300px; }
 
 /* About */
 /* Events */
