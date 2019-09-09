@@ -92,6 +92,7 @@
     }
 
     //workspace style
+
     .front-page-workspace{
         font-family: $headline_font_family;
         font-size: 23px;
@@ -105,11 +106,7 @@
         max-width: 50%;
         margin: 0 auto;
     }
-
-
 }
-
-
 
 
 /* Workspace */
@@ -117,16 +114,51 @@
 .post-type-archive-workspace {
     background-color: $color__background-body;
     text-align: center;
+
     .page-title {
-    font-size: $headline_font_size;
-    
-    .taxonomy-description {
-    font-size: $bodytext_font_size;   
+        font-size: $headline_font_size;
+        font-family: $headline_font_family;
+    }   
+        .taxonomy-description {
+            font-family: $bodytext_font_family;
+            font-size: $bodytext_font_size;
+            text-align: center;
+            max-width: 50%;
+            margin: 0 auto;
+            letter-spacing: .3px;
     }
 }
 
+.workspace-post-content {
+    display: flex;
+    padding-top: 40px; 
+    flex-direction: row-reverse;
+    width: 80%;
+    
+
 }
 
+.workspace-thumbnail-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 25%;
+    border: 1px solid $light_green;
+    box-shadow: 1px 2px 1px 2px $light_green;
+    img {
+       width: 360px; 
+       padding-top: 120px;
+    }
+    h2 {
+        font-size: $headline_font_size;
+        font-family: $headline_font_family;
+        color: $color__text-main;
+        padding-top: 50px;
+    }
+    a {
+        text-decoration: none;
+    }
+}
 
 
 
