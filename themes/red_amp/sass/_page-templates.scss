@@ -219,8 +219,18 @@
 
 }
 
+<<<<<<< HEAD
+.workspace-post-content {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px; 
+    flex-direction: row-reverse;
+    width: 80%;
+    margin: 0 auto;
+=======
 .front-page-workspace-button {
     text-align: center;
+>>>>>>> b3f603d42ad1d600b1577108c512c59100ac8394
 
     button {
         width: 300px;
@@ -231,7 +241,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 25%;
+    width: 31.5%;
     border: 1px solid $light_green;
     box-shadow: 1px 2px 1px 2px $light_green;
     img {
@@ -239,7 +249,7 @@
        padding-top: 120px;
     }
     h2 {
-        font-size: $headline_font_size;
+        font-size: $headline_font_size * 1.2;
         font-family: $headline_font_family;
         color: $color__text-main;
         padding-top: 50px;
