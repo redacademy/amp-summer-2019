@@ -122,26 +122,52 @@
     text-align: center;
     justify-content: center;
     align-content: center;
-    h2{
-      font-family: $headline_font_family; 
-      padding: 60px 0;
-      
+
+    h2 {
+        font-family: $headline_font_family;
+        padding: 60px 0;
+
     }
-    p{
+
+    p {
         font-family: $bodytext_font_family;
         font-size: 18px;
     }
-    
+
 
     .front-page-amp-community-logos {
         display: flex;
         flex-flow: row wrap;
         margin-top: 50px;
         margin-bottom: 50px;
+        height: 250px;
+        overflow: hidden;
+        position: relative;
+        transition: 0.7s;
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 200px;
+            background: linear-gradient(to bottom, rgba(white, 0), rgba(white, 1));
+        }
+
+        &.is-open {
+            height: 550px;
+            transition: 0.7s;
+            &::after {
+                content: "";
+                background: none;
+            }
+        }
+
+        
 
         div {
             width: 33%;
-            height: 260px;
+            height: 150px;
             display: flex;
             align-content: center;
 
@@ -152,7 +178,8 @@
         }
     }
 }
-.front-page-amp-community-division-line-top{
+
+.front-page-amp-community-division-line-top {
     border-top: 2px solid $dark_green;
     margin: 0 auto;
     margin-bottom: 30px;
@@ -160,10 +187,14 @@
     height: 0.1px;
     width: 25%
 }
+
 .front-page-amp-community-division-line {
-    border-top: 2px solid $dark_green;
+    border-top: 3px solid $dark_green;
+    margin: 0 auto;
     margin-bottom: 30px;
     height: 0.1px;
+    width: 90%;
+
 }
 
 .front-page-button-arrow {
@@ -171,7 +202,7 @@
 
     .button-arrow-amp-community {
         width: 68px;
-        height: 67px;
+        height: auto;
         font-size: 30px;
         color: $dark_green;
         text-align: center;
@@ -179,11 +210,15 @@
         background: none;
         box-shadow: none;
 
+
         &:focus {
             outline: none;
         }
     }
 
+}
+.turn-arrow{
+    transform: rotate(180deg);
 }
 
 
@@ -265,18 +300,13 @@
 
 }
 
-<<<<<<< HEAD
 .workspace-post-content {
     display: flex;
     justify-content: space-between;
-    padding-top: 40px; 
+    padding-top: 40px;
     flex-direction: row-reverse;
     width: 80%;
     margin: 0 auto;
-=======
-.front-page-workspace-button {
-    text-align: center;
->>>>>>> b3f603d42ad1d600b1577108c512c59100ac8394
 
     button {
         width: 300px;

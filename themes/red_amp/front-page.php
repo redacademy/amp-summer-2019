@@ -102,37 +102,43 @@ $the_query = new WP_Query($args);
     </div>
     <div class="front-page-amp-community-logos">
         <div>
-            <img src="<?php echo get_template_directory_uri() . '/images/dog.png' ?>" alt="">
+            <img src="<?php echo get_template_directory_uri() . '/images/Member_Logo01.png' ?>" alt="">
         </div>
         <div>
-            <img src="<?php echo get_template_directory_uri() . '/images/dog.png' ?>" alt="">
+            <img src="<?php echo get_template_directory_uri() . '/images/Member_Logo02.png' ?>" alt="">
         </div>
         <div>
-            <img src="<?php echo get_template_directory_uri() . '/images/dog.png' ?>" alt="">
+            <img src="<?php echo get_template_directory_uri() . '/images/Member_Logo03.png' ?>" alt="">
         </div>
         <div>
-            <img src="<?php echo get_template_directory_uri() . '/images/dog.png' ?>" alt="">
+            <img src="<?php echo get_template_directory_uri() . '/images/Member_Logo04.png' ?>" alt="">
         </div>
         <div>
-            <img src="<?php echo get_template_directory_uri() . '/images/dog.png' ?>" alt="">
+            <img src="<?php echo get_template_directory_uri() . '/images/Member_Logo05.png' ?>" alt="">
         </div>
         <div>
-            <img src="<?php echo get_template_directory_uri() . '/images/dog.png' ?>" alt="">
+            <img src="<?php echo get_template_directory_uri() . '/images/Member_Logo06.png' ?>" alt="">
         </div>
         <div>
-            <img src="<?php echo get_template_directory_uri() . '/images/dog.png' ?>" alt="">
+            <img src="<?php echo get_template_directory_uri() . '/images/Member_Logo07.png' ?>" alt="">
         </div>
         <div>
-            <img src="<?php echo get_template_directory_uri() . '/images/dog.png' ?>" alt="">
+            <img src="<?php echo get_template_directory_uri() . '/images/Member_Logo08.png' ?>" alt="">
         </div>
         <div>
-            <img src="<?php echo get_template_directory_uri() . '/images/dog.png' ?>" alt="">
+            <img src="<?php echo get_template_directory_uri() . '/images/Member_Logo09.png' ?>" alt="">
+        </div>
+        <div>
+            <img src="<?php echo get_template_directory_uri() . '/images/Member_Logo10.png' ?>" alt="">
+        </div>
+        <div>
+            <img src="<?php echo get_template_directory_uri() . '/images/Member_Logo11.png' ?>" alt="">
+        </div>
+        <div>
+            <img src="<?php echo get_template_directory_uri() . '/images/Member_Logo12.png' ?>" alt="">
         </div>
     </div>
 
-</div>
-<div class="front-page-button-arrow">
-    <button class="button-arrow-amp-community"><i class="fas fa-chevron-up"></i></button>
 </div>
 <div class="front-page-button-arrow">
     <button class="button-arrow-amp-community"><i class="fas fa-chevron-down"></i></button>
