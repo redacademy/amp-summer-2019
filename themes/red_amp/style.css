@@ -665,6 +665,8 @@ a {
     .site-footer .footer-content .footer-newsletter-form {
       padding: 50px;
       font-size: 10px; }
+    .site-footer .footer-content .social-icon {
+      padding: 50px; }
   .site-footer .hidden-mobile {
     display: none; }
   .site-footer .show-desktop {
