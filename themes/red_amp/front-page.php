@@ -80,7 +80,8 @@ $the_query = new WP_Query($args);
 <!-- end of workspace loop -->
 
 <!-- view workspace button -->
-<div class="front-page-workspace-button">
+<div class="front-page-workspace-button" style = "
+text-align: center;">
     <button class="button-book"> View Workspaces</button>
 </div>
 <div class="front-page-amp-community-division-line-top">
