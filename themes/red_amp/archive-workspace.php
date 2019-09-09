@@ -26,23 +26,23 @@ get_header(); ?>
 			<?php /* Start the Loop */ ?>
 
 			
-
+			<div class="workspace-post-content">
 			<?php while ( have_posts() ) : the_post(); ?>
 
-					<div class="thumbnail-wrapper">	
+					<div class="workspace-thumbnail-wrapper">	
 						<a href="<?php echo get_the_permalink(); ?>">
 							<?php the_post_thumbnail(); ?> 
+							
+							<h2>
 							<?php the_title(); ?>
+							</h2>
 						</a>
-					</div>
-
-				
-
+					</div> <!-- #workspace-thumbnail-wrapper -->
 			<?php endwhile; ?>
-
+			</div> <!-- #workspace-post-content -->
 			
 
-			<div class="primary-cta-block">
+			<div class="primary-cta-block workspace-cta">
 			<a class="button-book" href="#">Book a Tour</a>
 			</div>
 
