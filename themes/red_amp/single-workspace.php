@@ -8,50 +8,61 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+	<main id="main" class="site-main" role="main">
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
-		
 			<div class="workspace-content">
-			<?php 
-			$fields = CFS()->get( 'workspace_area' );
-			foreach ( $fields as $field ) : 
-				$images =  $field['workspace_images' ];
-				foreach ( $images as $image ) : ?>
-				
-				<div class="single-workspace-content">
-					<img src="<?php echo $image['workspace_image']; ?>" height="310" width="460">	 <?php
-					endforeach;	
+					
+					<?php	
+					$fields = CFS()->get( 'workspace_area' );
+					$index = 0;
+					foreach ( $fields as $field ) :  
 					?>
-					<p> <?php echo $field['workspace_title']; ?> </p>
-					<p> <?php echo $field['workspace_description'];  ?> </p>
-	
+					<div class="workspace-wrapper">
 
-					<div>
-					<p><?php echo $field['workspace_cost'];  ?></p>
-					</div>
+						<div id="workspace-carousel-<?php echo $index;?>" class='row container-carousel'>	
+							<?php $index++; ?>
+							<?php
+								$images =  $field['workspace_images' ];
+								foreach ( $images as $image ) : ?>
+								
+							<div class="single-workspace-content carousel-cell">
+							
+									<a href="#" class="thumbnail" id="carousel-selector-">
+										<img src="<?php echo $image['workspace_image']; ?>" width="460" alt="Image"/>
+									</a>
+								
+							</div> <!-- End of single-workspace-content carousel-cell -->
+								<?php
+								endforeach;	
+								?>
 
-					<div>
-						<hr>
-					</div>
+						</div> <!-- End of row container-carousel -->
+								
+						<div class="workspace-details">
+							<p> <?php echo $field['workspace_title']; ?> </p>
+							<p> <?php echo $field['workspace_description'];  ?> </p>
+							<p><?php echo $field['workspace_cost'];  ?></p>
+						</div> <!-- End of workspace-details -->
 
-
-				</div>	<!-- End of single-workspace-content -->	
-				
+					</div><!-- workspace-wrapper -->
 				<?php 	
-			endforeach;
-			?>
+				endforeach;
+				?>
+
 			</div> <!-- End of workspace content -->
-		</div>
+			
+		
+		
 
 			
-			<div>
-			<h1>Amenities Included</h1>	
-			</div>
+		
+		<h1>Amenities Included</h1>	
+		
 
 
-			<div class="workspace-icons">
+		<div class="workspace-icons">
 			<?php 
 			$icons = CFS()->get( 'workspace_icons' );
 			
@@ -135,9 +146,9 @@ get_header(); ?>
 					break;	
 												
 				}
-			endforeach;
-			?>
-		<?php endwhile; ?> <!-- End of while loop -->
+				endforeach;
+				?>
+			<?php endwhile; ?> <!-- End of while loop -->
 
 		</div> <!-- End of workspace icons -->
 
