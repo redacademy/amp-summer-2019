@@ -484,6 +484,7 @@
       flex: none;
       width: 456px;
       height: 305px;
+      overflow: hidden;
     }
 
     .event-details {
@@ -492,6 +493,11 @@
     .event-location-time-details {
       display: flex;
       justify-content: space-between;
+
+      .location{
+        font-weight:bold;
+        margin:0;
+      }
     }
     a {
       color: #297373;

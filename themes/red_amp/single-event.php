@@ -61,8 +61,10 @@ get_header(); ?>
 			
 			echo '<div class="event-location-time-details">';
 			echo '<div class="event-location">';
+			echo '<p class="location">';
 			echo 'Location';
-			echo '<br>';
+			echo '</p>';
+			
 			echo $event_location;
 			echo '<br>';
 			echo '</div>';
