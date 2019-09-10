@@ -24,7 +24,7 @@ get_header(); ?>
 
 			<div class="events-description">
 			<?php
-			echo CFS()->get('option_event_description', 134); // TODO change id to match options page on staging site
+			echo CFS()->get('option_event_description', 138); // TODO change id to match options page on staging site
 			?>
             </div>
            </div>

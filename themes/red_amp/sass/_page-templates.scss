@@ -361,13 +361,15 @@
 
         .loop-item-container {
           display: flex;
-          margin-bottom: 20px;
+          margin-bottom: 50px;
+          border-radius:5px;
           box-shadow: 0 12px 48px -12px $box_shadow_green;
 
           .event-image {
             height: 268px;
             width: 400px;
             flex: none;
+            border-radius:5px;
           }
 
           .event-information {
@@ -407,10 +409,10 @@
             .button-arrow-container {
               width: 100%;
               text-align: center;
-              // display: flex;
-              // align-items: center;
+              display: flex;
+              align-items: center;
               box-shadow: none;
-              // flex:none;
+             
 
               .button-arrow {
                 margin: 0 auto;
@@ -474,7 +476,7 @@
     }
   }
 
-  .single-event {
+  .single-event-wrap {
     width: 1021px;
     margin-left: auto;
     margin-right: auto;
@@ -486,6 +488,7 @@
       flex: none;
       width: 456px;
       height: 305px;
+      overflow: hidden;
     }
 
     .event-details {
@@ -494,6 +497,11 @@
     .event-location-time-details {
       display: flex;
       justify-content: space-between;
+
+      .location{
+        font-weight:bold;
+        margin:0;
+      }
     }
     a {
       color: #297373;
