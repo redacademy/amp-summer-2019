@@ -871,7 +871,7 @@ object {
     -webkit-transition: 0.7s;
     transition: 0.7s; }
     .front-page-amp-community .front-page-amp-community-logos::after {
-      content: "";
+      content: '';
       position: absolute;
       bottom: 0;
       left: 0;
@@ -884,7 +884,7 @@ object {
       -webkit-transition: 0.7s;
       transition: 0.7s; }
       .front-page-amp-community .front-page-amp-community-logos.is-open::after {
-        content: "";
+        content: '';
         background: none; }
     .front-page-amp-community .front-page-amp-community-logos div {
       width: 33%;
@@ -991,7 +991,10 @@ object {
     text-align: center;
     max-width: 50%;
     margin: 0 auto;
-    letter-spacing: .3px; }
+    letter-spacing: 0.3px; }
+
+.primary-cta-block {
+  padding-bottom: 100px; }
 
 .primary-cta-block {
   padding-bottom: 100px; }
