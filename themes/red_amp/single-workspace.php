@@ -41,7 +41,7 @@ get_header(); ?>
 						</div> <!-- End of row container-carousel -->
 								
 						<div class="workspace-details">
-							<p> <?php echo $field['workspace_title']; ?> </p>
+							<h1> <?php echo $field['workspace_title']; ?> </h1>
 							<p> <?php echo $field['workspace_description'];  ?> </p>
 							<p><?php echo $field['workspace_cost'];  ?></p>
 						</div> <!-- End of workspace-details -->

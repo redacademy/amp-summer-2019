@@ -12,7 +12,7 @@
   for (i=0; i<index; i++ ){
     $('#workspace-carousel-'+i).flickity({
       // options
-      cellAlign: 'left',
+      cellAlign: 'center',
       contain: true,
       wrapAround: true
     });
