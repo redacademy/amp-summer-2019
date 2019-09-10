@@ -16,7 +16,7 @@ get_header(); ?>
 		 <h1>Events</h1>
 		 </div>
 		 <div class="events-description">
-	  	<?php echo CFS()->get('option_event_description', 134); ?>
+	  	<?php echo CFS()->get('option_event_description', 138); ?>
 		</div>	
 
 		<?php while ( have_posts() ) : the_post(); ?>
