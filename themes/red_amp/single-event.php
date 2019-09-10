@@ -25,7 +25,7 @@ get_header(); ?>
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 		</div>
 
-        <div class ="single-event">
+        <div class ="single-event-wrap">
 		<div class="event-thumbnail">
 		<?php if ( has_post_thumbnail() ) : ?>
 			<?php the_post_thumbnail( 'large' ); ?>

@@ -305,7 +305,7 @@
     }
 }
 
-
+}
 
 /* About */
 
@@ -342,88 +342,6 @@
     }
 
 
-<<<<<<< HEAD
-    .loop-type-events{
-        width:943px;
-        margin: 0 auto;
-       
-        a{
-            text-decoration: none;
-        
-
-        .loop-item-container{
-            display:flex;
-            margin-bottom:50px;
-            border-radius: 5px;
-            box-shadow: 0 12px 48px -12px $box_shadow_green;
-            // & :last-child {
-            //     margin-bottom: 70px;
-            //   }
-     
-      .event-image{
-          height:268px;
-          width:400px;
-          flex:none;
-          border-radius: 5px;
-        
-      }
-      .event-information{
-            padding-left: 20px;
-            
-            .event-name{
-                margin:0;
-                font-family: $font__main;
-                font-size: 20px;	
-                
-                letter-spacing: 0.3px;	
-                line-height: 25px;
-                padding-top:10px;
-            }
-
-            .event-date{
-             font-family: $font__secondary;
-             font-weight: bold;
-              padding-top:10px;
-              font-size:16px;
-                margin:0;
-            }
-           
-      }
-      .event-content-wrapper{
-          display:flex;
-        .event-content {
-            font-family: $font__secondary;
-            font-size:16px;
-            margin-bottom: 0;
-            padding-top:10px;
-            padding-left:20px;
-            text-align: left;
-        }
-        .button-arrow-container {
-            width: 100%;
-           
-            display: flex;
-            align-items: center;
-            box-shadow: none;
-           
-
-            .button-arrow {
-                margin: 0 auto;
-                width: 68px;
-                height: 67px;
-                
-                font-size: 40px;
-                color: $dark_green;
-                background: transparent;
-                text-align: center;
-               
-                border:none;
-                box-shadow: none;
-            
-=======
-
-    .custom-loop {
->>>>>>> 938abaeb486648a4454a7dc3caba32ec9ac2c4e2
 
         .loop-type-events {
             width: 943px;
@@ -431,7 +349,6 @@
 
             a {
                 text-decoration: none;
-
 
                 .loop-item-container {
                     display: flex;
@@ -512,26 +429,14 @@
 
                     //end of event-content-wrapper
 
-                }
+                }// end of loop container
+            }// end of a tag
+        }// end of loop-type events
+    }// end of EVENTS
 
-                // end of loop container
-            }
-        }
-    }
 
-<<<<<<< HEAD
-}//end of event-content-wrapper
-   
-  }// end of loop container
-  }
-  }
-  }// end of custom loop
-=======
-    // end of custom loop
->>>>>>> 938abaeb486648a4454a7dc3caba32ec9ac2c4e2
-}
 
-/* Single Event */
+/* Single Event Page */
 .single-event{
 
     .events-title h1{
@@ -565,7 +470,7 @@
       
     }
 
-    .single-event{
+    .single-event-wrap{
         width: 1021px;
         margin-left: auto;
         margin-right: auto;
