@@ -3,8 +3,10 @@
 
   $('.main-carousel').flickity({
     // options
-    cellAlign: 'left',
-    contain: true,
+    // cellAlign: 'left',
+    // contain: true,
+    // adaptiveHeight: false,
+    wrapAround: true,
   });
 
   let index = $('.container-carousel').length;

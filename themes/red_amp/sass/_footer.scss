@@ -6,13 +6,11 @@
 * {
   box-sizing: border-box;
 }
- 
+
 .site-footer {
   background: $dark_green;
   color: white;
-  
-
-  .contact{
+  .contact {
     display: flex;
     flex-direction: row;
   }
@@ -25,18 +23,32 @@
     white-space: nowrap;
     display: flex;
     justify-content: space-evenly;
+    img {
+      padding-right: 15px;
+      height: 20px;
+    }
+    a:link {
+      color: white;
+      text-decoration: none;
+      #text {
+        display: inline-block;
+        margin-right: 1em;
+      }
+    }
+    a[href^='mailto'] {
+      color: white;
+      text-decoration: none;
+    }
   }
 
   .footer-content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    // grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 10px;
-    // justify-items: center;
   }
 }
 .site-footer-name-address {
-  padding: 50px 0 50px 50px;
+  padding: 50px 0 0px 50px;
   white-space: nowrap;
   -ms-flex-line-pack: justify;
   align-content: space-between;
@@ -44,7 +56,7 @@
 
 .footer-newsletter-form {
   align-content: center;
-  padding: 50px;
+  padding: 0px 50px;
   text-align: center;
   white-space: nowrap;
   margin: auto 0;
@@ -52,6 +64,7 @@
 
 .social-icon {
   margin: auto;
+  padding-top: 30px;
 }
 
 // INPUT HIDDEN VALUES HERE
