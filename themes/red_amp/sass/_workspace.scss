@@ -17,3 +17,52 @@
         border: 1px solid $dark_green;
     }
 }
+
+// .workspace-content {
+ 
+// .container-carousel {
+//     width: 540px;
+//     img {
+//         padding-left: 80px;
+//     }
+// }
+// .single-workspace-content {
+//     width: 100%;
+// }
+// .carousel-selector {
+//     width: 50%;
+// }
+
+// .active {
+//     display: flex;
+//     flex-wrap: wrap;
+// }
+// }
+
+// .workspace-details {
+//     width: 700px;
+// }
+
+
+.workspace-wrapper {
+    position: relative;
+    display: flex;
+    > div {
+        width: 50%;
+    }
+    &::after {
+        content: '';
+        width: 80%;
+        height: 2px;
+        background: black;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    &:last-child {
+        &::after {
+            display: none;
+        }
+    }
+}
