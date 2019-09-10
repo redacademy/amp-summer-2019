@@ -80,12 +80,12 @@ $the_query = new WP_Query($args);
 <!-- end of workspace loop -->
 
 <!-- view workspace button -->
-<div class="front-page-workspace-button" style = "
+<div class="front-page-workspace-button" style="
 text-align: center;">
     <button class="button-book"> View Workspaces</button>
 </div>
 <div class="front-page-amp-community-division-line-top">
-    
+
 </div>
 <div class="front-page-amp-community">
     <div>
@@ -145,31 +145,62 @@ text-align: center;">
     <button class="button-arrow-amp-community"><i class="fas fa-chevron-down"></i></button>
 </div>
 <div class="front-page-amp-community-division-line">
-    
+
 </div>
+<!-- ///////////////////-- -->
 
 
-<?php
-$arr = array(
-    'images/bike.svg',
-    'images/clock.svg',
-    'images/desk.svg',
-    'images/dog.svg',
-    'images/people.svg',
-);
-?>
+<!-- A loop for custom field testimonial -->
+
+
+
 
 
 <!-- TESTIMONIALS CAROUSEL  -->
-<?php
-echo "<div class='item active'>";
-echo "<div class='row main-carousel'>";
-foreach ($arr as $key => $value) {
-    echo "<div class='col-md-2'>";
-    echo '<a href="#" class="thumbnail" id="carousel-selector-' . $key . '"><img src="' . get_stylesheet_directory_uri() . '/' . $value . '" alt="Image" style="max-width:100%;"></a>';
-    echo "</div>";
-}
-echo "</div>";
-echo "</div>"; ?>
+
+<div class='item-active'>
+    <div class='row main-carousel'>
+        <?php
+        $fields = CFS()->get('testimonial');
+        $i = 0;
+
+        foreach ($fields as $field) : {
+                ?>
+
+                <?php
+                        $image = $field['picture'];
+                        $text = $field['testimonial_text'];
+                        $name = $field['name'];
+                        $company = $field['company_name'];
+                        $array[$i] = array(
+                            $image,
+                            $text,
+                            $name,
+                            $company,
+                        );
+                        ?>
+                <div class="carousel-cell">
+                    <div class="carousel-content">
+                        <div class="carousel-content-individual carousel-image">
+                            <img src="<?php echo $image; ?>" alt="">
+                        </div>
+                        <div class="carousel-content-individual carousel-text">
+                            <?php echo $text; ?>
+                        </div>
+                        <div class="carousel-content-individual carousel-name">
+                            <?php echo $name; ?>
+                        </div>
+                        <div class="carousel-content-individual carousel-company">
+                            <?php echo $company; ?>
+                        </div>
+
+                    </div> <!-- carousel-cell-content -->
+                <?php $i++; } ?>
+                </div><!-- .carousel-cell-container -->
+
+            <?php endforeach; ?>
+    </div><!-- .row main-carousel -->
+</div><!-- .item-active -->
+
 
 <?php get_footer();

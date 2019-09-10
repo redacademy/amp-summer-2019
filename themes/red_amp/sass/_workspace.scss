@@ -18,30 +18,19 @@
     }
 }
 
-// .workspace-content {
- 
-// .container-carousel {
-//     width: 540px;
-//     img {
-//         padding-left: 80px;
-//     }
-// }
-// .single-workspace-content {
-//     width: 100%;
-// }
-// .carousel-selector {
-//     width: 50%;
-// }
-
-// .active {
-//     display: flex;
-//     flex-wrap: wrap;
-// }
-// }
-
-// .workspace-details {
-//     width: 700px;
-// }
+.workspace-content {
+.container-carousel {
+    width: 540px;
+    a {
+        margin: 0 auto;       
+        right: 0;
+    }
+}
+.carousel-cell {
+    width: 100%;
+    padding-left: 42px;
+}
+}
 
 
 .workspace-wrapper {
@@ -52,9 +41,9 @@
     }
     &::after {
         content: '';
-        width: 80%;
+        width: 50%;
         height: 2px;
-        background: black;
+        background: $dark_green;
         position: absolute;
         bottom: 0;
         left: 50%;
@@ -66,3 +55,44 @@
         }
     }
 }
+
+.workspace-details {
+    h1 {
+        font-family: $headline_font_family;
+        font-size: $headline_font_size *1.8;
+    }
+}
+
+.carousel-cell {
+    img {
+        width: 455px;
+        height: 303px;
+    }
+}
+
+.workspace-wrapper {
+    padding-bottom: 80px;
+    margin: 80px 160px 0 160px;
+}
+
+.flickity-button-icon {
+    color: $dark_green;
+}
+
+.container-carousel {
+.flickity-button {
+    background:transparent;
+    box-shadow: unset;
+    border: none !important;
+    width: 90px;
+    height: 90px;
+    // left: 95%;
+    // right: 75%;
+}
+}
+   .workspace-wrapper {
+    .dot {
+        width: 90px;
+        height: 90px;
+    }
+   }

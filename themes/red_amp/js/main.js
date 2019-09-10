@@ -3,8 +3,10 @@
 
   $('.main-carousel').flickity({
     // options
-    cellAlign: 'left',
-    contain: true,
+    // cellAlign: 'left',
+    // contain: true,
+    // adaptiveHeight: false,
+    wrapAround: true,
   });
 
   let index = $('.container-carousel').length;
@@ -12,7 +14,7 @@
   for (i=0; i<index; i++ ){
     $('#workspace-carousel-'+i).flickity({
       // options
-      cellAlign: 'left',
+      cellAlign: 'center',
       contain: true,
       wrapAround: true
     });
