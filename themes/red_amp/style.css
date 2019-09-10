@@ -996,9 +996,6 @@ object {
 .primary-cta-block {
   padding-bottom: 100px; }
 
-.primary-cta-block {
-  padding-bottom: 100px; }
-
 .workspace-post-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1044,6 +1041,10 @@ object {
     text-decoration: none; }
 
 /* About */
+.page-about-section-title .page-about-section {
+  background: red;
+  text-align: center; }
+
 /* Events */
 .post-type-archive-event .event-wrap {
   padding-top: 40px;
