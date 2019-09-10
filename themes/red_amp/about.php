@@ -5,10 +5,13 @@
  * @package RED_Starter_Theme
  */
 
-// CAROUSEL FOR MOBILE (ADD MOBILE FEAUTURES)
+// CAROUSEL FOR MOBILE (ADD MOBILE FEATURES)
 
 get_header(); ?>
 
+
+
+<!-- MOBILE ABOUT CAROUSEL  -->
 <?php
     $arr = array(
         'images/bike.svg',
@@ -19,7 +22,6 @@ get_header(); ?>
 );
 ?>
 
-<!-- MOBILE ABOUT CAROUSEL  -->
 <?php 
   echo "<div class='item active'>";
     echo "<div class='row main-carousel'>";

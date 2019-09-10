@@ -16,7 +16,7 @@ get_header(); ?>
 		 <h1>Events</h1>
 		 </div>
 		 <div class="events-description">
-	  	<?php echo CFS()->get('option_event_description', 134); ?>
+	  	<?php echo CFS()->get('option_event_description', 138); ?>
 		</div>	
 
 		<?php while ( have_posts() ) : the_post(); ?>
@@ -61,8 +61,10 @@ get_header(); ?>
 			
 			echo '<div class="event-location-time-details">';
 			echo '<div class="event-location">';
+			echo '<p class="location">';
 			echo 'Location';
-			echo '<br>';
+			echo '</p>';
+			
 			echo $event_location;
 			echo '<br>';
 			echo '</div>';
@@ -86,12 +88,16 @@ get_header(); ?>
 			
 			
 			// echo $event_date;
-            echo '<br>';
+			echo '<br>';
+			$esc_location = explode("<br />", $event_location);
+			$comma_separated = implode(", ", $esc_location);
+
+			// var_dump($comma_separated);
 			echo "<a href='https://www.google.com/calendar/render?
 			action=TEMPLATE&
 			text={$event_title}&
 			dates={$event_date}/{$event_offset}&
-			location={$event_location}&
+			location={$comma_separated}&
 			sprop=name:{$event_title}&
 			sprop=website:{$event_website}&
 			details={$event_description}&
