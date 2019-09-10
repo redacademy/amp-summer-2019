@@ -9,6 +9,16 @@
     wrapAround: true,
   });
 
+  let index = $('.container-carousel').length;
+  let i;
+  for (i=0; i<index; i++ ){
+    $('#workspace-carousel-'+i).flickity({
+      // options
+      cellAlign: 'left',
+      contain: true,
+      wrapAround: true
+    });
+  }
 
 
   $('.button-arrow-amp-community').on('click', function(){

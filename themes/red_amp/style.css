@@ -642,6 +642,14 @@ a {
 .site-footer {
   background: #297373;
   color: white; }
+  .site-footer .contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; }
   .site-footer .contact-info {
     padding: 2rem;
     position: relative;
@@ -661,8 +669,7 @@ a {
   .site-footer .footer-content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 10px;
-    justify-items: center; }
+    grid-column-gap: 10px; }
 
 .site-footer-name-address {
   padding: 50px 0 50px 50px;
@@ -1363,3 +1370,23 @@ object {
   width: 50%;
   height: 0px;
   border: 1px solid #297373; }
+
+.workspace-wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .workspace-wrapper > div {
+    width: 50%; }
+  .workspace-wrapper::after {
+    content: '';
+    width: 80%;
+    height: 2px;
+    background: black;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%); }
+  .workspace-wrapper:last-child::after {
+    display: none; }
