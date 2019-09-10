@@ -142,7 +142,7 @@ get_header(); ?>
 		</div> <!-- End of workspace icons -->
 
 		<div class="primary-cta-block">
-			<a class="primary-cta" href="#">Book a Tour</a>
+			<button class="button-book" href="#">Book a Tour</button>
 		</div>
 
 		</main><!-- #main -->

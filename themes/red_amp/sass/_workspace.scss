@@ -3,17 +3,17 @@
 .workspace-content {
     div:last-of-type {
         div:last-of-type {
-            
         hr {
-            background-color: purple;
             display: none;
         }    
         }        
-
-
-
-
-    
     }
+}
 
+.workspace-content {
+    hr {
+        width: 50%;
+        height: 0px;
+        border: 1px solid $dark_green;
+    }
 }
