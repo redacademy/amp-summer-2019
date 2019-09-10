@@ -6,11 +6,16 @@
 * {
   box-sizing: border-box;
 }
-
+ 
 .site-footer {
   background: $dark_green;
   color: white;
+  
 
+  .contact{
+    display: flex;
+    flex-direction: row;
+  }
   .contact-info {
     padding: 2rem;
     position: relative;
@@ -27,7 +32,7 @@
     grid-template-columns: repeat(3, 1fr);
     // grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 10px;
-    justify-items: center;
+    // justify-items: center;
   }
 }
 .site-footer-name-address {
