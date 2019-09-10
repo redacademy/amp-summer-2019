@@ -1,0 +1,96 @@
+
+.page{
+  
+    .container{
+        width:1150px;
+    .entry-title{
+        text-align: center;
+       
+        font-family: $font__main;
+    }
+    .wp-block-columns{
+       
+        margin:0 auto;
+    .wp-block-column {
+       
+        .wpcf7{
+        
+        width:509px;
+        background-color: $form_background_color;
+        display: flex;
+        justify-content: center;
+        overflow:none;
+
+
+        form p label{
+            color: $font_dark;
+            font-family: $font__secondary;	
+            
+            font-weight: bold;
+
+            input{
+                padding-left: 20px;
+                padding-top:13px;
+                padding-bottom:13px;
+                opacity: 0.5;	
+                color: $font_dark;
+                
+                font-family: $font__secondary;
+                border-radius: 3px; 
+                background-color: $font_light;
+              
+            }
+            textarea{
+                padding-left: 20px;
+                padding-top:13px;
+                opacity: 0.5;	
+                color: $font_dark;
+                font-family:  $font__secondary;
+                border-radius: 3px; 
+                background-color: $font_light;
+            }
+
+           
+            }
+            .wpcf7-submit{
+               
+                display:block;
+                margin-left:auto;
+                margin-right:auto;
+                font-size: 25px;
+                color: $font_light;
+                font-weight: 700;
+                height: 42px;
+                width: 240px;	
+                border-radius: 4px;
+                font-family: $bodytext_font_family;
+                background: $dark_green;
+                box-shadow: none;
+                padding: 0;
+
+                &:focus {
+                outline: none;
+                }
+
+                &:hover {
+                box-shadow: 0 10px 10px 0 $dark_grey;
+                }
+            }
+          
+        }
+
+        
+       
+    } 
+
+    iframe{
+        margin-bottom: 50px;
+    }
+    p{  
+        
+        display: flex;
+        align-content: space-between;
+    }
+}
+}
+}
