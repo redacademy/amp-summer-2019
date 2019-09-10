@@ -1310,3 +1310,11 @@ object {
       width: fit-content;
       margin-bottom: 2px;
       border-bottom: red solid 4px; }
+
+.workspace-content div:last-of-type div:last-of-type hr {
+  display: none; }
+
+.workspace-content hr {
+  width: 50%;
+  height: 0px;
+  border: 1px solid #297373; }
