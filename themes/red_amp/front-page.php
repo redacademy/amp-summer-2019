@@ -2,7 +2,7 @@
 
 /**
  * The template for displaying archive pages.
- *
+ * Template Name: Front Page
  * @package RED_Starter_Theme
  */
 
