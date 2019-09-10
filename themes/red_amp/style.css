@@ -666,13 +666,25 @@ a {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly; }
+    .site-footer .contact-info img {
+      padding-right: 15px;
+      height: 20px; }
+    .site-footer .contact-info a:link {
+      color: white;
+      text-decoration: none; }
+      .site-footer .contact-info a:link #text {
+        display: inline-block;
+        margin-right: 1em; }
+    .site-footer .contact-info a[href^='mailto'] {
+      color: white;
+      text-decoration: none; }
   .site-footer .footer-content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 10px; }
 
 .site-footer-name-address {
-  padding: 50px 0 50px 50px;
+  padding: 50px 0 0px 50px;
   white-space: nowrap;
   -ms-flex-line-pack: justify;
   align-content: space-between; }
@@ -680,13 +692,14 @@ a {
 .footer-newsletter-form {
   -ms-flex-line-pack: center;
       align-content: center;
-  padding: 50px;
+  padding: 0px 50px;
   text-align: center;
   white-space: nowrap;
   margin: auto 0; }
 
 .social-icon {
-  margin: auto; }
+  margin: auto;
+  padding-top: 30px; }
 
 .hidden-mobile {
   display: none; }
@@ -1390,3 +1403,70 @@ object {
             transform: translateX(-50%); }
   .workspace-wrapper:last-child::after {
     display: none; }
+
+.page .container {
+  width: 1150px; }
+  .page .container .entry-title {
+    text-align: center;
+    font-family: "Bambi"; }
+  .page .container .wp-block-columns {
+    margin: 0 auto; }
+    .page .container .wp-block-columns .wp-block-column .wpcf7 {
+      width: 509px;
+      background-color: #DAEFEC;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      overflow: none; }
+      .page .container .wp-block-columns .wp-block-column .wpcf7 form p label {
+        color: #393939;
+        font-family: "Muli", sans-serif;
+        font-weight: bold; }
+        .page .container .wp-block-columns .wp-block-column .wpcf7 form p label input {
+          padding-left: 20px;
+          padding-top: 13px;
+          padding-bottom: 13px;
+          opacity: 0.5;
+          color: #393939;
+          font-family: "Muli", sans-serif;
+          border-radius: 3px;
+          background-color: #fff; }
+        .page .container .wp-block-columns .wp-block-column .wpcf7 form p label textarea {
+          padding-left: 20px;
+          padding-top: 13px;
+          opacity: 0.5;
+          color: #393939;
+          font-family: "Muli", sans-serif;
+          border-radius: 3px;
+          background-color: #fff; }
+      .page .container .wp-block-columns .wp-block-column .wpcf7 .wpcf7-submit {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 25px;
+        color: #fff;
+        font-weight: 700;
+        height: 42px;
+        width: 240px;
+        border-radius: 4px;
+        font-family: "Muli", sans-serif;
+        background: #297373;
+        -webkit-box-shadow: none;
+                box-shadow: none;
+        padding: 0; }
+        .page .container .wp-block-columns .wp-block-column .wpcf7 .wpcf7-submit:focus {
+          outline: none; }
+        .page .container .wp-block-columns .wp-block-column .wpcf7 .wpcf7-submit:hover {
+          -webkit-box-shadow: 0 10px 10px 0 #07393c;
+                  box-shadow: 0 10px 10px 0 #07393c; }
+    .page .container .wp-block-columns iframe {
+      margin-bottom: 50px; }
+    .page .container .wp-block-columns p {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-line-pack: justify;
+          align-content: space-between; }
