@@ -13,26 +13,43 @@ get_header(); ?>
 		<?php while ( have_posts() ) : the_post(); ?>
 
 		
-		<div class="workspace-content">
+			<div class="workspace-content">
 			<?php 
 			$fields = CFS()->get( 'workspace_area' );
 			foreach ( $fields as $field ) : 
 				$images =  $field['workspace_images' ];
 				foreach ( $images as $image ) : ?>
-				<img src="<?php echo $image['workspace_image']; ?>" height="310" width="460">	 <?php
-				endforeach;	
-				?>
-				<p> <?php echo $field['workspace_title']; ?> </p>
-				<p> <?php echo $field['workspace_description'];  ?> </p>
+				
+				<div class="single-workspace-content">
+					<img src="<?php echo $image['workspace_image']; ?>" height="310" width="460">	 <?php
+					endforeach;	
+					?>
+					<p> <?php echo $field['workspace_title']; ?> </p>
+					<p> <?php echo $field['workspace_description'];  ?> </p>
+	
+
+					<div>
+					<p><?php echo $field['workspace_cost'];  ?></p>
+					</div>
+
+					<div>
+						<hr>
+					</div>
 
 
-				<div>
-				<p><?php echo $field['workspace_cost'];  ?></p>
-				</div>
+				</div>	<!-- End of single-workspace-content -->	
+				
 				<?php 	
 			endforeach;
 			?>
 			</div> <!-- End of workspace content -->
+		</div>
+
+			
+			<div>
+			<h1>Amenities Included</h1>	
+			</div>
+
 
 			<div class="workspace-icons">
 			<?php 
@@ -102,7 +119,7 @@ get_header(); ?>
 					?>	</div> <?php
 					break;
 					case 'Custom-built FSC Wooden Desks':
-					?> <div> <img src="<?php echo get_template_directory_uri() . '/images/custom-desks.png'; ?>" alt="desks" />
+					?> <div> <img src="<?php echo get_template_directory_uri() . '/images/desk.png'; ?>" alt="desks" />
 					<?php  echo "Custom-built FSC Wooden Desks";
 					?>	</div> <?php
 					break;
