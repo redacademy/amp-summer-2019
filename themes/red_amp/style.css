@@ -1040,6 +1040,51 @@ object {
   .workspace-thumbnail-wrapper a {
     text-decoration: none; }
 
+.main-carousel {
+  height: 600px;
+  margin: 0 auto;
+  width: 75%;
+  margin: 50px auto; }
+  .main-carousel .carousel-cell {
+    width: 40%;
+    text-align: center;
+    height: 80%;
+    border: 1px solid black;
+    opacity: 0.6;
+    -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+    transition: opacity 0.5s, -webkit-transform 0.5s;
+    transition: transform 0.5s, opacity 0.5s;
+    transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s; }
+    .main-carousel .carousel-cell .carousel-content {
+      width: 100%;
+      margin: 0 auto;
+      margin-top: 10px;
+      padding: 30px; }
+  .main-carousel .is-selected {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    background: white;
+    z-index: 299;
+    opacity: 1; }
+
+.flickity-viewport {
+  padding: 3rem 0;
+  height: 100% !important; }
+
+.carousel-text {
+  max-height: 100px;
+  overflow-y: scroll; }
+
+.flickity-prev-next-button.previous {
+  -webkit-box-shadow: unset;
+          box-shadow: unset;
+  left: -50px !important; }
+
+.flickity-prev-next-button.next {
+  right: -50px !important;
+  -webkit-box-shadow: unset;
+          box-shadow: unset; }
+
 /* About */
 /* Events */
 .post-type-archive-event .event-wrap {
