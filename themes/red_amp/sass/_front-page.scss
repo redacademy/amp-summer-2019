@@ -259,139 +259,142 @@
 }
 
 // Carousel in Front page for testimonials
-.front-page-carousel{
-.main-carousel {
-    height: 550px;
-    margin: 0 auto;
-    // margin-bottom: 50px;
-    width: 60%;
-    margin: 50px auto;
+.front-page-carousel {
+    .main-carousel {
+        height: 550px;
+        margin: 0 auto;
+        // margin-bottom: 50px;
+        width: 60%;
+        margin: 50px auto;
 
-    .carousel-cell {
-        width: 40%;
-        // border: 1px solid black;
-        text-align: center;
-        // height: 85%;
-        border: 1px solid black;
-        opacity: 0.6;
-        transition: transform 0.5s, opacity 0.5s;
-        // transform: scale(0.9);
-        margin: 0;
-        font-family: $bodytext_font_family;
-        font-size: $bodytext_font_size_smaller;
+        .carousel-cell {
+            width: 40%;
+            // border: 1px solid black;
+            text-align: center;
+            // height: 85%;
+            border: 1px solid black;
+            opacity: 0.6;
+            transition: transform 0.5s, opacity 0.5s;
+            // transform: scale(0.9);
+            margin: 0;
+            font-family: $bodytext_font_family;
+            font-size: $bodytext_font_size_smaller;
 
-        .carousel-content {
-            width: 100%;
-            margin: 0 auto;
-            margin-top: 10px;
-            padding: 30px;
-            visibility: visible;
-            z-index: 100;
-        }
-
-        .carousel-image {
-            width: 130px;
-            margin: 30px auto;
-            height: 130px;
-
-            img {
-                border-radius: 50%;
-                height: 100%;
+            .carousel-content {
+                width: 100%;
+                margin: 0 auto;
+                margin-top: 10px;
+                padding: 30px;
+                visibility: visible;
+                z-index: 100;
             }
 
+            .carousel-image {
+                width: 130px;
+                margin: 30px auto;
+                height: 130px;
+
+                img {
+                    border-radius: 50%;
+                    height: 100%;
+                }
+
+            }
+
+            .carousel-text {
+                // font-family: $bodytext_font_family;
+                // font-size: $bodytext_font_size_smaller;
+                margin: 30px 0;
+
+            }
+
+            .carousel-name {
+                font-weight: bold;
+            }
+
+            .carousel-company {
+                // font-family: $bodytext_font_family;
+                // font-size: $bodytext_font_size_smaller;
+            }
         }
 
-        .carousel-text {
-            // font-family: $bodytext_font_family;
-            // font-size: $bodytext_font_size_smaller;
-            margin: 30px 0;
 
+        .is-selected {
+            transform: scale(1.2);
+            // transition: 0.3s;
+            background: white;
+            z-index: 299;
+            opacity: 1;
+            margin-right: -30px;
         }
 
-        .carousel-name {
-            font-weight: bold;
+    }
+
+    // .carousel-cell {
+    //     opacity: 0.6;
+    //     transition: transform 0.5s, opacity 0.5s;
+    // }
+    .flickity-enabled .flickity-viewport {
+        padding: 3rem 0;
+        height: 100%;
+        overflow: visible;
+    }
+
+    .flickity-slider {
+        // transform: translateX(-50%) !important;
+        // left: 50% !important;
+    }
+
+    .item-active {
+        // margin-bottom: 100px;
+    }
+
+
+
+    .carousel-text {
+        max-height: 100px;
+        overflow-y: scroll;
+    }
+
+    .flickity-prev-next-button {
+        background: transparent;
+
+        // position: relative;
+        &.previous {
+            box-shadow: unset;
+            left: -140px !important;
         }
 
-        .carousel-company {
-            // font-family: $bodytext_font_family;
-            // font-size: $bodytext_font_size_smaller;
+        &.next {
+            right: -140px !important;
+            // transform: rotate(180deg);
+            box-shadow: unset;
         }
     }
 
-
-    .is-selected {
-        transform: scale(1.2);
-        // transition: 0.3s;
-        background: white;
-        z-index: 299;
-        opacity: 1;
-        margin-right: -30px;
+    .flickity-slider {
+        // left: 121px !important;
     }
 
-}
-
-// .carousel-cell {
-//     opacity: 0.6;
-//     transition: transform 0.5s, opacity 0.5s;
-// }
-.flickity-enabled .flickity-viewport {
-    padding: 3rem 0;
-    height: 100%;
-    overflow: visible;
-}
-
-.flickity-slider {
-    // transform: translateX(-50%) !important;
-    // left: 50% !important;
-}
-
-.item-active {
-    // margin-bottom: 100px;
-}
 
 
+    .flickity-page-dots {
 
-.carousel-text {
-    max-height: 100px;
-    overflow-y: scroll;
-}
+        .is-selected {
+            background: $dark_green !important;
+            margin: 0 15px;
+        }
 
-.flickity-prev-next-button {
-    background: transparent;
-
-    // position: relative;
-    &.previous {
-        box-shadow: unset;
-        left: -140px !important;
-    }
-
-    &.next {
-        right: -140px !important;
-        // transform: rotate(180deg);
-        box-shadow: unset;
+        li {
+            background: $light_green !important;
+            border: 1px solid $dark_green;
+            margin: 0 15px;
+        }
     }
 }
 
-.flickity-slider {
-    // left: 121px !important;
-}
-
-
-
-.flickity-page-dots {
-
-    .is-selected {
-        background: $dark_green !important;
-    }
-
-    li {
-        background: $light_green !important;
-        border: 1px solid $dark_green;
-
-    }
-}
-} //front-page-carousel
-.bottom-book-button-front-page{
+//front-page-carousel
+.bottom-book-button-front-page {
     margin-bottom: 200px;
     margin-top: 100px;
 }

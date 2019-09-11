@@ -632,6 +632,7 @@ a {
 .bypostauthor {
   display: block; }
 
+<<<<<<< HEAD
 .about-content {
   /* OUR HEADQUARTERS */
   /* AMP MEMBERS */ }
@@ -699,6 +700,20 @@ a {
             box-shadow: none;
     padding: 0;
     margin-bottom: 1.5rem; }
+=======
+.about-section-title {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+
+.about-section-description {
+  text-align: center; }
+>>>>>>> df9f3f88fda7744296861d5884d405646c536012
 
 /*--------------------------------------------------------------
 # Content
@@ -990,6 +1005,26 @@ object {
 .workspace-icon-title {
   width: 1080px;
   margin: 0 auto; }
+<<<<<<< HEAD
+=======
+  .workspace-icon-title h1 {
+    font-family: "Bambi";
+    margin-bottom: 40px;
+    font-size: 28px; }
+
+.workspace-icon-title-flex-two {
+  width: 750px;
+  margin: 0 auto; }
+  .workspace-icon-title-flex-two h1 {
+    margin-bottom: 30px;
+    font-family: "Bambi";
+    font-size: 20px; }
+
+.workspace-icon-text {
+  text-align: center;
+  margin-top: 75px;
+  margin-bottom: 60px; }
+>>>>>>> df9f3f88fda7744296861d5884d405646c536012
 
 .single-workspace .primary-cta-block {
   text-align: center; }
@@ -1001,10 +1036,39 @@ object {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+<<<<<<< HEAD
   margin: 0 auto; }
 
 .workspace-icon-flex-three {
   width: 31%; }
+=======
+  margin: 0 auto;
+  border: 2px solid #297373;
+  border-radius: 5px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.workspace-icons-flex-two {
+  width: 750px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 auto;
+  border: 2px solid #297373;
+  border-radius: 5px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.workspace-icon-flex-three {
+  width: 31%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+>>>>>>> df9f3f88fda7744296861d5884d405646c536012
 
 .workspace-icon-flex-two {
   display: -webkit-box;
@@ -1012,6 +1076,29 @@ object {
   display: flex;
   width: 48%; }
 
+<<<<<<< HEAD
+=======
+.workspace-icon-image-holder {
+  width: 87px;
+  height: 87px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.workspace-icon-content-holder {
+  padding: 40px 30px 40px 30px; }
+  .workspace-icon-content-holder p {
+    -ms-flex-item-align: center;
+        align-self: center;
+    padding-left: 20px; }
+
+>>>>>>> df9f3f88fda7744296861d5884d405646c536012
 .page .container {
   width: 1150px; }
   .page .container .entry-title {
@@ -1552,11 +1639,13 @@ object {
             box-shadow: unset; }
 
 .front-page-carousel .flickity-page-dots .is-selected {
-  background: #297373 !important; }
+  background: #297373 !important;
+  margin: 0 15px; }
 
 .front-page-carousel .flickity-page-dots li {
   background: #b1ede8 !important;
-  border: 1px solid #297373; }
+  border: 1px solid #297373;
+  margin: 0 15px; }
 
 .bottom-book-button-front-page {
   margin-bottom: 200px;
@@ -1567,6 +1656,12 @@ object {
     Here is where all specific css per page template will go
 --------------------------------------------------------------*/
 /* Header */
+.header-shadow-effect {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(41, 115, 115, 0.07)), to(rgba(177, 237, 232, 0)));
+  background: linear-gradient(to bottom, rgba(41, 115, 115, 0.07), rgba(177, 237, 232, 0));
+  height: 20px;
+  max-width: 1400px; }
+
 .main-navigation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1665,6 +1760,7 @@ object {
       margin-bottom: 2px;
       border-bottom: red solid 4px; }
 
+<<<<<<< HEAD
 .about-content {
   /* OUR HEADQUARTERS */
   /* AMP MEMBERS */ }
@@ -1736,98 +1832,18 @@ object {
 /* Workspace Page Only */
 .post-type-archive-workspace {
   background-color: #fff;
+=======
+/*--------------------------------------------------------------
+# Page Templates
+    Here is where all specific css per page template will go
+--------------------------------------------------------------*/
+/* 404 page */
+.four-o-four {
+  margin: 77px auto;
+>>>>>>> df9f3f88fda7744296861d5884d405646c536012
   text-align: center; }
-  .post-type-archive-workspace .page-title {
-    font-size: 20px;
-    font-family: "Bambi"; }
-  .post-type-archive-workspace .taxonomy-description {
-    font-family: "Muli", sans-serif;
-    font-size: 16px;
-    text-align: center;
-    max-width: 50%;
-    margin: 0 auto;
-    letter-spacing: 0.3px; }
 
-.primary-cta-block {
-  padding-bottom: 100px; }
-
-.workspace-post-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding-top: 40px;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  width: 80%;
-  margin: 0 auto; }
-  .workspace-post-content .front-page-workspace-button {
-    text-align: center; }
-    .workspace-post-content .front-page-workspace-button button {
-      width: 300px; }
-
-.workspace-thumbnail-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  width: 31.5%;
-  border: 1px solid #b1ede8;
-  -webkit-box-shadow: 1px 2px 1px 2px #b1ede8;
-          box-shadow: 1px 2px 1px 2px #b1ede8; }
-  .workspace-thumbnail-wrapper img {
-    width: 360px;
-    padding-top: 120px; }
-  .workspace-thumbnail-wrapper h2 {
-    font-size: 24px;
-    font-family: "Bambi";
-    color: #404040;
-    padding-top: 50px; }
-  .workspace-thumbnail-wrapper a {
-    text-decoration: none; }
-
-.workspace-content div:last-of-type div:last-of-type hr {
-  display: none; }
-
-.workspace-content .container-carousel {
-  width: 540px; }
-  .workspace-content .container-carousel a {
-    margin: 0 auto;
-    right: 0; }
-
-.workspace-content .carousel-cell {
-  width: 100%; }
-
-.workspace-wrapper {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-  .workspace-wrapper > div {
-    width: 50%;
-    padding: 0 3rem; }
-  .workspace-wrapper::after {
-    content: '';
-    width: 50%;
-    height: 2px;
-    background: #297373;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%); }
-  .workspace-wrapper:last-child::after {
-    display: none; }
-
+<<<<<<< HEAD
 .workspace-details {
   height: 350px; }
   .workspace-details h1 {
@@ -1976,3 +1992,8 @@ object {
       display: flex;
       -ms-flex-line-pack: justify;
           align-content: space-between; }
+=======
+.four-o-four-text {
+  font-family: "Bambi";
+  font-size: 14px; }
+>>>>>>> df9f3f88fda7744296861d5884d405646c536012
