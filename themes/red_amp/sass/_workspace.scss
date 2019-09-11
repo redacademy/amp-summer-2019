@@ -209,7 +209,30 @@
 .workspace-icon-title {
     width: 1080px;
     margin: 0 auto;
+    
+    h1 {
+        font-family: $font__main;
+        margin-bottom: 40px;
+        font-size: $headline_font_size * 1.4;
+    } 
 }
+
+.workspace-icon-title-flex-two {
+    width: 750px;
+    margin: 0 auto;
+    h1 {
+    margin-bottom: 30px;
+    font-family: $font__main;
+    font-size: $headline_font_size;
+}   
+}
+
+.workspace-icon-text {
+    text-align: center; 
+    margin-top: 75px;
+    margin-bottom: 60px;
+}   
+
 
 .single-workspace {
     .primary-cta-block {
@@ -222,14 +245,47 @@
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
+    border: 2px solid $dark_green;
+    border-radius: 5px;
+    justify-content: space-between;
+}
+
+.workspace-icons-flex-two {
+    width: 750px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    border: 2px solid $dark_green;
+    border-radius: 5px;
+    justify-content: space-between;
+    
 }
 
 .workspace-icon-flex-three {
     width: 31%;
+    display: flex;
+    
 }    
 
 .workspace-icon-flex-two {
     display: flex;
     width: 48%;
     
+}
+
+.workspace-icon-image-holder {
+    width: 87px;
+    height: 87px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.workspace-icon-content-holder {
+    padding: 40px 30px 40px 30px;
+    p {
+        align-self: center;
+        padding-left: 20px;
+    }
 }
