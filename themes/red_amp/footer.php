@@ -46,7 +46,7 @@
 							<span><img src="<?php echo get_template_directory_uri();?>/images/LinkedIn.svg" alt="logo"/></span>
 							<span><img src="<?php echo get_template_directory_uri();?>/images/twitter.svg" alt="logo"/></span>
 						<div class="site-rights">
-							<p>© All rights reserved - The Amp Vancouver 2014</p>	
+							<p>© All rights reserved - The Amp Vancouver 2019</p>	
 						</div>
 					</div> 
 
