@@ -1612,13 +1612,13 @@ object {
 
 .about-section-title {
   text-align: center;
-  height: 38px;
-  width: 262px;
-  color: #393939;
-  font-family: "Bambi Bold";
-  font-size: 36px;
-  letter-spacing: 0.44px;
-  line-height: 38px; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
 
 .about-section-description {
   text-align: center; }
