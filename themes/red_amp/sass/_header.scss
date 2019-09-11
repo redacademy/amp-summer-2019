@@ -1,0 +1,102 @@
+/*--------------------------------------------------------------
+# Page Templates
+    Here is where all specific css per page template will go
+--------------------------------------------------------------*/
+
+/* Header */
+
+.main-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .site-logo {
+        width: 100px;
+    }
+
+    .menu-menu-1-container {
+        margin-right: 50px;
+        display: flex;
+        justify-content: space-around;
+        text-align: right;
+        width: 70%;
+
+        ul {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+
+            li {
+                width: fit-content;
+                text-align: right;
+                display: flex;
+                justify-content: flex-start;
+                padding-right: 30px;
+
+                &:nth-child(2) {}
+
+                &:focus {
+                    border-bottom: red 2px solid;
+                }
+
+                a {
+                    width: fit-content;
+                }
+            }
+
+            .sub-menu {
+                display: flex;
+                flex-flow: column;
+                text-align: left;
+                box-shadow: none;
+
+                li {
+                    text-align: left;
+                    border-bottom: 1px solid;
+                    width: 220px;
+                    display: flex;
+                    justify-content: flex-start;
+
+                    &:nth-child(1) {
+                        margin-top: 20px;
+                    }
+
+                    &:nth-child(2) {
+                        margin-top: 10px;
+                    }
+
+                    &:nth-child(3) {
+                        margin-top: 10px;
+                        border-bottom: none;
+                    }
+                }
+
+                a {
+                    font-size: $bodytext_font_size_smaller;
+                    border-bottom: none;
+                }
+            }
+        }
+
+        a {
+            font-family: $headline_font_family;
+            font-size: $subhead_font_size;
+            text-decoration: none;
+            color: $font_dark;
+            font-weight: 900;
+        }
+
+        .current-menu-item {
+            li {
+                display: flex;
+                justify-content: flex-end;
+            }
+
+            a {
+                width: fit-content;
+                margin-bottom: 2px;
+                border-bottom: red solid 4px;
+            }
+        }
+    }
+}

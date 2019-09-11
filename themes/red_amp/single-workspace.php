@@ -57,92 +57,106 @@ get_header(); ?>
 		
 
 			
-		
-		<h1>Amenities Included</h1>	
-		
+		<div class="workspace-icon-title">
+			<h1>Amenities Included</h1>	
+		</div>
 
 
 		<div class="workspace-icons">
 			<?php 
 			$icons = CFS()->get( 'workspace_icons' );
+			$icon_class = "workspace-icon-single";
+			$numIcons = count($icons);
+			// echo $numIcons;
+			if (($numIcons % 3 ) == 0)
+			{ 
+				
+				$icon_class = "workspace-icon-flex-three";
+				
+
+			}
+			else 
+			{    $icon_class = "workspace-icon-flex-two";
+			}	
+
 			
 			foreach($icons as $icon):
 				
 				switch ($icon) {
 					case 'High Speed Wifi':
-						?> <div> <img src="<?php echo get_template_directory_uri() . '/images/wifi.png'; ?>" alt="wifi" />
-							<?php  echo "High Speed Wifi";
-						?>	</div> <?php
-						break;
+					?> <div class="<?php echo $icon_class; ?>"> <img src="<?php echo get_template_directory_uri() . '/images/wifi.png'; ?>" alt="wifi" />
+						<p> <?php  echo "High Speed Wifi";
+					?> </p>	</div> <?php
+					break;
 					case '24/7 Access':
-					?> <div> <img src="<?php echo get_template_directory_uri() . '/images/clock.png'; ?>" alt="access" />
-					<?php  echo "24/7 Access";
-					?>	</div> <?php
+					?> <div class="<?php echo $icon_class; ?>"> <img src="<?php echo get_template_directory_uri() . '/images/clock.png'; ?>" alt="access" />
+					<p> <?php  echo "24/7 Access";
+					?> </p>	</div> <?php
 						break;
 					case 'Access 9am-5pm':
-					?> <div> <img src="<?php echo get_template_directory_uri() . '/images/clock.png'; ?>" alt="access" />
-					<?php  echo "Access 9am-5pm";
-					?>	</div> <?php
+					?> <div class="<?php echo $icon_class; ?>"> <img src="<?php echo get_template_directory_uri() . '/images/clock.png'; ?>" alt="access" />
+					<p> <?php  echo "Access 9am-5pm";
+					?> </p>	</div> <?php
 						break;
 					case 'Kitchen and Loungue Area':
-					?> <div> <img src="<?php echo get_template_directory_uri() . '/images/sofa.png'; ?>" alt="kitchen" />
-					<?php  echo "Kitchen and Loungue Area";
-					?>	</div> <?php
+					?> <div class="<?php echo $icon_class; ?>"> <img src="<?php echo get_template_directory_uri() . '/images/sofa.png'; ?>" alt="kitchen" />
+					<p> <?php  echo "Kitchen and Loungue Area";
+					?> </p>	</div> <?php
 						break;
 					case 'Front Desk Reception':
-					?> <div> <img src="<?php echo get_template_directory_uri() . '/images/desk.png'; ?>" alt="front-desk" />
-					<?php  echo "Front Desk Reception";
-					?>	</div> <?php
+					?> <div class="<?php echo $icon_class; ?>"> <img src="<?php echo get_template_directory_uri() . '/images/desk.png'; ?>" alt="front-desk" />
+					<p> <?php  echo "Front Desk Reception";
+					?> </p>	</div> <?php
 						break;
 					case 'Tea & Coffee':
-					?> <div> <img src="<?php echo get_template_directory_uri() . '/images/coffee.png'; ?>" alt="tea" />
-					<?php  echo "Tea & Coffee";
-					?>	</div> <?php
+					?> <div class="<?php echo $icon_class; ?>"> <img src="<?php echo get_template_directory_uri() . '/images/coffee.png'; ?>" alt="tea" />
+					<p> <?php  echo "Tea & Coffee";
+					?> </p>	</div> <?php
 						break;	
 					case 'Phone Booths':
-					?> <div> <img src="<?php echo get_template_directory_uri() . '/images/phone.png'; ?>" alt="phone" />
-					<?php  echo "Phone Booths";
-					?>	</div> <?php
+					?> <div class="<?php echo $icon_class; ?>"> <img src="<?php echo get_template_directory_uri() . '/images/phone.png'; ?>" alt="phone" />
+					<p> <?php  echo "Phone Booths";
+					?> </p>	</div> <?php
 						break;
 					case 'Secure Bike locker':
-					?> <div> <img src="<?php echo get_template_directory_uri() . '/images/bike.png'; ?>" alt="bike" />
-					<?php  echo "Secure Bike locker";
-					?>	</div> <?php
+					?> <div class="<?php echo $icon_class; ?>"> <img src="<?php echo get_template_directory_uri() . '/images/bike.png'; ?>" alt="bike" />
+					<p> <?php  echo "Secure Bike locker";
+					?> </p>	</div> <?php
 					break;
 					case 'Dog Friendly':
-					?> <div> <img src="<?php echo get_template_directory_uri() . '/images/dog.png'; ?>" alt="dog" />
-					<?php  echo "Dog Friendly";
-					?>	</div> <?php
+					?> <div class="<?php echo $icon_class; ?>"> <img src="<?php echo get_template_directory_uri() . '/images/dog.png'; ?>" alt="dog" />
+					<p> <?php  echo "Dog Friendly";
+					?> </p>	</div> <?php
 					break;
 					case 'Gym & Showers':
-					?> <div> <img src="<?php echo get_template_directory_uri() . '/images/gym.png'; ?>" alt="gym" />
-					<?php  echo "Gym & Showers";
-					?>	</div> <?php
+					?> <div class="<?php echo $icon_class; ?>"> <img src="<?php echo get_template_directory_uri() . '/images/gym.png'; ?>" alt="gym" />
+					<p> <?php  echo "Gym & Showers";
+					?> </p>	</div> <?php
 					break;
 					case 'Photocopier/Printer & Scanner':
-					?> <div> <img src="<?php echo get_template_directory_uri() . '/images/printer.png'; ?>" alt="photocopier" />
-					<?php  echo "Photocopier/Printer & Scanner";
-					?>	</div> <?php
+					?> <div class="<?php echo $icon_class; ?>"> <img src="<?php echo get_template_directory_uri() . '/images/printer.png'; ?>" alt="photocopier" />
+					<p> <?php  echo "Photocopier/Printer & Scanner";
+					?> </p>	</div> <?php
 					break;
 					case 'Access to Booking Meeting/Event Rooms':
-					?> <div> <img src="<?php echo get_template_directory_uri() . '/images/calendar.png'; ?>" alt="meeting" />
-					<?php  echo "Access to Booking Meeting/Event Rooms";
-					?>	</div> <?php
+					?> <div class="<?php echo $icon_class; ?>"> <img src="<?php echo get_template_directory_uri() . '/images/calendar.png'; ?>" alt="meeting" />
+					<p> <?php  echo "Access to Booking Meeting/Event Rooms";
+					?> </p>	</div> <?php
 					break;
 					case 'Custom-built FSC Wooden Desks':
-					?> <div> <img src="<?php echo get_template_directory_uri() . '/images/desk.png'; ?>" alt="desks" />
-					<?php  echo "Custom-built FSC Wooden Desks";
-					?>	</div> <?php
+					?> <div class="<?php echo $icon_class; ?>"> <img src="<?php echo get_template_directory_uri() . '/images/desk.png'; ?>" alt="desks" />
+					<p> <?php  echo "Custom-built FSC Wooden Desks";
+					?> </p>	</div> <?php
 					break;
 					case 'Capacity up to 30 people':
-					?> <div> <img src="<?php echo get_template_directory_uri() . '/images/people.png'; ?>" alt="people" />
-					<?php  echo "Capacity up to 30 people";
-					?>	</div> <?php
+					?> <div class="<?php echo $icon_class; ?>"> <img src="<?php echo get_template_directory_uri() . '/images/people.png'; ?>" alt="people" />
+					<p> <?php  echo "Capacity up to 30 people";
+					?> </p>	</div> <?php
 					break;
 					case 'Projector and Flip Chart':
-					?> <div> <img src="<?php echo get_template_directory_uri() . '/images/projector.png'; ?>" alt="projectors" />
-					<?php  echo "Capacity up to 30 people";
-					?>	</div> <?php
+					?> <div class="<?php echo $icon_class; ?>"> <img src="<?php echo get_template_directory_uri() . '/images/projector.png'; ?>" alt="projectors" />
+					<p> <?php  echo "Projector and Flip Chart";
+					?> </p>	</div> <?php
 					break;	
 												
 				}
