@@ -80,7 +80,10 @@ $the_query = new WP_Query($args);
 <!-- view workspace button -->
 <div class="front-page-workspace-button" style="
 text-align: center;">
-    <button class="button-book"> View Workspaces</button>
+    <button class="button-book" 
+        onclick= "window.location.href ='<?php echo get_home_url(); ?>/workspace';" > 
+        View Workspaces
+    </button>
 </div>
 <div class="front-page-amp-community-division-line-top">
 
