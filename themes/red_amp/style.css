@@ -1396,7 +1396,7 @@ object {
         margin-top: 50px; }
 
 .main-carousel {
-  height: 600px;
+  height: 550px;
   margin: 0 auto;
   width: 60%;
   margin: 50px auto; }
@@ -1409,7 +1409,9 @@ object {
     transition: opacity 0.5s, -webkit-transform 0.5s;
     transition: transform 0.5s, opacity 0.5s;
     transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
-    margin: 0; }
+    margin: 0;
+    font-family: "Muli", sans-serif;
+    font-size: 14px; }
     .main-carousel .carousel-cell .carousel-content {
       width: 100%;
       margin: 0 auto;
@@ -1425,8 +1427,9 @@ object {
         border-radius: 50%;
         height: 100%; }
     .main-carousel .carousel-cell .carousel-text {
-      font-family: "Muli", sans-serif;
-      font-size: 16px; }
+      margin: 30px 0; }
+    .main-carousel .carousel-cell .carousel-name {
+      font-weight: bold; }
   .main-carousel .is-selected {
     -webkit-transform: scale(1.2);
             transform: scale(1.2);
@@ -1454,6 +1457,17 @@ object {
     right: -140px !important;
     -webkit-box-shadow: unset;
             box-shadow: unset; }
+
+.flickity-page-dots .is-selected {
+  background: #297373 !important; }
+
+.flickity-page-dots li {
+  background: #b1ede8 !important;
+  border: 1px solid #297373; }
+
+.bottom-book-button-front-page {
+  margin-bottom: 200px;
+  margin-top: 100px; }
 
 /*--------------------------------------------------------------
 # Page Templates
@@ -1645,16 +1659,6 @@ object {
 .workspace-content .carousel-cell {
   width: 100%; }
 
-.workspace-content .container-carousel {
-  width: 540px; }
-  .workspace-content .container-carousel a {
-    margin: 0 auto;
-    right: 0; }
-
-.workspace-content .carousel-cell {
-  width: 100%;
-  padding-left: 42px; }
-
 .workspace-wrapper {
   position: relative;
   display: -webkit-box;
@@ -1676,18 +1680,6 @@ object {
   .workspace-wrapper:last-child::after {
     display: none; }
 
-<<<<<<< HEAD
-.workspace-details h1 {
-  font-family: "Bambi";
-  font-size: 36px; }
-
-.carousel-cell img {
-  width: 455px;
-  height: 303px; }
-
-.workspace-wrapper {
-  padding-bottom: 80px;
-=======
 .workspace-details {
   height: 350px; }
   .workspace-details h1 {
@@ -1701,7 +1693,6 @@ object {
 
 .workspace-wrapper {
   padding-bottom: 38px;
->>>>>>> f2c608c34764d1a3f0ddcf9ee74cf971dfb24cee
   margin: 80px 160px 0 160px; }
 
 .flickity-button-icon {
@@ -1711,11 +1702,6 @@ object {
   background: transparent;
   -webkit-box-shadow: unset;
           box-shadow: unset;
-<<<<<<< HEAD
-  border: none !important;
-  width: 90px;
-  height: 90px; }
-=======
   border: none;
   width: 90px;
   height: 90px;
@@ -1729,13 +1715,10 @@ object {
   .container-carousel .flickity-button.flickity-prev-next-button.next {
     right: -10px !important;
     top: 40%; }
->>>>>>> f2c608c34764d1a3f0ddcf9ee74cf971dfb24cee
 
 .workspace-wrapper .dot {
   width: 90px;
   height: 90px; }
-<<<<<<< HEAD
-=======
 
 .flickity-viewport {
   padding: 0;
@@ -1753,7 +1736,6 @@ object {
     height: 17px;
     width: 17px;
     border: 1px solid #297373; }
->>>>>>> f2c608c34764d1a3f0ddcf9ee74cf971dfb24cee
 
 .page .container {
   width: 1150px; }
