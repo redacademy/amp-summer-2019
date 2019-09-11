@@ -1395,12 +1395,12 @@ object {
       .front-page-workspace .front-page-each-workspace .front-page-workspace-title h1 {
         margin-top: 50px; }
 
-.main-carousel {
+.front-page-carousel .main-carousel {
   height: 550px;
   margin: 0 auto;
   width: 60%;
   margin: 50px auto; }
-  .main-carousel .carousel-cell {
+  .front-page-carousel .main-carousel .carousel-cell {
     width: 40%;
     text-align: center;
     border: 1px solid black;
@@ -1412,25 +1412,25 @@ object {
     margin: 0;
     font-family: "Muli", sans-serif;
     font-size: 14px; }
-    .main-carousel .carousel-cell .carousel-content {
+    .front-page-carousel .main-carousel .carousel-cell .carousel-content {
       width: 100%;
       margin: 0 auto;
       margin-top: 10px;
       padding: 30px;
       visibility: visible;
       z-index: 100; }
-    .main-carousel .carousel-cell .carousel-image {
+    .front-page-carousel .main-carousel .carousel-cell .carousel-image {
       width: 130px;
       margin: 30px auto;
       height: 130px; }
-      .main-carousel .carousel-cell .carousel-image img {
+      .front-page-carousel .main-carousel .carousel-cell .carousel-image img {
         border-radius: 50%;
         height: 100%; }
-    .main-carousel .carousel-cell .carousel-text {
+    .front-page-carousel .main-carousel .carousel-cell .carousel-text {
       margin: 30px 0; }
-    .main-carousel .carousel-cell .carousel-name {
+    .front-page-carousel .main-carousel .carousel-cell .carousel-name {
       font-weight: bold; }
-  .main-carousel .is-selected {
+  .front-page-carousel .main-carousel .is-selected {
     -webkit-transform: scale(1.2);
             transform: scale(1.2);
     background: white;
@@ -1438,30 +1438,30 @@ object {
     opacity: 1;
     margin-right: -30px; }
 
-.flickity-enabled .flickity-viewport {
+.front-page-carousel .flickity-enabled .flickity-viewport {
   padding: 3rem 0;
   height: 100%;
   overflow: visible; }
 
-.carousel-text {
+.front-page-carousel .carousel-text {
   max-height: 100px;
   overflow-y: scroll; }
 
-.flickity-prev-next-button {
+.front-page-carousel .flickity-prev-next-button {
   background: transparent; }
-  .flickity-prev-next-button.previous {
+  .front-page-carousel .flickity-prev-next-button.previous {
     -webkit-box-shadow: unset;
             box-shadow: unset;
     left: -140px !important; }
-  .flickity-prev-next-button.next {
+  .front-page-carousel .flickity-prev-next-button.next {
     right: -140px !important;
     -webkit-box-shadow: unset;
             box-shadow: unset; }
 
-.flickity-page-dots .is-selected {
+.front-page-carousel .flickity-page-dots .is-selected {
   background: #297373 !important; }
 
-.flickity-page-dots li {
+.front-page-carousel .flickity-page-dots li {
   background: #b1ede8 !important;
   border: 1px solid #297373; }
 
