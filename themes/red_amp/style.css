@@ -1645,6 +1645,16 @@ object {
 .workspace-content .carousel-cell {
   width: 100%; }
 
+.workspace-content .container-carousel {
+  width: 540px; }
+  .workspace-content .container-carousel a {
+    margin: 0 auto;
+    right: 0; }
+
+.workspace-content .carousel-cell {
+  width: 100%;
+  padding-left: 42px; }
+
 .workspace-wrapper {
   position: relative;
   display: -webkit-box;
@@ -1666,6 +1676,18 @@ object {
   .workspace-wrapper:last-child::after {
     display: none; }
 
+<<<<<<< HEAD
+.workspace-details h1 {
+  font-family: "Bambi";
+  font-size: 36px; }
+
+.carousel-cell img {
+  width: 455px;
+  height: 303px; }
+
+.workspace-wrapper {
+  padding-bottom: 80px;
+=======
 .workspace-details {
   height: 350px; }
   .workspace-details h1 {
@@ -1679,6 +1701,7 @@ object {
 
 .workspace-wrapper {
   padding-bottom: 38px;
+>>>>>>> f2c608c34764d1a3f0ddcf9ee74cf971dfb24cee
   margin: 80px 160px 0 160px; }
 
 .flickity-button-icon {
@@ -1688,6 +1711,11 @@ object {
   background: transparent;
   -webkit-box-shadow: unset;
           box-shadow: unset;
+<<<<<<< HEAD
+  border: none !important;
+  width: 90px;
+  height: 90px; }
+=======
   border: none;
   width: 90px;
   height: 90px;
@@ -1701,10 +1729,13 @@ object {
   .container-carousel .flickity-button.flickity-prev-next-button.next {
     right: -10px !important;
     top: 40%; }
+>>>>>>> f2c608c34764d1a3f0ddcf9ee74cf971dfb24cee
 
 .workspace-wrapper .dot {
   width: 90px;
   height: 90px; }
+<<<<<<< HEAD
+=======
 
 .flickity-viewport {
   padding: 0;
@@ -1722,6 +1753,7 @@ object {
     height: 17px;
     width: 17px;
     border: 1px solid #297373; }
+>>>>>>> f2c608c34764d1a3f0ddcf9ee74cf971dfb24cee
 
 .page .container {
   width: 1150px; }
