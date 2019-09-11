@@ -935,6 +935,23 @@ object {
 .workspace-icon-title {
   width: 1080px;
   margin: 0 auto; }
+  .workspace-icon-title h1 {
+    font-family: "Bambi";
+    margin-bottom: 40px;
+    font-size: 28px; }
+
+.workspace-icon-title-flex-two {
+  width: 750px;
+  margin: 0 auto; }
+  .workspace-icon-title-flex-two h1 {
+    margin-bottom: 30px;
+    font-family: "Bambi";
+    font-size: 20px; }
+
+.workspace-icon-text {
+  text-align: center;
+  margin-top: 75px;
+  margin-bottom: 60px; }
 
 .single-workspace .primary-cta-block {
   text-align: center; }
@@ -946,16 +963,58 @@ object {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 0 auto; }
+  margin: 0 auto;
+  border: 2px solid #297373;
+  border-radius: 5px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.workspace-icons-flex-two {
+  width: 750px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 auto;
+  border: 2px solid #297373;
+  border-radius: 5px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
 
 .workspace-icon-flex-three {
-  width: 31%; }
+  width: 31%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
 .workspace-icon-flex-two {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 48%; }
+
+.workspace-icon-image-holder {
+  width: 87px;
+  height: 87px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.workspace-icon-content-holder {
+  padding: 40px 30px 40px 30px; }
+  .workspace-icon-content-holder p {
+    -ms-flex-item-align: center;
+        align-self: center;
+    padding-left: 20px; }
 
 .page .container {
   width: 1150px; }
@@ -1497,11 +1556,13 @@ object {
             box-shadow: unset; }
 
 .front-page-carousel .flickity-page-dots .is-selected {
-  background: #297373 !important; }
+  background: #297373 !important;
+  margin: 0 15px; }
 
 .front-page-carousel .flickity-page-dots li {
   background: #b1ede8 !important;
-  border: 1px solid #297373; }
+  border: 1px solid #297373;
+  margin: 0 15px; }
 
 .bottom-book-button-front-page {
   margin-bottom: 200px;
