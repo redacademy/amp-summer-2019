@@ -151,7 +151,7 @@ text-align: center;">
 <!-- A loop for custom field testimonial -->
 <!-- TESTIMONIALS CAROUSEL  -->
 
-<div class='item-active'>
+<div class='item-active front-page-carousel'>
     <div class='row main-carousel'>
         <?php
         $fields = CFS()->get('testimonial');
