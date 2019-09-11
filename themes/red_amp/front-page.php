@@ -147,15 +147,8 @@ text-align: center;">
 <div class="front-page-amp-community-division-line">
 
 </div>
-<!-- ///////////////////-- -->
-
 
 <!-- A loop for custom field testimonial -->
-
-
-
-
-
 <!-- TESTIMONIALS CAROUSEL  -->
 
 <div class='item-active'>
@@ -195,12 +188,16 @@ text-align: center;">
                         </div>
 
                     </div> <!-- carousel-cell-content -->
-                <?php $i++; } ?>
+                <?php $i++;
+                    } ?>
                 </div><!-- .carousel-cell-container -->
 
             <?php endforeach; ?>
     </div><!-- .row main-carousel -->
 </div><!-- .item-active -->
 
-
+<div class="front-page-workspace-button bottom-book-button-front-page" style="
+text-align: center;">
+    <button class="button-book"> Book a Tour</button>
+</div>
 <?php get_footer();

@@ -990,11 +990,6 @@ object {
 # Page Templates
     Here is where all specific css per page template will go
 --------------------------------------------------------------*/
-/* About */
-/*--------------------------------------------------------------
-# Page Templates
-    Here is where all specific css per page template will go
---------------------------------------------------------------*/
 /* Book a tour popup */
 /*--------------------------------------------------------------
 # Page Templates
@@ -1401,49 +1396,78 @@ object {
         margin-top: 50px; }
 
 .main-carousel {
-  height: 600px;
+  height: 550px;
   margin: 0 auto;
-  width: 75%;
+  width: 60%;
   margin: 50px auto; }
   .main-carousel .carousel-cell {
     width: 40%;
     text-align: center;
-    height: 80%;
     border: 1px solid black;
     opacity: 0.6;
     -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
     transition: opacity 0.5s, -webkit-transform 0.5s;
     transition: transform 0.5s, opacity 0.5s;
-    transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s; }
+    transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
+    margin: 0;
+    font-family: "Muli", sans-serif;
+    font-size: 14px; }
     .main-carousel .carousel-cell .carousel-content {
       width: 100%;
       margin: 0 auto;
       margin-top: 10px;
-      padding: 30px; }
+      padding: 30px;
+      visibility: visible;
+      z-index: 100; }
+    .main-carousel .carousel-cell .carousel-image {
+      width: 130px;
+      margin: 30px auto;
+      height: 130px; }
+      .main-carousel .carousel-cell .carousel-image img {
+        border-radius: 50%;
+        height: 100%; }
+    .main-carousel .carousel-cell .carousel-text {
+      margin: 30px 0; }
+    .main-carousel .carousel-cell .carousel-name {
+      font-weight: bold; }
   .main-carousel .is-selected {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
     background: white;
     z-index: 299;
-    opacity: 1; }
+    opacity: 1;
+    margin-right: -30px; }
 
-.flickity-viewport {
+.flickity-enabled .flickity-viewport {
   padding: 3rem 0;
-  height: 100% !important; }
+  height: 100%;
+  overflow: visible; }
 
 .carousel-text {
   max-height: 100px;
   overflow-y: scroll; }
 
-.flickity-prev-next-button.previous {
-  -webkit-box-shadow: unset;
-          box-shadow: unset;
-  left: -50px !important; }
+.flickity-prev-next-button {
+  background: transparent; }
+  .flickity-prev-next-button.previous {
+    -webkit-box-shadow: unset;
+            box-shadow: unset;
+    left: -140px !important; }
+  .flickity-prev-next-button.next {
+    right: -140px !important;
+    -webkit-box-shadow: unset;
+            box-shadow: unset; }
 
-.flickity-prev-next-button.next {
-  right: -50px !important;
-  -webkit-box-shadow: unset;
-          box-shadow: unset; }
+.flickity-page-dots .is-selected {
+  background: #297373 !important; }
+
+.flickity-page-dots li {
+  background: #b1ede8 !important;
+  border: 1px solid #297373; }
+
+.bottom-book-button-front-page {
+  margin-bottom: 200px;
+  margin-top: 100px; }
 
 /*--------------------------------------------------------------
 # Page Templates
@@ -1635,16 +1659,6 @@ object {
 .workspace-content .carousel-cell {
   width: 100%; }
 
-.workspace-content .container-carousel {
-  width: 540px; }
-  .workspace-content .container-carousel a {
-    margin: 0 auto;
-    right: 0; }
-
-.workspace-content .carousel-cell {
-  width: 100%;
-  padding-left: 42px; }
-
 .workspace-wrapper {
   position: relative;
   display: -webkit-box;
@@ -1666,18 +1680,6 @@ object {
   .workspace-wrapper:last-child::after {
     display: none; }
 
-<<<<<<< HEAD
-.workspace-details h1 {
-  font-family: "Bambi";
-  font-size: 36px; }
-
-.carousel-cell img {
-  width: 455px;
-  height: 303px; }
-
-.workspace-wrapper {
-  padding-bottom: 80px;
-=======
 .workspace-details {
   height: 350px; }
   .workspace-details h1 {
@@ -1691,7 +1693,6 @@ object {
 
 .workspace-wrapper {
   padding-bottom: 38px;
->>>>>>> f2c608c34764d1a3f0ddcf9ee74cf971dfb24cee
   margin: 80px 160px 0 160px; }
 
 .flickity-button-icon {
@@ -1701,11 +1702,6 @@ object {
   background: transparent;
   -webkit-box-shadow: unset;
           box-shadow: unset;
-<<<<<<< HEAD
-  border: none !important;
-  width: 90px;
-  height: 90px; }
-=======
   border: none;
   width: 90px;
   height: 90px;
@@ -1719,13 +1715,10 @@ object {
   .container-carousel .flickity-button.flickity-prev-next-button.next {
     right: -10px !important;
     top: 40%; }
->>>>>>> f2c608c34764d1a3f0ddcf9ee74cf971dfb24cee
 
 .workspace-wrapper .dot {
   width: 90px;
   height: 90px; }
-<<<<<<< HEAD
-=======
 
 .flickity-viewport {
   padding: 0;
@@ -1743,7 +1736,6 @@ object {
     height: 17px;
     width: 17px;
     border: 1px solid #297373; }
->>>>>>> f2c608c34764d1a3f0ddcf9ee74cf971dfb24cee
 
 .page .container {
   width: 1150px; }
