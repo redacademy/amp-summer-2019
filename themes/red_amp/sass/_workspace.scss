@@ -1,4 +1,71 @@
 
+/* Workspace Page Only */
+
+.post-type-archive-workspace {
+    background-color: $color__background-body;
+    text-align: center;
+
+    .page-title {
+        font-size: $headline_font_size;
+        font-family: $headline_font_family;
+    }
+
+    .taxonomy-description {
+        font-family: $bodytext_font_family;
+        font-size: $bodytext_font_size;
+        text-align: center;
+        max-width: 50%;
+        margin: 0 auto;
+        letter-spacing: 0.3px;
+    }
+}
+
+.primary-cta-block {
+    padding-bottom: 100px;
+}
+
+.workspace-post-content {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    flex-direction: row-reverse;
+    width: 80%;
+    margin: 0 auto;
+
+    .front-page-workspace-button {
+        text-align: center;
+
+        button {
+            width: 300px;
+        }
+    }
+}
+
+.workspace-thumbnail-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 31.5%;
+    border: 1px solid $light_green;
+    box-shadow: 1px 2px 1px 2px $light_green;
+
+    img {
+        width: 360px;
+        padding-top: 120px;
+    }
+
+    h2 {
+        font-size: $headline_font_size * 1.2;
+        font-family: $headline_font_family;
+        color: $color__text-main;
+        padding-top: 50px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
+
 
 .workspace-content {
     div:last-of-type {
