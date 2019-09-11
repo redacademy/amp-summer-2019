@@ -18,6 +18,10 @@
     background: lighten($color: $light_green, $amount: 12%);
     margin-top: 50px;
     margin-bottom: 80px;
+    
+    &:focus{
+        outline: none;
+    }
 
     img {
         background: $font_light;

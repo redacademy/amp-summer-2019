@@ -314,7 +314,8 @@ body {
   color: #393939;
   max-width: 1400px;
   margin: 0 auto;
-  width: 100vw; }
+  width: 100vw;
+  scroll-behavior: smooth; }
 
 blockquote,
 q {
@@ -1284,6 +1285,8 @@ object {
   background: #e3f8f7;
   margin-top: 50px;
   margin-bottom: 80px; }
+  .front-page-values:focus {
+    outline: none; }
   .front-page-values img {
     background: #fff;
     margin: 15px; }

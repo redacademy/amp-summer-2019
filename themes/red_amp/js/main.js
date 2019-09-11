@@ -46,6 +46,16 @@
   // end of function for book a tour button
 
 
+  $('.button-arrow').on('click', function(event) {
+    event.preventDefault();
+
+    const $href = $(event.currentTarget).attr('data-scrollto'); // value = #goto
+    console.log($($href).offset().top);
+    console.log('test');
+    $('body,html').animate({
+      scrollTop: $($href).offset().top
+    });
+  });
 
 
 
