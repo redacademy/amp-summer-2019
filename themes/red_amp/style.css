@@ -314,7 +314,8 @@ body {
   color: #393939;
   max-width: 1400px;
   margin: 0 auto;
-  width: 100vw; }
+  width: 100vw;
+  scroll-behavior: smooth; }
 
 blockquote,
 q {
@@ -632,6 +633,75 @@ a {
 .bypostauthor {
   display: block; }
 
+<<<<<<< HEAD
+.about-content {
+  /* OUR HEADQUARTERS */
+  /* AMP MEMBERS */ }
+  .about-content .who-we-are-title,
+  .about-content .missions-values-title,
+  .about-content .meet-the-team-title {
+    text-align: center;
+    color: #393939;
+    font-family: 'Bambi Bold'; }
+  .about-content .about-page-amp-members {
+    max-width: 60%;
+    margin: 0 auto; }
+    .about-content .about-page-amp-members h2 {
+      font-family: "Bambi";
+      text-align: center; }
+    .about-content .about-page-amp-members p {
+      font-family: "Muli", sans-serif;
+      font-size: 18px;
+      text-align: center; }
+    .about-content .about-page-amp-members .about-page-amp-members-logos {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      position: relative;
+      -webkit-transition: 0.7s;
+      transition: 0.7s; }
+      .about-content .about-page-amp-members .about-page-amp-members-logos div {
+        width: 33%;
+        height: 150px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-line-pack: center;
+            align-content: center; }
+        .about-content .about-page-amp-members .about-page-amp-members-logos div img {
+          margin: auto; }
+  .about-content .about-page-amp-member-division-line-top {
+    border-top: 2px solid #297373;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 80px;
+    height: 0.1px;
+    width: 25%; }
+  .about-content .about-page-amp-member-division-line {
+    border-top: 3px solid #297373;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    height: 0.1px;
+    width: 90%; }
+  .about-content .about-page-workspace-button .bottom-book-button-about-page .button-book {
+    font-size: 25px;
+    color: #fff;
+    font-weight: 700;
+    width: 250px;
+    height: 80px;
+    font-family: "Muli", sans-serif;
+    background: #297373;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    padding: 0;
+    margin-bottom: 1.5rem; }
+=======
 .about-section-title {
   text-align: center;
   display: -webkit-box;
@@ -644,6 +714,7 @@ a {
 
 .about-section-description {
   text-align: center; }
+>>>>>>> df9f3f88fda7744296861d5884d405646c536012
 
 /*--------------------------------------------------------------
 # Content
@@ -935,6 +1006,26 @@ object {
 .workspace-icon-title {
   width: 1080px;
   margin: 0 auto; }
+<<<<<<< HEAD
+=======
+  .workspace-icon-title h1 {
+    font-family: "Bambi";
+    margin-bottom: 40px;
+    font-size: 28px; }
+
+.workspace-icon-title-flex-two {
+  width: 750px;
+  margin: 0 auto; }
+  .workspace-icon-title-flex-two h1 {
+    margin-bottom: 30px;
+    font-family: "Bambi";
+    font-size: 20px; }
+
+.workspace-icon-text {
+  text-align: center;
+  margin-top: 75px;
+  margin-bottom: 60px; }
+>>>>>>> df9f3f88fda7744296861d5884d405646c536012
 
 .single-workspace .primary-cta-block {
   text-align: center; }
@@ -946,10 +1037,39 @@ object {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+<<<<<<< HEAD
   margin: 0 auto; }
 
 .workspace-icon-flex-three {
   width: 31%; }
+=======
+  margin: 0 auto;
+  border: 2px solid #297373;
+  border-radius: 5px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.workspace-icons-flex-two {
+  width: 750px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 auto;
+  border: 2px solid #297373;
+  border-radius: 5px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.workspace-icon-flex-three {
+  width: 31%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+>>>>>>> df9f3f88fda7744296861d5884d405646c536012
 
 .workspace-icon-flex-two {
   display: -webkit-box;
@@ -957,6 +1077,29 @@ object {
   display: flex;
   width: 48%; }
 
+<<<<<<< HEAD
+=======
+.workspace-icon-image-holder {
+  width: 87px;
+  height: 87px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.workspace-icon-content-holder {
+  padding: 40px 30px 40px 30px; }
+  .workspace-icon-content-holder p {
+    -ms-flex-item-align: center;
+        align-self: center;
+    padding-left: 20px; }
+
+>>>>>>> df9f3f88fda7744296861d5884d405646c536012
 .page .container {
   width: 1150px; }
   .page .container .entry-title {
@@ -1225,6 +1368,8 @@ object {
   background: #e3f8f7;
   margin-top: 50px;
   margin-bottom: 80px; }
+  .front-page-values:focus {
+    outline: none; }
   .front-page-values img {
     background: #fff;
     margin: 15px; }
@@ -1497,11 +1642,13 @@ object {
             box-shadow: unset; }
 
 .front-page-carousel .flickity-page-dots .is-selected {
-  background: #297373 !important; }
+  background: #297373 !important;
+  margin: 0 15px; }
 
 .front-page-carousel .flickity-page-dots li {
   background: #b1ede8 !important;
-  border: 1px solid #297373; }
+  border: 1px solid #297373;
+  margin: 0 15px; }
 
 .bottom-book-button-front-page {
   margin-bottom: 200px;
@@ -1616,6 +1763,79 @@ object {
       margin-bottom: 2px;
       border-bottom: red solid 4px; }
 
+<<<<<<< HEAD
+.about-content {
+  /* OUR HEADQUARTERS */
+  /* AMP MEMBERS */ }
+  .about-content .who-we-are-title,
+  .about-content .missions-values-title,
+  .about-content .meet-the-team-title {
+    text-align: center;
+    color: #393939;
+    font-family: 'Bambi Bold'; }
+  .about-content .about-page-amp-members {
+    max-width: 60%;
+    margin: 0 auto; }
+    .about-content .about-page-amp-members h2 {
+      font-family: "Bambi";
+      text-align: center; }
+    .about-content .about-page-amp-members p {
+      font-family: "Muli", sans-serif;
+      font-size: 18px;
+      text-align: center; }
+    .about-content .about-page-amp-members .about-page-amp-members-logos {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      position: relative;
+      -webkit-transition: 0.7s;
+      transition: 0.7s; }
+      .about-content .about-page-amp-members .about-page-amp-members-logos div {
+        width: 33%;
+        height: 150px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-line-pack: center;
+            align-content: center; }
+        .about-content .about-page-amp-members .about-page-amp-members-logos div img {
+          margin: auto; }
+  .about-content .about-page-amp-member-division-line-top {
+    border-top: 2px solid #297373;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 80px;
+    height: 0.1px;
+    width: 25%; }
+  .about-content .about-page-amp-member-division-line {
+    border-top: 3px solid #297373;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    height: 0.1px;
+    width: 90%; }
+  .about-content .about-page-workspace-button .bottom-book-button-about-page .button-book {
+    font-size: 25px;
+    color: #fff;
+    font-weight: 700;
+    width: 250px;
+    height: 80px;
+    font-family: "Muli", sans-serif;
+    background: #297373;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    padding: 0;
+    margin-bottom: 1.5rem; }
+
+/* Workspace Page Only */
+.post-type-archive-workspace {
+  background-color: #fff;
+=======
 /*--------------------------------------------------------------
 # Page Templates
     Here is where all specific css per page template will go
@@ -1623,8 +1843,160 @@ object {
 /* 404 page */
 .four-o-four {
   margin: 77px auto;
+>>>>>>> df9f3f88fda7744296861d5884d405646c536012
   text-align: center; }
 
+<<<<<<< HEAD
+.workspace-details {
+  height: 350px; }
+  .workspace-details h1 {
+    font-family: "Bambi";
+    font-size: 36px;
+    margin-top: 0; }
+
+.carousel-cell img {
+  width: 100%;
+  height: auto; }
+
+.workspace-wrapper {
+  padding-bottom: 38px;
+  margin: 80px 160px 0 160px; }
+
+.flickity-button-icon {
+  color: #297373; }
+
+.container-carousel .flickity-button {
+  background: transparent;
+  -webkit-box-shadow: unset;
+          box-shadow: unset;
+  border: none;
+  width: 90px;
+  height: 90px;
+  padding: 0;
+  margin: 0; }
+  .container-carousel .flickity-button:hover {
+    background: none; }
+  .container-carousel .flickity-button.flickity-prev-next-button.previous {
+    left: -10px !important;
+    top: 40%; }
+  .container-carousel .flickity-button.flickity-prev-next-button.next {
+    right: -10px !important;
+    top: 40%; }
+
+.workspace-wrapper .dot {
+  width: 90px;
+  height: 90px; }
+
+.flickity-viewport {
+  padding: 0;
+  height: 306px; }
+
+.workspace-wrapper .flickity-page-dots {
+  width: 82% !important;
+  bottom: 30px; }
+  .workspace-wrapper .flickity-page-dots .is-selected {
+    background: #297373 !important;
+    height: 17px;
+    width: 17px; }
+  .workspace-wrapper .flickity-page-dots li {
+    background: #b1ede8 !important;
+    height: 17px;
+    width: 17px;
+    border: 1px solid #297373; }
+
+.workspace-icon-title {
+  width: 1080px;
+  margin: 0 auto; }
+
+.single-workspace .primary-cta-block {
+  text-align: center; }
+
+.workspace-icons {
+  width: 1080px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 auto; }
+
+.workspace-icon-flex-three {
+  width: 31%; }
+
+.workspace-icon-flex-two {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 48%; }
+
+.page .container {
+  width: 1150px; }
+  .page .container .entry-title {
+    text-align: center;
+    font-family: "Bambi"; }
+  .page .container .wp-block-columns {
+    margin: 0 auto; }
+    .page .container .wp-block-columns .wp-block-column .wpcf7 {
+      width: 509px;
+      background-color: #DAEFEC;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      overflow: none; }
+      .page .container .wp-block-columns .wp-block-column .wpcf7 form p label {
+        color: #393939;
+        font-family: "Muli", sans-serif;
+        font-weight: bold; }
+        .page .container .wp-block-columns .wp-block-column .wpcf7 form p label input {
+          padding-left: 20px;
+          padding-top: 13px;
+          padding-bottom: 13px;
+          opacity: 0.5;
+          color: #393939;
+          font-family: "Muli", sans-serif;
+          border-radius: 3px;
+          background-color: #fff; }
+        .page .container .wp-block-columns .wp-block-column .wpcf7 form p label textarea {
+          padding-left: 20px;
+          padding-top: 13px;
+          opacity: 0.5;
+          color: #393939;
+          font-family: "Muli", sans-serif;
+          border-radius: 3px;
+          background-color: #fff; }
+      .page .container .wp-block-columns .wp-block-column .wpcf7 .wpcf7-submit {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 25px;
+        color: #fff;
+        font-weight: 700;
+        height: 42px;
+        width: 240px;
+        border-radius: 4px;
+        font-family: "Muli", sans-serif;
+        background: #297373;
+        -webkit-box-shadow: none;
+                box-shadow: none;
+        padding: 0; }
+        .page .container .wp-block-columns .wp-block-column .wpcf7 .wpcf7-submit:focus {
+          outline: none; }
+        .page .container .wp-block-columns .wp-block-column .wpcf7 .wpcf7-submit:hover {
+          -webkit-box-shadow: 0 10px 10px 0 #07393c;
+                  box-shadow: 0 10px 10px 0 #07393c; }
+    .page .container .wp-block-columns iframe {
+      margin-bottom: 50px; }
+    .page .container .wp-block-columns p {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-line-pack: justify;
+          align-content: space-between; }
+=======
 .four-o-four-text {
   font-family: "Bambi";
   font-size: 14px; }
+>>>>>>> df9f3f88fda7744296861d5884d405646c536012

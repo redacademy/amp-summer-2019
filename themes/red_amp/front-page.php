@@ -25,9 +25,11 @@ get_header(); ?>
             </div>
             <div class="front-page-content-container">
                 <div class="button-arrow-container">
-                    <button class="button-arrow"><i class="fas fa-chevron-down"></i></button>
+                    <button class="button-arrow" data-scrollto="#goto">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
                 </div>
-                <div class="front-page-values">
+                <div id="goto" class="front-page-values">
                     <div>
                         <img src="<?php echo get_template_directory_uri() . '/images/Community.png' ?>" alt="values-community">
                     </div>
@@ -80,7 +82,9 @@ $the_query = new WP_Query($args);
 <!-- view workspace button -->
 <div class="front-page-workspace-button" style="
 text-align: center;">
-    <button class="button-book"> View Workspaces</button>
+    <button class="button-book" onclick="window.location.href ='<?php echo get_home_url(); ?>/workspace';">
+        View Workspaces
+    </button>
 </div>
 <div class="front-page-amp-community-division-line-top">
 
