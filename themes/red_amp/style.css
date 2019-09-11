@@ -632,6 +632,74 @@ a {
 .bypostauthor {
   display: block; }
 
+.about-content {
+  /* OUR HEADQUARTERS */
+  /* AMP MEMBERS */ }
+  .about-content .who-we-are-title,
+  .about-content .missions-values-title,
+  .about-content .meet-the-team-title {
+    text-align: center;
+    color: #393939;
+    font-family: 'Bambi Bold'; }
+  .about-content .about-page-amp-members {
+    max-width: 60%;
+    margin: 0 auto; }
+    .about-content .about-page-amp-members h2 {
+      font-family: "Bambi";
+      text-align: center; }
+    .about-content .about-page-amp-members p {
+      font-family: "Muli", sans-serif;
+      font-size: 18px;
+      text-align: center; }
+    .about-content .about-page-amp-members .about-page-amp-members-logos {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      position: relative;
+      -webkit-transition: 0.7s;
+      transition: 0.7s; }
+      .about-content .about-page-amp-members .about-page-amp-members-logos div {
+        width: 33%;
+        height: 150px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-line-pack: center;
+            align-content: center; }
+        .about-content .about-page-amp-members .about-page-amp-members-logos div img {
+          margin: auto; }
+  .about-content .about-page-amp-member-division-line-top {
+    border-top: 2px solid #297373;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 80px;
+    height: 0.1px;
+    width: 25%; }
+  .about-content .about-page-amp-member-division-line {
+    border-top: 3px solid #297373;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    height: 0.1px;
+    width: 90%; }
+  .about-content .about-page-workspace-button .bottom-book-button-about-page .button-book {
+    font-size: 25px;
+    color: #fff;
+    font-weight: 700;
+    width: 250px;
+    height: 80px;
+    font-family: "Muli", sans-serif;
+    background: #297373;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    padding: 0;
+    margin-bottom: 1.5rem; }
+
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
@@ -918,6 +986,31 @@ object {
     height: 17px;
     width: 17px;
     border: 1px solid #297373; }
+
+.workspace-icon-title {
+  width: 1080px;
+  margin: 0 auto; }
+
+.single-workspace .primary-cta-block {
+  text-align: center; }
+
+.workspace-icons {
+  width: 1080px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 auto; }
+
+.workspace-icon-flex-three {
+  width: 31%; }
+
+.workspace-icon-flex-two {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 48%; }
 
 .page .container {
   width: 1150px; }
@@ -1572,18 +1665,73 @@ object {
       margin-bottom: 2px;
       border-bottom: red solid 4px; }
 
-.about-section-title {
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row; }
-
-.about-section-description {
-  text-align: center; }
+.about-content {
+  /* OUR HEADQUARTERS */
+  /* AMP MEMBERS */ }
+  .about-content .who-we-are-title,
+  .about-content .missions-values-title,
+  .about-content .meet-the-team-title {
+    text-align: center;
+    color: #393939;
+    font-family: 'Bambi Bold'; }
+  .about-content .about-page-amp-members {
+    max-width: 60%;
+    margin: 0 auto; }
+    .about-content .about-page-amp-members h2 {
+      font-family: "Bambi";
+      text-align: center; }
+    .about-content .about-page-amp-members p {
+      font-family: "Muli", sans-serif;
+      font-size: 18px;
+      text-align: center; }
+    .about-content .about-page-amp-members .about-page-amp-members-logos {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      position: relative;
+      -webkit-transition: 0.7s;
+      transition: 0.7s; }
+      .about-content .about-page-amp-members .about-page-amp-members-logos div {
+        width: 33%;
+        height: 150px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-line-pack: center;
+            align-content: center; }
+        .about-content .about-page-amp-members .about-page-amp-members-logos div img {
+          margin: auto; }
+  .about-content .about-page-amp-member-division-line-top {
+    border-top: 2px solid #297373;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 80px;
+    height: 0.1px;
+    width: 25%; }
+  .about-content .about-page-amp-member-division-line {
+    border-top: 3px solid #297373;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    height: 0.1px;
+    width: 90%; }
+  .about-content .about-page-workspace-button .bottom-book-button-about-page .button-book {
+    font-size: 25px;
+    color: #fff;
+    font-weight: 700;
+    width: 250px;
+    height: 80px;
+    font-family: "Muli", sans-serif;
+    background: #297373;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    padding: 0;
+    margin-bottom: 1.5rem; }
 
 /* Workspace Page Only */
 .post-type-archive-workspace {
@@ -1736,6 +1884,31 @@ object {
     height: 17px;
     width: 17px;
     border: 1px solid #297373; }
+
+.workspace-icon-title {
+  width: 1080px;
+  margin: 0 auto; }
+
+.single-workspace .primary-cta-block {
+  text-align: center; }
+
+.workspace-icons {
+  width: 1080px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 auto; }
+
+.workspace-icon-flex-three {
+  width: 31%; }
+
+.workspace-icon-flex-two {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 48%; }
 
 .page .container {
   width: 1150px; }
