@@ -263,29 +263,44 @@
     height: 600px;
     margin: 0 auto;
     // margin-bottom: 50px;
-    width: 75%;
+    width: 60%;
     margin: 50px auto;
 
     .carousel-cell {
         width: 40%;
         // border: 1px solid black;
         text-align: center;
-        height: 80%;
+        // height: 85%;
         border: 1px solid black;
         opacity: 0.6;
         transition: transform 0.5s, opacity 0.5s;
-
+        // transform: scale(0.9);
+        margin: 0;
 
         .carousel-content {
             width: 100%;
             margin: 0 auto;
             margin-top: 10px;
             padding: 30px;
+            visibility: visible;
+            z-index: 100;
         }
 
-        .carousel-image {}
+        .carousel-image {
+            width: 130px;
+            margin: 30px auto;
+            height: 130px;
+            img{
+               border-radius: 50%;  
+               height: 100%;
+            }
+           
+        }
 
-        .carousel-text {}
+        .carousel-text {
+            font-family: $bodytext_font_family;
+            font-size: $bodytext_font_size;
+        }
 
         .carousel-name {}
 
@@ -294,24 +309,29 @@
 
 
     .is-selected {
-        transform: scale(1.1);
+        transform: scale(1.2);
         // transition: 0.3s;
         background: white;
         z-index: 299;
         opacity: 1;
+        margin-right: -30px;
     }
+    
 }
 
 // .carousel-cell {
 //     opacity: 0.6;
 //     transition: transform 0.5s, opacity 0.5s;
 // }
-.flickity-viewport {
+.flickity-enabled .flickity-viewport {
     padding: 3rem 0;
-    height: 100% !important;
-
+    height: 100%;
+    overflow: visible;
 }
-
+.flickity-slider {
+    // transform: translateX(-50%) !important;
+    // left: 50% !important;
+}
 .item-active {
     // margin-bottom: 100px;
 }
@@ -324,15 +344,15 @@
 }
 
 .flickity-prev-next-button {
-
+    background: transparent;
     // position: relative;
     &.previous {
         box-shadow: unset;
-        left: -50px !important;
+        left: -140px !important;
     }
 
     &.next {
-        right: -50px !important;
+        right: -140px !important;
         // transform: rotate(180deg);
         box-shadow: unset;
     }
@@ -341,8 +361,3 @@
 .flickity-slider {
     // left: 121px !important;
 }
-
-
-
-
-

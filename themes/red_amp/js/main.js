@@ -3,9 +3,6 @@
 
   $('.main-carousel').flickity({
     // options
-    // cellAlign: 'left',
-    // contain: true,
-    // adaptiveHeight: false,
     wrapAround: true,
   });
 
@@ -16,7 +13,7 @@
       // options
       cellAlign: 'center',
       contain: true,
-      wrapAround: true
+      wrapAround: false,
     });
   }
 
