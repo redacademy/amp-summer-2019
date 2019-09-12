@@ -656,12 +656,21 @@ a {
     margin-top: 75px; }
   .about-content .about-page-main-title p {
     text-align: center;
-    margin-bottom: 100px; }
+    margin-bottom: 100px;
+    width: 700px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto; }
   .about-content .about-page-values .values-description h2 {
     font-family: "Bambi";
     text-align: center; }
   .about-content .about-page-values .values-description p {
-    text-align: center; }
+    text-align: center;
+    text-align: center;
+    width: 750px;
+    margin-bottom: 100px;
+    margin-left: 170px;
+    margin-right: 190px; }
   .about-content .about-page-values {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -703,12 +712,17 @@ a {
       border-radius: 50%; }
     .about-content .team-section .the-team .amp-employee .individual {
       text-align: center; }
+      .about-content .team-section .the-team .amp-employee .individual p {
+        margin-bottom: 1.5rem;
+        width: 200px;
+        padding-left: 25px; }
   .about-content .headquarters {
     margin: 0 auto;
     width: 1200px;
     position: relative;
     height: 429px;
-    margin-bottom: 429px; }
+    margin-bottom: 429px;
+    margin-top: 100px; }
     .about-content .headquarters .hq-description {
       background-color: #daefec;
       height: 100%;
@@ -717,7 +731,11 @@ a {
       text-align: center; }
       .about-content .headquarters .hq-description h2 {
         font-family: "Bambi";
-        text-align: center; }
+        text-align: center;
+        padding-top: 30px; }
+      .about-content .headquarters .hq-description p {
+        width: 650px;
+        margin-left: 40px; }
     .about-content .headquarters .amp-building img {
       height: auto;
       width: 60%;
@@ -727,7 +745,8 @@ a {
       left: 40%; }
   .about-content .about-page-amp-members {
     max-width: 60%;
-    margin: 0 auto; }
+    margin: 0 auto;
+    margin-top: -100px; }
     .about-content .about-page-amp-members h2 {
       font-family: "Bambi";
       text-align: center; }
@@ -782,7 +801,7 @@ a {
     -webkit-box-shadow: none;
             box-shadow: none;
     padding: 0;
-    margin-bottom: 40px; }
+    margin-bottom: 20vh; }
 
 /*--------------------------------------------------------------
 # Content

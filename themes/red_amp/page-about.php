@@ -10,7 +10,7 @@ get_header(); ?>
 	<div id="primary" class="content-area about-content">
 	<main id="main" class="site-main" role="main">
 		<?php while ( have_posts() ) : the_post(); ?>
-			<?php get_template_part( 'template-parts/content', 'page' ); ?>
+
 
 	<div class="about-header-shadow">
 
@@ -20,7 +20,7 @@ get_header(); ?>
 			Who we are
 		</h1>
 		<p>
-			The Amp coworking space is a social enterprise launched by Ecotrust Canada. We offer a shared space for mission-driven organizations and individuals to connect and collaborate every day. Ideally located at the crossroads of Gastown and Chinatown in the historic BC Electric Building, The Amp is a bright, beautiful space complete with all the amenities your team needs to thrive and with ample opportunities to connect with social purpose organizations. 
+			The Amp coworking space is a social enterprise launched by Ecotrust Canada. We offer a shared space for mission-driven organizations and individuals to connect and collaborate every day. Ideally located at the crossroads of Gastown and Chinatown in the historic BC Electric Building, The Amp is a bright, beautiful space complete with all the amenities your team needs to thrive and with ample opportunities to connect with social purpose organizations! 
 		</p>
 	</div> <!-- end of main-page-title -->
 
@@ -150,7 +150,7 @@ get_header(); ?>
 	</main><!-- #main -->
 	</div><!-- #primary -->
 
-	<div class="about-page-workspace-button bottom-book-button-about-page" style="text-align: center;">
+	<div class="about-page-workspace-button bottom-book-button-about-page" style="text-align: center; margin-bottom: 200px; margin-top: 110px;">
     	<button class="button-book"> Book a Tour</button>
 	</div>
 <?php get_footer(); ?>
