@@ -13,23 +13,24 @@ get_header(); ?>
 			<?php get_template_part( 'template-parts/content', 'page' ); ?>
 
 	<div class="team-section">
-		<div>
+		<div class="team-title">
 			<h2>
 				Meet the Team
 			<h2>
 		</div> <!-- h2 div -->
 
-		<div class="amp-employee">
-			<img src="<?php echo get_template_directory_uri();?>/images/YumiKosaka.png"/>
-				<div class="teresa">
-					<h3>Teresa Mayo</h3>
-						<p>Coworking Community Manager</p>
-				</div> <!-- end of Teresa info -->
-		</div> <!-- enf of amp-employee -->
+		<div class="the-team">
+			<div class="amp-employee">
+				<img src="<?php echo get_template_directory_uri();?>/images/TeresaMayo.png"/>
+					<div class="individual">
+						<h3>Teresa Mayo</h3>
+							<p>Coworking Community Manager</p>
+					</div> <!-- end of Teresa info -->
+			</div> <!-- enf of amp-employee -->
 
 		<div class="amp-employee">
-			<img src="<?php echo get_template_directory_uri();?>/images/YumiKosaka.png"/>
-				<div class="teresa">
+			<img src="<?php echo get_template_directory_uri();?>/images/ChuckRumsey.jpg"/>
+				<div class="individual">
 					<h3>Chuck Rumsey</h3>
 						<p>President and CEO - ECOTRUST</p>
 				</div> <!-- end of Teresa info -->
@@ -37,11 +38,12 @@ get_header(); ?>
 
 		<div class="amp-employee">
 			<img src="<?php echo get_template_directory_uri();?>/images/YumiKosaka.png"/>
-				<div class="teresa">
+				<div class="individual">
 					<h3>Yumi Kosaka</h3>
 						<p>Accountant</p>
 				</div> <!-- end of Teresa info -->
-		</div> <!-- enf of amp-employee -->
+			</div> <!-- enf of amp-employee -->
+		</div> <!-- end of the-team -->
 		
 	</div> <!-- end of team section -->
 

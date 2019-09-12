@@ -7,8 +7,30 @@
     font-family: 'Bambi Bold';
   }
 
-/* MEET THE TEAM */
-
+  /* MEET THE TEAM */
+  .team-section {
+    .team-title {
+      text-align: center;
+    }
+    .the-team {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      .amp-employee {
+        img {
+          height: 233px;
+          width: 233px;
+          border-radius: 50%;
+        }
+        .individual {
+          text-align: center;
+          p{
+            
+          }
+        }
+      }
+    }
+  }
 
   /* OUR HEADQUARTERS */
   .headquarters {

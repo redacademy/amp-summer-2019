@@ -643,6 +643,25 @@ a {
     text-align: center;
     color: #393939;
     font-family: 'Bambi Bold'; }
+  .about-content .team-section .team-title {
+    text-align: center; }
+  .about-content .team-section .the-team {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly; }
+    .about-content .team-section .the-team .amp-employee img {
+      height: 233px;
+      width: 233px;
+      border-radius: 50%; }
+    .about-content .team-section .the-team .amp-employee .individual {
+      text-align: center; }
   .about-content .headquarters {
     margin: 0 auto;
     width: 1200px;
@@ -752,9 +771,8 @@ a {
             flex-direction: column;
     white-space: nowrap;
     display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly; }
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
     .site-footer .contact-info img {
       padding-right: 15px;
       height: 20px; }
@@ -770,7 +788,9 @@ a {
   .site-footer .footer-content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 10px; }
+    grid-column-gap: 10px;
+    height: 175px;
+    line-height: 1; }
 
 .site-footer-name-address {
   padding: 50px 0 0px 50px;
