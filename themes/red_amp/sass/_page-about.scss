@@ -109,6 +109,7 @@
     position: relative;
     height: 429px;
     margin-bottom: 429px;
+    margin-top: 100px;
     .hq-description {
       background-color: #daefec;
       height: 100%;
@@ -118,8 +119,14 @@
       h2 {
         font-family: $headline_font_family;
         text-align: center;
+        padding-top: 30px;
+      }
+      p {
+        width: 650px;
+        margin-left: 40px;
       }
     }
+
     .amp-building {
       img {
         height: auto;
@@ -136,6 +143,7 @@
   .about-page-amp-members {
     max-width: 60%;
     margin: 0 auto;
+    margin-top: -100px;
     // text-align: center;
     // justify-content: center;
     // align-content: center;
