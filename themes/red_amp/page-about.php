@@ -12,6 +12,9 @@ get_header(); ?>
 		<?php while ( have_posts() ) : the_post(); ?>
 			<?php get_template_part( 'template-parts/content', 'page' ); ?>
 
+	<div class="about-header-shadow">
+
+	</div> <!-- end of header shadow -->
 	<div class="about-page-main-title">
 		<h1>
 			Who we are
