@@ -26,7 +26,7 @@ $pagination_margin: 15vw;
       
       .gf_step {
         background: white;
-        border: 1px solid skyblue;
+        border: 1px solid #297373;
         color: white;
         position: relative;
         display: flex;
@@ -124,6 +124,7 @@ $pagination_margin: 15vw;
       a{
         
         text-decoration: none;
+        border: 1px solid $dark_green;
         font-size: 25px;
         color: $font_light;
         font-weight: 700;
@@ -146,17 +147,44 @@ $pagination_margin: 15vw;
     .ui-datepicker-month,.ui-datepicker-year{
 
     font-family: $font__secondary;
+    font-weight: 300;
 }
 }
+
+.gform_wrapper .gform_page_fields ul.gform_fields {
+    display:flex;
+
+    justify-content: space-between;
+
+}
+
+.gform_wrapper .gfield .ginput_container .gfield_select{
+    width: 13rem;
+    height: 2.2rem;
+}
+
+
 
 
 tr td.ui-datepicker-unselectable.ui-state-disabled {
     background-color: white;
 }
 
-.ui-datepicker-calendar .ui-state-active {
-    background: white;
-    border: 1px solid red;
-    color: #666;
-}
+.ui-datepicker-calendar {
 
+    .ui-state-default {
+             
+        
+        &.ui-state-active {
+            // background: white; 
+            background-color: #FF6978;
+            // border: 1px solid red;
+            border-radius: 50%;
+            color: #666;
+        }
+
+    }
+    
+
+
+}

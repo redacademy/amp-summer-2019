@@ -1102,7 +1102,7 @@ object {
     padding-left: 20px; }
 
 .page .container {
-  width: 1150px; }
+  width: 1400px; }
   .page .container .entry-title {
     text-align: center;
     font-family: "Bambi"; }
@@ -1193,7 +1193,7 @@ object {
             align-items: center; }
   .book-tour-form_wrapper.gform_wrapper .gf_step {
     background: white;
-    border: 1px solid skyblue;
+    border: 1px solid #297373;
     color: white;
     position: relative;
     display: -webkit-box;
@@ -1269,6 +1269,7 @@ object {
   text-align: center; }
   .gform_confirmation_wrapper .gform_confirmation_message a {
     text-decoration: none;
+    border: 1px solid #297373;
     font-size: 25px;
     color: #fff;
     font-weight: 700;
@@ -1283,14 +1284,27 @@ object {
       outline: none; }
 
 .ui-datepicker .ui-datepicker-month, .ui-datepicker .ui-datepicker-year {
-  font-family: "Muli", sans-serif; }
+  font-family: "Muli", sans-serif;
+  font-weight: 300; }
+
+.gform_wrapper .gform_page_fields ul.gform_fields {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.gform_wrapper .gfield .ginput_container .gfield_select {
+  width: 13rem;
+  height: 2.2rem; }
 
 tr td.ui-datepicker-unselectable.ui-state-disabled {
   background-color: white; }
 
-.ui-datepicker-calendar .ui-state-active {
-  background: white;
-  border: 1px solid red;
+.ui-datepicker-calendar .ui-state-default.ui-state-active {
+  background-color: #FF6978;
+  border-radius: 50%;
   color: #666; }
 
 /*--------------------------------------------------------------
