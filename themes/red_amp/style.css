@@ -634,6 +634,7 @@ a {
   display: block; }
 
 .about-content {
+  /* MEET THE TEAM */
   /* OUR HEADQUARTERS */
   /* AMP MEMBERS */ }
   .about-content .who-we-are-title,
@@ -642,6 +643,25 @@ a {
     text-align: center;
     color: #393939;
     font-family: 'Bambi Bold'; }
+  .about-content .headquarters {
+    margin: 0 auto;
+    width: 1200px;
+    position: relative;
+    height: 429px;
+    margin-bottom: 429px; }
+    .about-content .headquarters .hq-description {
+      background-color: #daefec;
+      height: 100%;
+      width: 60%;
+      border-radius: 4px;
+      text-align: center; }
+    .about-content .headquarters .amp-building img {
+      height: auto;
+      width: 60%;
+      position: absolute;
+      border-radius: 4px;
+      top: 250px;
+      left: 40%; }
   .about-content .about-page-amp-members {
     max-width: 60%;
     margin: 0 auto; }
@@ -699,7 +719,7 @@ a {
     -webkit-box-shadow: none;
             box-shadow: none;
     padding: 0;
-    margin-bottom: 1.5rem; }
+    margin-bottom: 40px; }
 
 /*--------------------------------------------------------------
 # Content

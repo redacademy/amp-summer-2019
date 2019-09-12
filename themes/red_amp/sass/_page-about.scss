@@ -7,8 +7,34 @@
     font-family: 'Bambi Bold';
   }
 
+/* MEET THE TEAM */
+
+
   /* OUR HEADQUARTERS */
-  
+  .headquarters {
+    margin: 0 auto;
+    width: 1200px;
+    position: relative;
+    height: 429px;
+    margin-bottom: 429px;
+    .hq-description {
+      background-color: #daefec;
+      height: 100%;
+      width: 60%;
+      border-radius: 4px;
+      text-align: center;
+    }
+    .amp-building {
+      img {
+        height: auto;
+        width: 60%;
+        position: absolute;
+        border-radius: 4px;
+        top: 250px;
+        left: 40%;
+      }
+    }
+  }
 
   /* AMP MEMBERS */
   .about-page-amp-members {
@@ -79,7 +105,7 @@
         background: $dark_green;
         box-shadow: none;
         padding: 0;
-        margin-bottom: $base__space-unit;
+        margin-bottom: 40px;
       }
     }
   }
