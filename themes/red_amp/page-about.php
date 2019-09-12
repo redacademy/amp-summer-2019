@@ -12,6 +12,18 @@ get_header(); ?>
 		<?php while ( have_posts() ) : the_post(); ?>
 			<?php get_template_part( 'template-parts/content', 'page' ); ?>
 
+	<div id="go-to" class="about-page-values">
+        <div>
+            <img src="<?php echo get_template_directory_uri() . '/images/Community.png' ?>" alt="values-community">
+         </div>
+         <div>
+            <img src="<?php echo get_template_directory_uri() . '/images/Collaboration.png' ?>" alt="values-collaboration">
+        </div>
+        <div>
+        <img src="<?php echo get_template_directory_uri() . '/images/Mission_Driven.png' ?>" alt="values-mission-driven">
+        </div>
+    </div> 
+
 	<div class="team-section">
 		<div class="team-title">
 			<h2>
