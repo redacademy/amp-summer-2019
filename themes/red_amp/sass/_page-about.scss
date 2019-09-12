@@ -26,8 +26,10 @@
     p {
       text-align: center;
       margin-bottom: 100px;
-      // width: 343px;
-      // height: px;
+      width: 700px;
+      margin-bottom: 100px;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 
@@ -40,6 +42,11 @@
       }
       p {
         text-align: center;
+        text-align: center;
+        width: 750px;
+        margin-bottom: 100px;
+        margin-left: 170px;
+        margin-right: 190px;
       }
     }
   }
@@ -86,8 +93,9 @@
         .individual {
           text-align: center;
           p {
-            //how to make one word go to the next line?
-            //tried white space and tried word wrap
+            margin-bottom: 1.5rem;
+            width: 200px;
+            padding-left: 25px;
           }
         }
       }
@@ -101,6 +109,7 @@
     position: relative;
     height: 429px;
     margin-bottom: 429px;
+    margin-top: 100px;
     .hq-description {
       background-color: #daefec;
       height: 100%;
@@ -110,8 +119,14 @@
       h2 {
         font-family: $headline_font_family;
         text-align: center;
+        padding-top: 30px;
+      }
+      p {
+        width: 650px;
+        margin-left: 40px;
       }
     }
+
     .amp-building {
       img {
         height: auto;
@@ -128,6 +143,7 @@
   .about-page-amp-members {
     max-width: 60%;
     margin: 0 auto;
+    margin-top: -100px;
     // text-align: center;
     // justify-content: center;
     // align-content: center;
@@ -193,8 +209,19 @@
         background: $dark_green;
         box-shadow: none;
         padding: 0;
-        margin-bottom: 40px;
+        margin-bottom: 20vh;
       }
     }
   }
+
+  @include mobile {
+   
+  }
 }
+
+// @media only screen and (max-width: $mobileBreakPoint) {
+//   body {
+//     background-color: red;
+
+//   }
+// }
