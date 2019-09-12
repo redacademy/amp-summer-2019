@@ -634,6 +634,7 @@ a {
   display: block; }
 
 .about-content {
+  /* AMP VALUES */
   /* MEET THE TEAM */
   /* OUR HEADQUARTERS */
   /* AMP MEMBERS */ }
@@ -643,6 +644,26 @@ a {
     text-align: center;
     color: #393939;
     font-family: 'Bambi Bold'; }
+  .about-content .about-page-values {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    padding: 40px;
+    background: #e3f8f7;
+    margin-top: 50px;
+    margin-bottom: 80px; }
+    .about-content .about-page-values:focus {
+      outline: none; }
+    .about-content .about-page-values img {
+      background: #fff;
+      margin: 15px; }
   .about-content .team-section .team-title {
     text-align: center; }
   .about-content .team-section .the-team {

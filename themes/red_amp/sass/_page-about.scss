@@ -7,6 +7,28 @@
     font-family: 'Bambi Bold';
   }
 
+  /* AMP VALUES */
+  .about-page-values {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    padding: 40px;
+    background: lighten($color: $light_green, $amount: 12%);
+    margin-top: 50px;
+    margin-bottom: 80px;
+
+    &:focus {
+      outline: none;
+    }
+
+    img {
+      background: $font_light;
+      margin: 15px;
+    }
+  }
+
   /* MEET THE TEAM */
   .team-section {
     .team-title {
