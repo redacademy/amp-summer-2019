@@ -14,9 +14,7 @@ get_header(); ?>
         <?php $banner_bg = get_the_post_thumbnail_url(); ?>
         <div class="hero-banner">
             <div style="
-            background: 
-            linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 3%),
-            url(<?php echo $banner_bg; ?>);
+            background: url(<?php echo $banner_bg; ?>);
             background-size: 100%;
             background-position: bottom;
             background-repeat: no-repeat;
@@ -27,9 +25,11 @@ get_header(); ?>
             </div>
             <div class="front-page-content-container">
                 <div class="button-arrow-container">
-                    <button class="button-arrow"><i class="fas fa-chevron-down"></i></button>
+                    <button class="button-arrow" data-scrollto="#goto">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
                 </div>
-                <div class="front-page-values">
+                <div id="goto" class="front-page-values">
                     <div>
                         <img src="<?php echo get_template_directory_uri() . '/images/Community.png' ?>" alt="values-community">
                     </div>
@@ -82,7 +82,9 @@ $the_query = new WP_Query($args);
 <!-- view workspace button -->
 <div class="front-page-workspace-button" style="
 text-align: center;">
-    <button class="button-book"> View Workspaces</button>
+    <button class="button-book" onclick="window.location.href ='<?php echo get_home_url(); ?>/workspace';">
+        View Workspaces
+    </button>
 </div>
 <div class="front-page-amp-community-division-line-top">
 

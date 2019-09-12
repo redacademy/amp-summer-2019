@@ -1,7 +1,86 @@
-.about-section-title {
-  text-align: center;
-  height: 38px;	width: 262px;	color: #393939;	font-family: "Bambi Bold";	font-size: 36px;	letter-spacing: 0.44px;	line-height: 38px;
-}
-.about-section-description {
-  text-align: center;
+.about-content {
+  .who-we-are-title,
+  .missions-values-title,
+  .meet-the-team-title {
+    text-align: center;
+    color: #393939;
+    font-family: 'Bambi Bold';
+  }
+
+  /* OUR HEADQUARTERS */
+  
+
+  /* AMP MEMBERS */
+  .about-page-amp-members {
+    max-width: 60%;
+    margin: 0 auto;
+    // text-align: center;
+    // justify-content: center;
+    // align-content: center;
+
+    h2 {
+      font-family: $headline_font_family;
+      text-align: center;
+    }
+
+    p {
+      font-family: $bodytext_font_family;
+      font-size: 18px;
+      text-align: center;
+    }
+
+    .about-page-amp-members-logos {
+      display: flex;
+      flex-flow: row wrap;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      position: relative;
+      transition: 0.7s;
+
+      div {
+        width: 33%;
+        height: 150px;
+        display: flex;
+        align-content: center;
+
+        img {
+          margin: auto;
+        }
+      }
+    }
+  }
+
+  .about-page-amp-member-division-line-top {
+    border-top: 2px solid $dark_green;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 80px;
+    height: 0.1px;
+    width: 25%;
+  }
+
+  .about-page-amp-member-division-line {
+    border-top: 3px solid $dark_green;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    height: 0.1px;
+    width: 90%;
+  }
+
+  .about-page-workspace-button {
+    .bottom-book-button-about-page {
+      .button-book {
+        font-size: 25px;
+        color: $font_light;
+        font-weight: 700;
+        width: 250px;
+        height: 80px;
+        font-family: $bodytext_font_family;
+        background: $dark_green;
+        box-shadow: none;
+        padding: 0;
+        margin-bottom: $base__space-unit;
+      }
+    }
+  }
 }
