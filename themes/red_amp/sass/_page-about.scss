@@ -1,5 +1,4 @@
 .about-content {
-  .who-we-are-title,
   .missions-values-title,
   .meet-the-team-title {
     text-align: center;
@@ -7,8 +6,123 @@
     font-family: 'Bambi Bold';
   }
 
+  /* HEAD OF PAGE SHADOW */
+  .about-shadow {
+    background: linear-gradient(
+      to bottom,
+      rgba($dark_green, 0.07),
+      rgba($light_green, 0)
+    );
+    height: 20px;
+    max-width: $body_max_width;
+  }
+  /* ABOUT PAGE MAIN TITLE */
+  .about-page-main-title {
+    h1 {
+      font-family: $headline_font_family;
+      text-align: center;
+      margin-top: 75px;
+    }
+    p {
+      text-align: center;
+      margin-bottom: 100px;
+      // width: 343px;
+      // height: px;
+    }
+  }
+
+  /* AMP VALUES */
+  .about-page-values {
+    .values-description {
+      h2 {
+        font-family: $headline_font_family;
+        text-align: center;
+      }
+      p {
+        text-align: center;
+      }
+    }
+  }
+  .about-page-values {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    padding: 40px;
+    background: lighten($color: $light_green, $amount: 12%);
+    margin-top: 50px;
+    margin-bottom: 80px;
+
+    &:focus {
+      outline: none;
+    }
+
+    img {
+      background: $font_light;
+      margin: 15px;
+    }
+  }
+
+  /* MEET THE TEAM */
+  .team-section {
+    .team-title {
+      h2 {
+        font-family: $headline_font_family;
+        text-align: center;
+        margin-bottom: 85px;
+      }
+    }
+    .the-team {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      .amp-employee {
+        img {
+          height: 233px;
+          width: 233px;
+          border-radius: 50%;
+        }
+        .individual {
+          text-align: center;
+          p {
+            //how to make one word go to the next line?
+            //tried white space and tried word wrap
+          }
+        }
+      }
+    }
+  }
+
   /* OUR HEADQUARTERS */
-  
+  .headquarters {
+    margin: 0 auto;
+    width: 1200px;
+    position: relative;
+    height: 429px;
+    margin-bottom: 429px;
+    .hq-description {
+      background-color: #daefec;
+      height: 100%;
+      width: 60%;
+      border-radius: 4px;
+      text-align: center;
+      h2 {
+        font-family: $headline_font_family;
+        text-align: center;
+      }
+    }
+    .amp-building {
+      img {
+        height: auto;
+        width: 60%;
+        position: absolute;
+        border-radius: 4px;
+        top: 250px;
+        left: 40%;
+      }
+    }
+  }
 
   /* AMP MEMBERS */
   .about-page-amp-members {
@@ -79,7 +193,7 @@
         background: $dark_green;
         box-shadow: none;
         padding: 0;
-        margin-bottom: $base__space-unit;
+        margin-bottom: 40px;
       }
     }
   }

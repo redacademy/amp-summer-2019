@@ -23,7 +23,7 @@
     flex-direction: column;
     white-space: nowrap;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     img {
       padding-right: 15px;
       height: 20px;
@@ -46,6 +46,8 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 10px;
+    height: 175px;
+    line-height: 1;
   }
 }
 .site-footer-name-address {

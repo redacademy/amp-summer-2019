@@ -634,14 +634,97 @@ a {
   display: block; }
 
 .about-content {
+  /* HEAD OF PAGE SHADOW */
+  /* ABOUT PAGE MAIN TITLE */
+  /* AMP VALUES */
+  /* MEET THE TEAM */
   /* OUR HEADQUARTERS */
   /* AMP MEMBERS */ }
-  .about-content .who-we-are-title,
   .about-content .missions-values-title,
   .about-content .meet-the-team-title {
     text-align: center;
     color: #393939;
     font-family: 'Bambi Bold'; }
+  .about-content .about-shadow {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(41, 115, 115, 0.07)), to(rgba(177, 237, 232, 0)));
+    background: linear-gradient(to bottom, rgba(41, 115, 115, 0.07), rgba(177, 237, 232, 0));
+    height: 20px;
+    max-width: 1400px; }
+  .about-content .about-page-main-title h1 {
+    font-family: "Bambi";
+    text-align: center;
+    margin-top: 75px; }
+  .about-content .about-page-main-title p {
+    text-align: center;
+    margin-bottom: 100px; }
+  .about-content .about-page-values .values-description h2 {
+    font-family: "Bambi";
+    text-align: center; }
+  .about-content .about-page-values .values-description p {
+    text-align: center; }
+  .about-content .about-page-values {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    padding: 40px;
+    background: #e3f8f7;
+    margin-top: 50px;
+    margin-bottom: 80px; }
+    .about-content .about-page-values:focus {
+      outline: none; }
+    .about-content .about-page-values img {
+      background: #fff;
+      margin: 15px; }
+  .about-content .team-section .team-title h2 {
+    font-family: "Bambi";
+    text-align: center;
+    margin-bottom: 85px; }
+  .about-content .team-section .the-team {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly; }
+    .about-content .team-section .the-team .amp-employee img {
+      height: 233px;
+      width: 233px;
+      border-radius: 50%; }
+    .about-content .team-section .the-team .amp-employee .individual {
+      text-align: center; }
+  .about-content .headquarters {
+    margin: 0 auto;
+    width: 1200px;
+    position: relative;
+    height: 429px;
+    margin-bottom: 429px; }
+    .about-content .headquarters .hq-description {
+      background-color: #daefec;
+      height: 100%;
+      width: 60%;
+      border-radius: 4px;
+      text-align: center; }
+      .about-content .headquarters .hq-description h2 {
+        font-family: "Bambi";
+        text-align: center; }
+    .about-content .headquarters .amp-building img {
+      height: auto;
+      width: 60%;
+      position: absolute;
+      border-radius: 4px;
+      top: 250px;
+      left: 40%; }
   .about-content .about-page-amp-members {
     max-width: 60%;
     margin: 0 auto; }
@@ -699,7 +782,7 @@ a {
     -webkit-box-shadow: none;
             box-shadow: none;
     padding: 0;
-    margin-bottom: 1.5rem; }
+    margin-bottom: 40px; }
 
 /*--------------------------------------------------------------
 # Content
@@ -732,9 +815,8 @@ a {
             flex-direction: column;
     white-space: nowrap;
     display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly; }
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
     .site-footer .contact-info img {
       padding-right: 15px;
       height: 20px; }
@@ -750,7 +832,9 @@ a {
   .site-footer .footer-content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 10px; }
+    grid-column-gap: 10px;
+    height: 175px;
+    line-height: 1; }
 
 .site-footer-name-address {
   padding: 50px 0 0px 50px;
@@ -791,7 +875,7 @@ a {
   font-family: "Muli", sans-serif; }
 
 .footer-newsletter-form input[type=submit] {
-  background-color: #CAE5E3;
+  background-color: #cae5e3;
   height: 42px;
   width: 61px;
   font-size: 16px;
@@ -1110,7 +1194,7 @@ object {
     margin: 0 auto; }
     .page .container .wp-block-columns .wp-block-column .wpcf7 {
       width: 509px;
-      background-color: #DAEFEC;
+      background-color: #daefec;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -1193,7 +1277,7 @@ object {
             align-items: center; }
   .book-tour-form_wrapper.gform_wrapper .gf_step {
     background: white;
-    border: 1px solid skyblue;
+    border: 1px solid #297373;
     color: white;
     position: relative;
     display: -webkit-box;
@@ -1269,6 +1353,7 @@ object {
   text-align: center; }
   .gform_confirmation_wrapper .gform_confirmation_message a {
     text-decoration: none;
+    border: 1px solid #297373;
     font-size: 25px;
     color: #fff;
     font-weight: 700;
@@ -1283,14 +1368,27 @@ object {
       outline: none; }
 
 .ui-datepicker .ui-datepicker-month, .ui-datepicker .ui-datepicker-year {
-  font-family: "Muli", sans-serif; }
+  font-family: "Muli", sans-serif;
+  font-weight: 300; }
+
+.gform_wrapper .gform_page_fields ul.gform_fields {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.gform_wrapper .gfield .ginput_container .gfield_select {
+  width: 13rem;
+  height: 2.2rem; }
 
 tr td.ui-datepicker-unselectable.ui-state-disabled {
   background-color: white; }
 
-.ui-datepicker-calendar .ui-state-active {
-  background: white;
-  border: 1px solid red;
+.ui-datepicker-calendar .ui-state-default.ui-state-active {
+  background-color: #FF6978;
+  border-radius: 50%;
   color: #666; }
 
 /*--------------------------------------------------------------
@@ -1327,8 +1425,8 @@ tr td.ui-datepicker-unselectable.ui-state-disabled {
       display: flex;
       margin-bottom: 50px;
       border-radius: 5px;
-      -webkit-box-shadow: 0 12px 48px -12px #9DBEBE;
-              box-shadow: 0 12px 48px -12px #9DBEBE; }
+      -webkit-box-shadow: 0 12px 48px -12px #9dbebe;
+              box-shadow: 0 12px 48px -12px #9dbebe; }
       .post-type-archive-event .custom-loop .loop-type-events a .loop-item-container .event-image {
         height: 268px;
         width: 400px;
@@ -1679,8 +1777,8 @@ tr td.ui-datepicker-unselectable.ui-state-disabled {
         -ms-flex: 1;
             flex: 1;
     text-align: center;
-    -webkit-box-shadow: 0 12px 48px -12px #9DBEBE;
-            box-shadow: 0 12px 48px -12px #9DBEBE;
+    -webkit-box-shadow: 0 12px 48px -12px #9dbebe;
+            box-shadow: 0 12px 48px -12px #9dbebe;
     max-width: 350px;
     height: -webkit-fit-content;
     height: -moz-fit-content;
