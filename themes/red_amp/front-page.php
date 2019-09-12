@@ -18,7 +18,7 @@ get_header(); ?>
             background-size: 100%;
             background-position: bottom;
             background-repeat: no-repeat;
-            width: 1400px;
+            width: 100%;
             height: 800px;
             ">
 
