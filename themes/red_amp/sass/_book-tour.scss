@@ -9,6 +9,7 @@ $pagination_margin: 15vw;
 .book-tour-form_wrapper.gform_wrapper {
 
     height: 670px;	
+    position:relative;
     width: 944px;	
     background-color: #DAEFEC;
     margin: 0 auto;
@@ -22,6 +23,7 @@ $pagination_margin: 15vw;
         display: flex;
         justify-content: center;
         align-items: center;
+        padding-top: 50px;
       }
       
       .gf_step {
@@ -81,8 +83,13 @@ $pagination_margin: 15vw;
     .gform_page_footer {
         border-top: none;
 
+
+
         .gform_button, .gform_next_button{
-            margin-left: 620px;
+            // margin-left: 620px;
+            position: absolute;
+            right: 15%;
+            top: 85%;
             font-size: 25px;
             color: $font_light;
             font-weight: 700;
@@ -97,16 +104,39 @@ $pagination_margin: 15vw;
             }
             
         }
+        // &::before {
+        //     content: '\003c';
+           
+        //     color:#297373;
+        //     font-family: $font__secondary;
+        //     font-size: 37px;
+        //     font-weight: bold;
+        //     position: absolute;
+        //     left: 13%;
+        //     // top: 31%;
+        //     bottom: 7%;
+        
+        //   }
+      
         .gform_previous_button {
             font-family: $bodytext_font_family;
+            position: absolute;
+            left: 15%;
+            top: 85%;
             font-size: 25px;
+            height: 60px;	
+            width: 150px;
             font-weight:900;
-            background-color: #DAEFEC;
+            background-color: transparent;
+            box-shadow: unset;
             color: $dark_green;
             border:none;
             &:focus {
                 outline: none;
             }
+           
+
+          
         }
     }
 
@@ -151,10 +181,11 @@ $pagination_margin: 15vw;
 }
 }
 
-.gform_wrapper .gform_page_fields ul.gform_fields {
+.gform_wrapper .gform_page_fields ul#gform_fields_1_2 {
     display:flex;
 
-    justify-content: space-between;
+    justify-content: space-around;
+  
 
 }
 
@@ -187,4 +218,58 @@ tr td.ui-datepicker-unselectable.ui-state-disabled {
     
 
 
+}
+
+
+// styling for modal
+
+.book-tour-form-modal{
+    display: none;
+
+    &.is-active{
+        display:block;
+        position:fixed;
+        z-index: 99999;
+        top: 5%;
+        left: 50%;
+
+        // right: 10%;
+        // bottom: 10%;
+        transform: translateX(-50%);
+    }
+
+}
+
+
+.close-book-tour{
+    
+    right: 3%;
+    top: 20px;
+    color:$dark_green;
+    background-color:transparent;
+    border:none;
+    font-size: 32px;
+    font-family: $font__secondary;
+    font-weight: bold;
+    box-shadow: unset;
+    display: block;
+    position: absolute;
+    z-index: 400;
+    &:focus {
+        outline: none;
+    }
+    &:hover {
+        outline: none;
+        box-shadow: unset;
+    }
+}
+
+.prev-button-arrow{
+    position: absolute;
+    bottom: 8.5%;
+   
+    left: 15%;
+    
+    color: $dark_green;
+    font-size: 1.5rem;
 }
