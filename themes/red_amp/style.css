@@ -1259,6 +1259,7 @@ object {
 /* Book a tour popup */
 .book-tour-form_wrapper.gform_wrapper {
   height: 670px;
+  position: relative;
   width: 944px;
   background-color: #DAEFEC;
   margin: 0 auto; }
@@ -1274,7 +1275,8 @@ object {
             justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    padding-top: 50px; }
   .book-tour-form_wrapper.gform_wrapper .gf_step {
     background: white;
     border: 1px solid #297373;
@@ -1323,7 +1325,9 @@ object {
   .book-tour-form_wrapper.gform_wrapper .gform_page_footer {
     border-top: none; }
     .book-tour-form_wrapper.gform_wrapper .gform_page_footer .gform_button, .book-tour-form_wrapper.gform_wrapper .gform_page_footer .gform_next_button {
-      margin-left: 620px;
+      position: absolute;
+      right: 15%;
+      top: 85%;
       font-size: 25px;
       color: #fff;
       font-weight: 700;
@@ -1338,9 +1342,16 @@ object {
         outline: none; }
     .book-tour-form_wrapper.gform_wrapper .gform_page_footer .gform_previous_button {
       font-family: "Muli", sans-serif;
+      position: absolute;
+      left: 15%;
+      top: 85%;
       font-size: 25px;
+      height: 60px;
+      width: 150px;
       font-weight: 900;
-      background-color: #DAEFEC;
+      background-color: transparent;
+      -webkit-box-shadow: unset;
+              box-shadow: unset;
       color: #297373;
       border: none; }
       .book-tour-form_wrapper.gform_wrapper .gform_page_footer .gform_previous_button:focus {
@@ -1371,13 +1382,12 @@ object {
   font-family: "Muli", sans-serif;
   font-weight: 300; }
 
-.gform_wrapper .gform_page_fields ul.gform_fields {
+.gform_wrapper .gform_page_fields ul#gform_fields_1_2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
 
 .gform_wrapper .gfield .ginput_container .gfield_select {
   width: 13rem;
@@ -1390,6 +1400,45 @@ tr td.ui-datepicker-unselectable.ui-state-disabled {
   background-color: #FF6978;
   border-radius: 50%;
   color: #666; }
+
+.book-tour-form-modal {
+  display: none; }
+  .book-tour-form-modal.is-active {
+    display: block;
+    position: fixed;
+    z-index: 99999;
+    top: 5%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%); }
+
+.close-book-tour {
+  right: 3%;
+  top: 20px;
+  color: #297373;
+  background-color: transparent;
+  border: none;
+  font-size: 32px;
+  font-family: "Muli", sans-serif;
+  font-weight: bold;
+  -webkit-box-shadow: unset;
+          box-shadow: unset;
+  display: block;
+  position: absolute;
+  z-index: 400; }
+  .close-book-tour:focus {
+    outline: none; }
+  .close-book-tour:hover {
+    outline: none;
+    -webkit-box-shadow: unset;
+            box-shadow: unset; }
+
+.prev-button-arrow {
+  position: absolute;
+  bottom: 8.5%;
+  left: 15%;
+  color: #297373;
+  font-size: 1.5rem; }
 
 /*--------------------------------------------------------------
 # Page Templates
