@@ -10,6 +10,7 @@
 .site-footer {
   background: $dark_green;
   color: white;
+  font-size: $bodytext_font_size_smaller;
   
   // .contact {
   //   display: flex;
@@ -67,10 +68,24 @@
 }
 .site-footer-name-address {
   width: 50%;
+  display: flex;
+  align-self: center;
+  align-content: center;
+  align-items: center;
+  p {
+  line-height: 1.75;
 }
+}
+
 
 .contact-info {
   width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  p {
+  padding-left: 13px;
+  }  
 }
 
 .footer-newsletter-form {
@@ -144,6 +159,9 @@ img {
 .contact {
   display: flex;
   flex-wrap: wrap; 
+  align-items: center;
+  justify-content: center;
+  
 }
 
 .site-footer {
@@ -173,7 +191,7 @@ p {
 }  
 
 .make-strong {
-  font-weight: bold;
+  font-size: $bodytext_font_size;
 }
 
 .contact, footer-newsletter-form, social-icons {
