@@ -24,8 +24,8 @@
 			</div>
 
 			<div class="contact-info">
-				<a href="604-343-4590"> <div class="contact-info-img-container img-phone"> <img src="<?php echo get_template_directory_uri(); ?>/images/Phone footer.svg" alt="phone-logo"/></div> <p>604-343-4590</p></a>
-				<a href="mailto:info@theamp.space"> <div class="contact-info-img-container img-email"> <img src="<?php echo get_template_directory_uri(); ?>/images/Icon email.svg" alt="email-logo" /> </div> <p>info@theamp.space</p>ç</a>
+				<a href="604-343-4590"> <div class="contact-info-img-container img-phone"> <img src="<?php echo get_template_directory_uri(); ?>/images/Phone footer.svg" alt="phone-logo"/><p>604-343-4590</p></div> </a>
+				<a href="mailto:info@theamp.space"> <div class="contact-info-img-container img-email"> <img src="<?php echo get_template_directory_uri(); ?>/images/Icon email.svg" alt="email-logo" /><p>info@theamp.space</p> </div> </a>
 			</div>
 		</div>
 		<!-- end of CONTACT div -->
@@ -45,11 +45,15 @@
 
 		<!-- .social-icon -->
 		<div class="social-icon">
+			
+			<div class="social-icon-images">
 			<span><img src="<?php echo get_template_directory_uri(); ?>/images/Facebook.svg" alt="logo" /></span>
 			<span><img src="<?php echo get_template_directory_uri(); ?>/images/LinkedIn.svg" alt="logo" /></span>
 			<span><img src="<?php echo get_template_directory_uri(); ?>/images/twitter.svg" alt="logo" /></span>
+			</div>
+
 			<div class="site-rights">
-				<p>© All rights reserved - The Amp Vancouver 2014</p>
+				<p>© All rights reserved - The Amp Vancouver 2019</p>
 			</div>
 		</div>
 		<!-- end of social-icon -->
