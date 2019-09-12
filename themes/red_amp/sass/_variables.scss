@@ -2,6 +2,7 @@
 
 $base__space-unit: 1.5rem;
 $body_max_width: 1400px; // need to be set properly
+$mobileBreakPoint: 760px;
 
 // Colors
 
@@ -9,9 +10,9 @@ $dark_grey: #07393c;
 $light_grey: #cacfd6;
 $dark_green: #297373;
 $light_green: #b1ede8;
-$box_shadow_green:#9DBEBE;
-$form_background_color:#DAEFEC;
-$newsletter-form-color: #CAE5E3;
+$box_shadow_green: #9dbebe;
+$form_background_color: #daefec;
+$newsletter-form-color: #cae5e3;
 
 $font_dark: #393939;
 $font_light: #fff;
@@ -27,9 +28,9 @@ $color__background-pre: #eee;
 $color__background-ins: #fff9c0;
 $color__border-abbr: #666;
 
-$color__link: #393939; ;
-$color__link-visited: #393939;;
-$color__link-hover: #393939;;
+$color__link: #393939;
+$color__link-visited: #393939;
+$color__link-hover: #393939;
 
 // Typography
 
