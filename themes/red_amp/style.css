@@ -634,6 +634,7 @@ a {
   display: block; }
 
 .about-content {
+  /* MEET THE TEAM */
   /* OUR HEADQUARTERS */
   /* AMP MEMBERS */ }
   .about-content .who-we-are-title,
@@ -718,11 +719,7 @@ a {
     -webkit-box-shadow: none;
             box-shadow: none;
     padding: 0;
-<<<<<<< HEAD
     margin-bottom: 40px; }
-=======
-    margin-bottom: 1.5rem; }
->>>>>>> bcdfe56e449497cedb5ec3d3fe74e36fc0bf456c
 
 /*--------------------------------------------------------------
 # Content
@@ -1125,7 +1122,7 @@ object {
     padding-left: 20px; }
 
 .page .container {
-  width: 1150px; }
+  width: 1400px; }
   .page .container .entry-title {
     text-align: center;
     font-family: "Bambi"; }

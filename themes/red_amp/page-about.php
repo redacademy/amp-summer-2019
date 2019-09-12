@@ -12,6 +12,39 @@ get_header(); ?>
 		<?php while ( have_posts() ) : the_post(); ?>
 			<?php get_template_part( 'template-parts/content', 'page' ); ?>
 
+	<div class="team-section">
+		<div>
+			<h2>
+				Meet the Team
+			<h2>
+		</div> <!-- h2 div -->
+
+		<div class="amp-employee">
+			<img src="<?php echo get_template_directory_uri();?>/images/YumiKosaka.png"/>
+				<div class="teresa">
+					<h3>Teresa Mayo</h3>
+						<p>Coworking Community Manager</p>
+				</div> <!-- end of Teresa info -->
+		</div> <!-- enf of amp-employee -->
+
+		<div class="amp-employee">
+			<img src="<?php echo get_template_directory_uri();?>/images/YumiKosaka.png"/>
+				<div class="teresa">
+					<h3>Chuck Rumsey</h3>
+						<p>President and CEO - ECOTRUST</p>
+				</div> <!-- end of Teresa info -->
+		</div> <!-- enf of amp-employee -->
+
+		<div class="amp-employee">
+			<img src="<?php echo get_template_directory_uri();?>/images/YumiKosaka.png"/>
+				<div class="teresa">
+					<h3>Yumi Kosaka</h3>
+						<p>Accountant</p>
+				</div> <!-- end of Teresa info -->
+		</div> <!-- enf of amp-employee -->
+		
+	</div> <!-- end of team section -->
+
 	<div class="headquarters">
 		<div class="hq-description">
 			<h2>
