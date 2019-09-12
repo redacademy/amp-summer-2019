@@ -6,14 +6,13 @@
 /* Front page */
 .hero-banner {
     position: relative;
-    height: 800px;
-    div {
+    div { ///changed with mobile
         @include mobile {
             background-position: bottom !important;
             background-size: 230% !important;
             // height: 600px !important;
         }
-    }
+    }///changed with mobile
 }
 
 
@@ -59,7 +58,7 @@
         width: 463px;
         font-family: $headline_font_family;
 
-        @include mobile {
+        @include mobile { ///changed with mobile
             top: 50px;
             left: 50%;
             transform: translateX(-50%);
@@ -67,15 +66,16 @@
             width: 340px;
             text-align: center;
             
-        }
+        } ///changed with mobile
     }
 
     .button-arrow-container {
         width: 100%;
         text-align: center;
-        @include mobile {
+
+        @include mobile { ///changed with mobile
             height: 0px !important;
-        }
+        } ///changed with mobile
 
         .button-arrow {
             margin: 0 auto;
@@ -88,12 +88,12 @@
             position: relative;
             top: -30px;
 
-            @include mobile {
+            @include mobile { ///changed with mobile
                 top: -80px;
                 width: 50px;
                 height: 50px;
                 font-size: 20px;
-            }
+            } ///changed with mobile
 
             &:focus {
                 outline: none;
@@ -107,13 +107,13 @@
         top: 296px;
         left: 150px;
 
-        @include mobile {
+        @include mobile { ///changed with mobile
             left: 25vw;
             top: 170px;
             font-size: 20px;
             width: 45%;
             height: 50px;
-        }
+        } ///changed with mobile
     }
 
     //workspace style in front page
@@ -304,9 +304,9 @@
 
 // Carousel in Front page for testimonials
 .front-page-carousel {
-    @include mobile {
+    @include mobile { ///changed with mobile
         width: 100%;
-     }
+     } ///changed with mobile
     .main-carousel {
         height: 550px;
         margin: 0 auto;
@@ -328,11 +328,11 @@
             margin: 0;
             font-family: $bodytext_font_family;
             font-size: $bodytext_font_size_smaller;
-            @include mobile {
+            @include mobile { ///changed with mobile
                 display: none;
                 width:100%;
                 
-            }
+            } ///changed with mobile
 
             .carousel-content {
                 width: 100%;
@@ -377,10 +377,10 @@
             z-index: 299;
             opacity: 1;
             margin-right: -30px;
-            @include mobile {
+            @include mobile { ///changed with mobile
                display: initial;
                left: 0 !important;
-            }
+            } ///changed with mobile
         }
     }
 
@@ -388,9 +388,6 @@
         padding: 3rem 0;
         height: 100%;
         overflow: visible;
-        @include mobile {
-            // overflow: hidden;
-        }
     }
 
     .flickity-slider {
@@ -409,9 +406,9 @@
 
     .flickity-prev-next-button {
         background: transparent;
-        @include mobile {
+        @include mobile { ///changed with mobile
             display: none;
-        }
+        } ///changed with mobile
 
         // position: relative;
         &.previous {
@@ -422,7 +419,6 @@
 
         &.next {
             right: -140px !important;
-            // transform: rotate(180deg);
             box-shadow: unset;
         }
     }
@@ -435,9 +431,9 @@
         .is-selected {
             background: $dark_green !important;
             margin: 0 15px;
-            @include mobile {
+            @include mobile { ///changed with mobile
                 display: inline-block;
-             }
+             } ///changed with mobile
         }
 
         li {
