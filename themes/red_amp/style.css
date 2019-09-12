@@ -634,6 +634,7 @@ a {
   display: block; }
 
 .about-content {
+  /* ABOUT PAGE MAIN TITLE */
   /* AMP VALUES */
   /* MEET THE TEAM */
   /* OUR HEADQUARTERS */
@@ -643,6 +644,18 @@ a {
     text-align: center;
     color: #393939;
     font-family: 'Bambi Bold'; }
+  .about-content .about-page-main-title h1 {
+    font-family: "Bambi";
+    text-align: center;
+    margin-top: 75px; }
+  .about-content .about-page-main-title p {
+    text-align: center;
+    margin-bottom: 100px; }
+  .about-content .about-page-values .values-description h2 {
+    font-family: "Bambi";
+    text-align: center; }
+  .about-content .about-page-values .values-description p {
+    text-align: center; }
   .about-content .about-page-values {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -663,8 +676,10 @@ a {
     .about-content .about-page-values img {
       background: #fff;
       margin: 15px; }
-  .about-content .team-section .team-title {
-    text-align: center; }
+  .about-content .team-section .team-title h2 {
+    font-family: "Bambi";
+    text-align: center;
+    margin-bottom: 85px; }
   .about-content .team-section .the-team {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -694,6 +709,9 @@ a {
       width: 60%;
       border-radius: 4px;
       text-align: center; }
+      .about-content .headquarters .hq-description h2 {
+        font-family: "Bambi";
+        text-align: center; }
     .about-content .headquarters .amp-building img {
       height: auto;
       width: 60%;
@@ -851,7 +869,7 @@ a {
   font-family: "Muli", sans-serif; }
 
 .footer-newsletter-form input[type=submit] {
-  background-color: #CAE5E3;
+  background-color: #cae5e3;
   height: 42px;
   width: 61px;
   font-size: 16px;
@@ -1170,7 +1188,7 @@ object {
     margin: 0 auto; }
     .page .container .wp-block-columns .wp-block-column .wpcf7 {
       width: 509px;
-      background-color: #DAEFEC;
+      background-color: #daefec;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -1401,8 +1419,8 @@ tr td.ui-datepicker-unselectable.ui-state-disabled {
       display: flex;
       margin-bottom: 50px;
       border-radius: 5px;
-      -webkit-box-shadow: 0 12px 48px -12px #9DBEBE;
-              box-shadow: 0 12px 48px -12px #9DBEBE; }
+      -webkit-box-shadow: 0 12px 48px -12px #9dbebe;
+              box-shadow: 0 12px 48px -12px #9dbebe; }
       .post-type-archive-event .custom-loop .loop-type-events a .loop-item-container .event-image {
         height: 268px;
         width: 400px;
@@ -1753,8 +1771,8 @@ tr td.ui-datepicker-unselectable.ui-state-disabled {
         -ms-flex: 1;
             flex: 1;
     text-align: center;
-    -webkit-box-shadow: 0 12px 48px -12px #9DBEBE;
-            box-shadow: 0 12px 48px -12px #9DBEBE;
+    -webkit-box-shadow: 0 12px 48px -12px #9dbebe;
+            box-shadow: 0 12px 48px -12px #9dbebe;
     max-width: 350px;
     height: -webkit-fit-content;
     height: -moz-fit-content;

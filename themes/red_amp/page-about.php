@@ -23,16 +23,25 @@ get_header(); ?>
 
 
 	<div id="go-to" class="about-page-values">
+		<div class="values-description">
+			<h2>
+				<b>Missions and Values</b>
+			</h2>
+			<p>
+				To offer supportive, affordable creative space for mission-driven organizations and businesses working towards positive change.
+			</p>
+		</div> 
+
         <div>
             <img src="<?php echo get_template_directory_uri() . '/images/Community.png' ?>" alt="values-community">
-         </div>
-         <div>
-            <img src="<?php echo get_template_directory_uri() . '/images/Collaboration.png' ?>" alt="values-collaboration">
         </div>
         <div>
-        <img src="<?php echo get_template_directory_uri() . '/images/Mission_Driven.png' ?>" alt="values-mission-driven">
+        	<img src="<?php echo get_template_directory_uri() . '/images/Collaboration.png' ?>" alt="values-collaboration">
         </div>
-    </div> 
+        <div>
+        	<img src="<?php echo get_template_directory_uri() . '/images/Mission_Driven.png' ?>" alt="values-mission-driven">
+        </div>
+    </div> <!-- end of about-page-values --> 
 
 	<div class="team-section">
 		<div class="team-title">
