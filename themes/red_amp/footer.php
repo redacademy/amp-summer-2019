@@ -19,8 +19,8 @@
 		<!-- start of CONTACT div -->
 		<div class="contact">
 			<div class="site-footer-name-address">
-				<p class="make-strong">The AMP</p>
-				<p>425 Carrall Street<br>Vancouver,BC<br>V6B 6E3</p>
+				<p><span class="make-strong">The AMP</span><br>
+				425 Carrall Street<br>Vancouver,BC<br>V6B 6E3</p>
 			</div>
 
 			<div class="contact-info">
