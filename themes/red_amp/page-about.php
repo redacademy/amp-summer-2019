@@ -10,7 +10,7 @@ get_header(); ?>
 	<div id="primary" class="content-area about-content">
 	<main id="main" class="site-main" role="main">
 		<?php while ( have_posts() ) : the_post(); ?>
-			<?php get_template_part( 'template-parts/content', 'page' ); ?>
+
 
 	<div class="about-header-shadow">
 
@@ -150,7 +150,7 @@ get_header(); ?>
 	</main><!-- #main -->
 	</div><!-- #primary -->
 
-	<div class="about-page-workspace-button bottom-book-button-about-page" style="text-align: center;">
+	<div class="about-page-workspace-button bottom-book-button-about-page" style="text-align: center; margin-bottom: 200px; margin-top: 70px;">
     	<button class="button-book"> Book a Tour</button>
 	</div>
 <?php get_footer(); ?>
