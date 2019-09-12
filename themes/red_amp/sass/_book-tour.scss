@@ -4,4 +4,159 @@
 --------------------------------------------------------------*/
 
 /* Book a tour popup */
+$pagination_margin: 15vw;
+
+.book-tour-form_wrapper.gform_wrapper {
+
+    height: 670px;	
+    width: 944px;	
+    background-color: #DAEFEC;
+    margin: 0 auto;
+
+    .gf_page_steps{
+        border-bottom:none;
+    }
+    
+    .gf_page_steps {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .gf_step {
+        background: white;
+        border: 1px solid skyblue;
+        color: white;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        flex-shrink: 0;
+        margin: 0 $pagination_margin;
+        transition: background 0.5s;
+        .gf_step_number{
+            display:none;
+        }
+
+        &:hover,
+        &.gf_step_active {
+           background: #297373;
+        }
+
+        &::after {
+          content: '';
+          background: #297373;
+          height: 2px;
+          width: $pagination_margin * 2;
+          position: absolute;
+          right: -$pagination_margin * 2;
+        }
+        &:nth-of-type(2) {
+          &::after {
+            display: none;
+          }
+        }
+      }
+    
+
+    .gform_heading{
+        margin-left: 75px;
+        padding-top: 50px;
+        h3.gform_title{
+            font-family: $font__secondary;
+            font-weight: bolder;
+        }
+        
+    }
+    .gform_page{
+        height: 339px;	
+        width: 784px;
+        margin:0 auto;
+    }
+
+    .gform_page_footer {
+        border-top: none;
+
+        .gform_button, .gform_next_button{
+            margin-left: 620px;
+            font-size: 25px;
+            color: $font_light;
+            font-weight: 700;
+            height: 60px;	
+            width: 150px;
+            font-family: $bodytext_font_family;
+            background: $dark_green;
+            box-shadow: none;
+            padding: 0;
+            &:focus {
+                outline: none;
+            }
+            
+        }
+        .gform_previous_button {
+            font-family: $bodytext_font_family;
+            font-size: 25px;
+            font-weight:900;
+            background-color: #DAEFEC;
+            color: $dark_green;
+            border:none;
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+
+   
+
+
+}
+
+.gform_confirmation_wrapper{
+    height: 400px;	
+    width: 944px;
+    margin:0 auto;
+    text-align: center;
+    .gform_confirmation_message{
+      a{
+        
+        text-decoration: none;
+        font-size: 25px;
+        color: $font_light;
+        font-weight: 700;
+        width: 250px;
+        height: 80px;
+        font-family: $bodytext_font_family;
+        background: $dark_green;
+        box-shadow: none;
+        padding: 0;
+
+        &:focus {
+            outline: none;
+        }
+
+      }
+    }
+}
+
+.ui-datepicker{
+    .ui-datepicker-month,.ui-datepicker-year{
+
+    font-family: $font__secondary;
+}
+}
+
+
+tr td.ui-datepicker-unselectable.ui-state-disabled {
+    background-color: white;
+}
+
+.ui-datepicker-calendar .ui-state-active {
+    background: white;
+    border: 1px solid red;
+    color: #666;
+}
 
