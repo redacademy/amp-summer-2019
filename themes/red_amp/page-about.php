@@ -20,7 +20,7 @@ get_header(); ?>
 			Who we are
 		</h1>
 		<p>
-			The Amp coworking space is a social enterprise launched by Ecotrust Canada. We offer a shared space for mission-driven organizations and individuals to connect and collaborate every day. Ideally located at the crossroads of Gastown and Chinatown in the historic BC Electric Building, The Amp is a bright, beautiful space complete with all the amenities your team needs to thrive and with ample opportunities to connect with social purpose organizations. 
+			The Amp coworking space is a social enterprise launched by Ecotrust Canada. We offer a shared space for mission-driven organizations and individuals to connect and collaborate every day. Ideally located at the crossroads of Gastown and Chinatown in the historic BC Electric Building, The Amp is a bright, beautiful space complete with all the amenities your team needs to thrive and with ample opportunities to connect with social purpose organizations! 
 		</p>
 	</div> <!-- end of main-page-title -->
 
