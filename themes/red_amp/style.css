@@ -642,6 +642,25 @@ a {
     text-align: center;
     color: #393939;
     font-family: 'Bambi Bold'; }
+  .about-content .headquarters {
+    margin: 0 auto;
+    width: 1200px;
+    position: relative;
+    height: 429px;
+    margin-bottom: 429px; }
+    .about-content .headquarters .hq-description {
+      background-color: #daefec;
+      height: 100%;
+      width: 60%;
+      border-radius: 4px;
+      text-align: center; }
+    .about-content .headquarters .amp-building img {
+      height: auto;
+      width: 60%;
+      position: absolute;
+      border-radius: 4px;
+      top: 250px;
+      left: 40%; }
   .about-content .about-page-amp-members {
     max-width: 60%;
     margin: 0 auto; }
@@ -699,7 +718,11 @@ a {
     -webkit-box-shadow: none;
             box-shadow: none;
     padding: 0;
+<<<<<<< HEAD
+    margin-bottom: 40px; }
+=======
     margin-bottom: 1.5rem; }
+>>>>>>> bcdfe56e449497cedb5ec3d3fe74e36fc0bf456c
 
 /*--------------------------------------------------------------
 # Content
