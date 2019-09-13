@@ -26,7 +26,7 @@
 
 
   //Function to open and close the pop up for the Book a Tour
-  // const $navSecondUL = $('#gform_previous_button_1');
+ 
 
 
   $(document).on('gform_page_loaded', function( ){
@@ -37,23 +37,6 @@
         $('#gform_previous_button_1').before('<i class="prev-button-arrow fas fa-less-than"></i>');
       }
   });
-
-  
-  // const $prev = $('#gform_previous_button_1').prop('value');
-  
-  // $('#gform_next_button_1_1').on('click', function(){
-  //   console.log('clicked'); 
-
-  //     if($prev === 'Previous') {
-  //       $('#gform_previous_button_1').before('aaaaaa');
-  //     } 
-
-  // })
-
-  // else {
-  //   // code to be executed if condition is false
-  // }
-  // $navSecondUL.before(`<i class="fas fa-less-than"></i>`);
 
 
 
