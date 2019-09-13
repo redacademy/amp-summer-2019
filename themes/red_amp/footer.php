@@ -29,9 +29,9 @@
 				<a href="mailto:info@theamp.space"> <div class="contact-info-img-container img-email"> <img src="<?php echo get_template_directory_uri(); ?>/images/Icon email.svg" alt="email-logo" /><p>info@theamp.space</p> </div> </a>
 			
 				<div class="social-icon-mobile hidden-mobile">
-				<span><img class="social-icon-mobile-image" src="<?php echo get_template_directory_uri(); ?>/images/Facebook.svg" alt="logo" /></span>
-				<span><img class="social-icon-mobile-image" src="<?php echo get_template_directory_uri(); ?>/images/LinkedIn.svg" alt="logo" /></span>
-				<span><img class="social-icon-mobile-image" src="<?php echo get_template_directory_uri(); ?>/images/twitter.svg" alt="logo" /></span>
+					<span><img class="social-icon-mobile-image" src="<?php echo get_template_directory_uri(); ?>/images/Facebook.svg" alt="logo" /></span>
+					<span><img class="social-icon-mobile-image" src="<?php echo get_template_directory_uri(); ?>/images/LinkedIn.svg" alt="logo" /></span>
+					<span><img class="social-icon-mobile-image" src="<?php echo get_template_directory_uri(); ?>/images/twitter.svg" alt="logo" /></span>
 				</div>
 			</div>
 		</div>
