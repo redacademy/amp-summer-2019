@@ -23,16 +23,24 @@
 				425 Carrall Street<br>Vancouver,BC<br>V6B 6E3</p>
 			</div>
 
+
 			<div class="contact-info">
 				<a href="604-343-4590"> <div class="contact-info-img-container img-phone"> <img src="<?php echo get_template_directory_uri(); ?>/images/Phone footer.svg" alt="phone-logo"/><p>604-343-4590</p></div> </a>
 				<a href="mailto:info@theamp.space"> <div class="contact-info-img-container img-email"> <img src="<?php echo get_template_directory_uri(); ?>/images/Icon email.svg" alt="email-logo" /><p>info@theamp.space</p> </div> </a>
+			
+				<div class="social-icon-mobile hidden-mobile">
+				<span><img class="social-icon-mobile-image" src="<?php echo get_template_directory_uri(); ?>/images/Facebook.svg" alt="logo" /></span>
+				<span><img class="social-icon-mobile-image" src="<?php echo get_template_directory_uri(); ?>/images/LinkedIn.svg" alt="logo" /></span>
+				<span><img class="social-icon-mobile-image" src="<?php echo get_template_directory_uri(); ?>/images/twitter.svg" alt="logo" /></span>
+				</div>
 			</div>
 		</div>
 		<!-- end of CONTACT div -->
 
 		<!-- .footer-newsletter-form -->
 		<div class="footer-newsletter-form">
-			<p>Sign up for our newsletter to learn more about our community!</p>
+			<p class="hidden-mobile">Sign up for our Newsletter</p>
+			<p class="show-mobile">Sign up for our newsletter to learn more about our community!</p>
 
 			<form action="/action_page.php">
 
@@ -43,20 +51,26 @@
 		</div>
 		<!-- end of footer-newsletter-form -->
 
-		<!-- .social-icon -->
-		<div class="social-icon">
+		<!-- .social-icon Desktop -->
+		<div class="social-icon show-mobile">
 			
-			<div class="social-icon-images">
+			<div class="social-icon-images show-mobile">
 			<span><img src="<?php echo get_template_directory_uri(); ?>/images/Facebook.svg" alt="logo" /></span>
 			<span><img src="<?php echo get_template_directory_uri(); ?>/images/LinkedIn.svg" alt="logo" /></span>
 			<span><img src="<?php echo get_template_directory_uri(); ?>/images/twitter.svg" alt="logo" /></span>
 			</div>
 
-			<div class="site-rights">
+			<div class="site-rights show-mobile">
 				<p>© All rights reserved - The Amp Vancouver 2019</p>
 			</div>
 		</div>
-		<!-- end of social-icon -->
+		<!-- end of social-icon Desktop-->
+
+		<!-- .site-rights Mobile -->
+		<div class="site-rights-mobile hidden-mobile">
+			<p>© All rights reserved - The Amp Vancouver 2019</p>
+		</div>
+		<!-- end of social-icon Mobile -->
 
 	</div>
 </footer><!-- #colophon -->

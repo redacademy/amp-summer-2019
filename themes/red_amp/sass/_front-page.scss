@@ -6,13 +6,18 @@
 /* Front page */
 .hero-banner {
     position: relative;
-    div { ///changed with mobile
+
+    div {
+
+        ///changed with mobile
         @include mobile {
             background-position: bottom !important;
             background-size: 230% !important;
             // height: 600px !important;
         }
-    }///changed with mobile
+    }
+
+    ///changed with mobile
 }
 
 
@@ -36,6 +41,13 @@
     img {
         background: $font_light;
         margin: 15px;
+
+        @include mobile {
+            ///changed with mobile
+            margin: 0;
+        }
+
+        ///changed with mobile
     }
 }
 
@@ -58,24 +70,30 @@
         width: 463px;
         font-family: $headline_font_family;
 
-        @include mobile { ///changed with mobile
+        @include mobile {
+            ///changed with mobile
             top: 50px;
             left: 50%;
             transform: translateX(-50%);
             font-size: 20px;
             width: 340px;
             text-align: center;
-            
-        } ///changed with mobile
+
+        }
+
+        ///changed with mobile
     }
 
     .button-arrow-container {
         width: 100%;
         text-align: center;
 
-        @include mobile { ///changed with mobile
+        @include mobile {
+            ///changed with mobile
             height: 0px !important;
-        } ///changed with mobile
+        }
+
+        ///changed with mobile
 
         .button-arrow {
             margin: 0 auto;
@@ -88,12 +106,15 @@
             position: relative;
             top: -30px;
 
-            @include mobile { ///changed with mobile
+            @include mobile {
+                ///changed with mobile
                 top: -80px;
                 width: 50px;
                 height: 50px;
                 font-size: 20px;
-            } ///changed with mobile
+            }
+
+            ///changed with mobile
 
             &:focus {
                 outline: none;
@@ -107,31 +128,42 @@
         top: 296px;
         left: 150px;
 
-        @include mobile { ///changed with mobile
+        @include mobile {
+            ///changed with mobile
             left: 25vw;
             top: 170px;
             font-size: 20px;
             width: 45%;
             height: 50px;
-        } ///changed with mobile
-    }
+        }
 
-    //workspace style in front page
-    .front-page-workspace {
-        font-family: $headline_font_family;
-        font-size: 23px;
-        text-align: center;
-        margin-top: 70px;
-    }
-
-    .front-page-workspace-text {
-        font-family: $bodytext_font_family;
-        font-size: $bodytext_font_size;
-        text-align: center;
-        max-width: 50%;
-        margin: 0 auto;
+        ///changed with mobile
     }
 }
+
+// end of .front-page-content-container
+
+
+//workspace style in front page
+.front-page-workspace-title {
+    font-family: $headline_font_family;
+    font-size: 23px;
+    text-align: center;
+    margin-top: 70px;
+
+
+}
+
+
+
+.front-page-workspace-text {
+    font-family: $bodytext_font_family;
+    font-size: $bodytext_font_size;
+    text-align: center;
+    max-width: 50%;
+    margin: 0 auto;
+}
+
 
 .button-book {
     font-size: 25px;
@@ -273,11 +305,20 @@
     .front-page-each-workspace {
         background: $font_light;
         margin: 15px;
-        flex: 1;
+        flex: 1 1 auto;
         text-align: center;
         box-shadow: 0 12px 48px -12px $box_shadow_green;
-        max-width: 350px;
+        width: 350px;
         height: fit-content;
+
+        @include mobile { /// include for mobile
+            // margin: 50px;
+            // margin: 10px;
+            // max-width:100%;
+            // padding: 10px;
+            width: 100%;
+        }
+
 
         .front-page-workspace-thumbnail {
             height: auto;
@@ -304,17 +345,20 @@
 
 // Carousel in Front page for testimonials
 .front-page-carousel {
-    @include mobile { ///changed with mobile
+    @include mobile {
+        ///changed with mobile
         width: 100%;
-     } ///changed with mobile
+    }
+
+    ///changed with mobile
     .main-carousel {
         height: 550px;
         margin: 0 auto;
         // margin-bottom: 50px;
         width: 60%;
         margin: 50px auto;
-        
-        
+
+
 
         .carousel-cell {
             width: 40%;
@@ -328,11 +372,15 @@
             margin: 0;
             font-family: $bodytext_font_family;
             font-size: $bodytext_font_size_smaller;
-            @include mobile { ///changed with mobile
+
+            @include mobile {
+                ///changed with mobile
                 display: none;
-                width:100%;
-                
-            } ///changed with mobile
+                width: 100%;
+
+            }
+
+            ///changed with mobile
 
             .carousel-content {
                 width: 100%;
@@ -377,10 +425,14 @@
             z-index: 299;
             opacity: 1;
             margin-right: -30px;
-            @include mobile { ///changed with mobile
-               display: initial;
-               left: 0 !important;
-            } ///changed with mobile
+
+            @include mobile {
+                ///changed with mobile
+                display: initial;
+                left: 0 !important;
+            }
+
+            ///changed with mobile
         }
     }
 
@@ -406,15 +458,19 @@
 
     .flickity-prev-next-button {
         background: transparent;
-        @include mobile { ///changed with mobile
+
+        @include mobile {
+            ///changed with mobile
             display: none;
-        } ///changed with mobile
+        }
+
+        ///changed with mobile
 
         // position: relative;
         &.previous {
             box-shadow: unset;
             left: -140px !important;
-            
+
         }
 
         &.next {
@@ -431,9 +487,13 @@
         .is-selected {
             background: $dark_green !important;
             margin: 0 15px;
-            @include mobile { ///changed with mobile
+
+            @include mobile {
+                ///changed with mobile
                 display: inline-block;
-             } ///changed with mobile
+            }
+
+            ///changed with mobile
         }
 
         li {
