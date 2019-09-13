@@ -3,6 +3,7 @@
  * The template for displaying all pages.
  *
  * @package RED_Starter_Theme
+ * Template name: about-page
  */
 
 get_header(); ?>
@@ -77,7 +78,7 @@ get_header(); ?>
 						<p>Accountant</p>
 				</div> <!-- end of Teresa info -->
 			</div> <!-- enf of amp-employee -->
-		</div> <!-- end of the-team -->
+		</div> end of the-team
 		
 	</div> <!-- end of team section -->
 
