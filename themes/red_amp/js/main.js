@@ -26,21 +26,35 @@
 
 
   //Function to open and close the pop up for the Book a Tour
+ 
+
+
+  $(document).on('gform_page_loaded', function( ){
+      // code to be trigger when next/previous page is loaded
+      let $prevInput = $('#gform_previous_button_1').prop('value');
+      if ( $prevInput === 'Previous'){
+        console.log(1);
+        $('#gform_previous_button_1').before('<i class="prev-button-arrow fas fa-less-than"></i>');
+      }
+  });
+
+
 
   const $bookButton = $('.button-book');
-  const $bookForm = $('.book-tour-form'); // TODO add form class here
-  const $bookIsOn = $('.book-is-on'); //TODO add class of form book a tour when is on
+  const $bookForm = $('.book-tour-form-modal'); // TODO add form class here
+  //const $bookIsOn = $('.book-is-on'); //TODO add class of form book a tour when is on
   const $bookCloseX = $('.close-book-tour'); //TODO add class for the X to close the book a tour pop up
 
   $bookButton.on('click', function(){
     event.preventDefault();
-    $bookForm.addClass($bookIsOn);
+    $bookForm.addClass('is-active');
 
   });
 
   $bookCloseX.on('click', function(){
     event.preventDefault();
-    $bookForm.removeClass($bookIsOn);
+    $bookForm.removeClass('is-active');
+
   });
 
   // end of function for book a tour button

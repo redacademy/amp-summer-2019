@@ -18,6 +18,13 @@
     }
 }
 
+//Mixin for Footer Only - 1050px
+@mixin footer-width {
+    @media (max-width: $footerBreakPoint) {
+        @content;
+    }
+}
+
 // TODO delete this comment after finish**************************
 // Use the following code to include mobile mixin in your SASS files
 

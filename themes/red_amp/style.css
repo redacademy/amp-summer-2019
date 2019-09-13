@@ -824,6 +824,16 @@ a {
 
 footer {
   max-width: 100%; }
+  footer .hidden-mobile {
+    display: none; }
+  footer .show-mobile {
+    display: block; }
+  @media (max-width: 760px) {
+    footer .hidden-mobile {
+      display: block;
+      font-size: 16px; }
+    footer .show-mobile {
+      display: none; } }
 
 .site-footer {
   background: #297373;
@@ -881,11 +891,9 @@ footer {
       -ms-flex-pack: center;
           justify-content: center; }
 
-.footer-newsletter-form .hidden-mobile {
-  display: none; }
-
-.footer-newsletter-form .show-desktop {
-  display: none; }
+@media (max-width: 760px) {
+  .footer-newsletter-form .hidden-mobile {
+    font-size: 16px; } }
 
 .footer-newsletter-form input {
   font-family: "Muli", sans-serif; }
@@ -904,14 +912,6 @@ footer {
   height: 42px;
   width: 260px;
   border: none; }
-
-.footer-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly; }
 
 .contact-info-img-container {
   display: -webkit-box;
@@ -940,15 +940,53 @@ footer {
           justify-content: center; }
 
 .site-footer {
-  width: 100%;
-  height: 175px; }
+  width: 100%; }
 
 .footer-content {
   max-width: 1400px;
-  height: 175px; }
+  height: 175px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly; }
+  @media (max-width: 1050px) {
+    .footer-content {
+      height: 300px;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+      .footer-content .contact {
+        -webkit-box-ordinal-group: 3;
+            -ms-flex-order: 2;
+                order: 2;
+        width: 50%; }
+      .footer-content .footer-newsletter-form {
+        -webkit-box-ordinal-group: 2;
+            -ms-flex-order: 1;
+                order: 1;
+        width: 100%; }
+      .footer-content .social-icon {
+        -webkit-box-ordinal-group: 4;
+            -ms-flex-order: 3;
+                order: 3;
+        width: 50%; }
+      .footer-content .site-rights-mobile {
+        -webkit-box-ordinal-group: 5;
+            -ms-flex-order: 4;
+                order: 4;
+        width: 100%;
+        text-align: center; } }
+
+.social-icon-mobile-image {
+  width: 20px; }
 
 .contact p {
-  margin: none !important; }
+  margin: none; }
+
+@media (max-width: 760px) {
+  .contact {
+    width: 100%; } }
 
 .social-icon {
   -ms-flex-item-align: center;
@@ -1330,6 +1368,7 @@ object {
 /* Book a tour popup */
 .book-tour-form_wrapper.gform_wrapper {
   height: 670px;
+  position: relative;
   width: 944px;
   background-color: #DAEFEC;
   margin: 0 auto; }
@@ -1345,7 +1384,8 @@ object {
             justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    padding-top: 50px; }
   .book-tour-form_wrapper.gform_wrapper .gf_step {
     background: white;
     border: 1px solid #297373;
@@ -1391,10 +1431,14 @@ object {
     height: 339px;
     width: 784px;
     margin: 0 auto; }
+  .book-tour-form_wrapper.gform_wrapper .ginput_container .medium {
+    width: 100%; }
   .book-tour-form_wrapper.gform_wrapper .gform_page_footer {
     border-top: none; }
     .book-tour-form_wrapper.gform_wrapper .gform_page_footer .gform_button, .book-tour-form_wrapper.gform_wrapper .gform_page_footer .gform_next_button {
-      margin-left: 620px;
+      position: absolute;
+      right: 15%;
+      top: 85%;
       font-size: 25px;
       color: #fff;
       font-weight: 700;
@@ -1409,9 +1453,16 @@ object {
         outline: none; }
     .book-tour-form_wrapper.gform_wrapper .gform_page_footer .gform_previous_button {
       font-family: "Muli", sans-serif;
+      position: absolute;
+      left: 15%;
+      top: 85%;
       font-size: 25px;
+      height: 60px;
+      width: 150px;
       font-weight: 900;
-      background-color: #DAEFEC;
+      background-color: transparent;
+      -webkit-box-shadow: unset;
+              box-shadow: unset;
       color: #297373;
       border: none; }
       .book-tour-form_wrapper.gform_wrapper .gform_page_footer .gform_previous_button:focus {
@@ -1425,7 +1476,7 @@ object {
   .gform_confirmation_wrapper .gform_confirmation_message a {
     text-decoration: none;
     border: 1px solid #297373;
-    font-size: 25px;
+    font-size: 40px;
     color: #fff;
     font-weight: 700;
     width: 250px;
@@ -1442,13 +1493,16 @@ object {
   font-family: "Muli", sans-serif;
   font-weight: 300; }
 
-.gform_wrapper .gform_page_fields ul.gform_fields {
+.gform_wrapper .gform_page_fields ul#gform_fields_1_2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+  .gform_wrapper .gform_page_fields ul#gform_fields_1_2 .custom-form-title-1 {
+    width: 100%; }
 
 .gform_wrapper .gfield .ginput_container .gfield_select {
   width: 13rem;
@@ -1461,6 +1515,66 @@ tr td.ui-datepicker-unselectable.ui-state-disabled {
   background-color: #FF6978;
   border-radius: 50%;
   color: #666; }
+
+.gform_confirmation_message_1 {
+  padding-top: 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 70vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-color: white; }
+  .gform_confirmation_message_1 img {
+    height: 25vh;
+    width: 25vw; }
+
+.book-tour-form-modal {
+  display: none; }
+  .book-tour-form-modal.is-active {
+    display: block;
+    position: fixed;
+    z-index: 99999;
+    top: 5%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%); }
+
+.close-book-tour {
+  right: 3%;
+  top: 20px;
+  color: #297373;
+  background-color: transparent;
+  border: none;
+  font-size: 32px;
+  font-family: "Muli", sans-serif;
+  font-weight: bold;
+  -webkit-box-shadow: unset;
+          box-shadow: unset;
+  display: block;
+  position: absolute;
+  z-index: 400; }
+  .close-book-tour:focus {
+    outline: none; }
+  .close-book-tour:hover {
+    outline: none;
+    -webkit-box-shadow: unset;
+            box-shadow: unset; }
+
+.prev-button-arrow {
+  position: absolute;
+  bottom: 8.5%;
+  left: 15%;
+  color: #297373;
+  font-size: 1.5rem; }
 
 /*--------------------------------------------------------------
 # Page Templates
@@ -1667,6 +1781,9 @@ tr td.ui-datepicker-unselectable.ui-state-disabled {
   .front-page-values img {
     background: #fff;
     margin: 15px; }
+    @media (max-width: 760px) {
+      .front-page-values img {
+        margin: 0; } }
 
 .hr-line {
   width: 30%;
@@ -1729,13 +1846,13 @@ tr td.ui-datepicker-unselectable.ui-state-disabled {
       width: 45%;
       height: 50px; } }
 
-.front-page-content-container .front-page-workspace {
+.front-page-workspace-title {
   font-family: "Bambi";
   font-size: 23px;
   text-align: center;
   margin-top: 70px; }
 
-.front-page-content-container .front-page-workspace-text {
+.front-page-workspace-text {
   font-family: "Muli", sans-serif;
   font-size: 16px;
   text-align: center;
@@ -1874,15 +1991,18 @@ tr td.ui-datepicker-unselectable.ui-state-disabled {
     background: #fff;
     margin: 15px;
     -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
     text-align: center;
     -webkit-box-shadow: 0 12px 48px -12px #9dbebe;
             box-shadow: 0 12px 48px -12px #9dbebe;
-    max-width: 350px;
+    width: 350px;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content; }
+    @media (max-width: 760px) {
+      .front-page-workspace .front-page-each-workspace {
+        width: 100%; } }
     .front-page-workspace .front-page-each-workspace .front-page-workspace-thumbnail {
       height: auto;
       width: 100%;
