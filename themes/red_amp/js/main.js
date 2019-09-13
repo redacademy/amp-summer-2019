@@ -44,7 +44,7 @@
 
 
   const $bookButton = $('.book-tour-popup');
-  const $bookForm = $('.book-tour-form-modal'); // TODO add form class here
+  const $bookForm = $('.book-tour-form-modal-outer-wrapper'); // TODO add form class here
   const $bookIsOn = 'is-active';
   const $bookCloseX = $('.close-book-tour');
 
