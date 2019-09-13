@@ -42,10 +42,10 @@
 				<img src="<?php echo get_template_directory_uri() . '/images/Logo_The_AMP.png' ?>" alt="site-logo">
 			</a>
 		</div>
-		<div class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+		<!-- <div class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
 
-			<?php echo esc_html('Primary Menu'); ?>
-		</div>
+			<?php //echo esc_html('Primary Menu'); ?>
+		</div> -->
 
 		<?php wp_nav_menu(array(
 			'theme_location' => 'primary',

@@ -25,7 +25,7 @@
 
 
 			<div class="contact-info">
-				<a href="604-343-4590"> <div class="contact-info-img-container img-phone"> <img src="<?php echo get_template_directory_uri(); ?>/images/Phone footer.svg" alt="phone-logo"/><p>604-343-4590</p></div> </a>
+				<a href="tel:6043434590"> <div class="contact-info-img-container img-phone"> <img src="<?php echo get_template_directory_uri(); ?>/images/Phone footer.svg" alt="phone-logo"/><p>604-343-4590</p></div> </a>
 				<a href="mailto:info@theamp.space"> <div class="contact-info-img-container img-email"> <img src="<?php echo get_template_directory_uri(); ?>/images/Icon email.svg" alt="email-logo" /><p>info@theamp.space</p> </div> </a>
 			
 				<div class="social-icon-mobile hidden-mobile">

@@ -13,7 +13,7 @@ get_header(); ?>
     <?php while (have_posts()) : the_post(); ?>
         <?php $banner_bg = get_the_post_thumbnail_url(); ?>
         <div class="hero-banner">
-            <div style="
+            <div class='hero-banner-div' style="
             background: url(<?php echo $banner_bg; ?>);
             background-size: 100%;
             background-position: bottom;
@@ -46,7 +46,7 @@ get_header(); ?>
                 <?php
                         the_content(); // the content loads the gutenberg content, template tags 
                         ?>
-                <button class="button-book front-page-button-book book-tour-popup"> Book a Tour</button>
+                <a href="<?php echo get_the_permalink(189); ?>" class="button-book front-page-button-book book-tour-popup"> Book a Tour</a>
             </div>
         </div>
     <?php endwhile; ?>
@@ -200,6 +200,6 @@ text-align: center;">
 
 <div class="front-page-workspace-button bottom-book-button-front-page" style="
 text-align: center;">
-    <button class="button-book book-tour-popup"> Book a Tour</button>
+    <a href="<?php echo get_the_permalink(189); ?>" class="button-book book-tour-popup"> Book a Tour</a>
 </div>
 <?php get_footer();
