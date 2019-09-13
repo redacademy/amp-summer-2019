@@ -151,6 +151,6 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 	<div class="about-page-workspace-button bottom-book-button-about-page" style="text-align: center; margin-bottom: 200px; margin-top: 110px;">
-    	<button class="button-book"> Book a Tour</button>
+    	<button class="button-book book-tour-popup"> Book a Tour</button>
 	</div>
 <?php get_footer(); ?>
