@@ -166,6 +166,8 @@
 
 
 .button-book {
+    
+    display: inline-block;
     font-size: 25px;
     color: $font_light;
     font-weight: 700;
@@ -182,6 +184,10 @@
 
     &:hover {
         box-shadow: 0 10px 10px 0 $dark_grey;
+    }
+
+    &:visited {
+        color: $font_light;
     }
 }
 
