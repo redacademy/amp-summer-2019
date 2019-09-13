@@ -48,37 +48,43 @@ get_header(); ?>
     </div> <!-- end of about-page-values --> 
 
 	<div class="team-section">
-		<div class="team-title">
-			<h2>
-				Meet the Team
-			<h2>
-		</div> <!-- h2 div -->
+	<div class='row main-carousel'>
+        <?php
+        $fields = CFS()->get('testimonial');
+        $i = 0;
 
-		<div class="the-team">
-			<div class="amp-employee">
-				<img src="<?php echo get_template_directory_uri();?>/images/TeresaMayo.png"/>
-					<div class="individual">
-						<h3>Teresa Mayo</h3>
-							<p>Coworking Community Manager</p>
-					</div> <!-- end of Teresa info -->
-			</div> <!-- enf of amp-employee -->
+        foreach ($fields as $field) : {
+                ?>
 
-		<div class="amp-employee">
-			<img src="<?php echo get_template_directory_uri();?>/images/ChuckRumsey.jpg"/>
-				<div class="individual">
-					<h3>Chuck Rumsey</h3>
-						<p>President and CEO - ECOTRUST</p>
-				</div> <!-- end of Teresa info -->
-		</div> <!-- enf of amp-employee -->
+                <?php
+                        $image = $field['member_image'];
+                        $text = $field['member_name'];
+                        $name = $field['member_position'];
+                        $array[$i] = array(
+                            $member_image,
+                            $member_name,
+                            $member_position,
+                        );
+                        ?>
+                <div class="carousel-cell">
+                    <div class="carousel-content">
+                        <div class="carousel-content-individual carousel-image">
+                            <img src="<?php echo $member_image; ?>" alt="">
+                        </div>
+                        <div class="carousel-content-individual carousel-text">
+                            <?php echo $member_name; ?>
+                        </div>
+                        <div class="carousel-content-individual carousel-name">
+                            <?php echo $member_position; ?>
+                        </div>
+ 
+                    </div> <!-- carousel-cell-content -->
+                <?php $i++;
+                    } ?>
+                </div><!-- .carousel-cell-container -->
 
-		<div class="amp-employee">
-			<img src="<?php echo get_template_directory_uri();?>/images/YumiKosaka.png"/>
-				<div class="individual">
-					<h3>Yumi Kosaka</h3>
-						<p>Accountant</p>
-				</div> <!-- end of Teresa info -->
-			</div> <!-- enf of amp-employee -->
-		</div> end of the-team
+            <?php endforeach; ?>
+    </div><!-- .row main-carousel -->
 		
 	</div> <!-- end of team section -->
 
