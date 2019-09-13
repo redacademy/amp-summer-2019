@@ -178,7 +178,7 @@ get_header(); ?>
 		</div>
 
 		<div class="primary-cta-block">
-			<button class="button-book" href="#">Book a Tour</button>
+			<a href="<?php echo get_the_permalink(189); ?>" class="button-book book-tour-popup" href="#">Book a Tour</a>
 		</div>
 
 		</main><!-- #main -->
