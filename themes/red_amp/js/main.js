@@ -12,6 +12,7 @@
     $('#workspace-carousel-'+i).flickity({
       // options
       cellAlign: 'center',
+      // cellAlign: 'left',
       contain: true,
       wrapAround: false,
     });

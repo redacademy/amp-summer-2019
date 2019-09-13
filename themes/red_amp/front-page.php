@@ -13,7 +13,7 @@ get_header(); ?>
     <?php while (have_posts()) : the_post(); ?>
         <?php $banner_bg = get_the_post_thumbnail_url(); ?>
         <div class="hero-banner">
-            <div style="
+            <div class='hero-banner-div' style="
             background: url(<?php echo $banner_bg; ?>);
             background-size: 100%;
             background-position: bottom;
