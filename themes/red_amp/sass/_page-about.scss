@@ -215,7 +215,22 @@
   }
 
   @include mobile {
-   
+    // @media only screen and (max-width: 782px) {
+      .about-page-main-title {
+        h1 {
+          font-family: $headline_font_family;
+          text-align: center;
+          margin-top: 75px;
+        }
+        p {
+          text-align: center;
+          margin-bottom: 100px;
+          margin-bottom: 100px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+    }
   }
 }
 
