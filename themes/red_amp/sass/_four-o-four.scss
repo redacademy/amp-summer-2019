@@ -8,9 +8,16 @@
 .four-o-four{
     margin: 77px auto;
     text-align: center;
+    @include mobile{
+        width: 50%;
+    }
 
 }
 .four-o-four-text{
     font-family: $headline_font_family;
     font-size: $bodytext_font_size_smaller;
+    @include mobile{
+        font-size: 10px;
+        width: 100%;
+    }
 }

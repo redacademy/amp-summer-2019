@@ -78,7 +78,7 @@
 
   /* MEET THE TEAM */
   .team-section {
-    .team-title {
+    .main-carousel {
       h2 {
         font-family: $headline_font_family;
         text-align: center;
@@ -231,7 +231,7 @@
 
   @include mobile {
     .about-page-values {
-      background: #daefec;
+      background: white;
       .values-description {
       }
     }
