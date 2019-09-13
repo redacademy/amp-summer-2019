@@ -2081,103 +2081,99 @@ tr td.ui-datepicker-unselectable.ui-state-disabled {
       .front-page-workspace .front-page-each-workspace .front-page-workspace-title h1 {
         margin-top: 50px; }
 
-@media (max-width: 760px) {
-  .front-page-carousel {
-    width: 80%;
-    margin: 0 auto; } }
-
-.front-page-carousel .main-carousel {
-  height: 550px;
-  margin: 0 auto;
-  width: 100%;
-  margin: 50px auto; }
-  .front-page-carousel .main-carousel .carousel-cell {
-    width: 40%;
-    text-align: center;
-    border: 1px solid black;
-    opacity: 0.6;
-    -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
-    transition: opacity 0.5s, -webkit-transform 0.5s;
-    transition: transform 0.5s, opacity 0.5s;
-    transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
-    margin: 0;
-    font-family: "Muli", sans-serif;
-    font-size: 14px; }
+.front-page-carousel {
+  width: 100%; }
+  @media (max-width: 760px) {
+    .front-page-carousel {
+      width: 80%;
+      margin: 0 auto; } }
+  .front-page-carousel .main-carousel {
+    height: 550px;
+    margin: 0 auto;
+    width: 60%;
+    margin: 50px auto; }
+    .front-page-carousel .main-carousel .carousel-cell {
+      width: 40%;
+      text-align: center;
+      border: 1px solid black;
+      opacity: 0.6;
+      -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+      transition: opacity 0.5s, -webkit-transform 0.5s;
+      transition: transform 0.5s, opacity 0.5s;
+      transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
+      margin: 0;
+      font-family: "Muli", sans-serif;
+      font-size: 14px; }
+      @media (max-width: 760px) {
+        .front-page-carousel .main-carousel .carousel-cell {
+          display: none;
+          width: 100%; } }
+      .front-page-carousel .main-carousel .carousel-cell .carousel-content {
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 10px;
+        padding: 30px;
+        visibility: visible;
+        z-index: 100; }
+      .front-page-carousel .main-carousel .carousel-cell .carousel-image {
+        width: 130px;
+        margin: 30px auto;
+        height: 130px; }
+        .front-page-carousel .main-carousel .carousel-cell .carousel-image img {
+          border-radius: 50%;
+          height: 100%; }
+      .front-page-carousel .main-carousel .carousel-cell .carousel-text {
+        margin: 30px 0; }
+      .front-page-carousel .main-carousel .carousel-cell .carousel-name {
+        font-weight: bold; }
+    .front-page-carousel .main-carousel .is-selected {
+      -webkit-transform: scale(1.2);
+              transform: scale(1.2);
+      background: white;
+      z-index: 299;
+      opacity: 1;
+      margin-right: -30px; }
+      @media (max-width: 760px) {
+        .front-page-carousel .main-carousel .is-selected {
+          display: initial;
+          left: 0 !important;
+          -webkit-transform: scale(1);
+                  transform: scale(1);
+          margin-right: unset; } }
+  .front-page-carousel .flickity-enabled .flickity-viewport {
+    padding: 3rem 0;
+    height: 100%;
+    overflow: visible; }
     @media (max-width: 760px) {
-      .front-page-carousel .main-carousel .carousel-cell {
-        display: none;
-        width: 100%; } }
-    .front-page-carousel .main-carousel .carousel-cell .carousel-content {
-      width: 100%;
-      margin: 0 auto;
-      margin-top: 10px;
-      padding: 30px;
-      visibility: visible;
-      z-index: 100; }
-    .front-page-carousel .main-carousel .carousel-cell .carousel-image {
-      width: 130px;
-      margin: 30px auto;
-      height: 130px; }
-      .front-page-carousel .main-carousel .carousel-cell .carousel-image img {
-        border-radius: 50%;
-        height: 100%; }
-    .front-page-carousel .main-carousel .carousel-cell .carousel-text {
-      margin: 30px 0; }
-    .front-page-carousel .main-carousel .carousel-cell .carousel-name {
-      font-weight: bold; }
-  .front-page-carousel .main-carousel .is-selected {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-    background: white;
-    z-index: 299;
-    opacity: 1;
-    margin-right: -30px; }
+      .front-page-carousel .flickity-enabled .flickity-viewport {
+        padding: 0;
+        overflow: hidden; } }
+  .front-page-carousel .carousel-text {
+    max-height: 100px;
+    overflow-y: scroll; }
+  .front-page-carousel .flickity-prev-next-button {
+    background: transparent; }
     @media (max-width: 760px) {
-      .front-page-carousel .main-carousel .is-selected {
-        display: initial;
-        left: 0 !important;
-        -webkit-transform: scale(1);
-                transform: scale(1);
-        margin-right: unset; } }
-
-.front-page-carousel .flickity-enabled .flickity-viewport {
-  padding: 3rem 0;
-  height: 100%;
-  overflow: visible; }
-  @media (max-width: 760px) {
-    .front-page-carousel .flickity-enabled .flickity-viewport {
-      padding: 0;
-      overflow: hidden; } }
-
-.front-page-carousel .carousel-text {
-  max-height: 100px;
-  overflow-y: scroll; }
-
-.front-page-carousel .flickity-prev-next-button {
-  background: transparent; }
-  @media (max-width: 760px) {
-    .front-page-carousel .flickity-prev-next-button {
-      display: none; } }
-  .front-page-carousel .flickity-prev-next-button.previous {
-    -webkit-box-shadow: unset;
-            box-shadow: unset;
-    left: -140px !important; }
-  .front-page-carousel .flickity-prev-next-button.next {
-    right: -140px !important;
-    -webkit-box-shadow: unset;
-            box-shadow: unset; }
-
-.front-page-carousel .flickity-page-dots .is-selected {
-  background: #297373 !important;
-  margin: 0 15px; }
-  @media (max-width: 760px) {
-    .front-page-carousel .flickity-page-dots .is-selected {
-      display: inline-block; } }
-
-.front-page-carousel .flickity-page-dots li {
-  background: #b1ede8 !important;
-  border: 1px solid #297373;
-  margin: 0 15px; }
+      .front-page-carousel .flickity-prev-next-button {
+        display: none; } }
+    .front-page-carousel .flickity-prev-next-button.previous {
+      -webkit-box-shadow: unset;
+              box-shadow: unset;
+      left: -140px !important; }
+    .front-page-carousel .flickity-prev-next-button.next {
+      right: -140px !important;
+      -webkit-box-shadow: unset;
+              box-shadow: unset; }
+  .front-page-carousel .flickity-page-dots .is-selected {
+    background: #297373 !important;
+    margin: 0 15px; }
+    @media (max-width: 760px) {
+      .front-page-carousel .flickity-page-dots .is-selected {
+        display: inline-block; } }
+  .front-page-carousel .flickity-page-dots li {
+    background: #b1ede8 !important;
+    border: 1px solid #297373;
+    margin: 0 15px; }
 
 .bottom-book-button-front-page {
   margin-bottom: 200px;

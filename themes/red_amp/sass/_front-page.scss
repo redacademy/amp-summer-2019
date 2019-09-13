@@ -353,6 +353,7 @@
 
 // Carousel in Front page for testimonials
 .front-page-carousel {
+    width:100%;
     @include mobile {
         ///changed with mobile
         width: 80%; /////////////100
@@ -364,7 +365,7 @@
         height: 550px;
         margin: 0 auto;
         // margin-bottom: 50px;
-        width: 100%; ////60
+        width: 60%; 
         margin: 50px auto;
 
 
