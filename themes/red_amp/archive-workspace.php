@@ -46,7 +46,7 @@ get_header(); ?>
 			
 
 			<div class="primary-cta-block"> 
-			<button class="button-book" href="#">Book a Tour</button>
+			<button class="button-book book-tour-popup" href="#">Book a Tour</button>
 			</div>
 
 		

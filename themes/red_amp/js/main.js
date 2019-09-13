@@ -40,20 +40,22 @@
 
 
 
-  const $bookButton = $('.button-book');
+ 
+  const $bookButton = $('.book-tour-popup');
   const $bookForm = $('.book-tour-form-modal'); // TODO add form class here
-  //const $bookIsOn = $('.book-is-on'); //TODO add class of form book a tour when is on
-  const $bookCloseX = $('.close-book-tour'); //TODO add class for the X to close the book a tour pop up
+  const $bookIsOn = 'is-active'; 
+  const $bookCloseX = $('.close-book-tour'); 
 
   $bookButton.on('click', function(){
+    console.log('open the modal');
     event.preventDefault();
-    $bookForm.addClass('is-active');
+    $bookForm.addClass($bookIsOn);
 
   });
 
   $bookCloseX.on('click', function(){
     event.preventDefault();
-    $bookForm.removeClass('is-active');
+    $bookForm.removeClass($bookIsOn);
 
   });
 
