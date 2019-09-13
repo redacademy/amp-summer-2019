@@ -815,7 +815,8 @@ footer {
 
 .site-footer {
   background: #297373;
-  color: white; }
+  color: white;
+  font-size: 14px; }
   .site-footer .contact-info a:link {
     color: white;
     text-decoration: none; }
@@ -824,10 +825,31 @@ footer {
     text-decoration: none; }
 
 .site-footer-name-address {
-  width: 50%; }
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .site-footer-name-address p {
+    line-height: 1.75; }
 
 .contact-info {
-  width: 50%; }
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: center;
+      align-content: center; }
+  .contact-info p {
+    padding-left: 13px; }
 
 .footer-newsletter-form {
   -ms-flex-line-pack: center;
@@ -897,7 +919,13 @@ footer {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 .site-footer {
   width: 100%;
@@ -915,7 +943,7 @@ footer {
       align-self: center; }
 
 .make-strong {
-  font-weight: bold; }
+  font-size: 16px; }
 
 .contact, footer-newsletter-form, social-icons {
   width: 33%; }
@@ -1353,6 +1381,8 @@ object {
     height: 339px;
     width: 784px;
     margin: 0 auto; }
+  .book-tour-form_wrapper.gform_wrapper .ginput_container .medium {
+    width: 100%; }
   .book-tour-form_wrapper.gform_wrapper .gform_page_footer {
     border-top: none; }
     .book-tour-form_wrapper.gform_wrapper .gform_page_footer .gform_button, .book-tour-form_wrapper.gform_wrapper .gform_page_footer .gform_next_button {
@@ -1417,8 +1447,12 @@ object {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around; }
+  .gform_wrapper .gform_page_fields ul#gform_fields_1_2 #field_1_13 {
+    width: 100%; }
 
 .gform_wrapper .gfield .ginput_container .gfield_select {
   width: 13rem;
@@ -1431,6 +1465,29 @@ tr td.ui-datepicker-unselectable.ui-state-disabled {
   background-color: #FF6978;
   border-radius: 50%;
   color: #666; }
+
+.gform_confirmation_message_1 {
+  padding-top: 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 70vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-color: white; }
+  .gform_confirmation_message_1 img {
+    height: 25vh;
+    width: 25vw; }
+  .gform_confirmation_message_1 a {
+    font-size: 40px; }
 
 .book-tour-form-modal {
   display: none; }

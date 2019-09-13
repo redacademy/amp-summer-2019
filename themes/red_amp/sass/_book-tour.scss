@@ -80,13 +80,18 @@ $pagination_margin: 15vw;
         margin:0 auto;
     }
 
+    .ginput_container .medium{
+        width: 100%;
+    }
+
+
     .gform_page_footer {
         border-top: none;
 
 
 
         .gform_button, .gform_next_button{
-            // margin-left: 620px;
+           
             position: absolute;
             right: 15%;
             top: 85%;
@@ -104,19 +109,7 @@ $pagination_margin: 15vw;
             }
             
         }
-        // &::before {
-        //     content: '\003c';
-           
-        //     color:#297373;
-        //     font-family: $font__secondary;
-        //     font-size: 37px;
-        //     font-weight: bold;
-        //     position: absolute;
-        //     left: 13%;
-        //     // top: 31%;
-        //     bottom: 7%;
-        
-        //   }
+       
       
         .gform_previous_button {
             font-family: $bodytext_font_family;
@@ -183,8 +176,12 @@ $pagination_margin: 15vw;
 
 .gform_wrapper .gform_page_fields ul#gform_fields_1_2 {
     display:flex;
-
+    flex-wrap: wrap;
     justify-content: space-around;
+
+    #field_1_13{
+        width: 100%;
+    }
   
 
 }
@@ -218,6 +215,25 @@ tr td.ui-datepicker-unselectable.ui-state-disabled {
     
 
 
+}
+
+.gform_confirmation_message_1{
+    padding-top: 6rem;
+    display: flex;
+    align-items: center;
+    height: 70vh;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: white;
+
+    img{
+        height:25vh;
+        width:25vw;
+    }
+
+    a{
+        font-size:40px;
+    }
 }
 
 
