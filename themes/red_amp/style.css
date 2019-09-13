@@ -654,6 +654,9 @@ a {
     font-family: "Bambi";
     text-align: center;
     margin-top: 75px; }
+    @media (max-width: 760px) {
+      .about-content .about-page-main-title h1 {
+        text-align: center; } }
   .about-content .about-page-main-title p {
     text-align: center;
     margin-bottom: 100px;
@@ -803,17 +806,15 @@ a {
     padding: 0;
     margin-bottom: 20vh; }
 
-@media only screen and (max-width: 760px) and (max-width: 782px) {
-  .about-content .about-page-main-title h1 {
-    font-family: "Bambi";
-    text-align: center;
-    margin-top: 75px; }
-  .about-content .about-page-main-title p {
-    text-align: center;
-    margin-bottom: 100px;
-    margin-bottom: 100px;
-    margin-left: auto;
-    margin-right: auto; } }
+/* MOBILE VERSION */
+@media (max-width: 760px) {
+  .about-content h1,
+  .about-content p {
+    max-width: 100vw; } }
+
+@media (max-width: 760px) {
+  .about-content .about-page-values {
+    background: #daefec; } }
 
 /*--------------------------------------------------------------
 # Content
@@ -853,13 +854,20 @@ footer {
   display: flex;
   -ms-flex-item-align: center;
       align-self: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
   .site-footer-name-address p {
     line-height: 1.75; }
+  @media (max-width: 760px) {
+    .site-footer-name-address {
+      -ms-flex-line-pack: distribute;
+          align-content: space-around;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start; } }
 
 .contact-info {
   width: 50%;
@@ -872,6 +880,18 @@ footer {
       align-content: center; }
   .contact-info p {
     padding-left: 13px; }
+  @media (max-width: 760px) {
+    .contact-info {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      .contact-info a {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-line-pack: end;
+            align-content: flex-end; } }
 
 .footer-newsletter-form {
   -ms-flex-line-pack: center;
@@ -926,19 +946,6 @@ footer {
 .img-email img {
   width: 28px; }
 
-.contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
-
 .site-footer {
   width: 100%; }
 
@@ -955,7 +962,10 @@ footer {
     .footer-content {
       height: 300px;
       -ms-flex-wrap: wrap;
-          flex-wrap: wrap; }
+          flex-wrap: wrap;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
       .footer-content .contact {
         -webkit-box-ordinal-group: 3;
             -ms-flex-order: 2;
@@ -977,16 +987,43 @@ footer {
                 order: 4;
         width: 100%;
         text-align: center; } }
+  @media (max-width: 760px) {
+    .footer-content .contact {
+      width: 100%; }
+    .footer-content .footer-newsletter-form {
+      width: 100%; }
+    .footer-content .site-rights-mobile {
+      width: 100%; } }
 
 .social-icon-mobile-image {
   width: 20px; }
 
-.contact p {
-  margin: none; }
-
-@media (max-width: 760px) {
-  .contact {
-    width: 100%; } }
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  @media (max-width: 760px) {
+    .contact {
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: end;
+          -ms-flex-align: end;
+              align-items: flex-end;
+      width: 100%; } }
+  .contact p {
+    margin: none; }
+  @media (max-width: 760px) {
+    .contact {
+      width: 100%; } }
 
 .social-icon {
   -ms-flex-item-align: center;
