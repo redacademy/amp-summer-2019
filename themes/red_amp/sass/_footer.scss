@@ -54,15 +54,19 @@ footer{
   align-self: center;
   align-content: space-around;
   align-items: center;
+
   p {
   line-height: 1.75;
 }
-@include mobile { ///changed with mobile
-  // align-self: flex-start;
-  align-content: space-around;
-  align-items: flex-start;
-} ///changed with mobile
+@include footer-width { ///changed with footer-width
+  justify-content: space-around;
 
+} ///changed with footer-width
+
+@include mobile { ///changed with mobile
+  justify-content: flex-start;
+  width: 40%;
+} ///changed with mobile
 
 }
 
@@ -71,30 +75,27 @@ footer{
   width: 50%;
   display: flex;
   flex-wrap: wrap;
-  align-content: center;
   p {
   padding-left: 13px;
+  margin: 0;
   }  
   @include mobile { ///changed with mobile
+    width: 60%
     a {
       display: flex;
-      align-content: flex-end;
+      // align-content: flex-end;
     }
    flex-direction: column; 
+   justify-content: space-between;
+   width: unset;
   } ///changed with mobile
 
 }
 
 .footer-newsletter-form {
-  align-content: center;
-  text-align: center;
-  // white-space: nowrap;
-  // padding: 0px 50px;
-  // margin: auto 0;
-  align-self: center;
-}
-
-.footer-newsletter-form {
+  .show-mobile {
+    padding-top: 1rem;
+  }
   form {
   display: flex;
   align-items: center;
@@ -102,10 +103,10 @@ footer{
 }
   
 .hidden-mobile {
-  
+  text-align: left; 
 }
 .show-mobile {
-  
+  text-align: center;  
 }
 @include mobile { ///changed with mobile
   .hidden-mobile {
@@ -145,9 +146,11 @@ input[type=email] {
 }
 
 .img-phone {
+  padding-bottom: 1rem;
 img {
   // height: 30px;
   width: 24px;
+  
 }
 }
 
@@ -156,6 +159,9 @@ img {
   // height: 22px;
   width: 28px;
 }
+@include mobile { ///changed with mobile
+  padding-bottom: 1rem;
+} ///changed with mobile
 }
 
 
@@ -171,7 +177,11 @@ img {
   height: 175px;
   display: flex;
   justify-content: space-evenly;
+  padding-left: 0rem;
+  padding-right: 0rem;
   @include footer-width { ///changed with footer-width
+    padding-left: 0rem;
+    padding-right: 0rem;
     height: 300px;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -191,21 +201,40 @@ img {
       order: 4;
       width: 100%;
       text-align: center;
+      font-size: $bodytext_font_size_smaller *.8;
     }
+    .social-icon {
+      padding-left: 50px;
+    }
+
   } ///changed with footer-width
 
   @include mobile { ///changed with mobile
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
     .contact {
       width: 100%;
     }
     .footer-newsletter-form {
       width: 100%;
+      
     }
     .social-icon {
     }
     .site-rights-mobile {
       width: 100%;
     }
+    .contact-info-img-container {
+      img {
+        width: 20px;
+      }
+    }
+    .footer-newsletter-form {
+      form {
+      justify-content: flex-start;
+      
+    }
+  }
   } ///changed with mobile
 
 }
@@ -213,7 +242,7 @@ img {
   .social-icon-mobile-image {
       width: 20px;
   }
-
+  
 
 
 .contact {
@@ -224,7 +253,7 @@ img {
     justify-content: center;
     @include mobile { ///changed with mobile
       justify-content: space-between;
-      align-items: flex-end;
+      
       width: 100%;
     } ///changed with mobile
   
