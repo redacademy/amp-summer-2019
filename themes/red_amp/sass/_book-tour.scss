@@ -148,7 +148,7 @@ $pagination_margin: 15vw;
         
         text-decoration: none;
         border: 1px solid $dark_green;
-        font-size: 25px;
+        font-size: 40px;
         color: $font_light;
         font-weight: 700;
         width: 250px;
@@ -179,8 +179,9 @@ $pagination_margin: 15vw;
     flex-wrap: wrap;
     justify-content: space-around;
 
-    #field_1_13{
+    .custom-form-title-1{
         width: 100%;
+
     }
   
 
@@ -231,9 +232,6 @@ tr td.ui-datepicker-unselectable.ui-state-disabled {
         width:25vw;
     }
 
-    a{
-        font-size:40px;
-    }
 }
 
 
