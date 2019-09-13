@@ -97,12 +97,9 @@
 
   //mobile nav menu in header
 
-//   if (($(window).width()) < 761){
-//   $('.menu-item-has-children').prepend('<a href="#" class="toggle-submenu"><i class="fas fa-angle-down"></i></a>');
   
-// }
 
-  $('.menu-item-has-children').on('click', function(event){
+  $('.menu-item-has-children').on('click', function (event) {
     event.preventDefault();
     $(event.currentTarget).find('.sub-menu').toggleClass('mobile-sub-menu');
   });
@@ -110,15 +107,22 @@
   const $hamburguerMenu = $('.hamburguer');
   const $closeHamburguer = $('.cross-close');
   const $mainMenu = $('.menu-menu-1-container');
+  
+  if ($(window).width() > 760) {
+    $hamburguerMenu.addClass('display-nothing');
+    $closeHamburguer.addClass('display-nothing');
+    console.log('desktop');
+  }
 
-  $hamburguerMenu.on('click', function() {
+
+  $hamburguerMenu.on('click', function () {
     $mainMenu.addClass('is-menu-active');
     $hamburguerMenu.addClass('remove-icon');
     $closeHamburguer.removeClass('remove-icon');
     console.log('HambButton');
   });
 
-  $closeHamburguer.on('click', function() {
+  $closeHamburguer.on('click', function () {
     $mainMenu.removeClass('is-menu-active');
     $hamburguerMenu.removeClass('remove-icon');
     $closeHamburguer.addClass('remove-icon');

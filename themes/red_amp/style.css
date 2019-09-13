@@ -2563,6 +2563,9 @@ tr td.ui-datepicker-unselectable.ui-state-disabled {
   .cross-close {
     z-index: 60; } }
 
+.display-nothing {
+  display: none !important; }
+
 /*--------------------------------------------------------------
 # Page Templates
     Here is where all specific css per page template will go
