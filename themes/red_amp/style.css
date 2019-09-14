@@ -2392,14 +2392,15 @@ tr td.ui-datepicker-unselectable.ui-state-disabled {
               justify-content: flex-end; }
       @media (max-width: 760px) {
         .main-navigation .menu-menu-1-container ul {
-          background: green;
+          background: #b1ede8;
           -webkit-box-pack: start;
               -ms-flex-pack: start;
                   justify-content: flex-start;
           -webkit-box-orient: vertical;
           -webkit-box-direction: normal;
               -ms-flex-flow: column;
-                  flex-flow: column; } }
+                  flex-flow: column;
+          border: none; } }
       .main-navigation .menu-menu-1-container ul li {
         width: -webkit-fit-content;
         width: -moz-fit-content;
@@ -2414,6 +2415,7 @@ tr td.ui-datepicker-unselectable.ui-state-disabled {
         padding-right: 30px; }
         @media (max-width: 760px) {
           .main-navigation .menu-menu-1-container ul li {
+            outline: none !important;
             text-align: left;
             padding: 0;
             -webkit-box-orient: horizontal;
@@ -2421,13 +2423,18 @@ tr td.ui-datepicker-unselectable.ui-state-disabled {
                 -ms-flex-flow: row-reverse;
                     flex-flow: row-reverse;
             -ms-flex-wrap: wrap;
-                flex-wrap: wrap; } }
+                flex-wrap: wrap;
+            border-bottom: 1px solid #297373; } }
         .main-navigation .menu-menu-1-container ul li:focus {
           border-bottom: red 2px solid; }
         .main-navigation .menu-menu-1-container ul li a {
           width: -webkit-fit-content;
           width: -moz-fit-content;
           width: fit-content; }
+          @media (max-width: 760px) {
+            .main-navigation .menu-menu-1-container ul li a {
+              font-family: "Muli", sans-serif;
+              font-weight: 900; } }
       .main-navigation .menu-menu-1-container ul .sub-menu {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -2451,7 +2458,7 @@ tr td.ui-datepicker-unselectable.ui-state-disabled {
                   justify-content: flex-start; }
           @media (max-width: 760px) {
             .main-navigation .menu-menu-1-container ul .sub-menu li {
-              font-weight: 10px;
+              border: none;
               width: 100%;
               margin-left: 30px; } }
           .main-navigation .menu-menu-1-container ul .sub-menu li:nth-child(1) {
@@ -2473,6 +2480,10 @@ tr td.ui-datepicker-unselectable.ui-state-disabled {
         .main-navigation .menu-menu-1-container ul .sub-menu a {
           font-size: 14px;
           border-bottom: none; }
+          @media (max-width: 760px) {
+            .main-navigation .menu-menu-1-container ul .sub-menu a {
+              font-size: 13px;
+              margin-left: 30px; } }
     .main-navigation .menu-menu-1-container a {
       font-family: "Bambi";
       font-size: 16px;
@@ -2534,11 +2545,16 @@ tr td.ui-datepicker-unselectable.ui-state-disabled {
 
 @media (max-width: 760px) {
   .menu-menu-1-container .menu-item-has-children {
-    width: 100%;
-    background: green; }
+    width: 100%; }
     .menu-menu-1-container .menu-item-has-children a {
-      width: 30%;
-      background: yellow; } }
+      width: 30%; } }
+  @media (max-width: 760px) and (max-width: 760px) {
+    .menu-menu-1-container .menu-item-has-children a::after {
+      font-size: 20px;
+      width: 40px;
+      color: #297373;
+      text-align: right;
+      height: 10px; } }
 
 @media (max-width: 760px) {
   .menu-menu-1-container .sub-menu {
@@ -2547,13 +2563,6 @@ tr td.ui-datepicker-unselectable.ui-state-disabled {
       display: none; }
     .menu-menu-1-container .sub-menu.mobile-sub-menu {
       display: initial; } }
-
-@media (max-width: 760px) {
-  .menu-menu-1-container a.toggle-submenu {
-    margin-left: 40px;
-    font-size: 20px;
-    width: 40px;
-    background: green; } }
 
 @media (max-width: 760px) {
   #primary-menu {
@@ -2577,21 +2586,21 @@ tr td.ui-datepicker-unselectable.ui-state-disabled {
   display: none !important; }
 
 @media (max-width: 760px) {
+  #site-navigation {
+    overflow: hidden;
+    position: relative; } }
+
+@media (max-width: 760px) {
   body .hamburguer i {
     font-size: 40px;
-    color: green;
+    color: #297373;
     margin-right: 10px; } }
 
 @media (max-width: 760px) {
   body .cross-close i {
     font-size: 40px;
-    color: green;
+    color: #297373;
     margin-right: 10px; } }
-
-@media (max-width: 760px) {
-  #site-navigation {
-    overflow: hidden;
-    position: relative; } }
 
 /*--------------------------------------------------------------
 # Page Templates
