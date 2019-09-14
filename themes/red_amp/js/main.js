@@ -121,6 +121,7 @@
     $closeHamburguer.removeClass('remove-icon');
     console.log('HambButton');
     $('body').css('overflow', 'hidden');
+    $('#site-navigation').css('position','initial');
   });
 
   $closeHamburguer.on('click', function () {
@@ -129,6 +130,7 @@
     $closeHamburguer.addClass('remove-icon');
     console.log('Xbutton');
     $('body').css('overflow', 'visible');
+    $('#site-navigation').css('position','relative');
   });
 
 

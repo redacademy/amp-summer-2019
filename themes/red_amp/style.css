@@ -2588,6 +2588,11 @@ tr td.ui-datepicker-unselectable.ui-state-disabled {
     color: green;
     margin-right: 10px; } }
 
+@media (max-width: 760px) {
+  #site-navigation {
+    overflow: hidden;
+    position: relative; } }
+
 /*--------------------------------------------------------------
 # Page Templates
     Here is where all specific css per page template will go

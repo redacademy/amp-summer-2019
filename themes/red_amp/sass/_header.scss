@@ -301,21 +301,30 @@
 }
 
 body .hamburguer {
-    i{
-        @include mobile{
-        font-size: 40px;
-        color: green;
-        margin-right: 10px;
+    i {
+        @include mobile {
+            font-size: 40px;
+            color: green;
+            margin-right: 10px;
         }
     }
 }
 
-body .cross-close {
-    i{
-        @include mobile{
-        font-size: 40px;
-        color: green;
-        margin-right: 10px;
+body {
+    .cross-close {
+        i {
+            @include mobile {
+                font-size: 40px;
+                color: green;
+                margin-right: 10px;
+            }
         }
+    }
+}
+
+#site-navigation {
+    @include mobile {
+        overflow: hidden;
+        position: relative;
     }
 }
