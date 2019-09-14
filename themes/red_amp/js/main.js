@@ -107,7 +107,7 @@
   const $hamburguerMenu = $('.hamburguer');
   const $closeHamburguer = $('.cross-close');
   const $mainMenu = $('.menu-menu-1-container');
-  
+
   if ($(window).width() > 760) {
     $hamburguerMenu.addClass('display-nothing');
     $closeHamburguer.addClass('display-nothing');
@@ -120,6 +120,7 @@
     $hamburguerMenu.addClass('remove-icon');
     $closeHamburguer.removeClass('remove-icon');
     console.log('HambButton');
+    $('body').css('overflow', 'hidden');
   });
 
   $closeHamburguer.on('click', function () {
@@ -127,6 +128,7 @@
     $hamburguerMenu.removeClass('remove-icon');
     $closeHamburguer.addClass('remove-icon');
     console.log('Xbutton');
+    $('body').css('overflow', 'visible');
   });
 
 
