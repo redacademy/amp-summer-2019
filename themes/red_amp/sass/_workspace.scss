@@ -3,8 +3,9 @@
 
 .post-type-archive-workspace {
     background-color: $color__background-body;
+    .site-content {
     text-align: center;
-
+    }
     .page-title {
         font-size: $headline_font_size;
         font-family: $headline_font_family;
