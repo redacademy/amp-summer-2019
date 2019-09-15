@@ -36,7 +36,7 @@ $pagination_margin: 15vw;
     height: 670px;
 	
     position:relative;
-    width: 944px;	
+    max-width: 944px;	
     background-color: #DAEFEC;
     margin: 0 auto;
     
@@ -144,9 +144,9 @@ $pagination_margin: 15vw;
             @include mobile{
                 height: 44px;
                 width: 220px;
-                position: absolute;
-                right: 35%;
-                margin-top: 1.5rem;
+                // position: absolute;
+                // right: 35%;
+                // margin-top: 1.5rem;
 
             }
             position: absolute;
@@ -302,10 +302,11 @@ tr td.ui-datepicker-unselectable.ui-state-disabled {
 
         
     }
-    padding-top: 6rem;
+    // padding-top: 6rem;
     display: flex;
     align-items: center;
-    height: 70vh;
+    height: 75vh;
+    width:75vw;
     flex-direction: column;
     justify-content: space-evenly;
     background-color: white;

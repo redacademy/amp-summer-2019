@@ -13,23 +13,34 @@
     .events-title h1 {
         text-align: center;
         font-family: $font__main;
+
+        @include mobile{
+            font-size: 24px;
+        }
     }
 
     .events-description {
         font-family: $font__secondary;
         font-size: $bodytext_font_size;
-        width: 750px;
+        max-width: 750px;
 
         text-align: center;
         margin-left: auto;
         margin-right: auto;
         letter-spacing: 0.9;
         line-height: 22px;
+
+        @include mobile{
+            padding-left: 10px;
+            padding-right: 10px;
+            font-size: 14px;
+
+        }
     }
 
     .custom-loop {
         .loop-type-events {
-            width: 943px;
+            max-width: 943px;
             margin: 0 auto;
 
             a {
@@ -42,10 +53,18 @@
                     box-shadow: 0 12px 48px -12px $box_shadow_green;
 
                     .event-image {
-                        height: 268px;
+                       
+                        height:auto;
                         width: 400px;
                         flex: none;
                         border-radius: 5px;
+
+                        @include mobile{
+                            width:30vw;
+                            height:20vh;
+                           
+                        }
+
                     }
 
                     .event-information {
@@ -59,6 +78,11 @@
                             letter-spacing: 0.3px;
                             line-height: 25px;
                             padding-top: 10px;
+
+                            @include mobile{
+                                font-size:16px;
+                                padding-top: 1rem;
+                            }
                         }
 
                         .event-date {
@@ -67,6 +91,23 @@
                             padding-top: 10px;
                             font-size: 16px;
                             margin: 0;
+
+                            @include mobile{
+
+                                font-size:14px;
+                                padding-top: 2rem;
+
+                                &::after{
+
+                                    content:'\f054';
+                                    font-family: "Font Awesome 5 Free";
+                                    font-weight: 900;
+                                    font-size: 16px;
+                                    color:$dark_green;
+                                    padding-left: 2.5rem;
+                                }
+
+                            }
                         }
                     }
 
@@ -80,6 +121,8 @@
                             padding-top: 10px;
                             padding-left: 20px;
                             text-align: left;
+                            padding-bottom: 1rem;
+
                         }
 
                         .button-arrow-container {
@@ -109,12 +152,19 @@
                                 }
                             }
                         }
+                        @include mobile{
+                            display:none;
+                        }
                     }
-
+                     
+                   
                     //end of event-content-wrapper
                 }
 
                 // end of loop container
+            }
+            @include mobile{
+                    padding: 0 10px;        
             }
         }
     }
