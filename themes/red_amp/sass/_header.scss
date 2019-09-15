@@ -35,8 +35,6 @@
 
         @include mobile {
             margin-right: auto;
-            //////////
-            // width: 40%;
             padding-top: 9rem;
             margin-left: auto;
 
@@ -44,7 +42,7 @@
                 width: 100%;
             }
 
-            .menu-item > a {
+            .menu-item>a {
                 display: flex;
                 justify-content: space-between;
                 padding: 1rem;
@@ -58,11 +56,12 @@
             width: 100%;
             display: flex;
             justify-content: flex-end;
-            flex-flow: column;
 
             @include mobile {
-                background: green;
+                background: $light_green;
                 justify-content: flex-start;
+                flex-flow: column;
+                border: none;
             }
 
             li {
@@ -73,11 +72,12 @@
                 padding-right: 30px;
 
                 @include mobile {
-                    //////
+                   outline: none !important;
                     text-align: left;
                     padding: 0;
                     flex-flow: row-reverse;
                     flex-wrap: wrap;
+                    border-bottom: 1px solid $dark_green;
                 }
 
                 /////
@@ -86,11 +86,15 @@
 
                 &:focus {
                     border-bottom: red 2px solid;
-                    
+
                 }
 
                 a {
                     width: fit-content;
+                    @include mobile {
+                         font-family: $bodytext_font_family;
+                         font-weight: 900;
+                    }
                 }
             }
 
@@ -107,24 +111,27 @@
                     display: flex;
                     justify-content: flex-start;
 
-                    @include mobile {///////
-                        font-weight:10px;
+                    @include mobile {
+                        border: none;
                         width: 100%;
                         margin-left: 30px;
+
                     }
 
                     ////////
 
                     &:nth-child(1) {
                         margin-top: 20px;
-                        @include mobile{
+
+                        @include mobile {
                             margin: 0;
                         }
                     }
 
                     &:nth-child(2) {
                         margin-top: 10px;
-                        @include mobile{
+
+                        @include mobile {
                             margin: 0;
                         }
                     }
@@ -132,7 +139,8 @@
                     &:nth-child(3) {
                         margin-top: 10px;
                         border-bottom: none;
-                        @include mobile{
+
+                        @include mobile {
                             margin: 0;
                         }
                     }
@@ -141,6 +149,10 @@
                 a {
                     font-size: $bodytext_font_size_smaller;
                     border-bottom: none;
+                    @include mobile{
+                        font-size: 13px;
+                        margin-left: 30px;
+                    }
                 }
             }
         }
@@ -151,7 +163,8 @@
             text-decoration: none;
             color: $font_dark;
             font-weight: 900;
-            @include mobile{
+
+            @include mobile {
                 font-size: $bodytext_font_size_smaller;
             }
         }
@@ -166,11 +179,9 @@
                 width: fit-content;
                 margin-bottom: 2px;
                 border-bottom: red solid 4px;
-                @include mobile{
-                    border-bottom: none;
-                }
 
                 @include mobile {
+                    border-bottom: none;
                     width: 100%;
                 }
             }
@@ -185,26 +196,33 @@
 //     display: flex;
 // }
 // }
-.main-navigation .menu-menu-1-container ul .sub-menu{
-    @include mobile{/////////
-    display: none;
-    }//////
+.main-navigation .menu-menu-1-container ul .sub-menu {
+    @include mobile {
+        /////////
+        display: none;
+    }
+
+    //////
 
     &.mobile-sub-menu {
-        display: flex;
+        @include mobile {
+            display: flex;
+        }
     }
 }
 
 .menu-toggle-header {
-    position: relative;
-    z-index: 60;
-    font-size: 40px;
-    margin-right: 10px;
-    
+    @include mobile {
+        position: relative;
+        z-index: 60;
+        font-size: 40px;
+        margin-right: 10px;
+    }
 }
 
 .menu-menu-1-container {
-    @include mobile{//////
+    @include mobile {
+        //////
         position: absolute;
         top: 0;
         right: 0;
@@ -217,62 +235,114 @@
         &.is-menu-active {
             transform: translateX(0);
         }
-    }//////
+    }
+
+    //////
 
 
 
     .menu-item-has-children {
-        width: 100%;
-        background: green;
+        @include mobile {
+            width: 100%;
 
-        a {
-            width: 30%;
-            background: yellow;
+            a {
+                width: 30%;
+            }
+
+            a::after{
+                @include mobile {
+                    font-size: 20px;
+                    width: 40px;
+                    color: $dark_green;
+                    text-align: right;
+                    height: 10px;
+                }
+            }
         }
     }
 
     .sub-menu {
-        display: none;
-
-        &:hover {
+        @include mobile {
             display: none;
-        }
 
-        &.mobile-sub-menu {
-            display: initial;
-            // margin-left: auto;
+            &:hover {
+                display: none;
+            }
+
+            &.mobile-sub-menu {
+                display: initial;
+                // margin-left: auto;
+            }
         }
     }
 
-    a.toggle-submenu {
-        margin-left: 40px;
-        font-size: 20px;
-        width: 40px;
-        background: green;
-    }
+    // a.toggle-submenu {
+    //     @include mobile {
+    //         margin-left: 40px;
+    //         font-size: 30px;
+    //         width: 40px;
+    //         background: $dark_green;
+    //     }
+    // }
 }
-    #primary-menu{
-        @include mobile{
-            // height: 100vh;
-            position: relative;
-            top:0;
-            // left:70vw; 
-            // right: -50px;
-            overflow: visible;
 
-        }
-
-
+#primary-menu {
+    @include mobile {
+        position: relative;
+        top: 0;
+        overflow: visible;
+    }
 }
 
 .menu-item-has-children {
-    > a::after {
+    >a::after {
         @include mobile {
             content: "\f107";
             font-family: "Font Awesome 5 Free";
         }
     }
 }
-.remove-icon{
+
+.remove-icon {
     display: none;
 }
+
+.cross-close {
+    @include mobile {
+        z-index: 60;
+    }
+}
+
+.display-nothing {
+    display: none !important;
+    ;
+}
+#site-navigation {
+    @include mobile {
+        overflow: hidden;
+        position: relative;
+    }
+}
+
+body .hamburguer {
+    i {
+        @include mobile {
+            font-size: 40px;
+            color: $dark_green;
+            margin-right: 10px;
+        }
+    }
+}
+
+body {
+    .cross-close {
+        i {
+            @include mobile {
+                font-size: 40px;
+                color: $dark_green;
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
