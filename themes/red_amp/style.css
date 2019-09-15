@@ -698,27 +698,26 @@ a {
     font-family: "Bambi";
     text-align: center;
     margin-bottom: 85px; }
-  .about-content .team-section .the-team {
+  .about-content .team-section .mobile-about-carousel .flickity-viewport {
+    width: 100%; }
+  .about-content .team-section .mobile-about-carousel .carousel-cell {
+    width: 100%;
+    text-align: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly; }
-    .about-content .team-section .the-team .amp-employee img {
-      height: 233px;
-      width: 233px;
-      border-radius: 50%; }
-    .about-content .team-section .the-team .amp-employee .individual {
-      text-align: center; }
-      .about-content .team-section .the-team .amp-employee .individual p {
-        margin-bottom: 1.5rem;
-        width: 200px;
-        padding-left: 25px; }
+    -ms-flex-line-pack: center;
+        align-content: center; }
+  .about-content .team-section .mobile-about-carousel .amp-employee img {
+    height: 233px;
+    width: 233px;
+    border-radius: 50%; }
+  .about-content .team-section .mobile-about-carousel .amp-employee .individual {
+    text-align: center; }
+    .about-content .team-section .mobile-about-carousel .amp-employee .individual p {
+      margin-bottom: 1.5rem;
+      width: 200px;
+      padding-left: 25px; }
   .about-content .headquarters {
     margin: 0 auto;
     width: 1200px;
