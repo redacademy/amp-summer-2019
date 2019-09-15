@@ -2370,16 +2370,29 @@ tr td.ui-datepicker-unselectable.ui-state-disabled {
       .main-navigation .menu-menu-1-container {
         margin-right: auto;
         padding-top: 9rem;
-        margin-left: auto; }
+        margin-left: auto;
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        -webkit-transform: translateX(100%);
+                transform: translateX(100%);
+        width: 80%;
+        margin-right: 0;
+        z-index: 50; }
+        .main-navigation .menu-menu-1-container.is-menu-active {
+          -webkit-transform: translateX(0);
+                  transform: translateX(0);
+          opacity: 1 !important; }
         .main-navigation .menu-menu-1-container .menu-item {
           width: 100%; }
         .main-navigation .menu-menu-1-container .menu-item > a {
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
-          -webkit-box-pack: justify;
-              -ms-flex-pack: justify;
-                  justify-content: space-between;
+          -webkit-box-pack: start;
+              -ms-flex-pack: start;
+                  justify-content: flex-start;
           padding: 1rem;
           width: 100%; } }
     .main-navigation .menu-menu-1-container ul {
@@ -2446,6 +2459,21 @@ tr td.ui-datepicker-unselectable.ui-state-disabled {
         text-align: left;
         -webkit-box-shadow: none;
                 box-shadow: none; }
+        @media (max-width: 760px) {
+          .main-navigation .menu-menu-1-container ul .sub-menu {
+            display: none; } }
+        @media (max-width: 760px) {
+          .main-navigation .menu-menu-1-container ul .sub-menu.mobile-sub-menu {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex; } }
+        @media (max-width: 760px) {
+          .main-navigation .menu-menu-1-container ul .sub-menu {
+            display: none; }
+            .main-navigation .menu-menu-1-container ul .sub-menu:hover {
+              display: none; }
+            .main-navigation .menu-menu-1-container ul .sub-menu.mobile-sub-menu {
+              display: initial; } }
         .main-navigation .menu-menu-1-container ul .sub-menu li {
           text-align: left;
           border-bottom: 1px solid;
@@ -2510,16 +2538,47 @@ tr td.ui-datepicker-unselectable.ui-state-disabled {
         .main-navigation .menu-menu-1-container .current-menu-item a {
           border-bottom: none;
           width: 100%; } }
-
-@media (max-width: 760px) {
-  .main-navigation .menu-menu-1-container ul .sub-menu {
-    display: none; } }
-
-@media (max-width: 760px) {
-  .main-navigation .menu-menu-1-container ul .sub-menu.mobile-sub-menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; } }
+      @media (max-width: 760px) {
+        .main-navigation .menu-menu-1-container .current-menu-item a:nth-child(2) {
+          width: 50%; } }
+    @media (max-width: 760px) {
+      .main-navigation .menu-menu-1-container .menu-item-has-children {
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: row wrap;
+                flex-flow: row wrap; }
+        .main-navigation .menu-menu-1-container .menu-item-has-children a {
+          -webkit-box-ordinal-group: 1;
+              -ms-flex-order: 0;
+                  order: 0;
+          width: 50%; }
+        .main-navigation .menu-menu-1-container .menu-item-has-children ul.mobile-sub-menu {
+          -webkit-box-ordinal-group: 3;
+              -ms-flex-order: 2;
+                  order: 2;
+          width: 100%; }
+          .main-navigation .menu-menu-1-container .menu-item-has-children ul.mobile-sub-menu li a {
+            width: 100%; } }
+    .main-navigation .menu-menu-1-container .menu-item-has-children .mobile-menu-arrow {
+      display: none; }
+      @media (max-width: 760px) {
+        .main-navigation .menu-menu-1-container .menu-item-has-children .mobile-menu-arrow {
+          display: initial;
+          -webkit-box-ordinal-group: 2;
+              -ms-flex-order: 1;
+                  order: 1;
+          width: 45%;
+          font-size: 20px;
+          color: #297373;
+          height: 20px;
+          text-align: right; } }
 
 @media (max-width: 760px) {
   .menu-toggle-header {
@@ -2529,51 +2588,10 @@ tr td.ui-datepicker-unselectable.ui-state-disabled {
     margin-right: 10px; } }
 
 @media (max-width: 760px) {
-  .menu-menu-1-container {
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100vh;
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
-    width: 80%;
-    margin-right: 0;
-    z-index: 50; }
-    .menu-menu-1-container.is-menu-active {
-      -webkit-transform: translateX(0);
-              transform: translateX(0); } }
-
-@media (max-width: 760px) {
-  .menu-menu-1-container .menu-item-has-children {
-    width: 100%; }
-    .menu-menu-1-container .menu-item-has-children a {
-      width: 30%; } }
-  @media (max-width: 760px) and (max-width: 760px) {
-    .menu-menu-1-container .menu-item-has-children a::after {
-      font-size: 20px;
-      width: 40px;
-      color: #297373;
-      text-align: right;
-      height: 10px; } }
-
-@media (max-width: 760px) {
-  .menu-menu-1-container .sub-menu {
-    display: none; }
-    .menu-menu-1-container .sub-menu:hover {
-      display: none; }
-    .menu-menu-1-container .sub-menu.mobile-sub-menu {
-      display: initial; } }
-
-@media (max-width: 760px) {
   #primary-menu {
     position: relative;
     top: 0;
     overflow: visible; } }
-
-@media (max-width: 760px) {
-  .menu-item-has-children > a::after {
-    content: "\f107";
-    font-family: "Font Awesome 5 Free"; } }
 
 .remove-icon {
   display: none; }

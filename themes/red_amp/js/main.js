@@ -97,11 +97,13 @@
 
   //mobile nav menu in header
 
-  
+  $('.menu-item-has-children').prepend('<a href="#" class="mobile-menu-arrow"><i class="fas fa-angle-down"></i></a>');
 
-  $('.menu-item-has-children').on('click', function (event) {
+  // $('.menu-item-has-children').on('click', function (event) {
+    $('.mobile-menu-arrow').on('click', function (event) {
     event.preventDefault();
-    $(event.currentTarget).find('.sub-menu').toggleClass('mobile-sub-menu');
+    // $(event.currentTarget).find('.sub-menu').toggleClass('mobile-sub-menu');
+    $('.menu-item-has-children').find('.sub-menu').toggleClass('mobile-sub-menu');
   });
 
   const $hamburguerMenu = $('.hamburguer');
@@ -120,7 +122,8 @@
     $hamburguerMenu.addClass('remove-icon');
     $closeHamburguer.removeClass('remove-icon');
     console.log('HambButton');
-    $('body').css('overflow', 'hidden');
+    $('body').css({'overflow':'hidden', 'opacity':'0.6'});
+    $('body .is-menu-active').css('opacity', '1');
     $('#site-navigation').css('position','initial');
   });
 
@@ -129,7 +132,8 @@
     $hamburguerMenu.removeClass('remove-icon');
     $closeHamburguer.addClass('remove-icon');
     console.log('Xbutton');
-    $('body').css('overflow', 'visible');
+    $('body').css({'overflow':'visible','opacity':'1'});
+
     $('#site-navigation').css('position','relative');
   });
 
