@@ -20,6 +20,9 @@
 </head>
 
 <body <?php body_class(); ?>>
+	<div id='background-mobile'></div> 
+	<!-- for mobile background opacity purpose -->
+
 	<div id="page" class="hfeed site">
 		<a class="skip-link screen-reader-text" href="#content"><?php echo esc_html('Skip to content'); ?></a>
 
@@ -42,10 +45,12 @@
 				<img src="<?php echo get_template_directory_uri() . '/images/Logo_The_AMP.png' ?>" alt="site-logo">
 			</a>
 		</div>
-		<!-- <div class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
-
-			<?php //echo esc_html('Primary Menu'); ?>
-		</div> -->
+		<div class="hamburguer" aria-controls="primary-menu" aria-expanded="false">
+			<i class="fas fa-bars"></i>
+		</div>
+		<div class="cross-close remove-icon" aria-controls="primary-menu" aria-expanded="false">
+			<i class="fas fa-times"></i>
+		</div>
 
 		<?php wp_nav_menu(array(
 			'theme_location' => 'primary',

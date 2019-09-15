@@ -78,10 +78,12 @@
 
 <!-- Adding the form of book a tour in the footer -->
 <?php
+echo "<div class='book-tour-form-modal-outer-wrapper'>";
 	echo "<div class='book-tour-form-modal'>";
 		// TODO try adding a close button
 		echo "<button class='close-book-tour'>X</button>";
 		gravity_form(1, false, false, false, '', true);
+	echo "</div>";
 	echo "</div>";
 ?>
 <!-- End of the form of Book a tour -->

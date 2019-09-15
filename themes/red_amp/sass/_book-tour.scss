@@ -5,20 +5,52 @@
 
 /* Book a tour popup */
 $pagination_margin: 15vw;
+.book-tour-form-modal-outer-wrapper{
+    display:none;
+    &::before{
+    content: "";
+    background: rgba(255,255,255,0.45);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    }
 
+    &.is-active {
+        display: block;
+    }
+}
 .book-tour-form_wrapper.gform_wrapper {
 
-    height: 670px;	
+
+    @include mobile {
+     height:110vh;
+     width:100vw;
+     background-color: transparent;
+     padding-left:10px;
+     padding-right:10px;
+    
+
+    }
+    height: 670px;
+	
     position:relative;
-    width: 944px;	
+    max-width: 944px;	
     background-color: #DAEFEC;
     margin: 0 auto;
+    
+
 
     .gf_page_steps{
         border-bottom:none;
     }
     
     .gf_page_steps {
+
+        @include mobile{
+            display: none;
+        }
         width: 100%;
         display: flex;
         justify-content: center;
@@ -63,27 +95,44 @@ $pagination_margin: 15vw;
           }
         }
       }
-    
+
+    .gfield_html h1{
+        font-family: $font__main;
+         font-weight: bold;
+    }
 
     .gform_heading{
-        margin-left: 75px;
-        padding-top: 50px;
-        h3.gform_title{
-            font-family: $font__secondary;
-            font-weight: bolder;
-        }
+     
+        display: none;
         
     }
     .gform_page{
         height: 339px;	
-        width: 784px;
+        max-width: 784px;
         margin:0 auto;
     }
 
+    .ginput_container_name .name_first{
+        @include mobile{
+            width:100%;
+        }
+    }
+    .ginput_container_name .name_last{
+        @include mobile{
+            width:100%;
+        }
+    }
     .ginput_container .medium{
+        @include mobile{
         width: 100%;
     }
-
+}
+ 
+.ginput_container input.medium.datepicker{
+    @include mobile{
+        width:100%;
+    }
+}
 
     .gform_page_footer {
         border-top: none;
@@ -92,6 +141,14 @@ $pagination_margin: 15vw;
 
         .gform_button, .gform_next_button{
            
+            @include mobile{
+                height: 44px;
+                width: 220px;
+                // position: absolute;
+                // right: 35%;
+                // margin-top: 1.5rem;
+
+            }
             position: absolute;
             right: 15%;
             top: 85%;
@@ -111,7 +168,11 @@ $pagination_margin: 15vw;
         }
        
       
-        .gform_previous_button {
+        .button.gform_previous_button {
+            @include mobile{
+                 display:none;
+
+            }
             font-family: $bodytext_font_family;
             position: absolute;
             left: 15%;
@@ -139,20 +200,29 @@ $pagination_margin: 15vw;
 }
 
 .gform_confirmation_wrapper{
-    height: 400px;	
-    width: 944px;
+    max-height: 400px;	
+    max-width: 944px;
     margin:0 auto;
     text-align: center;
     .gform_confirmation_message{
       a{
-        
+          @include mobile{
+            border: 1px solid $dark_green;
+            font-size:1.5rem;
+            width:10.5rem;
+            height:2.8125rem;
+            border-radius: 3px;
+            margin-bottom: 2rem;
+            
+        }
+        display:inline-block;
         text-decoration: none;
         border: 1px solid $dark_green;
         font-size: 40px;
         color: $font_light;
         font-weight: 700;
-        width: 250px;
-        height: 80px;
+        max-width: 250px;
+        max-height: 80px;
         font-family: $bodytext_font_family;
         background: $dark_green;
         box-shadow: none;
@@ -175,6 +245,9 @@ $pagination_margin: 15vw;
 }
 
 .gform_wrapper .gform_page_fields ul#gform_fields_1_2 {
+    @include mobile{
+        display:block;
+    }
     display:flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -187,7 +260,12 @@ $pagination_margin: 15vw;
 
 }
 
+
+
 .gform_wrapper .gfield .ginput_container .gfield_select{
+    @include mobile{
+        width: 100%;
+    }
     width: 13rem;
     height: 2.2rem;
 }
@@ -219,15 +297,28 @@ tr td.ui-datepicker-unselectable.ui-state-disabled {
 }
 
 .gform_confirmation_message_1{
-    padding-top: 6rem;
+    @include mobile{
+        padding:0;
+
+        
+    }
+    // padding-top: 6rem;
     display: flex;
     align-items: center;
-    height: 70vh;
+    height: 75vh;
+    width:75vw;
     flex-direction: column;
     justify-content: space-evenly;
     background-color: white;
 
     img{
+
+        @include mobile{
+
+                height:auto;
+                width:auto;
+        
+        }
         height:25vh;
         width:25vw;
     }
@@ -238,14 +329,16 @@ tr td.ui-datepicker-unselectable.ui-state-disabled {
 // styling for modal
 
 .book-tour-form-modal{
-    display: none;
+    // display: none;
 
-    &.is-active{
-        display:block;
+    .is-active &{
+        // display:block;
         position:fixed;
         z-index: 99999;
         top: 5%;
         left: 50%;
+        overflow-y: auto;
+        height:75vh;
 
         // right: 10%;
         // bottom: 10%;
@@ -286,4 +379,10 @@ tr td.ui-datepicker-unselectable.ui-state-disabled {
     
     color: $dark_green;
     font-size: 1.5rem;
+}
+
+.entry-header{
+    h1{
+        display:none;
+    }
 }
