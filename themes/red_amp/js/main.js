@@ -122,8 +122,8 @@
     $hamburguerMenu.addClass('remove-icon');
     $closeHamburguer.removeClass('remove-icon');
     console.log('HambButton');
-    $('body').css({'overflow':'hidden', 'opacity':'0.6'});
-    $('body .is-menu-active').css('opacity', '1');
+    $('body').css('overflow','hidden');
+    $('#background-mobile').addClass('background-mobile-opacity-on');
     $('#site-navigation').css('position','initial');
   });
 
@@ -132,8 +132,8 @@
     $hamburguerMenu.removeClass('remove-icon');
     $closeHamburguer.addClass('remove-icon');
     console.log('Xbutton');
-    $('body').css({'overflow':'visible','opacity':'1'});
-
+    $('body').css('overflow','visible');
+    $('#background-mobile').removeClass('background-mobile-opacity-on');
     $('#site-navigation').css('position','relative');
   });
 

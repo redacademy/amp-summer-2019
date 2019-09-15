@@ -1508,7 +1508,7 @@ object {
 .book-tour-form_wrapper.gform_wrapper {
   height: 670px;
   position: relative;
-  width: 944px;
+  max-width: 944px;
   background-color: #DAEFEC;
   margin: 0 auto; }
   @media (max-width: 760px) {
@@ -1610,10 +1610,7 @@ object {
       @media (max-width: 760px) {
         .book-tour-form_wrapper.gform_wrapper .gform_page_footer .gform_button, .book-tour-form_wrapper.gform_wrapper .gform_page_footer .gform_next_button {
           height: 44px;
-          width: 220px;
-          position: absolute;
-          right: 35%;
-          margin-top: 1.5rem; } }
+          width: 220px; } }
       .book-tour-form_wrapper.gform_wrapper .gform_page_footer .gform_button:focus, .book-tour-form_wrapper.gform_wrapper .gform_page_footer .gform_next_button:focus {
         outline: none; }
     .book-tour-form_wrapper.gform_wrapper .gform_page_footer .button.gform_previous_button {
@@ -1700,14 +1697,14 @@ tr td.ui-datepicker-unselectable.ui-state-disabled {
   color: #666; }
 
 .gform_confirmation_message_1 {
-  padding-top: 6rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 70vh;
+  height: 75vh;
+  width: 75vw;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1780,19 +1777,27 @@ tr td.ui-datepicker-unselectable.ui-state-disabled {
 .post-type-archive-event .events-title h1 {
   text-align: center;
   font-family: "Bambi"; }
+  @media (max-width: 760px) {
+    .post-type-archive-event .events-title h1 {
+      font-size: 24px; } }
 
 .post-type-archive-event .events-description {
   font-family: "Muli", sans-serif;
   font-size: 16px;
-  width: 750px;
+  max-width: 750px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
   letter-spacing: 0.9;
   line-height: 22px; }
+  @media (max-width: 760px) {
+    .post-type-archive-event .events-description {
+      padding-left: 10px;
+      padding-right: 10px;
+      font-size: 14px; } }
 
 .post-type-archive-event .custom-loop .loop-type-events {
-  width: 943px;
+  max-width: 943px;
   margin: 0 auto; }
   .post-type-archive-event .custom-loop .loop-type-events a {
     text-decoration: none; }
@@ -1805,12 +1810,16 @@ tr td.ui-datepicker-unselectable.ui-state-disabled {
       -webkit-box-shadow: 0 12px 48px -12px #9dbebe;
               box-shadow: 0 12px 48px -12px #9dbebe; }
       .post-type-archive-event .custom-loop .loop-type-events a .loop-item-container .event-image {
-        height: 268px;
+        height: auto;
         width: 400px;
         -webkit-box-flex: 0;
             -ms-flex: none;
                 flex: none;
         border-radius: 5px; }
+        @media (max-width: 760px) {
+          .post-type-archive-event .custom-loop .loop-type-events a .loop-item-container .event-image {
+            width: 30vw;
+            height: 20vh; } }
       .post-type-archive-event .custom-loop .loop-type-events a .loop-item-container .event-information {
         padding-left: 20px; }
         .post-type-archive-event .custom-loop .loop-type-events a .loop-item-container .event-information .event-name {
@@ -1820,12 +1829,27 @@ tr td.ui-datepicker-unselectable.ui-state-disabled {
           letter-spacing: 0.3px;
           line-height: 25px;
           padding-top: 10px; }
+          @media (max-width: 760px) {
+            .post-type-archive-event .custom-loop .loop-type-events a .loop-item-container .event-information .event-name {
+              font-size: 16px;
+              padding-top: 1rem; } }
         .post-type-archive-event .custom-loop .loop-type-events a .loop-item-container .event-information .event-date {
           font-family: "Muli", sans-serif;
           font-weight: bold;
           padding-top: 10px;
           font-size: 16px;
           margin: 0; }
+          @media (max-width: 760px) {
+            .post-type-archive-event .custom-loop .loop-type-events a .loop-item-container .event-information .event-date {
+              font-size: 14px;
+              padding-top: 2rem; }
+              .post-type-archive-event .custom-loop .loop-type-events a .loop-item-container .event-information .event-date::after {
+                content: '\f054';
+                font-family: "Font Awesome 5 Free";
+                font-weight: 900;
+                font-size: 16px;
+                color: #297373;
+                padding-left: 2.5rem; } }
       .post-type-archive-event .custom-loop .loop-type-events a .loop-item-container .event-content-wrapper {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -1836,7 +1860,8 @@ tr td.ui-datepicker-unselectable.ui-state-disabled {
           margin-bottom: 0;
           padding-top: 10px;
           padding-left: 20px;
-          text-align: left; }
+          text-align: left;
+          padding-bottom: 1rem; }
         .post-type-archive-event .custom-loop .loop-type-events a .loop-item-container .event-content-wrapper .button-arrow-container {
           width: 100%;
           text-align: center;
@@ -1863,6 +1888,12 @@ tr td.ui-datepicker-unselectable.ui-state-disabled {
               outline: none;
               -webkit-box-shadow: none;
                       box-shadow: none; }
+        @media (max-width: 760px) {
+          .post-type-archive-event .custom-loop .loop-type-events a .loop-item-container .event-content-wrapper {
+            display: none; } }
+  @media (max-width: 760px) {
+    .post-type-archive-event .custom-loop .loop-type-events {
+      padding: 0 10px; } }
 
 /* Single Event */
 .single-event .events-title h1 {
@@ -2379,7 +2410,7 @@ tr td.ui-datepicker-unselectable.ui-state-disabled {
                 transform: translateX(100%);
         width: 80%;
         margin-right: 0;
-        z-index: 50; }
+        z-index: 150; }
         .main-navigation .menu-menu-1-container.is-menu-active {
           -webkit-transform: translateX(0);
                   transform: translateX(0);
@@ -2583,7 +2614,7 @@ tr td.ui-datepicker-unselectable.ui-state-disabled {
 @media (max-width: 760px) {
   .menu-toggle-header {
     position: relative;
-    z-index: 60;
+    z-index: 160;
     font-size: 40px;
     margin-right: 10px; } }
 
@@ -2598,7 +2629,7 @@ tr td.ui-datepicker-unselectable.ui-state-disabled {
 
 @media (max-width: 760px) {
   .cross-close {
-    z-index: 60; } }
+    z-index: 160; } }
 
 .display-nothing {
   display: none !important; }
@@ -2619,6 +2650,22 @@ tr td.ui-datepicker-unselectable.ui-state-disabled {
     font-size: 40px;
     color: #297373;
     margin-right: 10px; } }
+
+#background-mobile {
+  height: 90vh;
+  width: 100vw;
+  display: none; }
+  #background-mobile.background-mobile-opacity-on {
+    display: initial;
+    content: "";
+    position: absolute;
+    background: rgba(0, 0, 0, 0.3);
+    bottom: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    opacity: 0.6;
+    z-index: 1; }
 
 /*--------------------------------------------------------------
 # Page Templates
