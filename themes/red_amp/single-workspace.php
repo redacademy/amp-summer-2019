@@ -180,7 +180,7 @@ get_header(); ?>
 			<p class="workspace-icon-text">Join our community of like-minded organizations!</p>
 			<p class="workspace-icon-text-mobile">See More</p>
 			<div class="front-page-button-arrow">
-				<button class="button-arrow-amp-community"><i class="fas fa-chevron-down"></i></button>
+				<button class="button-arrow-amp-workspace button-arrow-amp-community"><i class="fas fa-chevron-down"></i></button>
 			</div>
 		</div>
 

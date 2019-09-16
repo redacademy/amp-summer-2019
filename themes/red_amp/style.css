@@ -2181,7 +2181,12 @@ tr td.ui-datepicker-unselectable.ui-state-disabled {
   background: #297373;
   -webkit-box-shadow: none;
           box-shadow: none;
-  padding: 0; }
+  padding-top: 17px;
+  text-align: center;
+  text-decoration: none; }
+  @media (max-width: 760px) {
+    .button-book {
+      padding-top: 10px; } }
   .button-book:focus {
     outline: none; }
   .button-book:hover {
@@ -2335,6 +2340,7 @@ tr td.ui-datepicker-unselectable.ui-state-disabled {
   width: 100%; }
   @media (max-width: 760px) {
     .front-page-carousel {
+      display: none;
       width: 80%;
       margin: 0 auto; } }
   .front-page-carousel .main-carousel {
@@ -2424,6 +2430,37 @@ tr td.ui-datepicker-unselectable.ui-state-disabled {
     background: #b1ede8 !important;
     border: 1px solid #297373;
     margin: 0 15px; }
+
+.front-page-carousel-mobile {
+  display: none; }
+  @media (max-width: 760px) {
+    .front-page-carousel-mobile {
+      display: initial; } }
+  .front-page-carousel-mobile .main-carousel {
+    height: 80vh; }
+    .front-page-carousel-mobile .main-carousel .carousel-cell .carousel-content {
+      height: 80vh;
+      width: 90vw;
+      margin: 0 auto; }
+      .front-page-carousel-mobile .main-carousel .carousel-cell .carousel-content .carousel-image {
+        text-align: center; }
+        .front-page-carousel-mobile .main-carousel .carousel-cell .carousel-content .carousel-image img {
+          width: 40%;
+          margin-top: 20px; }
+      .front-page-carousel-mobile .main-carousel .carousel-cell .carousel-content .carousel-text {
+        text-align: center;
+        height: 40vh;
+        width: 80%;
+        margin: 20px auto;
+        overflow-y: scroll; }
+      .front-page-carousel-mobile .main-carousel .carousel-cell .carousel-content .carousel-name {
+        text-align: center; }
+      .front-page-carousel-mobile .main-carousel .carousel-cell .carousel-content .carousel-company {
+        text-align: center; }
+    .front-page-carousel-mobile .main-carousel .is-selected {
+      border: 1px solid black; }
+  .front-page-carousel-mobile .flickity-button {
+    display: none; }
 
 .bottom-book-button-front-page {
   margin-bottom: 200px;

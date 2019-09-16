@@ -43,7 +43,22 @@
     $('.front-page-amp-community-logos').toggleClass('is-open');
     $('.front-page-button-arrow').toggleClass('turn-arrow');
   });
-  // end of amp community function from front pageXOffset
+
+  $('.button-arrow-amp-workspace').on('click', function(event){
+    event.preventDefault();
+    $('.workspace-icons-flex-two').find('.workspace-icon-flex-two').toggleClass('workspace-icon-flex-two-open');
+    console.log('is this working?');
+
+    $('.workspace-icons').find('.workspace-icon-flex-three').toggleClass('workspace-icon-flex-three-open');
+
+    // if you are getting errors try using an if statement e.g. 
+    // if($('.workspace-icons-flex-two').length){
+    //   console.log('workspace icons flex two exists');
+    // }
+  });
+
+
+
 
   //Function to open and close the pop up for the Book a Tour
 
@@ -94,7 +109,7 @@
 
   $('.mobile-back-to-top').on('click', function(event) {
     event.preventDefault();
-    const $href = $(event.currentTarget).attr('data-scrollto'); // value = #goto
+    const $href = $(event.currentTarget).attr('data-scrollto'); 
     console.log($($href).offset().top);
     console.log('test2');
     $('body,html').animate({
@@ -102,8 +117,8 @@
     });
   });
 
-  //mobile nav menu in header
 
+<<<<<<< HEAD
   $('.menu-item-has-children').prepend(
     '<a href="#" class="mobile-menu-arrow"><i class="fas fa-angle-down"></i></a>'
   );
@@ -115,6 +130,14 @@
     $('.menu-item-has-children')
       .find('.sub-menu')
       .toggleClass('mobile-sub-menu');
+=======
+
+  //mobile nav menu in header
+  $('.menu-item-has-children').prepend('<a href="#" class="mobile-menu-arrow"><i class="fas fa-angle-down"></i></a>');
+    $('.mobile-menu-arrow').on('click', function (event) {
+    event.preventDefault();
+    $('.menu-item-has-children').find('.sub-menu').toggleClass('mobile-sub-menu');
+>>>>>>> b4f82fdf786995c57c45fd2061e5b6d2c52e958a
   });
 
   const $hamburguerMenu = $('.hamburguer');
