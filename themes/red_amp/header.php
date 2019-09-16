@@ -19,7 +19,7 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body id="back-to-top-beggining" <?php body_class(); ?>>
 	<div id='background-mobile'></div> 
 	<!-- for mobile background opacity purpose -->
 
