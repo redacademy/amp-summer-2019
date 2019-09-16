@@ -6,22 +6,14 @@
 /* Front page */
 .hero-banner {
     position: relative;
-
-
     .hero-banner-div {
-
-        ///changed with mobile
         @include mobile {
             background-position: bottom !important;
             background-size: 230% !important;
             height: 600px !important;
         }
     }
-
-    ///changed with mobile
 }
-
-
 
 .front-page-values {
     display: flex;
@@ -34,7 +26,6 @@
     margin-top: 50px;
     margin-bottom: 80px;
 
-
     &:focus {
         outline: none;
     }
@@ -42,20 +33,16 @@
     img {
         background: $font_light;
         margin: 15px;
-
         @include mobile {
-            ///changed with mobile
             margin: 0;
         }
-
-        ///changed with mobile
     }
 }
+// .front-page-values
 
 .hr-line {
     width: 30%;
     margin: 0 auto;
-
     hr {
         border-top: 2px solid $dark_green;
     }
@@ -72,29 +59,23 @@
         font-family: $headline_font_family;
 
         @include mobile {
-            ///changed with mobile
             top: 50px;
             left: 50%;
             transform: translateX(-50%);
             font-size: 20px;
             width: 340px;
             text-align: center;
-
         }
-
-        ///changed with mobile
     }
+    // .banner-text
 
     .button-arrow-container {
         width: 100%;
         text-align: center;
 
         @include mobile {
-            ///changed with mobile
             height: 0px !important;
         }
-
-        ///changed with mobile
 
         .button-arrow {
             margin: 0 auto;
@@ -108,21 +89,19 @@
             top: -30px;
 
             @include mobile {
-                ///changed with mobile
                 top: -80px;
                 width: 50px;
                 height: 50px;
                 font-size: 20px;
             }
-
-            ///changed with mobile
-
             &:focus {
                 outline: none;
 
             }
         }
+        // .button-arrow
     }
+    // .button-arrow-container
 
     .front-page-button-book {
         position: absolute;
@@ -130,19 +109,16 @@
         left: 150px;
 
         @include mobile {
-            ///changed with mobile
             left: 25vw;
             top: 170px;
             font-size: 20px;
             width: 45%;
             height: 50px;
         }
-
-        ///changed with mobile
     }
+    // .front-page-button-book
 }
-
-// end of .front-page-content-container
+//.front-page-content-container
 
 
 //workspace style in front page
@@ -151,11 +127,7 @@
     font-size: 23px;
     text-align: center;
     margin-top: 70px;
-
-
 }
-
-
 
 .front-page-workspace-text {
     font-family: $bodytext_font_family;
@@ -165,9 +137,7 @@
     margin: 0 auto;
 }
 
-
 .button-book {
-
     display: inline-block;
     font-size: 25px;
     color: $font_light;
@@ -191,9 +161,10 @@
         color: $font_light;
     }
 }
+// .button-book
+
 
 // Front-page - amp community
-
 .front-page-amp-community {
     max-width: 60%;
     margin: 0 auto;
@@ -252,7 +223,9 @@
             }
         }
     }
+    // .front-page-amp-community-logos
 }
+// .front-page-amp-community
 
 .front-page-amp-community-division-line-top {
     border-top: 2px solid $dark_green;
@@ -288,7 +261,9 @@
             outline: none;
         }
     }
+    // .button-arrow-amp-community 
 }
+// .front-page-button-arrow
 
 .turn-arrow {
     transform: rotate(180deg);
@@ -319,11 +294,6 @@
         height: fit-content;
 
         @include mobile {
-            /// include for mobile
-            // margin: 50px;
-            // margin: 10px;
-            // max-width:100%;
-            // padding: 10px;
             width: 100%;
         }
 
@@ -343,32 +313,31 @@
             max-width: 100%;
             font-family: $headline_font_family;
             font-size: 10px;
-
             h1 {
                 margin-top: 50px;
             }
         }
+        // .front-page-workspace-title
     }
+    // .front-page-each-workspace
 }
+// .front-page-workspace
+
 
 // Carousel in Front page for testimonials
 .front-page-carousel {
     width:100%;
     @include mobile {
-        ///changed with mobile
-        width: 80%; /////////////100
-        margin: 0 auto; //////
+        width: 80%; 
+        margin: 0 auto; 
     }
 
-    ///changed with mobile
     .main-carousel {
         height: 550px;
         margin: 0 auto;
         // margin-bottom: 50px;
         width: 60%; 
         margin: 50px auto;
-
-
 
         .carousel-cell {
             width: 40%;
@@ -384,13 +353,9 @@
             font-size: $bodytext_font_size_smaller;
 
             @include mobile {
-                ///changed with mobile
                 display: none;
                 width: 100%;
-
             }
-
-            ///changed with mobile
 
             .carousel-content {
                 width: 100%;
@@ -427,6 +392,7 @@
                 // font-size: $bodytext_font_size_smaller;
             }
         }
+        // .carousel-cell
 
         .is-selected {
             transform: scale(1.2);
@@ -437,16 +403,15 @@
             margin-right: -30px;
 
             @include mobile {
-                ///changed with mobile
                 display: initial;
                 left: 0 !important;
                 transform: scale(1);
                 margin-right: unset;
             }
-
-            ///changed with mobile
         }
+        // .is-selected
     }
+    // .main-carousel
 
     .flickity-enabled .flickity-viewport {
         padding: 3rem 0;
@@ -477,17 +442,12 @@
         background: transparent;
 
         @include mobile {
-            ///changed with mobile
             display: none;
         }
 
-        ///changed with mobile
-
-        // position: relative;
         &.previous {
             box-shadow: unset;
             left: -140px !important;
-
         }
 
         &.next {
@@ -495,6 +455,7 @@
             box-shadow: unset;
         }
     }
+    // .flickity-prev-next-button
 
     .flickity-slider {
         // left: 121px !important;
@@ -506,11 +467,8 @@
             margin: 0 15px;
 
             @include mobile {
-                ///changed with mobile
                 display: inline-block;
             }
-
-            ///changed with mobile
         }
 
         li {
@@ -519,9 +477,11 @@
             margin: 0 15px;
         }
     }
+    // .flickity-page-dots
 }
+// .front-page-carousel
 
-//front-page-carousel
+
 .bottom-book-button-front-page {
     margin-bottom: 200px;
     margin-top: 100px;

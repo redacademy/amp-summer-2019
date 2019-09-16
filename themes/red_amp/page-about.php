@@ -47,46 +47,47 @@ get_header(); ?>
         </div>
     </div> <!-- end of about-page-values --> 
 
+	
 	<div class="team-section">
-	<div class='row main-carousel'>
-        <?php
-        $fields = CFS()->get('testimonial');
-        $i = 0;
+		<div class='mobile-about-carousel'>
+        	<?php
+        		$fields = CFS()->get('meet_the_team');
+        			$i = 0;
 
-        foreach ($fields as $field) : {
-                ?>
+						if(!empty($fields)) {
+        					foreach ($fields as $i => $field) :
+            ?>
 
-                <?php
-                        $image = $field['member_image'];
-                        $text = $field['member_name'];
-                        $name = $field['member_position'];
-                        $array[$i] = array(
-                            $member_image,
-                            $member_name,
-                            $member_position,
-                        );
-                        ?>
-                <div class="carousel-cell">
-                    <div class="carousel-content">
-                        <div class="carousel-content-individual carousel-image">
-                            <img src="<?php echo $member_image; ?>" alt="">
-                        </div>
-                        <div class="carousel-content-individual carousel-text">
-                            <?php echo $member_name; ?>
-                        </div>
-                        <div class="carousel-content-individual carousel-name">
-                            <?php echo $member_position; ?>
-                        </div>
+			<?php
+                $member_image = $field['member_image'];
+                $member_name = $field['member_name'];
+                $member_position = $field['member_postion'];
+                $array[$i] = array(
+                    $member_image,
+                    $member_name,
+                    $member_position,
+                );
+            ?>
+    <div class="carousel-cell">
+        <div class="carousel-content amp-employee">
+            <div id="about-carousel" class="carousel-content-individual carousel-image">
+                <img src="<?php echo $member_image; ?>" alt="">
+            </div>
+            <div class="carousel-content-individual carousel-text">
+                <?php echo $member_name; ?>
+            </div>
+            <div class="carousel-content-individual carousel-member-name">
+                <?php echo $member_position; ?>
+            </div>
  
-                    </div> <!-- carousel-cell-content -->
-                <?php $i++;
-                    } ?>
-                </div><!-- .carousel-cell-container -->
+    </div> <!-- carousel-cell-content -->
+        <?php //$i++; ?>
+    </div><!-- .carousel-content amp-employee -->
 
-            <?php endforeach; ?>
-    </div><!-- .row main-carousel -->
-		
-	</div> <!-- end of team section -->
+				<?php endforeach; ?>
+			<?php } ?>
+    	</div><!-- .mobile-about-carousel -->
+	</div> <!-- end of team section --> 
 
 	<div class="headquarters">
 		<div class="hq-description">
