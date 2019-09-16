@@ -109,7 +109,7 @@
 
   $('.mobile-back-to-top').on('click', function(event) {
     event.preventDefault();
-    const $href = $(event.currentTarget).attr('data-scrollto'); // value = #goto
+    const $href = $(event.currentTarget).attr('data-scrollto'); 
     console.log($($href).offset().top);
     console.log('test2');
     $('body,html').animate({
@@ -117,14 +117,12 @@
     });
   });
 
+
+
   //mobile nav menu in header
-
   $('.menu-item-has-children').prepend('<a href="#" class="mobile-menu-arrow"><i class="fas fa-angle-down"></i></a>');
-
-  // $('.menu-item-has-children').on('click', function (event) {
     $('.mobile-menu-arrow').on('click', function (event) {
     event.preventDefault();
-    // $(event.currentTarget).find('.sub-menu').toggleClass('mobile-sub-menu');
     $('.menu-item-has-children').find('.sub-menu').toggleClass('mobile-sub-menu');
   });
 
