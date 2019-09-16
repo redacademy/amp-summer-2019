@@ -198,12 +198,77 @@ text-align: center;">
     </div><!-- .row main-carousel -->
 </div><!-- .item-active -->
 
+
+<!-- TODO Begin of carousel testimonial mobile -->
+<div class='item-active front-page-carousel-mobile'>
+
+    <div class='row main-carousel'>
+        <?php
+        $fields = CFS()->get('testimonial');
+        $i = 0;
+
+        foreach ($fields as $field) : {
+                ?>
+                <?php
+                        $image = $field['picture'];
+                        $text = $field['testimonial_text'];
+                        $name = $field['name'];
+                        $company = $field['company_name'];
+                        $array[$i] = array(
+                            $image,
+                            $text,
+                            $name,
+                            $company,
+                        );
+                        ?>
+                <div class="carousel-cell">
+                    <div class="carousel-content">
+                        <div class="carousel-content-individual carousel-image">
+                            <img src="<?php echo $image; ?>" alt="">
+                        </div>
+                        <div class="carousel-content-individual carousel-text">
+                            <?php echo $text; ?>
+                        </div>
+                        <div class="carousel-content-individual carousel-name">
+                            <?php echo $name; ?>
+                        </div>
+                        <div class="carousel-content-individual carousel-company">
+                            <?php echo $company; ?>
+                        </div>
+
+                    </div> <!-- carousel-cell-content -->
+                <?php $i++;
+                    } ?>
+                </div><!-- .carousel-cell-container -->
+
+            <?php endforeach; ?>
+    </div><!-- .row main-carousel -->
+
+</div>
+<!-- end of carousel testimonial mobile -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <div class="front-page-workspace-button bottom-book-button-front-page" style="
 text-align: center;">
     <a href="<?php echo get_the_permalink(189); ?>" class="button-book book-tour-popup"> Book a Tour</a>
 </div>
- <div class="mobile-back-to-top" data-scrollto="#back-to-top-beggining">
-     <a href="#" >Back to top</a>
- </div>
+<div class="mobile-back-to-top" data-scrollto="#back-to-top-beggining">
+    <a href="#">Back to top</a>
+</div>
 
 <?php get_footer();
