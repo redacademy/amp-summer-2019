@@ -189,6 +189,9 @@
     text-align: center;
     justify-content: center;
     align-content: center;
+    @include mobile{
+        max-width: 90%;
+    }
 
     h2 {
         font-family: $headline_font_family;
