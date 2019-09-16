@@ -704,7 +704,14 @@ a {
     text-align: center;
     margin-bottom: 85px; }
   .about-content .team-section .mobile-about-carousel .flickity-viewport {
-    width: 100%; }
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; }
   .about-content .team-section .mobile-about-carousel .carousel-cell {
     width: 100%;
     text-align: center;
@@ -784,6 +791,9 @@ a {
             align-content: center; }
         .about-content .about-page-amp-members .about-page-amp-members-logos div img {
           margin: auto; }
+      .about-content .about-page-amp-members .about-page-amp-members-logos .about-page-button-arrow,
+      .about-content .about-page-amp-members .about-page-amp-members-logos .about-page-amp-community-division-line {
+        display: none; }
   .about-content .about-page-amp-member-division-line-top {
     border-top: 2px solid #297373;
     margin: 0 auto;
@@ -819,6 +829,32 @@ a {
 @media (max-width: 760px) {
   .about-content .about-page-values {
     background: white; } }
+
+@media (max-width: 760px) {
+  .about-content .flickity-viewport {
+    width: 100%; } }
+
+@media (max-width: 760px) {
+  .about-content .headquarters .hq-description {
+    display: none; }
+  .about-content .headquarters .amp-building img {
+    display: none; } }
+
+@media (max-width: 760px) {
+  .about-content .about-page-button-arrow {
+    text-align: center; }
+    .about-content .about-page-button-arrow .about-arrow-amp-community {
+      width: 68px;
+      height: auto;
+      font-size: 30px;
+      color: #297373;
+      text-align: center;
+      border: none;
+      background: none;
+      -webkit-box-shadow: none;
+              box-shadow: none; }
+      .about-content .about-page-button-arrow .about-arrow-amp-community:focus {
+        outline: none; } }
 
 /*--------------------------------------------------------------
 # Content
