@@ -136,27 +136,23 @@
     console.log('desktop');
   }
 
-
-  $hamburguerMenu.on('click', function () {
+  $hamburguerMenu.on('click', function() {
     $mainMenu.addClass('is-menu-active');
     $hamburguerMenu.addClass('remove-icon');
     $closeHamburguer.removeClass('remove-icon');
     console.log('HambButton');
-    $('body').css('overflow','hidden');
+    $('body').css('overflow', 'hidden');
     $('#background-mobile').addClass('background-mobile-opacity-on');
-    $('#site-navigation').css('position','initial');
+    $('#site-navigation').css('position', 'initial');
   });
 
-  $closeHamburguer.on('click', function () {
+  $closeHamburguer.on('click', function() {
     $mainMenu.removeClass('is-menu-active');
     $hamburguerMenu.removeClass('remove-icon');
     $closeHamburguer.addClass('remove-icon');
     console.log('Xbutton');
-    $('body').css('overflow','visible');
+    $('body').css('overflow', 'visible');
     $('#background-mobile').removeClass('background-mobile-opacity-on');
-    $('#site-navigation').css('position','relative');
+    $('#site-navigation').css('position', 'relative');
   });
-
-
-
 })(jQuery);
