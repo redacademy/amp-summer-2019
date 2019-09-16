@@ -2450,7 +2450,8 @@ tr td.ui-datepicker-unselectable.ui-state-disabled {
       .front-page-carousel-mobile .main-carousel .carousel-cell .carousel-content .carousel-image {
         text-align: center; }
         .front-page-carousel-mobile .main-carousel .carousel-cell .carousel-content .carousel-image img {
-          width: 40%; }
+          width: 40%;
+          margin-top: 20px; }
       .front-page-carousel-mobile .main-carousel .carousel-cell .carousel-content .carousel-text {
         text-align: center;
         height: 40vh;
