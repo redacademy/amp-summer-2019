@@ -43,7 +43,22 @@
     $('.front-page-amp-community-logos').toggleClass('is-open');
     $('.front-page-button-arrow').toggleClass('turn-arrow');
   });
-  // end of amp community function from front pageXOffset
+
+  $('.button-arrow-amp-workspace').on('click', function(event){
+    event.preventDefault();
+    $('.workspace-icons-flex-two').find('.workspace-icon-flex-two').toggleClass('workspace-icon-flex-two-open');
+    console.log('is this working?');
+
+    $('.workspace-icons').find('.workspace-icon-flex-three').toggleClass('workspace-icon-flex-three-open');
+
+    // if you are getting errors try using an if statement e.g. 
+    // if($('.workspace-icons-flex-two').length){
+    //   console.log('workspace icons flex two exists');
+    // }
+  });
+
+
+
 
   //Function to open and close the pop up for the Book a Tour
 

@@ -345,9 +345,11 @@
         padding-left: 1rem;
         padding-right: 1rem;   
     }
-    .workspace-icons-flex-two, .workspace-icons {
-        width: 98%;
-        
+    .workspace-icons-flex-two {
+        width: 80%;  
+    }
+    .workspace-icons {
+        width: 98%;  
     }
     .workspace-icon-text-mobile  {
         width: 100%;
@@ -386,17 +388,17 @@
       }
     }
     
-    // .workspace-icon-flex-three {
-    // &:nth-child(n+4) {
-    //     display: flex;
-    //   }
-    // }
+    .workspace-icon-flex-three-open {
+    &:nth-child(n+4) {
+        display: flex;
+      }
+    }
 
-    // .workspace-icon-flex-two  {
-    // &:nth-child(n+3) {
-    //     display: flex;
-    //   }
-    // }
+    .workspace-icon-flex-two-open  {
+    &:nth-child(n+3) {
+        display: flex;
+      }
+    }
 
 
     } ///changed with mobile
