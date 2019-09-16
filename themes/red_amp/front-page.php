@@ -247,22 +247,6 @@ text-align: center;">
 </div>
 <!-- end of carousel testimonial mobile -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <div class="front-page-workspace-button bottom-book-button-front-page" style="
 text-align: center;">
     <a href="<?php echo get_the_permalink(189); ?>" class="button-book book-tour-popup"> Book a Tour</a>

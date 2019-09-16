@@ -1328,7 +1328,7 @@ object {
   margin-top: 75px;
   margin-bottom: 60px; }
 
-.workspace-icon-text-mobile, .front-page-button-arrow {
+.single-workspace .workspace-icon-text-mobile, .single-workspace .front-page-button-arrow {
   display: none; }
 
 .single-workspace .primary-cta-block {
@@ -1440,7 +1440,26 @@ object {
     margin-bottom: 0;
     margin-top: 2rem; }
   .single-workspace .primary-cta-block {
-    padding-top: 1rem; } }
+    padding-top: 1rem; }
+  .workspace-icon-content-holder {
+    padding: 40px 30px 40px 30px; }
+    .workspace-icon-content-holder p {
+      -ms-flex-item-align: center;
+          align-self: center;
+      padding-left: 0; }
+  .workspace-icon-content-holder {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .workspace-icon-content-holder .workspace-icon-image-holder {
+      width: 100%; }
+  .workspace-icon-flex-three:nth-child(n+4) {
+    display: none; }
+  .workspace-icon-flex-two:nth-child(n+3) {
+    display: none; } }
 
 .page .container {
   max-width: 1400px; }
@@ -2167,7 +2186,12 @@ tr td.ui-datepicker-unselectable.ui-state-disabled {
   background: #297373;
   -webkit-box-shadow: none;
           box-shadow: none;
-  padding: 0; }
+  padding-top: 17px;
+  text-align: center;
+  text-decoration: none; }
+  @media (max-width: 760px) {
+    .button-book {
+      padding-top: 10px; } }
   .button-book:focus {
     outline: none; }
   .button-book:hover {

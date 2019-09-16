@@ -157,7 +157,13 @@
     font-family: $bodytext_font_family;
     background: $dark_green;
     box-shadow: none;
-    padding: 0;
+    padding-top: 17px;
+    text-align: center;
+    text-decoration: none;
+    @include mobile{
+        padding-top: 10px;
+    }
+
 
     &:focus {
         outline: none;
@@ -170,6 +176,7 @@
     &:visited {
         color: $font_light;
     }
+
 }
 
 // .button-book
@@ -526,9 +533,6 @@
                 height: 80vh;
                 width: 90vw;
                 margin: 0 auto;
-                // border: 1px solid black;
-
-                .carousel-content-individual {}
 
                 .carousel-image {
                     text-align: center;
@@ -565,28 +569,10 @@
     }
 
     // .main-carousel
-    .flickity-enabled .flickity-viewport {}
-
-    .flickity-slider {}
-
-    .item-active {}
 
     .flickity-button {
         display: none;
     }
-
-    // .flickity-prev-next-button
-
-    .flickity-slider {}
-
-    .flickity-page-dots {
-        .is-selected {}
-
-        li {}
-    }
-
-    // .flickity-page-dots
-
 }
 
 // .front-page-carousel-mobile  
