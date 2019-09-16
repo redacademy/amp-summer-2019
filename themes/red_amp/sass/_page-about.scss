@@ -276,10 +276,15 @@
     .flickity-viewport {
       width: 100%;
 
-      // display: flex;
-      // flex-direction: row;
       .carousel-cell {
         width: 100% !important; // todo pleease don't iuse important
+      }
+    }
+  }
+  @include mobile {
+    .team-section .mobile-about-carousel {
+      .flickity-button {
+        display: block;
       }
     }
   }

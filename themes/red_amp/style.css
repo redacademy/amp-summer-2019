@@ -830,6 +830,9 @@ a {
       .about-content .flickity-viewport .carousel-cell {
         width: 100% !important; } }
   @media (max-width: 760px) {
+    .about-content .team-section .mobile-about-carousel .flickity-button {
+      display: block; } }
+  @media (max-width: 760px) {
     .about-content .headquarters .hq-description {
       display: none; }
     .about-content .headquarters .amp-building img {
