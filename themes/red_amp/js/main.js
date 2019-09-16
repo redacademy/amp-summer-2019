@@ -118,26 +118,12 @@
   });
 
 
-<<<<<<< HEAD
-  $('.menu-item-has-children').prepend(
-    '<a href="#" class="mobile-menu-arrow"><i class="fas fa-angle-down"></i></a>'
-  );
-
-  // $('.menu-item-has-children').on('click', function (event) {
-  $('.mobile-menu-arrow').on('click', function(event) {
-    event.preventDefault();
-    // $(event.currentTarget).find('.sub-menu').toggleClass('mobile-sub-menu');
-    $('.menu-item-has-children')
-      .find('.sub-menu')
-      .toggleClass('mobile-sub-menu');
-=======
 
   //mobile nav menu in header
   $('.menu-item-has-children').prepend('<a href="#" class="mobile-menu-arrow"><i class="fas fa-angle-down"></i></a>');
     $('.mobile-menu-arrow').on('click', function (event) {
     event.preventDefault();
     $('.menu-item-has-children').find('.sub-menu').toggleClass('mobile-sub-menu');
->>>>>>> b4f82fdf786995c57c45fd2061e5b6d2c52e958a
   });
 
   const $hamburguerMenu = $('.hamburguer');
