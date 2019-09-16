@@ -2192,7 +2192,7 @@ tr td.ui-datepicker-unselectable.ui-state-disabled {
   font-family: "Bambi";
   font-size: 23px;
   text-align: center;
-  margin-top: 70px; }
+  margin: 35px 0; }
 
 .front-page-workspace-text {
   font-family: "Muli", sans-serif;
