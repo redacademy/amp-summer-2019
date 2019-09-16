@@ -283,8 +283,9 @@
 #primary-menu {
     @include mobile {
         position: relative;
-        top: 0;
+        top: 0px;
         overflow: visible;
+        height:83.3vh;
     }
 }
 

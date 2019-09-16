@@ -2656,8 +2656,9 @@ tr td.ui-datepicker-unselectable.ui-state-disabled {
 @media (max-width: 760px) {
   #primary-menu {
     position: relative;
-    top: 0;
-    overflow: visible; } }
+    top: 0px;
+    overflow: visible;
+    height: 83.3vh; } }
 
 .remove-icon {
   display: none; }
