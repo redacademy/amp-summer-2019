@@ -42,7 +42,7 @@
 		<!-- .site-logo -->
 		<div class="site-logo">
 			<a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
-				<img src="<?php echo get_template_directory_uri() . '/images/Logo_The_AMP.png' ?>" alt="site-logo">
+				<img src="<?php echo esc_url(get_template_directory_uri()) . '/images/Logo_The_AMP.png' ?>" alt="site-logo">
 			</a>
 		</div>
 		<div class="hamburguer" aria-controls="primary-menu" aria-expanded="false">
