@@ -283,8 +283,7 @@
   }
   @include mobile {
     .team-section .mobile-about-carousel {
-      .flickity-button,
-      .flickity-page-dots {
+      .flickity-button {
         display: block;
       }
     }

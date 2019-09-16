@@ -830,8 +830,7 @@ a {
       .about-content .flickity-viewport .carousel-cell {
         width: 100% !important; } }
   @media (max-width: 760px) {
-    .about-content .team-section .mobile-about-carousel .flickity-button,
-    .about-content .team-section .mobile-about-carousel .flickity-page-dots {
+    .about-content .team-section .mobile-about-carousel .flickity-button {
       display: block; } }
   @media (max-width: 760px) {
     .about-content .headquarters .hq-description {
