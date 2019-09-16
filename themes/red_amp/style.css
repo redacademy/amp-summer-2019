@@ -2112,6 +2112,9 @@ tr td.ui-datepicker-unselectable.ui-state-disabled {
   background: #e3f8f7;
   margin-top: 50px;
   margin-bottom: 80px; }
+  @media (max-width: 760px) {
+    .front-page-values {
+      margin-bottom: 50px; } }
   .front-page-values:focus {
     outline: none; }
   .front-page-values img {
@@ -2119,7 +2122,7 @@ tr td.ui-datepicker-unselectable.ui-state-disabled {
     margin: 15px; }
     @media (max-width: 760px) {
       .front-page-values img {
-        margin: 0; } }
+        margin: 10px 0; } }
 
 .hr-line {
   width: 30%;
@@ -2194,6 +2197,9 @@ tr td.ui-datepicker-unselectable.ui-state-disabled {
   text-align: center;
   max-width: 50%;
   margin: 0 auto; }
+  @media (max-width: 760px) {
+    .front-page-workspace-text {
+      max-width: 90%; } }
 
 .button-book {
   display: inline-block;
@@ -2211,7 +2217,8 @@ tr td.ui-datepicker-unselectable.ui-state-disabled {
   text-decoration: none; }
   @media (max-width: 760px) {
     .button-book {
-      padding-top: 10px; } }
+      padding-top: 10px;
+      font-size: 20px; } }
   .button-book:focus {
     outline: none; }
   .button-book:hover {
@@ -2332,6 +2339,10 @@ tr td.ui-datepicker-unselectable.ui-state-disabled {
   width: 100%;
   padding: 40px;
   margin-top: 50px; }
+  @media (max-width: 760px) {
+    .front-page-workspace {
+      margin-top: 0;
+      padding-top: 0; } }
   .front-page-workspace a {
     text-decoration: none; }
   .front-page-workspace .front-page-each-workspace {
@@ -2349,7 +2360,8 @@ tr td.ui-datepicker-unselectable.ui-state-disabled {
     height: fit-content; }
     @media (max-width: 760px) {
       .front-page-workspace .front-page-each-workspace {
-        width: 100%; } }
+        width: 100%;
+        margin: 15px 0; } }
     .front-page-workspace .front-page-each-workspace .front-page-workspace-thumbnail {
       height: auto;
       width: 100%;
@@ -2361,8 +2373,14 @@ tr td.ui-datepicker-unselectable.ui-state-disabled {
       max-width: 100%;
       font-family: "Bambi";
       font-size: 10px; }
+      @media (max-width: 760px) {
+        .front-page-workspace .front-page-each-workspace .front-page-workspace-title {
+          margin-top: 0; } }
       .front-page-workspace .front-page-each-workspace .front-page-workspace-title h1 {
         margin-top: 50px; }
+        @media (max-width: 760px) {
+          .front-page-workspace .front-page-each-workspace .front-page-workspace-title h1 {
+            margin: 20px 0; } }
 
 .front-page-carousel {
   width: 100%; }
@@ -2467,7 +2485,7 @@ tr td.ui-datepicker-unselectable.ui-state-disabled {
   .front-page-carousel-mobile .main-carousel {
     height: 80vh; }
     .front-page-carousel-mobile .main-carousel .carousel-cell .carousel-content {
-      height: 80vh;
+      height: 68vh;
       width: 90vw;
       margin: 0 auto; }
       .front-page-carousel-mobile .main-carousel .carousel-cell .carousel-content .carousel-image {
@@ -2477,12 +2495,13 @@ tr td.ui-datepicker-unselectable.ui-state-disabled {
           margin-top: 20px; }
       .front-page-carousel-mobile .main-carousel .carousel-cell .carousel-content .carousel-text {
         text-align: center;
-        height: 40vh;
+        height: 30vh;
         width: 80%;
-        margin: 20px auto;
+        margin: 15px auto;
         overflow-y: scroll; }
       .front-page-carousel-mobile .main-carousel .carousel-cell .carousel-content .carousel-name {
-        text-align: center; }
+        text-align: center;
+        font-weight: bold; }
       .front-page-carousel-mobile .main-carousel .carousel-cell .carousel-content .carousel-company {
         text-align: center; }
     .front-page-carousel-mobile .main-carousel .is-selected {
