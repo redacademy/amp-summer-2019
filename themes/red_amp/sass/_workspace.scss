@@ -95,29 +95,7 @@
 }
 
 
-.workspace-wrapper {
-    position: relative;
-    display: flex;
-    > div {
-        width: 50%;
-        padding: 0 3rem;
-    }
-    &::after {
-        content: '';
-        width: 50%;
-        height: 2px;
-        background: $dark_green;
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-    &:last-child {
-        &::after {
-            display: none;
-        }
-    }
-}
+
 
 .workspace-details {
     h1 {
@@ -135,10 +113,7 @@
     }
 }
 
-.workspace-wrapper {
-    padding-bottom: 38px;
-    margin: 80px 160px 0 160px;
-}
+
 
 .flickity-button-icon {
     color: $dark_green;
@@ -170,15 +145,9 @@
 
         }
     }
-}
-    
+}  
 }// .container-carousel 
-   .workspace-wrapper {
-    .dot {
-        width: 90px;
-        height: 90px;
-    }
-   }
+   
 
 
    .flickity-viewport {
@@ -187,7 +156,37 @@
    }
 
 .workspace-wrapper {
-
+        position: relative;
+        display: flex;
+        > div {
+            width: 50%;
+            padding: 0 3rem;
+        }
+        &::after {
+            content: '';
+            width: 50%;
+            height: 2px;
+            background: $dark_green;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            @include mobile { ///changed with mobile
+            content: none;
+              } ///changed with mobile
+        }
+        &:last-child {
+            &::after {
+                display: none;
+            }
+        }
+        padding-bottom: 38px;
+        margin: 80px 160px 0 160px;
+    .dot {
+        width: 90px;
+        height: 90px;
+    }
+   
    .flickity-page-dots {
         width: 82% !important;
         bottom: 30px;
@@ -293,12 +292,44 @@
         padding-left: 20px;
     }
 }
+.workspace-desktop-hidden {
+    display: none;
+}
 
 @include mobile { ///changed with mobile
+    .single-workspace {
     .workspace-icon-text {
         display: none;
     }
     .workspace-icon-text-mobile, .front-page-button-arrow {
         display: block;
     }
+    .workspace-desktop-hidden {
+        display: block;
+    }
+    .workspace-mobile-hidden {
+        display: none;
+    }
+    .workspace-wrapper {
+        margin: 0 1rem;    
+        display: block;
+    > div {
+            width: 100%;
+            padding: 0 3rem;
+        }    
+    }
+    .workspace-details {
+        height: unset;
+    }
+    .workspace-carousel {
+        margin: 0 auto;
+    }
+    .flickity-button {
+        display: none;
+    }
+    .flickity-page-dots {
+        width: 100%;
+        bottom: 0;
+    }
+    }   
   } ///changed with mobile

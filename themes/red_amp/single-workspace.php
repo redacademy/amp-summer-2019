@@ -20,6 +20,10 @@ get_header(); ?>
 					foreach ( $fields as $field ) :  
 					?>
 					<div class="workspace-wrapper">
+						
+						<div class="workspace-details workspace-desktop-hidden">
+							<h1> <?php echo $field['workspace_title']; ?></h1>			
+						</div> <!-- End of workspace-details mobile hidden -->	
 
 						<div id="workspace-carousel-<?php echo $index;?>" class='row container-carousel'>	
 							<?php $index++; ?>
@@ -39,9 +43,9 @@ get_header(); ?>
 								?>
 
 						</div> <!-- End of row container-carousel -->
-								
+
 						<div class="workspace-details">
-							<h1> <?php echo $field['workspace_title']; ?> </h1>
+							<h1 class="workspace-mobile-hidden"> <?php echo $field['workspace_title']; ?> </h1>
 							<p> <?php echo $field['workspace_description'];  ?> </p>
 							<p><?php echo $field['workspace_cost'];  ?></p>
 						</div> <!-- End of workspace-details -->
