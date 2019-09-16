@@ -742,7 +742,7 @@ a {
         text-align: center;
         padding-top: 30px; }
       .about-content .headquarters .hq-description p {
-        width: 650px; }
+        text-align: center; }
     .about-content .headquarters .amp-building img {
       height: auto;
       width: 60%;
@@ -750,6 +750,8 @@ a {
       border-radius: 4px;
       top: 250px;
       left: 40%; }
+    .about-content .headquarters .amp-building-mobile {
+      display: none; }
   .about-content .about-page-amp-members {
     max-width: 60%;
     margin: 0 auto;
@@ -841,8 +843,17 @@ a {
       .about-content .headquarters .hq-description p,
       .about-content .headquarters h2 p {
         text-align: center; }
-    .about-content .amp-building img {
-      display: none; } }
+    .about-content .headquarters .hq-description {
+      width: 100%; }
+      .about-content .headquarters .hq-description .amp-building-mobile {
+        width: 100%; }
+    .about-content .headquarters .amp-building img {
+      display: none; }
+    .about-content .headquarters .amp-building-mobile {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%; } }
   @media (max-width: 760px) {
     .about-content .about-page-button-arrow {
       text-align: center; }
@@ -2197,7 +2208,7 @@ tr td.ui-datepicker-unselectable.ui-state-disabled {
   font-family: "Bambi";
   font-size: 23px;
   text-align: center;
-  margin-top: 70px; }
+  margin: 35px 0; }
 
 .front-page-workspace-text {
   font-family: "Muli", sans-serif;

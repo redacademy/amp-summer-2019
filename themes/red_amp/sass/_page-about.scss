@@ -144,7 +144,7 @@
         padding-top: 30px;
       }
       p {
-        width: 650px;
+        text-align: center;
       }
     }
 
@@ -157,6 +157,9 @@
         top: 250px;
         left: 40%;
       }
+    }
+    .amp-building-mobile {
+      display: none;
     }
   }
 
@@ -288,10 +291,25 @@
           text-align: center;
         }
       }
-    }
-    .amp-building {
-      img {
-        display: none;
+
+      .hq-description {
+        width: 100%;
+        .amp-building-mobile {
+          width: 100%;
+        }
+      }
+
+      .amp-building {
+        img {
+          display: none;
+        }
+      }
+
+      .amp-building-mobile {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
       }
     }
   }
