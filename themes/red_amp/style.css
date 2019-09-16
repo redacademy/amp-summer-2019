@@ -830,6 +830,10 @@ a {
       .about-content .flickity-viewport .carousel-cell {
         width: 100% !important; } }
   @media (max-width: 760px) {
+    .about-content .team-section .mobile-about-carousel .flickity-button,
+    .about-content .team-section .mobile-about-carousel .flickity-page-dots {
+      display: block; } }
+  @media (max-width: 760px) {
     .about-content .headquarters .hq-description {
       display: none; }
     .about-content .headquarters .amp-building img {
@@ -1427,7 +1431,9 @@ object {
     width: 100%;
     padding-left: 1rem;
     padding-right: 1rem; }
-  .single-workspace .workspace-icons-flex-two, .single-workspace .workspace-icons {
+  .single-workspace .workspace-icons-flex-two {
+    width: 80%; }
+  .single-workspace .workspace-icons {
     width: 98%; }
   .single-workspace .workspace-icon-text-mobile {
     width: 100%;
@@ -1454,7 +1460,15 @@ object {
   .workspace-icon-flex-three:nth-child(n+4) {
     display: none; }
   .workspace-icon-flex-two:nth-child(n+3) {
-    display: none; } }
+    display: none; }
+  .workspace-icon-flex-three-open:nth-child(n+4) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .workspace-icon-flex-two-open:nth-child(n+3) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; } }
 
 .page .container {
   max-width: 1400px; }
@@ -1600,7 +1614,6 @@ object {
   margin: 0 auto; }
   @media (max-width: 760px) {
     .book-tour-form_wrapper.gform_wrapper {
-      height: 110vh;
       width: 100vw;
       background-color: transparent;
       padding-left: 10px;
@@ -1679,7 +1692,8 @@ object {
     .book-tour-form_wrapper.gform_wrapper .ginput_container input.medium.datepicker {
       width: 100%; } }
   .book-tour-form_wrapper.gform_wrapper .gform_page_footer {
-    border-top: none; }
+    border-top: none;
+    position: relative; }
     .book-tour-form_wrapper.gform_wrapper .gform_page_footer .gform_button, .book-tour-form_wrapper.gform_wrapper .gform_page_footer .gform_next_button {
       position: absolute;
       right: 15%;
@@ -1697,7 +1711,15 @@ object {
       @media (max-width: 760px) {
         .book-tour-form_wrapper.gform_wrapper .gform_page_footer .gform_button, .book-tour-form_wrapper.gform_wrapper .gform_page_footer .gform_next_button {
           height: 44px;
-          width: 220px; } }
+          width: 220px;
+          display: block;
+          position: absolute;
+          border: 1px solid #297373;
+          border-radius: 3px;
+          top: 16px;
+          left: 50%;
+          -webkit-transform: translateX(-50%);
+                  transform: translateX(-50%); } }
       .book-tour-form_wrapper.gform_wrapper .gform_page_footer .gform_button:focus, .book-tour-form_wrapper.gform_wrapper .gform_page_footer .gform_next_button:focus {
         outline: none; }
     .book-tour-form_wrapper.gform_wrapper .gform_page_footer .button.gform_previous_button {
@@ -1724,21 +1746,25 @@ object {
   max-height: 400px;
   max-width: 944px;
   margin: 0 auto;
+  position: relative;
   text-align: center; }
   .gform_confirmation_wrapper .gform_confirmation_message a {
     display: inline-block;
     text-decoration: none;
     border: 1px solid #297373;
-    font-size: 40px;
+    font-size: 2.5rem;
     color: #fff;
     font-weight: 700;
-    max-width: 250px;
-    max-height: 80px;
+    width: 15.625rem;
+    height: 4rem;
+    border-radius: 3px;
     font-family: "Muli", sans-serif;
     background: #297373;
     -webkit-box-shadow: none;
             box-shadow: none;
-    padding: 0; }
+    padding: 0;
+    position: absolute;
+    bottom: -4%; }
     @media (max-width: 760px) {
       .gform_confirmation_wrapper .gform_confirmation_message a {
         border: 1px solid #297373;
@@ -1746,7 +1772,9 @@ object {
         width: 10.5rem;
         height: 2.8125rem;
         border-radius: 3px;
-        margin-bottom: 2rem; } }
+        margin-bottom: 2rem;
+        position: absolute;
+        bottom: -5%; } }
     .gform_confirmation_wrapper .gform_confirmation_message a:focus {
       outline: none; }
 
@@ -1790,8 +1818,8 @@ tr td.ui-datepicker-unselectable.ui-state-disabled {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 75vh;
-  width: 75vw;
+  height: auto;
+  width: auto;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1802,7 +1830,8 @@ tr td.ui-datepicker-unselectable.ui-state-disabled {
   background-color: white; }
   @media (max-width: 760px) {
     .gform_confirmation_message_1 {
-      padding: 0; } }
+      padding-left: 10px;
+      padding-right: 10px; } }
   .gform_confirmation_message_1 img {
     height: 25vh;
     width: 25vw; }
@@ -2269,7 +2298,7 @@ tr td.ui-datepicker-unselectable.ui-state-disabled {
 
 .front-page-button-arrow {
   text-align: center; }
-  .front-page-button-arrow .button-arrow-amp-community {
+  .front-page-button-arrow .button-arrow-amp-community, .front-page-button-arrow .button-arrow-amp-workspace {
     width: 68px;
     height: auto;
     font-size: 30px;
@@ -2279,7 +2308,7 @@ tr td.ui-datepicker-unselectable.ui-state-disabled {
     background: none;
     -webkit-box-shadow: none;
             box-shadow: none; }
-    .front-page-button-arrow .button-arrow-amp-community:focus {
+    .front-page-button-arrow .button-arrow-amp-community:focus, .front-page-button-arrow .button-arrow-amp-workspace:focus {
       outline: none; }
 
 .turn-arrow {
