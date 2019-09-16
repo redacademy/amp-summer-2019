@@ -69,7 +69,6 @@ get_header(); ?>
 			$icons_class = "workspace-icons";  
 			$icon_text_class = "workspace-icon-title";
 			$numIcons = count($icons);
-			// echo $numIcons;
 			if (($numIcons % 3 ) == 0)
 			{ 
 				
@@ -146,7 +145,7 @@ get_header(); ?>
 					break;
 					case 'Photocopier/Printer & Scanner':
 					?> <div class="<?php echo $icon_class; ?> workspace-icon-content-holder"> <div class="workspace-icon-image-holder"> <img src="<?php echo get_template_directory_uri() . '/images/printer.png'; ?>" alt="photocopier" /> </div>
-					<p> <?php  echo "Photocopier/Printer & Scanner";
+					<p> <?php  echo "Photocopier / Printer & Scanner";
 					?> </p>	</div> <?php
 					break;
 					case 'Access to Booking Meeting/Event Rooms':
