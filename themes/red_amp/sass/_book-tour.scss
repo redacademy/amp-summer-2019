@@ -25,7 +25,7 @@ $pagination_margin: 15vw;
 
 
     @include mobile {
-     height:110vh;
+    //  height:110vh;
      width:100vw;
      background-color: transparent;
      padding-left:10px;
@@ -136,7 +136,7 @@ $pagination_margin: 15vw;
 
     .gform_page_footer {
         border-top: none;
-
+        position:relative;
 
 
         .gform_button, .gform_next_button{
@@ -147,6 +147,13 @@ $pagination_margin: 15vw;
                 // position: absolute;
                 // right: 35%;
                 // margin-top: 1.5rem;
+                display: block;
+                position: absolute;
+                border:1px solid $dark_green;
+                border-radius: 3px;
+                top: 16px;
+                left: 50%;
+                transform: translateX(-50%);
 
             }
             position: absolute;
@@ -203,6 +210,7 @@ $pagination_margin: 15vw;
     max-height: 400px;	
     max-width: 944px;
     margin:0 auto;
+    position:relative;
     text-align: center;
     .gform_confirmation_message{
       a{
@@ -213,20 +221,25 @@ $pagination_margin: 15vw;
             height:2.8125rem;
             border-radius: 3px;
             margin-bottom: 2rem;
+            position: absolute;
+            bottom:-5%;
             
         }
         display:inline-block;
         text-decoration: none;
         border: 1px solid $dark_green;
-        font-size: 40px;
+        font-size: 2.5rem;
         color: $font_light;
         font-weight: 700;
-        max-width: 250px;
-        max-height: 80px;
+        width: 15.625rem;
+        height: 4rem;
+        border-radius: 3px;
         font-family: $bodytext_font_family;
         background: $dark_green;
         box-shadow: none;
         padding: 0;
+        position: absolute;
+        bottom:-4%;
 
         &:focus {
             outline: none;
@@ -298,15 +311,17 @@ tr td.ui-datepicker-unselectable.ui-state-disabled {
 
 .gform_confirmation_message_1{
     @include mobile{
-        padding:0;
+        padding-left: 10px;
+        padding-right: 10px;
 
-        
     }
     // padding-top: 6rem;
     display: flex;
     align-items: center;
-    height: 75vh;
-    width:75vw;
+    // height: 75vh;
+    // width:75vw;
+    height:auto;
+    width:auto;
     flex-direction: column;
     justify-content: space-evenly;
     background-color: white;
