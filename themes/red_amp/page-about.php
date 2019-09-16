@@ -116,7 +116,7 @@ get_header(); ?>
     	</div>
     	<div>
        		 <p>
-           		 Meet the AMP Members... share the space with like minded people and organizations...focus on positive and social change...
+           		 Meet the AMP Members... share the space with like minded people and organizations...focus on positive and social change.
         	</p>
     	</div>
     <div class="about-page-amp-members-logos">
