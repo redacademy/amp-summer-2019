@@ -92,7 +92,12 @@ get_header(); ?>
 		<div class="hq-description">
 			<h2>
 				Our Headquarters
-			</h2>
+            </h2>
+            
+            <div class="amp-building-mobile">
+                <img src="<?php echo get_template_directory_uri();?>/images/Building1.jpg" alt="building"/>
+            </div> <!-- amp-building -->
+            
 			<p>
 				The old BC Electric Building. Our name, The Amp, is inspired by our location in the old BC Electric Building. An Ampere is a unit of electric current named after a French mathematician. 'Ampeer' is the name we give to the many teams and individuals who make The AMP the home for work in the heart of Vancouver.
 			</p>
@@ -111,7 +116,7 @@ get_header(); ?>
     	</div>
     	<div>
        		 <p>
-           		 Meet the AMP Members... share the space with like minded people and organizations...focus on positive and social change...
+           		 Meet the AMP Members... share the space with like minded people and organizations...focus on positive and social change.
         	</p>
     	</div>
     <div class="about-page-amp-members-logos">

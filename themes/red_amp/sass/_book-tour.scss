@@ -25,7 +25,7 @@ $pagination_margin: 15vw;
 
 
     @include mobile {
-    //  height:110vh;
+    min-height: 100vh;
      width:100vw;
      background-color: transparent;
      padding-left:10px;
@@ -33,7 +33,7 @@ $pagination_margin: 15vw;
     
 
     }
-    height: 670px;
+    // height: 670px;
 	
     position:relative;
     max-width: 944px;	
@@ -400,4 +400,18 @@ tr td.ui-datepicker-unselectable.ui-state-disabled {
     h1{
         display:none;
     }
+}
+
+tbody{
+    background: white;
+}
+
+.page-book-a-tour{
+
+   .site-content .content-area .site-main .container article .entry-content{
+       @include mobile{
+           max-height: 1000px;
+     
+    }
+}
 }
