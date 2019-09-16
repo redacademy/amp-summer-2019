@@ -150,7 +150,7 @@ get_header(); ?>
 					break;
 					case 'Access to Booking Meeting/Event Rooms':
 					?> <div class="<?php echo $icon_class; ?> workspace-icon-content-holder"> <div class="workspace-icon-image-holder"> <img src="<?php echo get_template_directory_uri() . '/images/calendar.png'; ?>" alt="meeting" /> </div>
-					<p> <?php  echo "Access to Booking Meeting/Event Rooms";
+					<p> <?php  echo "Access to Booking Meeting / Event Rooms";
 					?> </p>	</div> <?php
 					break;
 					case 'Custom-built FSC Wooden Desks':
