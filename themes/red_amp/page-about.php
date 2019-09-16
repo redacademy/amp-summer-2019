@@ -81,7 +81,6 @@ get_header(); ?>
             </div>
  
     </div> <!-- carousel-cell-content -->
-        <?php //$i++; ?>
     </div><!-- .carousel-content amp-employee -->
 
 				<?php endforeach; ?>
@@ -151,9 +150,17 @@ get_header(); ?>
         </div>
         <div>
             <img src="<?php echo get_template_directory_uri() . '/images/Member_Logo12.png' ?>" alt="">
-        </div>
-    </div>
+        </div>  
 
+    <div class="about-page-button-arrow">
+        <button class="about-arrow-amp-community"><i class="fas fa-chevron-down"></i></button>
+    </div> <!-- end of button arrow -->
+    <div class="about-page-amp-community-division-line">
+
+    </div> <!-- end of division line -->
+    
+    </div> <!-- end of amp members logo --> 
+    
 		<?php endwhile; // End of the loop. ?>
 	</main><!-- #main -->
 	</div><!-- #primary -->
