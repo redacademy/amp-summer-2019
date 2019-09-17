@@ -331,6 +331,9 @@
     box-shadow: 0 12px 48px -12px $box_shadow_green;
     width: 350px;
     height: fit-content;
+    &:hover{
+      transform: scale(1.05);
+    }
 
     @include mobile {
       width: 100%;

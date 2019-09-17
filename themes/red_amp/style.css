@@ -2521,6 +2521,9 @@ tbody {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content; }
+    .front-page-workspace .front-page-each-workspace:hover {
+      -webkit-transform: scale(1.05);
+              transform: scale(1.05); }
     @media (max-width: 760px) {
       .front-page-workspace .front-page-each-workspace {
         width: 100%;
