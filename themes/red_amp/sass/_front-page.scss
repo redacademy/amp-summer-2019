@@ -134,23 +134,11 @@
 
 //workspace style in front page
 .front-page-workspace-title {
-<<<<<<< HEAD
     font-family: $headline_font_family;
     font-size: 23px;
     text-align: center;
     // margin-top: 70px;
     margin: 35px 0;
-=======
-  font-family: $headline_font_family;
-  font-size: 23px;
-  text-align: center;
-  margin-top: 70px;
-  font-family: $headline_font_family;
-  font-size: 23px;
-  text-align: center;
-  // margin-top: 70px;
-  margin: 35px 0;
->>>>>>> 6cdf52a06dc2c28537be3e8c24d2cf13b3c16a0b
 }
 
 .front-page-workspace-text {
@@ -188,6 +176,7 @@
 
   &:hover {
     box-shadow: 0 10px 10px 0 $dark_grey;
+    color: $font_light;
   }
 
   &:visited {
