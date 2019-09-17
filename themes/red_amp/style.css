@@ -713,6 +713,11 @@ a {
   .about-content .team-section .mobile-about-carousel .flickity-viewport {
     width: 100%;
     max-width: 1400px; }
+    @media (min-width: 760px) {
+      .about-content .team-section .mobile-about-carousel .flickity-viewport {
+        width: 80%;
+        margin-left: auto;
+        margin-right: 182px; } }
   .about-content .team-section .mobile-about-carousel .carousel-cell {
     width: 38%;
     text-align: center; }

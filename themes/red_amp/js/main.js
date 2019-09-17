@@ -8,7 +8,7 @@
     // options
     wrapAround: true,
     cellAlign: 'center'
-  }); 
+  });
 
   let index = $('.container-carousel').length;
   let i;
@@ -154,21 +154,22 @@
     $('#site-navigation').css('position', 'relative');
   });
 
-
   // Start of contact us page form redirect on form submissions to thank you page
 
-    if($('.page-contact').length){
-      document.addEventListener( 'wpcf7mailsent', function( event ) {
-        
+  if ($('.page-contact').length) {
+    document.addEventListener(
+      'wpcf7mailsent',
+      function(event) {
         console.log('form sent?', event.detail.contactFormId);
-        if ( parseInt(event.detail.contactFormId) === 73 ) {
+        if (parseInt(event.detail.contactFormId) === 73) {
           console.log('reload window');
           window.location = amp_api.home_url + '/thank-you';
         }
-
-      }, false );
-    }
-  // End of contact us page form redirect on form submissions to thank you page  
+      },
+      false
+    );
+  }
+  // End of contact us page form redirect on form submissions to thank you page
 })(jQuery);
 
 /*   ABOUT PAGE OPEN/CLOSE FUNCTION */
