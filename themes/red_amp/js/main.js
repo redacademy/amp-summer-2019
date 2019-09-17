@@ -62,7 +62,7 @@
     // code to be trigger when next/previous page is loaded
     let $prevInput = $('#gform_previous_button_1').prop('value');
     if ($prevInput === 'Previous') {
-      console.log(1);
+     
       $('#gform_previous_button_1').before(
         '<i class="prev-button-arrow fas fa-less-than"></i>'
       );
@@ -92,6 +92,10 @@
 
     // end of function for book a tour button
   }
+
+ 
+  
+ 
 
   $('.button-arrow').on('click', function(event) {
     event.preventDefault();

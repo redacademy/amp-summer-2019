@@ -40,6 +40,7 @@ $pagination_margin: 15vw;
     max-width: 944px;	
     background-color: #DAEFEC;
     margin: 0 auto;
+    height: 100%;
     
 
 
@@ -108,7 +109,8 @@ $pagination_margin: 15vw;
         
     }
     .gform_page{
-        height: 339px;	
+        // height: 339px;	
+        height: 100%;
         max-width: 784px;
         margin:0 auto;
     }
@@ -355,6 +357,7 @@ tr td.ui-datepicker-unselectable.ui-state-disabled {
         left: 50%;
         overflow-y: auto;
         height:75vh;
+        // background-color: #DAEFEC;
 
         // right: 10%;
         // bottom: 10%;
@@ -363,6 +366,17 @@ tr td.ui-datepicker-unselectable.ui-state-disabled {
 
 }
 
+.prev-button-arrow.fa-less-than{
+    height:60px;
+    display: inline-block;
+    position: absolute;
+    top: 85%;
+    &::before{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
 
 .close-book-tour{
     
@@ -389,8 +403,8 @@ tr td.ui-datepicker-unselectable.ui-state-disabled {
 
 .prev-button-arrow{
     position: absolute;
-    bottom: 8.5%;
-   
+    // bottom: 8.5%;
+    top: 208%;
     left: 15%;
     
     color: $dark_green;
