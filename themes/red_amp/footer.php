@@ -20,14 +20,22 @@
 		<div class="contact">
 			<div class="site-footer-name-address">
 				<p><span class="make-strong">The AMP</span><br>
-				425 Carrall Street<br>Vancouver,BC<br>V6B 6E3</p>
+					425 Carrall Street<br>Vancouver,BC<br>V6B 6E3</p>
 			</div>
 
 
 			<div class="contact-info">
-				<a href="tel:6043434590"> <div class="contact-info-img-container img-phone"> <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/Phone footer.svg" alt="phone-logo"/><p>604-343-4590</p></div> </a>
-				<a href="mailto:info@theamp.space"> <div class="contact-info-img-container img-email"> <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/Icon email.svg" alt="email-logo" /><p>info@theamp.space</p> </div> </a>
-			
+				<a href="tel:6043434590">
+					<div class="contact-info-img-container img-phone"> <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/Phone footer.svg" alt="phone-logo" />
+						<p>604-343-4590</p>
+					</div>
+				</a>
+				<a href="mailto:info@theamp.space">
+					<div class="contact-info-img-container img-email"> <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/Icon email.svg" alt="email-logo" />
+						<p>info@theamp.space</p>
+					</div>
+				</a>
+
 				<div class="social-icon-mobile hidden-mobile">
 					<span><img class="social-icon-mobile-image" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/Facebook.svg" alt="logo" /></span>
 					<span><img class="social-icon-mobile-image" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/LinkedIn.svg" alt="logo" /></span>
@@ -53,11 +61,23 @@
 
 		<!-- .social-icon Desktop -->
 		<div class="social-icon show-mobile">
-			
+
 			<div class="social-icon-images show-mobile">
-			<span><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/Facebook.svg" alt="logo" /></span>
-			<span><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/LinkedIn.svg" alt="logo" /></span>
-			<span><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/twitter.svg" alt="logo" /></span>
+				<span>
+					<a href="https://www.facebook.com/AmpVancouver" target="_blank">
+						<img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/Facebook.svg" alt="logo" />
+					</a>
+				</span>
+				<span>
+					<a href="https://www.linkedin.com/company/the-amp-vancouver/" target="_blank">
+						<img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/LinkedIn.svg" alt="logo" />
+					</a>
+				</span>
+				<span>
+					<a href="https://twitter.com/AmpVancouver" target="_blank">
+						<img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/twitter.svg" alt="logo" />
+					</a>
+				</span>
 			</div>
 
 			<div class="site-rights show-mobile">
@@ -79,12 +99,12 @@
 <!-- Adding the form of book a tour in the footer -->
 <?php
 echo "<div class='book-tour-form-modal-outer-wrapper'>";
-	echo "<div class='book-tour-form-modal'>";
-		// TODO try adding a close button
-		echo "<button class='close-book-tour'>X</button>";
-		gravity_form(1, false, false, false, '', true);
-	echo "</div>";
-	echo "</div>";
+echo "<div class='book-tour-form-modal'>";
+// TODO try adding a close button
+echo "<button class='close-book-tour'>X</button>";
+gravity_form(1, false, false, false, '', true);
+echo "</div>";
+echo "</div>";
 ?>
 <!-- End of the form of Book a tour -->
 
