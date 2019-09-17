@@ -187,7 +187,7 @@
         font-family: $font__secondary;
         font-size: $bodytext_font_size;
         width: 750px;
-        text-align: center;
+        text-align: justify;
         margin-left: auto;
         margin-right: auto;
         letter-spacing: 0.9;
@@ -235,8 +235,15 @@
 
         .event-details {
             margin-left: 130px;
+            .events-description-details{
+                     p:nth-child(1){
+                        font-weight: bold;
+             }
+             p{
+                text-align: justify;
+             }
+          }
         }
-
         .event-location-time-details {
             display: flex;
             justify-content: space-between;

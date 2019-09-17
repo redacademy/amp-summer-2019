@@ -93,7 +93,7 @@ get_header(); ?>
 			$comma_separated = implode(", ", $esc_location);
 
 			// var_dump($comma_separated);
-			echo "<a href='https://www.google.com/calendar/render?
+			echo "<a target='_blank' href='https://www.google.com/calendar/render?
 			action=TEMPLATE&
 			text={$event_title}&
 			dates={$event_date}/{$event_offset}&
@@ -108,10 +108,10 @@ get_header(); ?>
 		?>
 		
 		<br>
-		<a href="<?php echo CFS()->get('event_map_location')['url'];?>">View map</a>
+		<a target='_blank' href="<?php echo CFS()->get('event_map_location')['url'];?>">View map</a>
 
 		<br>
-		<a href="<?= $event_button['url'] ?>">
+		<a target='_blank' href="<?= $event_button['url'] ?>">
 		<button type="button" class="button-book">Register</button>
 		</a>
 		</main><!-- #main -->

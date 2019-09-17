@@ -713,6 +713,11 @@ a {
   .about-content .team-section .mobile-about-carousel .flickity-viewport {
     width: 100%;
     max-width: 1400px; }
+    @media (min-width: 760px) {
+      .about-content .team-section .mobile-about-carousel .flickity-viewport {
+        width: 80%;
+        margin-left: auto;
+        margin-right: 182px; } }
   .about-content .team-section .mobile-about-carousel .carousel-cell {
     width: 38%;
     text-align: center; }
@@ -1601,7 +1606,8 @@ object {
         font-family: "Muli", sans-serif;
         font-weight: bold;
         width: 100%; }
-        .page .container .wp-block-columns .wp-block-column .wpcf7 form p label textarea, .page .container .wp-block-columns .wp-block-column .wpcf7 form p label input {
+        .page .container .wp-block-columns .wp-block-column .wpcf7 form p label textarea,
+        .page .container .wp-block-columns .wp-block-column .wpcf7 form p label input {
           width: 100%;
           padding-left: 0;
           padding-top: 0;
@@ -1613,6 +1619,7 @@ object {
           padding-bottom: 13px;
           opacity: 0.5;
           color: #393939;
+          padding-left: 20px;
           font-family: "Muli", sans-serif;
           border-radius: 3px;
           background-color: #fff; }
@@ -1675,7 +1682,8 @@ object {
         flex-basis: 100%;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
-    .page .wp-block-column .contact-page-map, .page .wp-block-column .contact-page-form {
+    .page .wp-block-column .contact-page-map,
+    .page .wp-block-column .contact-page-form {
       width: 100%; }
     .page .wp-block-column .contact-page-form {
       margin: 0 !important;
@@ -2152,7 +2160,7 @@ tbody {
   font-family: "Muli", sans-serif;
   font-size: 16px;
   width: 750px;
-  text-align: center;
+  text-align: justify;
   margin-left: auto;
   margin-right: auto;
   letter-spacing: 0.9;
@@ -2195,6 +2203,10 @@ tbody {
     overflow: hidden; }
   .single-event .single-event-wrap .event-details {
     margin-left: 130px; }
+    .single-event .single-event-wrap .event-details .events-description-details p:nth-child(1) {
+      font-weight: bold; }
+    .single-event .single-event-wrap .event-details .events-description-details p {
+      text-align: justify; }
   .single-event .single-event-wrap .event-location-time-details {
     display: -webkit-box;
     display: -ms-flexbox;
