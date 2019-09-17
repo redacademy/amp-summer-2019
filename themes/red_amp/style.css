@@ -1713,7 +1713,8 @@ object {
   position: relative;
   max-width: 944px;
   background-color: #DAEFEC;
-  margin: 0 auto; }
+  margin: 0 auto;
+  height: 100%; }
   @media (max-width: 760px) {
     .book-tour-form_wrapper.gform_wrapper {
       min-height: 100vh;
@@ -1780,7 +1781,7 @@ object {
   .book-tour-form_wrapper.gform_wrapper .gform_heading {
     display: none; }
   .book-tour-form_wrapper.gform_wrapper .gform_page {
-    height: 339px;
+    height: 100%;
     max-width: 784px;
     margin: 0 auto; }
   @media (max-width: 760px) {
@@ -1954,6 +1955,17 @@ tr td.ui-datepicker-unselectable.ui-state-disabled {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%); }
 
+.prev-button-arrow.fa-less-than {
+  height: 60px;
+  display: inline-block;
+  position: absolute;
+  top: 85%; }
+  .prev-button-arrow.fa-less-than::before {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%); }
+
 .close-book-tour {
   right: 3%;
   top: 20px;
@@ -1977,7 +1989,7 @@ tr td.ui-datepicker-unselectable.ui-state-disabled {
 
 .prev-button-arrow {
   position: absolute;
-  bottom: 8.5%;
+  top: 208%;
   left: 15%;
   color: #297373;
   font-size: 1.5rem; }
