@@ -90,6 +90,9 @@ function red_starter_scripts() {
 	wp_enqueue_style('red-starter-googlefont-lusitana', 'https://fonts.googleapis.com/css?family=Lusitana:400,700&display=swap');
 
 	wp_enqueue_style('flickity', 'https://unpkg.com/flickity@2/dist/flickity.min.css');
+	
+	wp_enqueue_script('jquery');
+
 	wp_enqueue_script( 'flickity', 'https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js', array(), '', true );
 
 	wp_enqueue_script( 'amp-main-js', get_template_directory_uri() . '/build/js/main.min.js', array('jquery'), '', true );
