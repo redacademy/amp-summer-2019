@@ -22,7 +22,7 @@ get_header(); ?>
 					<div class="workspace-wrapper">
 						
 						<div class="workspace-details workspace-desktop-hidden">
-							<h1> <?php echo $field['workspace_title']; ?></h1>			
+							<h1> <?php echo esc_html($field['workspace_title']); ?></h1>			
 						</div> <!-- End of workspace-details mobile hidden -->	
 
 						<div id="workspace-carousel-<?php echo $index;?>" class='row container-carousel'>	
@@ -45,9 +45,9 @@ get_header(); ?>
 						</div> <!-- End of row container-carousel -->
 
 						<div class="workspace-details">
-							<h1 class="workspace-mobile-hidden"> <?php echo $field['workspace_title']; ?> </h1>
-							<p> <?php echo $field['workspace_description'];  ?> </p>
-							<p><?php echo $field['workspace_cost'];  ?></p>
+							<h1 class="workspace-mobile-hidden"> <?php echo esc_html($field['workspace_title']); ?> </h1>
+							<p> <?php echo esc_html($field['workspace_description']);  ?> </p>
+							<p><?php echo esc_html($field['workspace_cost']);  ?></p>
 						</div> <!-- End of workspace-details -->
 
 					</div><!-- workspace-wrapper -->
@@ -94,77 +94,77 @@ get_header(); ?>
 				
 				switch ($icon) {
 					case 'High Speed Wifi':
-					?> <div class="<?php echo $icon_class; ?> workspace-icon-content-holder"> <div class="workspace-icon-image-holder"> <img src="<?php echo get_template_directory_uri() . '/images/wifi.png'; ?>" alt="wifi" /> </div>
+					?> <div class="<?php echo $icon_class; ?> workspace-icon-content-holder"> <div class="workspace-icon-image-holder"> <img src="<?php echo esc_url(get_template_directory_uri()) . '/images/wifi.png'; ?>" alt="wifi" /> </div>
 						<p> <?php  echo "High Speed Wifi";
 					?> </p>	</div> <?php
 					break;
 					case '24/7 Access':
-					?> <div class="<?php echo $icon_class; ?> workspace-icon-content-holder"> <div class="workspace-icon-image-holder"> <img src="<?php echo get_template_directory_uri() . '/images/clock.png'; ?>" alt="access" /> </div>
+					?> <div class="<?php echo $icon_class; ?> workspace-icon-content-holder"> <div class="workspace-icon-image-holder"> <img src="<?php echo esc_url(get_template_directory_uri()) . '/images/clock.png'; ?>" alt="access" /> </div>
 					<p> <?php  echo "24/7 Access";
 					?> </p>	</div> <?php
 						break;
 					case 'Access 9am-5pm':
-					?> <div class="<?php echo $icon_class; ?> workspace-icon-content-holder"> <div class="workspace-icon-image-holder"> <img src="<?php echo get_template_directory_uri() . '/images/clock.png'; ?>" alt="access" /> </div>
+					?> <div class="<?php echo $icon_class; ?> workspace-icon-content-holder"> <div class="workspace-icon-image-holder"> <img src="<?php echo esc_url(get_template_directory_uri()) . '/images/clock.png'; ?>" alt="access" /> </div>
 					<p> <?php  echo "Access 9am-5pm";
 					?> </p>	</div> <?php
 						break;
 					case 'Kitchen and Loungue Area':
-					?> <div class="<?php echo $icon_class; ?> workspace-icon-content-holder"> <div class="workspace-icon-image-holder"> <img src="<?php echo get_template_directory_uri() . '/images/sofa.png'; ?>" alt="kitchen" /> </div>
+					?> <div class="<?php echo $icon_class; ?> workspace-icon-content-holder"> <div class="workspace-icon-image-holder"> <img src="<?php echo esc_url(get_template_directory_uri()) . '/images/sofa.png'; ?>" alt="kitchen" /> </div>
 					<p> <?php  echo "Kitchen and Loungue Area";
 					?> </p>	</div> <?php
 						break;
 					case 'Front Desk Reception':
-					?> <div class="<?php echo $icon_class; ?> workspace-icon-content-holder"> <div class="workspace-icon-image-holder"> <img src="<?php echo get_template_directory_uri() . '/images/desk.png'; ?>" alt="front-desk" /> </div>
+					?> <div class="<?php echo $icon_class; ?> workspace-icon-content-holder"> <div class="workspace-icon-image-holder"> <img src="<?php echo esc_url(get_template_directory_uri()) . '/images/desk.png'; ?>" alt="front-desk" /> </div>
 					<p> <?php  echo "Front Desk Reception";
 					?> </p>	</div> <?php
 						break;
 					case 'Tea & Coffee':
-					?> <div class="<?php echo $icon_class; ?> workspace-icon-content-holder"> <div class="workspace-icon-image-holder"> <img src="<?php echo get_template_directory_uri() . '/images/coffee.png'; ?>" alt="tea" /> </div>
+					?> <div class="<?php echo $icon_class; ?> workspace-icon-content-holder"> <div class="workspace-icon-image-holder"> <img src="<?php echo esc_url(get_template_directory_uri()) . '/images/coffee.png'; ?>" alt="tea" /> </div>
 					<p> <?php  echo "Tea & Coffee";
 					?> </p>	</div> <?php
 						break;	
 					case 'Phone Booths':
-					?> <div class="<?php echo $icon_class; ?> workspace-icon-content-holder"> <div class="workspace-icon-image-holder"> <img src="<?php echo get_template_directory_uri() . '/images/phone.png'; ?>" alt="phone" /> </div>
+					?> <div class="<?php echo $icon_class; ?> workspace-icon-content-holder"> <div class="workspace-icon-image-holder"> <img src="<?php echo esc_url(get_template_directory_uri()) . '/images/phone.png'; ?>" alt="phone" /> </div>
 					<p> <?php  echo "Phone Booths";
 					?> </p>	</div> <?php
 						break;
 					case 'Secure Bike locker':
-					?> <div class="<?php echo $icon_class; ?> workspace-icon-content-holder"> <div class="workspace-icon-image-holder"> <img src="<?php echo get_template_directory_uri() . '/images/bike.png'; ?>" alt="bike" /> </div>
+					?> <div class="<?php echo $icon_class; ?> workspace-icon-content-holder"> <div class="workspace-icon-image-holder"> <img src="<?php echo esc_url(get_template_directory_uri()) . '/images/bike.png'; ?>" alt="bike" /> </div>
 					<p> <?php  echo "Secure Bike locker";
 					?> </p>	</div> <?php
 					break;
 					case 'Dog Friendly':
-					?> <div class="<?php echo $icon_class; ?> workspace-icon-content-holder"> <div class="workspace-icon-image-holder"> <img src="<?php echo get_template_directory_uri() . '/images/dog.png'; ?>" alt="dog" /> </div>
+					?> <div class="<?php echo $icon_class; ?> workspace-icon-content-holder"> <div class="workspace-icon-image-holder"> <img src="<?php echo esc_url(get_template_directory_uri()) . '/images/dog.png'; ?>" alt="dog" /> </div>
 					<p> <?php  echo "Dog Friendly";
 					?> </p>	</div> <?php
 					break;
 					case 'Gym & Showers':
-					?> <div class="<?php echo $icon_class; ?> workspace-icon-content-holder"> <div class="workspace-icon-image-holder"> <img src="<?php echo get_template_directory_uri() . '/images/gym.png'; ?>" alt="gym" /> </div>
+					?> <div class="<?php echo $icon_class; ?> workspace-icon-content-holder"> <div class="workspace-icon-image-holder"> <img src="<?php echo esc_url(get_template_directory_uri()) . '/images/gym.png'; ?>" alt="gym" /> </div>
 					<p> <?php  echo "Gym & Showers";
 					?> </p>	</div> <?php
 					break;
 					case 'Photocopier/Printer & Scanner':
-					?> <div class="<?php echo $icon_class; ?> workspace-icon-content-holder"> <div class="workspace-icon-image-holder"> <img src="<?php echo get_template_directory_uri() . '/images/printer.png'; ?>" alt="photocopier" /> </div>
+					?> <div class="<?php echo $icon_class; ?> workspace-icon-content-holder"> <div class="workspace-icon-image-holder"> <img src="<?php echo esc_url(get_template_directory_uri()) . '/images/printer.png'; ?>" alt="photocopier" /> </div>
 					<p> <?php  echo "Photocopier / Printer & Scanner";
 					?> </p>	</div> <?php
 					break;
 					case 'Access to Booking Meeting/Event Rooms':
-					?> <div class="<?php echo $icon_class; ?> workspace-icon-content-holder"> <div class="workspace-icon-image-holder"> <img src="<?php echo get_template_directory_uri() . '/images/calendar.png'; ?>" alt="meeting" /> </div>
+					?> <div class="<?php echo $icon_class; ?> workspace-icon-content-holder"> <div class="workspace-icon-image-holder"> <img src="<?php echo esc_url(get_template_directory_uri()) . '/images/calendar.png'; ?>" alt="meeting" /> </div>
 					<p> <?php  echo "Access to Booking Meeting / Event Rooms";
 					?> </p>	</div> <?php
 					break;
 					case 'Custom-built FSC Wooden Desks':
-					?> <div class="<?php echo $icon_class; ?> workspace-icon-content-holder"> <div class="workspace-icon-image-holder"> <img src="<?php echo get_template_directory_uri() . '/images/desk.png'; ?>" alt="desks" /> </div>
+					?> <div class="<?php echo $icon_class; ?> workspace-icon-content-holder"> <div class="workspace-icon-image-holder"> <img src="<?php echo esc_url(get_template_directory_uri()) . '/images/desk.png'; ?>" alt="desks" /> </div>
 					<p> <?php  echo "Custom-built FSC Wooden Desks";
 					?> </p>	</div> <?php
 					break;
 					case 'Capacity up to 30 people':
-					?> <div class="<?php echo $icon_class; ?> workspace-icon-content-holder"> <div class="workspace-icon-image-holder"> <img src="<?php echo get_template_directory_uri() . '/images/people.png'; ?>" alt="people" /> </div>
+					?> <div class="<?php echo $icon_class; ?> workspace-icon-content-holder"> <div class="workspace-icon-image-holder"> <img src="<?php echo esc_url(get_template_directory_uri()) . '/images/people.png'; ?>" alt="people" /> </div>
 					<p> <?php  echo "Capacity up to 30 people";
 					?> </p>	</div> <?php
 					break;
 					case 'Projector and Flip Chart':
-					?> <div class="<?php echo $icon_class; ?> workspace-icon-content-holder"> <div class="workspace-icon-image-holder"> <img src="<?php echo get_template_directory_uri() . '/images/projector.png'; ?>" alt="projectors" /> </div>
+					?> <div class="<?php echo $icon_class; ?> workspace-icon-content-holder"> <div class="workspace-icon-image-holder"> <img src="<?php echo esc_url(get_template_directory_uri()) . '/images/projector.png'; ?>" alt="projectors" /> </div>
 					<p> <?php  echo "Projector and Flip Chart";
 					?> </p>	</div> <?php
 					break;	
@@ -185,7 +185,7 @@ get_header(); ?>
 		</div>
 
 		<div class="primary-cta-block">
-			<a href="<?php echo get_the_permalink(189); ?>" class="button-book book-tour-popup" href="#">Book a Tour</a>
+			<a href="<?php echo esc_url(get_the_permalink(189)); ?>" class="button-book book-tour-popup" href="#">Book a Tour</a>
 		</div>
 
 		</main><!-- #main -->

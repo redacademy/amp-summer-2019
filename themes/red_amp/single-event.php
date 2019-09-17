@@ -22,13 +22,13 @@ get_header(); ?>
 		<?php while ( have_posts() ) : the_post(); ?>
 
         <div class="event-title">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		<?php esc_html(the_title( '<h1 class="entry-title">', '</h1>' )); ?>
 		</div>
 
         <div class ="single-event-wrap">
 		<div class="event-thumbnail">
 		<?php if ( has_post_thumbnail() ) : ?>
-			<?php the_post_thumbnail( 'large' ); ?>
+			<?php esc_html(the_post_thumbnail( 'large' )); ?>
 		<?php endif; ?>
 		</div>
 		<?php endwhile; // End of the loop. ?>
@@ -40,7 +40,7 @@ get_header(); ?>
 			<div class ="event-details">
 			<div class="events-description-details">
 			<p>About the Event </p>
-			<?php the_content(); ?>
+			<?php esc_html(the_content()); ?>
 		
 		     </div>
 

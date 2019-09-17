@@ -19,7 +19,7 @@ get_header(); ?>
 			<header class="page-header">
 				<div class="event-wrap">
 			<div class="events-title">
-				<?php post_type_archive_title('<h1>','</h1>');?>
+				<?php esc_html(post_type_archive_title('<h1>','</h1>'));?>
 			</div>
 
 			<div class="events-description">
@@ -54,7 +54,7 @@ get_header(); ?>
 							
 								<div class="event-image" 
 									style="
-										background-image: url(<?php echo get_the_post_thumbnail_url();?>);
+										background-image: url(<?php echo esc_url(get_the_post_thumbnail_url());?>);
 										background-size: cover;
 										background-repeat: no-repeat;
 										background-position: center top;
@@ -65,7 +65,7 @@ get_header(); ?>
 								<div class="content-wrapper">
 									<div class="event-information">
 										<p class="event-name">
-											<?php the_title();?>
+											<?php esc_html(the_title());?>
 										</p>
 
 										<p class="event-date">

@@ -25,13 +25,13 @@
 
 
 			<div class="contact-info">
-				<a href="tel:6043434590"> <div class="contact-info-img-container img-phone"> <img src="<?php echo get_template_directory_uri(); ?>/images/Phone footer.svg" alt="phone-logo"/><p>604-343-4590</p></div> </a>
-				<a href="mailto:info@theamp.space"> <div class="contact-info-img-container img-email"> <img src="<?php echo get_template_directory_uri(); ?>/images/Icon email.svg" alt="email-logo" /><p>info@theamp.space</p> </div> </a>
+				<a href="tel:6043434590"> <div class="contact-info-img-container img-phone"> <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/Phone footer.svg" alt="phone-logo"/><p>604-343-4590</p></div> </a>
+				<a href="mailto:info@theamp.space"> <div class="contact-info-img-container img-email"> <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/Icon email.svg" alt="email-logo" /><p>info@theamp.space</p> </div> </a>
 			
 				<div class="social-icon-mobile hidden-mobile">
-					<span><img class="social-icon-mobile-image" src="<?php echo get_template_directory_uri(); ?>/images/Facebook.svg" alt="logo" /></span>
-					<span><img class="social-icon-mobile-image" src="<?php echo get_template_directory_uri(); ?>/images/LinkedIn.svg" alt="logo" /></span>
-					<span><img class="social-icon-mobile-image" src="<?php echo get_template_directory_uri(); ?>/images/twitter.svg" alt="logo" /></span>
+					<span><img class="social-icon-mobile-image" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/Facebook.svg" alt="logo" /></span>
+					<span><img class="social-icon-mobile-image" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/LinkedIn.svg" alt="logo" /></span>
+					<span><img class="social-icon-mobile-image" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/twitter.svg" alt="logo" /></span>
 				</div>
 			</div>
 		</div>
@@ -55,9 +55,9 @@
 		<div class="social-icon show-mobile">
 			
 			<div class="social-icon-images show-mobile">
-			<span><img src="<?php echo get_template_directory_uri(); ?>/images/Facebook.svg" alt="logo" /></span>
-			<span><img src="<?php echo get_template_directory_uri(); ?>/images/LinkedIn.svg" alt="logo" /></span>
-			<span><img src="<?php echo get_template_directory_uri(); ?>/images/twitter.svg" alt="logo" /></span>
+			<span><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/Facebook.svg" alt="logo" /></span>
+			<span><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/LinkedIn.svg" alt="logo" /></span>
+			<span><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/twitter.svg" alt="logo" /></span>
 			</div>
 
 			<div class="site-rights show-mobile">
