@@ -165,9 +165,12 @@
   padding-top: 17px;
   text-align: center;
   text-decoration: none;
+  border-radius: 3px;
   @include mobile {
     padding-top: 10px;
     font-size: 20px;
+    width: 45%;
+    height: 50px;
   }
 
   &:focus {
@@ -299,6 +302,8 @@
   transform: rotate(180deg);
 }
 
+
+//Workspace in front page
 .front-page-workspace {
   display: flex;
   flex-flow: row-reverse;
@@ -358,14 +363,18 @@
         }
       }
     }
-
     // .front-page-workspace-title
   }
-
   // .front-page-each-workspace
 }
-
 // .front-page-workspace
+.front-page-workspace-button{
+  button.button-book{
+    @include mobile{
+      font-size: 16px;
+    }
+  }
+}
 
 // Carousel in Front page for testimonials
 .front-page-carousel {

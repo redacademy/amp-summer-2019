@@ -2371,11 +2371,14 @@ tbody {
           box-shadow: none;
   padding-top: 17px;
   text-align: center;
-  text-decoration: none; }
+  text-decoration: none;
+  border-radius: 3px; }
   @media (max-width: 760px) {
     .button-book {
       padding-top: 10px;
-      font-size: 20px; } }
+      font-size: 20px;
+      width: 45%;
+      height: 50px; } }
   .button-book:focus {
     outline: none; }
   .button-book:hover {
@@ -2541,6 +2544,10 @@ tbody {
         @media (max-width: 760px) {
           .front-page-workspace .front-page-each-workspace .front-page-workspace-title h1 {
             margin: 20px 0; } }
+
+@media (max-width: 760px) {
+  .front-page-workspace-button button.button-book {
+    font-size: 16px; } }
 
 .front-page-carousel {
   width: 100%; }
