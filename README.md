@@ -57,22 +57,22 @@ Custom fields for workspaces
 
 Steps for creating a new workspace
 #### Step 1
-<img src="./readme-images/click-workspace.png"   alt="read-me-image" />
+<img src="./themes/red_amp/readme-images/click-workspace.png"   alt="read-me-image" />
 
 #### Step 2
-<img src="./readme-images/new-workspace.png"   alt="read-me-image" />
+<img src="./themes/red_amp/readme-images/new-workspace.png"   alt="read-me-image" />
 
 #### Step 3
-<img src="./readme-images/workspace-title.png"   alt="read-me-image" />
+<img src="./themes/red_amp/readme-images/workspace-title.png"   alt="read-me-image" />
 
 #### Step 4
-<img src="./readme-images/workspace-icons.gif"   alt="read-me-image" />
+<img src="./themes/red_amp/readme-images/workspace-icons.gif"   alt="read-me-image" />
 
 #### Step 5
-<img src="./readme-images/create-workspace.gif"   alt="read-me-image" />
+<img src="./themes/red_amp/readme-images/create-workspace.gif"   alt="read-me-image" />
 
 #### Step 6
-<img src="./readme-images/workspace-publish.png"   alt="read-me-image" />
+<img src="./themes/red_amp/readme-images/workspace-publish.png"   alt="read-me-image" />
 
 ### Events
 
