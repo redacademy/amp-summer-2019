@@ -134,23 +134,11 @@
 
 //workspace style in front page
 .front-page-workspace-title {
-<<<<<<< HEAD
     font-family: $headline_font_family;
     font-size: 23px;
     text-align: center;
     // margin-top: 70px;
     margin: 35px 0;
-=======
-  font-family: $headline_font_family;
-  font-size: 23px;
-  text-align: center;
-  margin-top: 70px;
-  font-family: $headline_font_family;
-  font-size: 23px;
-  text-align: center;
-  // margin-top: 70px;
-  margin: 35px 0;
->>>>>>> 6cdf52a06dc2c28537be3e8c24d2cf13b3c16a0b
 }
 
 .front-page-workspace-text {
@@ -177,9 +165,12 @@
   padding-top: 17px;
   text-align: center;
   text-decoration: none;
+  border-radius: 3px;
   @include mobile {
     padding-top: 10px;
     font-size: 20px;
+    width: 45%;
+    height: 50px;
   }
 
   &:focus {
@@ -188,6 +179,7 @@
 
   &:hover {
     box-shadow: 0 10px 10px 0 $dark_grey;
+    color: $font_light;
   }
 
   &:visited {
@@ -310,6 +302,8 @@
   transform: rotate(180deg);
 }
 
+
+//Workspace in front page
 .front-page-workspace {
   display: flex;
   flex-flow: row-reverse;
@@ -337,6 +331,9 @@
     box-shadow: 0 12px 48px -12px $box_shadow_green;
     width: 350px;
     height: fit-content;
+    &:hover{
+      transform: scale(1.05);
+    }
 
     @include mobile {
       width: 100%;
@@ -369,14 +366,18 @@
         }
       }
     }
-
     // .front-page-workspace-title
   }
-
   // .front-page-each-workspace
 }
-
 // .front-page-workspace
+.front-page-workspace-button{
+  button.button-book{
+    @include mobile{
+      font-size: 16px;
+    }
+  }
+}
 
 // Carousel in Front page for testimonials
 .front-page-carousel {
