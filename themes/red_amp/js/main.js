@@ -8,7 +8,7 @@
     // options
     wrapAround: true,
     cellAlign: 'center'
-  });
+  }); 
 
   let index = $('.container-carousel').length;
   let i;
@@ -44,21 +44,17 @@
     $('.front-page-button-arrow').toggleClass('turn-arrow');
   });
 
-  $('.button-arrow-amp-workspace').on('click', function(event){
+  $('.button-arrow-amp-workspace').on('click', function(event) {
     event.preventDefault();
-    $('.workspace-icons-flex-two').find('.workspace-icon-flex-two').toggleClass('workspace-icon-flex-two-open');
+    $('.workspace-icons-flex-two')
+      .find('.workspace-icon-flex-two')
+      .toggleClass('workspace-icon-flex-two-open');
     console.log('is this working?');
 
-    $('.workspace-icons').find('.workspace-icon-flex-three').toggleClass('workspace-icon-flex-three-open');
-
-    // if you are getting errors try using an if statement e.g. 
-    // if($('.workspace-icons-flex-two').length){
-    //   console.log('workspace icons flex two exists');
-    // }
+    $('.workspace-icons')
+      .find('.workspace-icon-flex-three')
+      .toggleClass('workspace-icon-flex-three-open');
   });
-
-
-
 
   //Function to open and close the pop up for the Book a Tour
 
@@ -113,7 +109,7 @@
 
   $('.mobile-back-to-top').on('click', function(event) {
     event.preventDefault();
-    const $href = $(event.currentTarget).attr('data-scrollto'); 
+    const $href = $(event.currentTarget).attr('data-scrollto');
     console.log($($href).offset().top);
     console.log('test2');
     $('body,html').animate({
@@ -121,13 +117,15 @@
     });
   });
 
-
-
   //mobile nav menu in header
-  $('.menu-item-has-children').prepend('<a href="#" class="mobile-menu-arrow"><i class="fas fa-angle-down"></i></a>');
-    $('.mobile-menu-arrow').on('click', function (event) {
+  $('.menu-item-has-children').prepend(
+    '<a href="#" class="mobile-menu-arrow"><i class="fas fa-angle-down"></i></a>'
+  );
+  $('.mobile-menu-arrow').on('click', function(event) {
     event.preventDefault();
-    $('.menu-item-has-children').find('.sub-menu').toggleClass('mobile-sub-menu');
+    $('.menu-item-has-children')
+      .find('.sub-menu')
+      .toggleClass('mobile-sub-menu');
   });
 
   const $hamburguerMenu = $('.hamburguer');
@@ -159,5 +157,37 @@
     $('#background-mobile').removeClass('background-mobile-opacity-on');
     $('#site-navigation').css('position', 'relative');
   });
-  
+
+
+  // Start of contact us page form redirect on form submissions to thank you page
+
+    if($('.page-contact').length){
+      document.addEventListener( 'wpcf7mailsent', function( event ) {
+        
+        console.log('form sent?', event.detail.contactFormId);
+        if ( parseInt(event.detail.contactFormId) === 73 ) {
+          console.log('reload window');
+          window.location = amp_api.home_url + '/thank-you';
+        }
+
+      }, false );
+    }
+  // End of contact us page form redirect on form submissions to thank you page  
 })(jQuery);
+
+/*   ABOUT PAGE OPEN/CLOSE FUNCTION */
+$('.button-arrow-community').on('click', function() {
+  $('.about-page-amp-members-logos').toggleClass('is-open');
+  $('.about-page-button-arrow').toggleClass('turn-arrow');
+});
+$('.about-page-button-arrow').on('click', function(event) {
+  event.preventDefault();
+  $('..about-page-amp-members-logo')
+    .find('..about-page-amp-members-logo')
+    .toggleClass('.about-page-amp-members-logo-open');
+  console.log('is this working?');
+
+  $('.about-page-amp-members-logo')
+    .find('.about-page-amp-members-logo')
+    .toggleClass('.about-page-amp-members-logo-open');
+});

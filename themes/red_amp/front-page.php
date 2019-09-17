@@ -256,3 +256,4 @@ text-align: center;">
 </div>
 
 <?php get_footer();
+ 

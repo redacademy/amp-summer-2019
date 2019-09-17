@@ -1,9 +1,10 @@
 .about-content {
-  .missions-values-title,
-  .meet-the-team-title {
-    text-align: center;
-    color: #393939;
-    font-family: 'Bambi Bold';
+  .missions-values-title {
+    .meet-the-team-title {
+      text-align: center;
+      color: #393939;
+      font-family: 'Bambi Bold';
+    }
   }
 
   /* HEAD OF PAGE SHADOW */
@@ -22,19 +23,18 @@
     h1 {
       font-family: $headline_font_family;
       text-align: center;
-      margin-top: 75px;
-      @include mobile {
-        text-align: center;
-        // max-width: 760px;
-      }
+      // margin-top: 75px;
     }
     p {
-      text-align: center;
+      text-align: left;
       margin-bottom: 100px;
-      width: 700px;
+      max-width: 675px;
       margin-bottom: 100px;
       margin-left: auto;
       margin-right: auto;
+      @include mobile {
+        max-width: 375px;
+      }
     }
   }
 
@@ -52,6 +52,10 @@
         margin-bottom: 100px;
         margin-left: 170px;
         margin-right: 190px;
+        @include mobile {
+          margin-left: 1px;
+          margin-right: 1px;
+        }
       }
     }
   }
@@ -77,6 +81,14 @@
   }
 
   /* MEET THE TEAM */
+  .team-section,
+  .team-title {
+    h2 {
+      text-align: center;
+      font-family: Bambi;
+      padding-bottom: 50px;
+    }
+  }
   .team-section {
     .main-carousel {
       h2 {
@@ -87,13 +99,10 @@
     }
 
     .mobile-about-carousel {
-      // display: flex;
-      // flex-direction: row;
-      // justify-content: space-evenly;
       .flickity-viewport {
         width: 100%;
-        // display: flex;
-        // flex-direction: row;
+        max-width: 1139px;
+        // margin-left: 100px;
       }
 
       .carousel-cell {
@@ -145,6 +154,8 @@
       }
       p {
         text-align: center;
+        width: 650px;
+        padding-left: 15px;
       }
     }
 
@@ -165,7 +176,7 @@
 
   /* AMP MEMBERS */
   .about-page-amp-members {
-    max-width: 60%;
+    // max-width: 60%;
     margin: 0 auto;
     margin-top: -100px;
 
@@ -182,44 +193,35 @@
 
     .about-page-amp-members-logos {
       display: flex;
+      -ms-flex-flow: row wrap;
       flex-flow: row wrap;
+      justify-content: space-evenly;
       margin-top: 50px;
       margin-bottom: 50px;
       position: relative;
       transition: 0.7s;
+      max-width: 1137px;
+      align-items: center;
+      margin: 0 auto;
 
       div {
         width: 33%;
         height: 150px;
         display: flex;
         align-content: center;
+        @include mobile {
+          width: 50%;
+          .about-page-amp-community-division-line {
+            width: 100%;
+            align-items: center;
+          }
+        }
 
         img {
           margin: auto;
         }
       }
-      .about-page-button-arrow,
-      .about-page-amp-community-division-line {
-        display: none;
-      }
     }
-  }
-
-  .about-page-amp-member-division-line-top {
-    border-top: 2px solid $dark_green;
-    margin: 0 auto;
-    margin-bottom: 30px;
-    margin-top: 80px;
-    height: 0.1px;
-    width: 25%;
-  }
-
-  .about-page-amp-member-division-line {
-    border-top: 3px solid $dark_green;
-    margin: 0 auto;
-    margin-bottom: 30px;
-    height: 0.1px;
-    width: 90%;
   }
 
   .about-page-workspace-button {
@@ -238,24 +240,44 @@
       }
     }
   }
+  .about-page-button-arrow {
+    .about-button-arrow-community {
+      display: none;
+    }
+  }
+  .about-page-amp-member-description-mobile {
+    display: none;
+  }
 }
 
 /* MOBILE VERSION */
 
 .about-content {
-  // max-width: 760px;
-  // margin: 0 auto;
   @include mobile {
     h1,
+    h2,
     p {
       max-width: 100vw;
     }
   }
 
+  /* VALUES */
+
   @include mobile {
     .about-page-values {
-      background: white;
       .values-description {
+        h2 {
+          font-family: $headline_font_family;
+          text-align: center;
+          margin-left: 0;
+          margin-right: 0;
+        }
+        p {
+          text-align: center;
+          text-align: center;
+          width: 750px;
+          margin-bottom: 100px;
+        }
       }
     }
   }
@@ -275,10 +297,22 @@
     .team-section .mobile-about-carousel {
       .flickity-button {
         display: block;
+        background: none;
       }
     }
   }
 
+  @include mobile {
+    .carousel-amp-employee {
+      .carousel-content-individual {
+        .carousel-image {
+          .carousel-member-name {
+            color: red;
+          }
+        }
+      }
+    }
+  }
   /* MOBILE HQ SECTION */
 
   @include mobile {
@@ -288,7 +322,7 @@
         background: white;
         text-align: center;
         p {
-          text-align: center;
+          text-align: left;
         }
       }
 
@@ -313,27 +347,77 @@
       }
     }
   }
+}
 
-  /* AMP COMMUNITY LOGO SECTION */
+/* COMMUNITY MEMBERS MOBILE */
 
-  @include mobile {
-    .about-page-button-arrow {
+@include mobile {
+  .about-page-amp-members {
+    .about-page-amp-member-description-mobile {
+      display: block;
       text-align: center;
+      // width: 295px;
+    }
+  }
+  .about-page-amp-members-logos {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1px;
+    // background: red;
+  }
+  .about-page-amp-member-description {
+    display: none;
+  }
+}
 
-      .about-arrow-amp-community {
-        width: 68px;
-        height: auto;
-        font-size: 30px;
-        color: $dark_green;
-        text-align: center;
-        border: none;
-        background: none;
-        box-shadow: none;
-
-        &:focus {
-          outline: none;
-        }
+@include mobile {
+  .about-page-button-arrow {
+    .about-button-arrow-community {
+      display: block !important;
+      width: 68px;
+      height: auto;
+      font-size: 30px;
+      color: #297373;
+      text-align: center;
+      border: none;
+      background: none;
+      box-shadow: none;
+      button {
+        line-height: 1;
+        padding: 0.6rem 1rem 0.4rem;
+        text-shadow: 0 1px 0 hsla(0, 0%, 100%, 0.8);
       }
     }
+  }
+  .about-page-amp-community-division-line {
+    border-top: 3px solid $dark_green;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    height: 0.1px;
+    width: 95% !important;
+  }
+}
+
+@include mobile {
+  .about-page-amp-members {
+    margin: 0 auto;
+    margin-top: -200px !important;
+  }
+}
+
+/* BACK TO TOP BUTTON FOR MOBILE */
+
+.mobile-back-to-top-button {
+  display: none;
+  text-align: center;
+  // width: 100%;
+  // height: 50px;
+
+  @include mobile {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    widt: 100%;
+    height: 150px;
   }
 }
