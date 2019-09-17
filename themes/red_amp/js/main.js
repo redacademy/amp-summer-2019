@@ -54,11 +54,6 @@
     $('.workspace-icons')
       .find('.workspace-icon-flex-three')
       .toggleClass('workspace-icon-flex-three-open');
-
-    // if you are getting errors try using an if statement e.g.
-    // if($('.workspace-icons-flex-two').length){
-    //   console.log('workspace icons flex two exists');
-    // }
   });
 
   //Function to open and close the pop up for the Book a Tour
@@ -158,6 +153,22 @@
     $('#background-mobile').removeClass('background-mobile-opacity-on');
     $('#site-navigation').css('position', 'relative');
   });
+
+
+  // Start of contact us page form redirect on form submissions to thank you page
+
+    if($('.page-contact').length){
+      document.addEventListener( 'wpcf7mailsent', function( event ) {
+        
+        console.log('form sent?', event.detail.contactFormId);
+        if ( parseInt(event.detail.contactFormId) === 73 ) {
+          console.log('reload window');
+          window.location = amp_api.home_url + '/thank-you';
+        }
+
+      }, false );
+    }
+  // End of contact us page form redirect on form submissions to thank you page  
 })(jQuery);
 
 /*   ABOUT PAGE OPEN/CLOSE FUNCTION */
