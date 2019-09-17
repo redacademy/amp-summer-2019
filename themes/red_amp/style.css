@@ -1250,10 +1250,12 @@ object {
   .post-type-archive-workspace .taxonomy-description {
     font-family: "Muli", sans-serif;
     font-size: 16px;
-    text-align: center;
+    text-align: justify;
     max-width: 50%;
     margin: 0 auto;
     letter-spacing: 0.3px; }
+    .post-type-archive-workspace .taxonomy-description :last-child {
+      text-align: center; }
 
 .primary-cta-block {
   padding-bottom: 100px; }
