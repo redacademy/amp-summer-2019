@@ -161,7 +161,7 @@
 })(jQuery);
 
 /*   open and close the amp community in about page function */
-$('.button-arrow-amp-community').on('click', function() {
+$('.button-arrow-community').on('click', function() {
   $('.about-page-amp-members-logos').toggleClass('is-open');
-  $('.front-page-button-arrow').toggleClass('turn-arrow');
+  $('.about-page-button-arrow').toggleClass('turn-arrow');
 });

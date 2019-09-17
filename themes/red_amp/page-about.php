@@ -114,9 +114,14 @@ get_header(); ?>
              	Amp Members
         	</h2>
     	</div>
-    	<div>
+    	<div class="about-page-amp-member-description">
        		 <p>
-           		 Meet the AMP Members... share the space with like minded people and organizations...focus on positive and social change.
+           		 Meet the AMP Members... share the space with like minded people and organizations...focus on positive and social change...
+        	</p>
+        </div>
+        <div class="about-page-amp-member-description-mobile">
+       		 <p>
+           		 Meet the AMP Members... share the space with like minded people and organizations that focus on positive and social change.
         	</p>
     	</div>
     <div class="about-page-amp-members-logos">
@@ -154,16 +159,11 @@ get_header(); ?>
             <img src="<?php echo esc_url(get_template_directory_uri()) . '/images/Member_Logo11.png' ?>" alt="">
         </div>
         <div>
-<<<<<<< HEAD
             <img src="<?php echo get_template_directory_uri() . '/images/Member_Logo12.png' ?>" alt="">
-        </div>   
-=======
-            <img src="<?php echo esc_url(get_template_directory_uri()) . '/images/Member_Logo12.png' ?>" alt="">
-        </div>  
->>>>>>> 90e71fac914530503e8619d61bad78741f3ba58c
+        </div>
 
         <div class="about-page-button-arrow">
-            <button class="button-arrow-community"><i class="fas fa-chevron-down"></i></button>
+            <button class="about-button-arrow-community"><i class="fas fa-chevron-down"></i></button>
         </div>
         <div class="about-page-amp-community-division-line">
 
@@ -176,14 +176,11 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 	<div class="about-page-workspace-button bottom-book-button-about-page" style="text-align: center; margin-bottom: 200px; margin-top: 110px;">
-<<<<<<< HEAD
     	<a href="<?php echo get_the_permalink(189); ?>" class="button-book book-tour-popup"> Book a Tour</a>
     </div>
     <div class="mobile-back-to-top-button" data-scrollto="#back-to-top-beggining">
     <a href="#">Back to top</a>
 </div>
-=======
-    	<a href="<?php echo esc_url(get_the_permalink(189)); ?>" class="button-book book-tour-popup"> Book a Tour</a>
+    	
 	</div>
->>>>>>> 90e71fac914530503e8619d61bad78741f3ba58c
 <?php get_footer(); ?>
