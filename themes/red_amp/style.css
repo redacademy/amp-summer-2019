@@ -709,7 +709,8 @@ a {
     margin-bottom: 85px; }
   .about-content .team-section .mobile-about-carousel .flickity-viewport {
     width: 100%;
-    max-width: 1139px; }
+    max-width: 1139px;
+    margin: 0 auto; }
   .about-content .team-section .mobile-about-carousel .carousel-cell {
     width: 38%;
     text-align: center; }
