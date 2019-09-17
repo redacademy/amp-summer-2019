@@ -165,12 +165,12 @@ get_header(); ?>
             <img src="<?php echo get_template_directory_uri() . '/images/Member_Logo12.png' ?>" alt="">
         </div>
 
-        <div class="front-page-button-arrow">
-    <button class="button-arrow-amp-community"><i class="fas fa-chevron-down"></i></button>
-</div>
-<div class="front-page-amp-community-division-line">
+        <div class="about-page-button-arrow">
+            <button class="about-button-arrow-community"><i class="fas fa-chevron-down"></i></button>
+        </div>
+        <div class="about-page-amp-community-division-line">
 
-</div>
+        </div>
     
     </div> <!-- end of amp members logo --> 
     
