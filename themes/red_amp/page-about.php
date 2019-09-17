@@ -155,14 +155,14 @@ get_header(); ?>
         </div>
         <div>
             <img src="<?php echo get_template_directory_uri() . '/images/Member_Logo12.png' ?>" alt="">
-        </div>  
+        </div>   
 
-    <div class="about-page-button-arrow">
-        <button class="about-arrow-amp-community"><i class="fas fa-chevron-down"></i></button>
-    </div> <!-- end of button arrow -->
-    <div class="about-page-amp-community-division-line">
+        <div class="about-page-button-arrow">
+            <button class="button-arrow-community"><i class="fas fa-chevron-down"></i></button>
+        </div>
+        <div class="about-page-amp-community-division-line">
 
-    </div> <!-- end of division line -->
+        </div>
     
     </div> <!-- end of amp members logo --> 
     
@@ -172,5 +172,8 @@ get_header(); ?>
 
 	<div class="about-page-workspace-button bottom-book-button-about-page" style="text-align: center; margin-bottom: 200px; margin-top: 110px;">
     	<a href="<?php echo get_the_permalink(189); ?>" class="button-book book-tour-popup"> Book a Tour</a>
-	</div>
+    </div>
+    <div class="mobile-back-to-top-button" data-scrollto="#back-to-top-beggining">
+    <a href="#">Back to top</a>
+</div>
 <?php get_footer(); ?>
