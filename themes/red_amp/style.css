@@ -657,18 +657,17 @@ a {
     max-width: 1400px; }
   .about-content .about-page-main-title h1 {
     font-family: "Bambi";
-    text-align: center;
-    margin-top: 75px; }
-    @media (max-width: 760px) {
-      .about-content .about-page-main-title h1 {
-        text-align: center; } }
+    text-align: center; }
   .about-content .about-page-main-title p {
-    text-align: center;
+    text-align: left;
     margin-bottom: 100px;
-    width: 700px;
+    max-width: 675px;
     margin-bottom: 100px;
     margin-left: auto;
     margin-right: auto; }
+    @media (max-width: 760px) {
+      .about-content .about-page-main-title p {
+        max-width: 375px; } }
   .about-content .about-page-values .values-description h2 {
     font-family: "Bambi";
     text-align: center; }
@@ -699,12 +698,18 @@ a {
     .about-content .about-page-values img {
       background: #fff;
       margin: 15px; }
+  .about-content .team-section h2,
+  .about-content .team-title h2 {
+    text-align: center;
+    font-family: Bambi;
+    padding-bottom: 50px; }
   .about-content .team-section .main-carousel h2 {
     font-family: "Bambi";
     text-align: center;
     margin-bottom: 85px; }
   .about-content .team-section .mobile-about-carousel .flickity-viewport {
-    width: 100%; }
+    width: 100%;
+    max-width: 1139px; }
   .about-content .team-section .mobile-about-carousel .carousel-cell {
     width: 38%;
     text-align: center; }
@@ -742,7 +747,9 @@ a {
         text-align: center;
         padding-top: 30px; }
       .about-content .headquarters .hq-description p {
-        text-align: center; }
+        text-align: center;
+        width: 650px;
+        padding-left: 15px; }
     .about-content .headquarters .amp-building img {
       height: auto;
       width: 60%;
@@ -753,7 +760,6 @@ a {
     .about-content .headquarters .amp-building-mobile {
       display: none; }
   .about-content .about-page-amp-members {
-    max-width: 60%;
     margin: 0 auto;
     margin-top: -100px; }
     .about-content .about-page-amp-members h2 {
@@ -767,15 +773,23 @@ a {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
+      -ms-flex-flow: row wrap;
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
-          -ms-flex-flow: row wrap;
               flex-flow: row wrap;
+      -webkit-box-pack: space-evenly;
+          -ms-flex-pack: space-evenly;
+              justify-content: space-evenly;
       margin-top: 50px;
       margin-bottom: 50px;
       position: relative;
       -webkit-transition: 0.7s;
-      transition: 0.7s; }
+      transition: 0.7s;
+      max-width: 1137px;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin: 0 auto; }
       .about-content .about-page-amp-members .about-page-amp-members-logos div {
         width: 33%;
         height: 150px;
@@ -784,6 +798,14 @@ a {
         display: flex;
         -ms-flex-line-pack: center;
             align-content: center; }
+        @media (max-width: 760px) {
+          .about-content .about-page-amp-members .about-page-amp-members-logos div {
+            width: 50%; }
+            .about-content .about-page-amp-members .about-page-amp-members-logos div .about-page-amp-community-division-line {
+              width: 100%;
+              -webkit-box-align: center;
+                  -ms-flex-align: center;
+                      align-items: center; } }
         .about-content .about-page-amp-members .about-page-amp-members-logos div img {
           margin: auto; }
   .about-content .about-page-workspace-button .bottom-book-button-about-page .button-book {
@@ -798,9 +820,14 @@ a {
             box-shadow: none;
     padding: 0;
     margin-bottom: 20vh; }
+  .about-content .about-page-button-arrow .about-button-arrow-community {
+    display: none; }
+  .about-content .about-page-amp-member-description-mobile {
+    display: none; }
 
 /* MOBILE VERSION */
 .about-content {
+  /* VALUES */
   /* TEAM CAROUSEL */
   /* MOBILE HQ SECTION */ }
   @media (max-width: 760px) {
@@ -809,7 +836,13 @@ a {
       max-width: 100vw; } }
   @media (max-width: 760px) {
     .about-content .about-page-values {
-      background: white; } }
+      background: white; }
+      .about-content .about-page-values .values-description h2 {
+        font-family: "Bambi";
+        text-align: center; }
+      .about-content .about-page-values .values-description p {
+        text-align: left;
+        width: 295px; } }
   @media (max-width: 760px) {
     .about-content .flickity-viewport {
       width: 100%; }
@@ -817,7 +850,11 @@ a {
         width: 100% !important; } }
   @media (max-width: 760px) {
     .about-content .team-section .mobile-about-carousel .flickity-button {
-      display: block; } }
+      display: block;
+      background: none; } }
+  @media (max-width: 760px) {
+    .about-content .carousel-amp-employee .carousel-content-individual .carousel-image .carousel-member-name {
+      color: red; } }
   @media (max-width: 760px) {
     .about-content .headquarters .hq-description,
     .about-content .headquarters h2 {
@@ -825,7 +862,7 @@ a {
       text-align: center; }
       .about-content .headquarters .hq-description p,
       .about-content .headquarters h2 p {
-        text-align: center; }
+        text-align: left; }
     .about-content .headquarters .hq-description {
       width: 100%; }
       .about-content .headquarters .hq-description .amp-building-mobile {
@@ -837,6 +874,68 @@ a {
       margin-left: auto;
       margin-right: auto;
       width: 50%; } }
+
+/* COMMUNITY MEMBERS MOBILE */
+@media (max-width: 760px) {
+  .about-page-amp-members .about-page-amp-member-description-mobile {
+    display: block;
+    text-align: center; }
+  .about-page-amp-members-logos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 1px; }
+  .about-page-amp-member-description {
+    display: none; } }
+
+@media (max-width: 760px) {
+  .about-page-button-arrow .about-button-arrow-community {
+    display: block !important;
+    width: 68px;
+    height: auto;
+    font-size: 30px;
+    color: #297373;
+    text-align: center;
+    border: none;
+    background: none;
+    -webkit-box-shadow: none;
+            box-shadow: none; }
+    .about-page-button-arrow .about-button-arrow-community button {
+      line-height: 1;
+      padding: 0.6rem 1rem 0.4rem;
+      text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); }
+  .about-page-amp-community-division-line {
+    border-top: 3px solid #297373;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    height: 0.1px;
+    width: 95% !important; } }
+
+@media (max-width: 760px) {
+  .about-page-amp-members {
+    margin: 0 auto;
+    margin-top: -200px !important; } }
+
+/* BACK TO TOP BUTTON FOR MOBILE */
+.mobile-back-to-top-button {
+  display: none;
+  text-align: center; }
+  @media (max-width: 760px) {
+    .mobile-back-to-top-button {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
+      widt: 100%;
+      height: 150px; } }
 
 /*--------------------------------------------------------------
 # Content
@@ -1613,7 +1712,8 @@ object {
       width: 100vw;
       background-color: transparent;
       padding-left: 10px;
-      padding-right: 10px; } }
+      padding-right: 10px;
+      overflow-y: scroll; } }
   .book-tour-form_wrapper.gform_wrapper .gf_page_steps {
     border-bottom: none; }
   .book-tour-form_wrapper.gform_wrapper .gf_page_steps {
@@ -2018,6 +2118,9 @@ tbody {
 .single-event .events-title h1 {
   text-align: center;
   font-family: "Bambi"; }
+  @media (max-width: 760px) {
+    .single-event .events-title h1 {
+      display: none; } }
 
 .single-event .events-description {
   font-family: "Muli", sans-serif;
@@ -2028,9 +2131,12 @@ tbody {
   margin-right: auto;
   letter-spacing: 0.9;
   line-height: 22px; }
+  @media (max-width: 760px) {
+    .single-event .events-description {
+      display: none; } }
 
 .single-event .event-title {
-  width: 1021px;
+  max-width: 1021px;
   margin-left: auto;
   margin-right: auto;
   border-bottom: 2px solid #297373;
@@ -2038,9 +2144,15 @@ tbody {
   .single-event .event-title .entry-title {
     margin-bottom: 0;
     margin-top: 50px; }
+    @media (max-width: 760px) {
+      .single-event .event-title .entry-title {
+        text-align: center; } }
+  @media (max-width: 760px) {
+    .single-event .event-title {
+      border-bottom: unset; } }
 
 .single-event .single-event-wrap {
-  width: 1021px;
+  max-width: 1021px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 37px;
@@ -2078,18 +2190,56 @@ tbody {
     font-size: 25px;
     color: #fff;
     font-weight: 700;
-    width: 250px;
-    height: 80px;
+    max-width: 250px;
+    max-height: 80px;
     font-family: "Muli", sans-serif;
+    border: 1px solid #297373;
+    border-radius: 3px;
     background: #297373;
     -webkit-box-shadow: none;
             box-shadow: none;
-    padding: 0; }
+    padding: 0;
+    text-shadow: none; }
     .single-event .single-event-wrap .button-book:focus {
       outline: none; }
     .single-event .single-event-wrap .button-book:hover {
       -webkit-box-shadow: 0 10px 10px 0 #07393c;
               box-shadow: 0 10px 10px 0 #07393c; }
+  @media (max-width: 760px) {
+    .single-event .single-event-wrap {
+      display: block;
+      padding-left: 10px;
+      padding-right: 10px; }
+      .single-event .single-event-wrap .event-thumbnail {
+        -webkit-box-flex: 0;
+            -ms-flex: none;
+                flex: none;
+        width: auto;
+        height: auto;
+        overflow: hidden; }
+      .single-event .single-event-wrap .event-details {
+        margin-left: 0; }
+        .single-event .single-event-wrap .event-details .events-description-details {
+          font-size: 14px; }
+          .single-event .single-event-wrap .event-details .events-description-details p:nth-child(1) {
+            display: none; }
+      .single-event .single-event-wrap .event-location-time-details {
+        display: block; }
+        .single-event .single-event-wrap .event-location-time-details .location {
+          font-weight: bold;
+          margin: 0; }
+        .single-event .single-event-wrap .event-location-time-details .event-location {
+          margin-bottom: 20px; }
+      .single-event .single-event-wrap a {
+        margin-bottom: 10px; }
+      .single-event .single-event-wrap .button-book {
+        font-size: 25px;
+        width: 168px;
+        height: 45px;
+        font-size: 18px;
+        -webkit-transform: translate(50%, -50%);
+                transform: translate(50%, -50%);
+        margin-top: 60px; } }
 
 /*--------------------------------------------------------------
 # Page Templates
@@ -2193,6 +2343,10 @@ tbody {
       height: 50px; } }
 
 .front-page-workspace-title {
+  font-family: "Bambi";
+  font-size: 23px;
+  text-align: center;
+  margin-top: 70px;
   font-family: "Bambi";
   font-size: 23px;
   text-align: center;

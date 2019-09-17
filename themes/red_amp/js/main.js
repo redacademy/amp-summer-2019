@@ -171,8 +171,19 @@
   // End of contact us page form redirect on form submissions to thank you page  
 })(jQuery);
 
-/*   open and close the amp community in about page function */
-$('.button-arrow-amp-community').on('click', function() {
+/*   ABOUT PAGE OPEN/CLOSE FUNCTION */
+$('.button-arrow-community').on('click', function() {
   $('.about-page-amp-members-logos').toggleClass('is-open');
-  $('.front-page-button-arrow').toggleClass('turn-arrow');
+  $('.about-page-button-arrow').toggleClass('turn-arrow');
+});
+$('.about-page-button-arrow').on('click', function(event) {
+  event.preventDefault();
+  $('..about-page-amp-members-logo')
+    .find('..about-page-amp-members-logo')
+    .toggleClass('.about-page-amp-members-logo-open');
+  console.log('is this working?');
+
+  $('.about-page-amp-members-logo')
+    .find('.about-page-amp-members-logo')
+    .toggleClass('.about-page-amp-members-logo-open');
 });
