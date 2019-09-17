@@ -34,7 +34,7 @@ $pagination_margin: 15vw;
     
 
     }
-    // height: 670px;
+   
 	
     position:relative;
     max-width: 944px;	
@@ -145,11 +145,8 @@ $pagination_margin: 15vw;
         .gform_button, .gform_next_button{
            
             @include mobile{
-                height: 44px;
+                height: 50px;
                 width: 220px;
-                // position: absolute;
-                // right: 35%;
-                // margin-top: 1.5rem;
                 display: block;
                 position: absolute;
                 border:1px solid $dark_green;
@@ -226,6 +223,8 @@ $pagination_margin: 15vw;
             margin-bottom: 2rem;
             position: absolute;
             bottom:-5%;
+            left: 50%;
+            transform: translateX(-50%);
             
         }
         display:inline-block;
@@ -243,6 +242,8 @@ $pagination_margin: 15vw;
         padding: 0;
         position: absolute;
         bottom:-4%;
+        left: 50%;
+        transform: translateX(-50%);
 
         &:focus {
             outline: none;
@@ -299,9 +300,9 @@ tr td.ui-datepicker-unselectable.ui-state-disabled {
              
         
         &.ui-state-active {
-            // background: white; 
+           
             background-color: #FF6978;
-            // border: 1px solid red;
+           
             border-radius: 50%;
             color: #666;
         }
@@ -318,11 +319,9 @@ tr td.ui-datepicker-unselectable.ui-state-disabled {
         padding-right: 10px;
 
     }
-    // padding-top: 6rem;
+   
     display: flex;
     align-items: center;
-    // height: 75vh;
-    // width:75vw;
     height:auto;
     width:auto;
     flex-direction: column;
@@ -347,20 +346,17 @@ tr td.ui-datepicker-unselectable.ui-state-disabled {
 // styling for modal
 
 .book-tour-form-modal{
-    // display: none;
+    
 
     .is-active &{
-        // display:block;
+       
         position:fixed;
         z-index: 99999;
-        top: 5%;
+        top: 7%;
         left: 50%;
         overflow-y: auto;
         height:75vh;
-        // background-color: #DAEFEC;
-
-        // right: 10%;
-        // bottom: 10%;
+        
         transform: translateX(-50%);
     }
 
