@@ -789,6 +789,14 @@ a {
         display: flex;
         -ms-flex-line-pack: center;
             align-content: center; }
+        @media (max-width: 760px) {
+          .about-content .about-page-amp-members .about-page-amp-members-logos div {
+            width: 50%; }
+            .about-content .about-page-amp-members .about-page-amp-members-logos div .about-page-amp-community-division-line {
+              width: 100%;
+              -webkit-box-align: center;
+                  -ms-flex-align: center;
+                      align-items: center; } }
         .about-content .about-page-amp-members .about-page-amp-members-logos div img {
           margin: auto; }
   .about-content .about-page-workspace-button .bottom-book-button-about-page .button-book {
@@ -874,6 +882,29 @@ a {
     margin-bottom: 1px; }
   .about-page-amp-member-description {
     display: none; } }
+
+@media (max-width: 760px) {
+  .about-page-button-arrow .about-button-arrow-community {
+    display: block !important;
+    width: 68px;
+    height: auto;
+    font-size: 30px;
+    color: #297373;
+    text-align: center;
+    border: none;
+    background: none;
+    -webkit-box-shadow: none;
+            box-shadow: none; }
+    .about-page-button-arrow .about-button-arrow-community button {
+      line-height: 1;
+      padding: 0.6rem 1rem 0.4rem;
+      text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); }
+  .about-page-amp-community-division-line {
+    border-top: 3px solid #297373;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    height: 0.1px;
+    width: 95% !important; } }
 
 @media (max-width: 760px) {
   .about-page-amp-members {
