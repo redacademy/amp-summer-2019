@@ -1713,7 +1713,8 @@ object {
   position: relative;
   max-width: 944px;
   background-color: #DAEFEC;
-  margin: 0 auto; }
+  margin: 0 auto;
+  height: 100%; }
   @media (max-width: 760px) {
     .book-tour-form_wrapper.gform_wrapper {
       min-height: 100vh;
@@ -1780,7 +1781,7 @@ object {
   .book-tour-form_wrapper.gform_wrapper .gform_heading {
     display: none; }
   .book-tour-form_wrapper.gform_wrapper .gform_page {
-    height: 339px;
+    height: 100%;
     max-width: 784px;
     margin: 0 auto; }
   @media (max-width: 760px) {
@@ -1814,7 +1815,7 @@ object {
       padding: 0; }
       @media (max-width: 760px) {
         .book-tour-form_wrapper.gform_wrapper .gform_page_footer .gform_button, .book-tour-form_wrapper.gform_wrapper .gform_page_footer .gform_next_button {
-          height: 44px;
+          height: 50px;
           width: 220px;
           display: block;
           position: absolute;
@@ -1868,7 +1869,10 @@ object {
             box-shadow: none;
     padding: 0;
     position: absolute;
-    bottom: -4%; }
+    bottom: -4%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%); }
     @media (max-width: 760px) {
       .gform_confirmation_wrapper .gform_confirmation_message a {
         border: 1px solid #297373;
@@ -1878,7 +1882,10 @@ object {
         border-radius: 3px;
         margin-bottom: 2rem;
         position: absolute;
-        bottom: -5%; } }
+        bottom: -5%;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+                transform: translateX(-50%); } }
     .gform_confirmation_wrapper .gform_confirmation_message a:focus {
       outline: none; }
 
@@ -1947,12 +1954,23 @@ tr td.ui-datepicker-unselectable.ui-state-disabled {
 .is-active .book-tour-form-modal {
   position: fixed;
   z-index: 99999;
-  top: 5%;
+  top: 7%;
   left: 50%;
   overflow-y: auto;
   height: 75vh;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%); }
+
+.prev-button-arrow.fa-less-than {
+  height: 60px;
+  display: inline-block;
+  position: absolute;
+  top: 85%; }
+  .prev-button-arrow.fa-less-than::before {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%); }
 
 .close-book-tour {
   right: 3%;
@@ -1977,7 +1995,7 @@ tr td.ui-datepicker-unselectable.ui-state-disabled {
 
 .prev-button-arrow {
   position: absolute;
-  bottom: 8.5%;
+  top: 208%;
   left: 15%;
   color: #297373;
   font-size: 1.5rem; }

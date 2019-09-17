@@ -35,14 +35,17 @@ Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Br
  
 ## Theme description
  
-###The theme includes the following template files:
+### The theme includes the following template files:
 
-The theme supports featured images, menus uses them as follows:
+The theme supports carousel images using the flickity plugin and a default menu:
+
+Flickity:
+
 
 Menus:
 The default menu is in header.php, and uses the Menus admin
  
-###Styling
+### Styling
 Media Quiries for mobile layout.
  
 
@@ -66,10 +69,10 @@ Steps for creating a new workspace
 <img src="./themes/red_amp/readme-images/workspace-title.png"   alt="read-me-image" />
 
 #### Step 4
-<img src="./themes/red_amp/readme-images/workspace-icons.gif"   alt="read-me-image" />
+<img src="./themes/red_amp/readme-images/create-workspace.gif"   alt="read-me-image" />
 
 #### Step 5
-<img src="./themes/red_amp/readme-images/create-workspace.gif"   alt="read-me-image" />
+<img src="./themes/red_amp/readme-images/workspace-icons.gif"   alt="read-me-image" />
 
 #### Step 6
 <img src="./themes/red_amp/readme-images/workspace-publish.png"   alt="read-me-image" />
@@ -79,6 +82,22 @@ Steps for creating a new workspace
 Custom fields for workspaces.
 
 Steps for creating a new event.
+
+#### Step 1
+<img src="./themes/red_amp/readme-images/event-section.png"   alt="read-me-image" />
+
+#### Step 2
+<img src="./themes/red_amp/readme-images/event-add.png"   alt="read-me-image" />
+
+#### Step 3
+<img src="./themes/red_amp/readme-images/event-title.png"   alt="read-me-image" />
+
+#### Step 4
+<img src="./themes/red_amp/readme-images/event-details.png"   alt="read-me-image" />
+
+#### Step 5
+<img src="./themes/red_amp/readme-images/event-publish.png"   alt="read-me-image" />
+
 
 
 ### Forms
