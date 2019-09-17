@@ -175,7 +175,7 @@ get_header(); ?>
 	</main><!-- #main -->
 	</div><!-- #primary -->
 
-	<div class="about-page-workspace-button bottom-book-button-about-page" style="text-align: center; margin-bottom: 200px; margin-top: 110px;">
+	<div class="about-page-workspace-button bottom-book-button-about-page" style="text-align: center; margin-bottom: 100px;">
     	<a href="<?php echo get_the_permalink(189); ?>" class="button-book book-tour-popup"> Book a Tour</a>
     </div>
     <div class="mobile-back-to-top-button" data-scrollto="#back-to-top-beggining">
