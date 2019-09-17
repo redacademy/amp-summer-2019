@@ -2374,7 +2374,7 @@ tbody {
   padding-top: 17px;
   text-align: center;
   text-decoration: none;
-  border-radius: 3px; }
+  border-radius: 8px; }
   @media (max-width: 760px) {
     .button-book {
       padding-top: 10px;
