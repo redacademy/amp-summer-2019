@@ -2004,7 +2004,7 @@ tbody {
   font-family: "Muli", sans-serif;
   font-size: 16px;
   max-width: 750px;
-  text-align: center;
+  text-align: justify;
   margin-left: auto;
   margin-right: auto;
   letter-spacing: 0.9;
@@ -2079,7 +2079,7 @@ tbody {
           margin-bottom: 0;
           padding-top: 10px;
           padding-left: 20px;
-          text-align: left;
+          text-align: justify;
           padding-bottom: 1rem; }
         .post-type-archive-event .custom-loop .loop-type-events a .loop-item-container .event-content-wrapper .button-arrow-container {
           width: 100%;
