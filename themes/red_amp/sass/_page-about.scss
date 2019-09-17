@@ -31,6 +31,9 @@
       margin-bottom: 100px;
       margin-left: auto;
       margin-right: auto;
+      @include mobile {
+        max-width: 375px;
+      }
     }
   }
 
@@ -73,6 +76,14 @@
   }
 
   /* MEET THE TEAM */
+  .team-section,
+  .team-title {
+    h2 {
+      text-align: center;
+      font-family: Bambi;
+      padding-bottom: 50px;
+    }
+  }
   .team-section {
     .main-carousel {
       h2 {
@@ -85,6 +96,7 @@
     .mobile-about-carousel {
       .flickity-viewport {
         width: 100%;
+        max-width: 1139px;
       }
 
       .carousel-cell {

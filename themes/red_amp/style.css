@@ -665,6 +665,9 @@ a {
     margin-bottom: 100px;
     margin-left: auto;
     margin-right: auto; }
+    @media (max-width: 760px) {
+      .about-content .about-page-main-title p {
+        max-width: 375px; } }
   .about-content .about-page-values .values-description h2 {
     font-family: "Bambi";
     text-align: center; }
@@ -695,12 +698,18 @@ a {
     .about-content .about-page-values img {
       background: #fff;
       margin: 15px; }
+  .about-content .team-section h2,
+  .about-content .team-title h2 {
+    text-align: center;
+    font-family: Bambi;
+    padding-bottom: 50px; }
   .about-content .team-section .main-carousel h2 {
     font-family: "Bambi";
     text-align: center;
     margin-bottom: 85px; }
   .about-content .team-section .mobile-about-carousel .flickity-viewport {
-    width: 100%; }
+    width: 100%;
+    max-width: 1139px; }
   .about-content .team-section .mobile-about-carousel .carousel-cell {
     width: 38%;
     text-align: center; }

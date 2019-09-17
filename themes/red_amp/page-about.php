@@ -49,6 +49,9 @@ get_header(); ?>
 
 	
 	<div class="team-section">
+        <div class="Team-title">
+        <h2> Meet the Team </h2>
+        </div>
 		<div class='mobile-about-carousel'>
         	<?php
         		$fields = CFS()->get('meet_the_team');
