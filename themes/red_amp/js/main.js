@@ -54,11 +54,6 @@
     $('.workspace-icons')
       .find('.workspace-icon-flex-three')
       .toggleClass('workspace-icon-flex-three-open');
-
-    // if you are getting errors try using an if statement e.g.
-    // if($('.workspace-icons-flex-two').length){
-    //   console.log('workspace icons flex two exists');
-    // }
   });
 
   //Function to open and close the pop up for the Book a Tour
@@ -176,11 +171,8 @@
   // End of contact us page form redirect on form submissions to thank you page  
 })(jQuery);
 
-<<<<<<< HEAD
-=======
 /*   open and close the amp community in about page function */
 $('.button-arrow-amp-community').on('click', function() {
   $('.about-page-amp-members-logos').toggleClass('is-open');
   $('.front-page-button-arrow').toggleClass('turn-arrow');
 });
->>>>>>> 140e87dc0023c865777bfe106f12aefe00d22cd6
