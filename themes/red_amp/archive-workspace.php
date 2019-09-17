@@ -16,10 +16,10 @@ get_header(); ?>
 				
 				<div class="page-title">
 				<?php
-					post_type_archive_title('<h1>','</h1>');
+					esc_html(post_type_archive_title('<h1>','</h1>'));
 				?>
 				</div>	
-				<?php	the_archive_description( '<div class="taxonomy-description">', '</div>' );
+				<?php	esc_html(the_archive_description( '<div class="taxonomy-description">', '</div>' ));
 				?>
 			</header><!-- .page-header -->
 
@@ -29,11 +29,11 @@ get_header(); ?>
 			<div class="front-page-workspace"> 
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<a class="front-page-each-workspace" href="<?php echo get_the_permalink(); ?>">
+				<a class="front-page-each-workspace" href="<?php echo esc_url(get_the_permalink()); ?>">
 					<div>
-						<div class="front-page-workspace-thumbnail"><?php the_post_thumbnail(); ?></div>
+						<div class="front-page-workspace-thumbnail"><?php esc_html(the_post_thumbnail()); ?></div>
 						<div class="front-page-workspace-title">
-							<h1><?php the_title(); ?></h1>
+							<h1><?php esc_html(the_title()); ?></h1>
 						</div>
 					</div>
 				</a>
@@ -46,7 +46,7 @@ get_header(); ?>
 			
 
 			<div class="primary-cta-block"> 
-			<a href="<?php echo get_the_permalink(189); ?>" class="button-book book-tour-popup" href="#">Book a Tour</a>
+			<a href="<?php echo esc_url(get_the_permalink(189)); ?>" class="button-book book-tour-popup" href="#">Book a Tour</a>
 			</div>
 
 		

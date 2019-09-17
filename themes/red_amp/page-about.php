@@ -37,13 +37,13 @@ get_header(); ?>
 		</div> 
 
         <div>
-            <img src="<?php echo get_template_directory_uri() . '/images/Community.png' ?>" alt="values-community">
+            <img src="<?php echo esc_url(get_template_directory_uri()) . '/images/Community.png' ?>" alt="values-community">
         </div>
         <div>
-        	<img src="<?php echo get_template_directory_uri() . '/images/Collaboration.png' ?>" alt="values-collaboration">
+        	<img src="<?php echo esc_url(get_template_directory_uri()) . '/images/Collaboration.png' ?>" alt="values-collaboration">
         </div>
         <div>
-        	<img src="<?php echo get_template_directory_uri() . '/images/Mission_Driven.png' ?>" alt="values-mission-driven">
+        	<img src="<?php echo esc_url(get_template_directory_uri()) . '/images/Mission_Driven.png' ?>" alt="values-mission-driven">
         </div>
     </div> <!-- end of about-page-values --> 
 
@@ -95,7 +95,7 @@ get_header(); ?>
             </h2>
             
             <div class="amp-building-mobile">
-                <img src="<?php echo get_template_directory_uri();?>/images/Building1.jpg" alt="building"/>
+                <img src="<?php echo esc_url(get_template_directory_uri());?>/images/Building1.jpg" alt="building"/>
             </div> <!-- amp-building -->
             
 			<p>
@@ -104,7 +104,7 @@ get_header(); ?>
 		</div> <!-- hq-description -->
 	
 		<div class="amp-building">
-			<img src="<?php echo get_template_directory_uri();?>/images/Building1.jpg" alt="building"/>
+			<img src="<?php echo esc_url(get_template_directory_uri());?>/images/Building1.jpg" alt="building"/>
 		</div> <!-- amp-building -->
 	</div> <!-- end of hq-div -->
 
@@ -116,53 +116,58 @@ get_header(); ?>
     	</div>
     	<div>
        		 <p>
-           		 Meet the AMP Members... share the space with like minded people and organizations...focus on positive and social change...
+           		 Meet the AMP Members... share the space with like minded people and organizations...focus on positive and social change.
         	</p>
     	</div>
     <div class="about-page-amp-members-logos">
         <div>
-            <img src="<?php echo get_template_directory_uri() . '/images/Member_Logo01.png' ?>" alt="">
+            <img src="<?php echo esc_url(get_template_directory_uri()) . '/images/Member_Logo01.png' ?>" alt="">
         </div>
         <div>
-            <img src="<?php echo get_template_directory_uri() . '/images/Member_Logo02.png' ?>" alt="">
+            <img src="<?php echo esc_url(get_template_directory_uri()) . '/images/Member_Logo02.png' ?>" alt="">
         </div>
         <div>
-            <img src="<?php echo get_template_directory_uri() . '/images/Member_Logo03.png' ?>" alt="">
+            <img src="<?php echo esc_url(get_template_directory_uri()) . '/images/Member_Logo03.png' ?>" alt="">
         </div>
         <div>
-            <img src="<?php echo get_template_directory_uri() . '/images/Member_Logo04.png' ?>" alt="">
+            <img src="<?php echo esc_url(get_template_directory_uri()) . '/images/Member_Logo04.png' ?>" alt="">
         </div>
         <div>
-            <img src="<?php echo get_template_directory_uri() . '/images/Member_Logo05.png' ?>" alt="">
+            <img src="<?php echo esc_url(get_template_directory_uri()) . '/images/Member_Logo05.png' ?>" alt="">
         </div>
         <div>
-            <img src="<?php echo get_template_directory_uri() . '/images/Member_Logo06.png' ?>" alt="">
+            <img src="<?php echo esc_url(get_template_directory_uri()) . '/images/Member_Logo06.png' ?>" alt="">
         </div>
         <div>
-            <img src="<?php echo get_template_directory_uri() . '/images/Member_Logo07.png' ?>" alt="">
+            <img src="<?php echo esc_url(get_template_directory_uri()) . '/images/Member_Logo07.png' ?>" alt="">
         </div>
         <div>
-            <img src="<?php echo get_template_directory_uri() . '/images/Member_Logo08.png' ?>" alt="">
+            <img src="<?php echo esc_url(get_template_directory_uri()) . '/images/Member_Logo08.png' ?>" alt="">
         </div>
         <div>
-            <img src="<?php echo get_template_directory_uri() . '/images/Member_Logo09.png' ?>" alt="">
+            <img src="<?php echo esc_url(get_template_directory_uri()) . '/images/Member_Logo09.png' ?>" alt="">
         </div>
         <div>
-            <img src="<?php echo get_template_directory_uri() . '/images/Member_Logo10.png' ?>" alt="">
+            <img src="<?php echo esc_url(get_template_directory_uri()) . '/images/Member_Logo10.png' ?>" alt="">
         </div>
         <div>
-            <img src="<?php echo get_template_directory_uri() . '/images/Member_Logo11.png' ?>" alt="">
+            <img src="<?php echo esc_url(get_template_directory_uri()) . '/images/Member_Logo11.png' ?>" alt="">
         </div>
         <div>
+<<<<<<< HEAD
             <img src="<?php echo get_template_directory_uri() . '/images/Member_Logo12.png' ?>" alt="">
+        </div>   
+=======
+            <img src="<?php echo esc_url(get_template_directory_uri()) . '/images/Member_Logo12.png' ?>" alt="">
         </div>  
+>>>>>>> 90e71fac914530503e8619d61bad78741f3ba58c
 
-    <div class="about-page-button-arrow">
-        <button class="about-arrow-amp-community"><i class="fas fa-chevron-down"></i></button>
-    </div> <!-- end of button arrow -->
-    <div class="about-page-amp-community-division-line">
+        <div class="about-page-button-arrow">
+            <button class="button-arrow-community"><i class="fas fa-chevron-down"></i></button>
+        </div>
+        <div class="about-page-amp-community-division-line">
 
-    </div> <!-- end of division line -->
+        </div>
     
     </div> <!-- end of amp members logo --> 
     
@@ -171,6 +176,14 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 	<div class="about-page-workspace-button bottom-book-button-about-page" style="text-align: center; margin-bottom: 200px; margin-top: 110px;">
+<<<<<<< HEAD
     	<a href="<?php echo get_the_permalink(189); ?>" class="button-book book-tour-popup"> Book a Tour</a>
+    </div>
+    <div class="mobile-back-to-top-button" data-scrollto="#back-to-top-beggining">
+    <a href="#">Back to top</a>
+</div>
+=======
+    	<a href="<?php echo esc_url(get_the_permalink(189)); ?>" class="button-book book-tour-popup"> Book a Tour</a>
 	</div>
+>>>>>>> 90e71fac914530503e8619d61bad78741f3ba58c
 <?php get_footer(); ?>

@@ -44,21 +44,22 @@
     $('.front-page-button-arrow').toggleClass('turn-arrow');
   });
 
-  $('.button-arrow-amp-workspace').on('click', function(event){
+  $('.button-arrow-amp-workspace').on('click', function(event) {
     event.preventDefault();
-    $('.workspace-icons-flex-two').find('.workspace-icon-flex-two').toggleClass('workspace-icon-flex-two-open');
+    $('.workspace-icons-flex-two')
+      .find('.workspace-icon-flex-two')
+      .toggleClass('workspace-icon-flex-two-open');
     console.log('is this working?');
 
-    $('.workspace-icons').find('.workspace-icon-flex-three').toggleClass('workspace-icon-flex-three-open');
+    $('.workspace-icons')
+      .find('.workspace-icon-flex-three')
+      .toggleClass('workspace-icon-flex-three-open');
 
-    // if you are getting errors try using an if statement e.g. 
+    // if you are getting errors try using an if statement e.g.
     // if($('.workspace-icons-flex-two').length){
     //   console.log('workspace icons flex two exists');
     // }
   });
-
-
-
 
   //Function to open and close the pop up for the Book a Tour
 
@@ -109,7 +110,7 @@
 
   $('.mobile-back-to-top').on('click', function(event) {
     event.preventDefault();
-    const $href = $(event.currentTarget).attr('data-scrollto'); 
+    const $href = $(event.currentTarget).attr('data-scrollto');
     console.log($($href).offset().top);
     console.log('test2');
     $('body,html').animate({
@@ -117,13 +118,15 @@
     });
   });
 
-
-
   //mobile nav menu in header
-  $('.menu-item-has-children').prepend('<a href="#" class="mobile-menu-arrow"><i class="fas fa-angle-down"></i></a>');
-    $('.mobile-menu-arrow').on('click', function (event) {
+  $('.menu-item-has-children').prepend(
+    '<a href="#" class="mobile-menu-arrow"><i class="fas fa-angle-down"></i></a>'
+  );
+  $('.mobile-menu-arrow').on('click', function(event) {
     event.preventDefault();
-    $('.menu-item-has-children').find('.sub-menu').toggleClass('mobile-sub-menu');
+    $('.menu-item-has-children')
+      .find('.sub-menu')
+      .toggleClass('mobile-sub-menu');
   });
 
   const $hamburguerMenu = $('.hamburguer');
@@ -173,3 +176,11 @@
   // End of contact us page form redirect on form submissions to thank you page  
 })(jQuery);
 
+<<<<<<< HEAD
+=======
+/*   open and close the amp community in about page function */
+$('.button-arrow-amp-community').on('click', function() {
+  $('.about-page-amp-members-logos').toggleClass('is-open');
+  $('.front-page-button-arrow').toggleClass('turn-arrow');
+});
+>>>>>>> 140e87dc0023c865777bfe106f12aefe00d22cd6

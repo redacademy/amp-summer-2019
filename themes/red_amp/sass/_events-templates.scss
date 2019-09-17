@@ -177,6 +177,10 @@
     .events-title h1 {
         text-align: center;
         font-family: $font__main;
+
+        @include mobile{
+            display:none;
+        }
     }
 
     .events-description {
@@ -188,10 +192,14 @@
         margin-right: auto;
         letter-spacing: 0.9;
         line-height: 22px;
+
+        @include mobile{
+            display:none;
+        }
     }
 
     .event-title {
-        width: 1021px;
+        max-width: 1021px;
         margin-left: auto;
         margin-right: auto;
         border-bottom: 2px solid #297373;
@@ -200,11 +208,18 @@
         .entry-title {
             margin-bottom: 0;
             margin-top: 50px;
+
+            @include mobile{
+                text-align: center;
+            }
+        }
+        @include mobile{
+            border-bottom:unset;
         }
     }
 
     .single-event-wrap {
-        width: 1021px;
+        max-width: 1021px;
         margin-left: auto;
         margin-right: auto;
         margin-top: 37px;
@@ -245,12 +260,15 @@
             font-size: 25px;
             color: $font_light;
             font-weight: 700;
-            width: 250px;
-            height: 80px;
+            max-width: 250px;
+            max-height: 80px;
             font-family: $bodytext_font_family;
+            border:1px solid $dark_green;
+            border-radius:3px;
             background: $dark_green;
             box-shadow: none;
             padding: 0;
+            text-shadow: none;
 
             &:focus {
                 outline: none;
@@ -259,6 +277,63 @@
             &:hover {
                 box-shadow: 0 10px 10px 0 $dark_grey;
             }
+        }
+
+        @include mobile{
+            display: block;
+            padding-left:10px;
+            padding-right:10px;
+           
+            
+
+            .event-thumbnail {
+                flex: none;
+                width: auto;
+                height: auto;
+                overflow: hidden;
+            }
+    
+            .event-details {
+                margin-left: 0;
+                .events-description-details{
+                   
+                    font-size:14px;
+
+                    p:nth-child(1){
+                        display:none;
+                    }
+                }
+            }
+    
+            .event-location-time-details {
+                display: block;
+                
+    
+                .location {
+                    font-weight: bold;
+                    margin: 0;
+                }
+                .event-location{
+                    margin-bottom: 20px;
+                }
+            }
+
+            a{
+                margin-bottom: 10px;
+            }
+
+            .button-book {
+                font-size: 25px;
+                width:168px;
+                height:45px;
+                font-size: 18px;
+                transform: translate(50%, -50%);
+                margin-top: 60px;
+                
+                
+            }
+    
+
         }
     }
 }

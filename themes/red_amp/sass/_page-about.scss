@@ -144,7 +144,7 @@
         padding-top: 30px;
       }
       p {
-        width: 650px;
+        text-align: center;
       }
     }
 
@@ -157,6 +157,9 @@
         top: 250px;
         left: 40%;
       }
+    }
+    .amp-building-mobile {
+      display: none;
     }
   }
 
@@ -195,28 +198,7 @@
           margin: auto;
         }
       }
-      .about-page-button-arrow,
-      .about-page-amp-community-division-line {
-        display: none;
-      }
     }
-  }
-
-  .about-page-amp-member-division-line-top {
-    border-top: 2px solid $dark_green;
-    margin: 0 auto;
-    margin-bottom: 30px;
-    margin-top: 80px;
-    height: 0.1px;
-    width: 25%;
-  }
-
-  .about-page-amp-member-division-line {
-    border-top: 3px solid $dark_green;
-    margin: 0 auto;
-    margin-bottom: 30px;
-    height: 0.1px;
-    width: 90%;
   }
 
   .about-page-workspace-button {
@@ -288,34 +270,34 @@
           text-align: center;
         }
       }
-    }
-    .amp-building {
-      img {
-        display: none;
-      }
-    }
-  }
 
-  /* AMP COMMUNITY LOGO SECTION */
-
-  @include mobile {
-    .about-page-button-arrow {
-      text-align: center;
-
-      .about-arrow-amp-community {
-        width: 68px;
-        height: auto;
-        font-size: 30px;
-        color: $dark_green;
-        text-align: center;
-        border: none;
-        background: none;
-        box-shadow: none;
-
-        &:focus {
-          outline: none;
+      .hq-description {
+        width: 100%;
+        .amp-building-mobile {
+          width: 100%;
         }
+      }
+
+      .amp-building {
+        img {
+          display: none;
+        }
+      }
+
+      .amp-building-mobile {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
       }
     }
   }
 }
+
+
+
+
+
+  
+
+

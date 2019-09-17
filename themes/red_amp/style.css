@@ -742,7 +742,7 @@ a {
         text-align: center;
         padding-top: 30px; }
       .about-content .headquarters .hq-description p {
-        width: 650px; }
+        text-align: center; }
     .about-content .headquarters .amp-building img {
       height: auto;
       width: 60%;
@@ -750,6 +750,8 @@ a {
       border-radius: 4px;
       top: 250px;
       left: 40%; }
+    .about-content .headquarters .amp-building-mobile {
+      display: none; }
   .about-content .about-page-amp-members {
     max-width: 60%;
     margin: 0 auto;
@@ -784,22 +786,6 @@ a {
             align-content: center; }
         .about-content .about-page-amp-members .about-page-amp-members-logos div img {
           margin: auto; }
-      .about-content .about-page-amp-members .about-page-amp-members-logos .about-page-button-arrow,
-      .about-content .about-page-amp-members .about-page-amp-members-logos .about-page-amp-community-division-line {
-        display: none; }
-  .about-content .about-page-amp-member-division-line-top {
-    border-top: 2px solid #297373;
-    margin: 0 auto;
-    margin-bottom: 30px;
-    margin-top: 80px;
-    height: 0.1px;
-    width: 25%; }
-  .about-content .about-page-amp-member-division-line {
-    border-top: 3px solid #297373;
-    margin: 0 auto;
-    margin-bottom: 30px;
-    height: 0.1px;
-    width: 90%; }
   .about-content .about-page-workspace-button .bottom-book-button-about-page .button-book {
     font-size: 25px;
     color: #fff;
@@ -816,8 +802,7 @@ a {
 /* MOBILE VERSION */
 .about-content {
   /* TEAM CAROUSEL */
-  /* MOBILE HQ SECTION */
-  /* AMP COMMUNITY LOGO SECTION */ }
+  /* MOBILE HQ SECTION */ }
   @media (max-width: 760px) {
     .about-content h1,
     .about-content p {
@@ -841,23 +826,17 @@ a {
       .about-content .headquarters .hq-description p,
       .about-content .headquarters h2 p {
         text-align: center; }
-    .about-content .amp-building img {
-      display: none; } }
-  @media (max-width: 760px) {
-    .about-content .about-page-button-arrow {
-      text-align: center; }
-      .about-content .about-page-button-arrow .about-arrow-amp-community {
-        width: 68px;
-        height: auto;
-        font-size: 30px;
-        color: #297373;
-        text-align: center;
-        border: none;
-        background: none;
-        -webkit-box-shadow: none;
-                box-shadow: none; }
-        .about-content .about-page-button-arrow .about-arrow-amp-community:focus {
-          outline: none; } }
+    .about-content .headquarters .hq-description {
+      width: 100%; }
+      .about-content .headquarters .hq-description .amp-building-mobile {
+        width: 100%; }
+    .about-content .headquarters .amp-building img {
+      display: none; }
+    .about-content .headquarters .amp-building-mobile {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%; } }
 
 /*--------------------------------------------------------------
 # Content
@@ -1236,12 +1215,10 @@ object {
 .workspace-content .carousel-cell {
   width: 100%; }
 
-.workspace-details {
-  height: 350px; }
-  .workspace-details h1 {
-    font-family: "Bambi";
-    font-size: 36px;
-    margin-top: 0; }
+.workspace-details h1 {
+  font-family: "Bambi";
+  font-size: 36px;
+  margin-top: 0; }
 
 .carousel-cell img {
   width: 100%;
@@ -1277,7 +1254,10 @@ object {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-bottom: 38px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-bottom: 4rem;
   margin: 80px 160px 0 160px; }
   .workspace-wrapper > div {
     width: 50%;
@@ -1298,8 +1278,9 @@ object {
   .workspace-wrapper:last-child::after {
     display: none; }
   .workspace-wrapper .flickity-page-dots {
-    width: 82% !important;
-    bottom: 30px; }
+    width: 100% !important;
+    bottom: -30px;
+    left: 0; }
     .workspace-wrapper .flickity-page-dots .is-selected {
       background: #297373 !important;
       height: 17px;
@@ -1311,7 +1292,7 @@ object {
       border: 1px solid #297373; }
 
 .workspace-icon-title {
-  width: 100%;
+  width: 80%;
   margin: 0 auto; }
   .workspace-icon-title h1 {
     font-family: "Bambi";
@@ -1338,7 +1319,7 @@ object {
   text-align: center; }
 
 .workspace-icons {
-  width: 1080px;
+  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1473,6 +1454,17 @@ object {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; } }
+
+@media only screen and (min-width: 760px) and (max-width: 1050px) {
+  .workspace-wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .workspace-wrapper .workspace-details, .workspace-wrapper .container-carousel {
+      -webkit-box-flex: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1; }
+    .workspace-wrapper .workspace-details {
+      padding-top: 2rem; } }
 
 .page .container {
   max-width: 1400px; }
@@ -1611,13 +1603,13 @@ object {
     display: block; }
 
 .book-tour-form_wrapper.gform_wrapper {
-  height: 670px;
   position: relative;
   max-width: 944px;
   background-color: #DAEFEC;
   margin: 0 auto; }
   @media (max-width: 760px) {
     .book-tour-form_wrapper.gform_wrapper {
+      min-height: 100vh;
       width: 100vw;
       background-color: transparent;
       padding-left: 10px;
@@ -1884,6 +1876,13 @@ tr td.ui-datepicker-unselectable.ui-state-disabled {
 
 .entry-header h1 {
   display: none; }
+
+tbody {
+  background: white; }
+
+@media (max-width: 760px) {
+  .page-book-a-tour .site-content .content-area .site-main .container article .entry-content {
+    max-height: 1000px; } }
 
 /*--------------------------------------------------------------
 # Page Templates
@@ -2197,7 +2196,7 @@ tr td.ui-datepicker-unselectable.ui-state-disabled {
   font-family: "Bambi";
   font-size: 23px;
   text-align: center;
-  margin-top: 70px; }
+  margin: 35px 0; }
 
 .front-page-workspace-text {
   font-family: "Muli", sans-serif;
@@ -2312,7 +2311,8 @@ tr td.ui-datepicker-unselectable.ui-state-disabled {
 
 .front-page-button-arrow {
   text-align: center; }
-  .front-page-button-arrow .button-arrow-amp-community, .front-page-button-arrow .button-arrow-amp-workspace {
+  .front-page-button-arrow .button-arrow-amp-community,
+  .front-page-button-arrow .button-arrow-amp-workspace {
     width: 68px;
     height: auto;
     font-size: 30px;
@@ -2322,7 +2322,8 @@ tr td.ui-datepicker-unselectable.ui-state-disabled {
     background: none;
     -webkit-box-shadow: none;
             box-shadow: none; }
-    .front-page-button-arrow .button-arrow-amp-community:focus, .front-page-button-arrow .button-arrow-amp-workspace:focus {
+    .front-page-button-arrow .button-arrow-amp-community:focus,
+    .front-page-button-arrow .button-arrow-amp-workspace:focus {
       outline: none; }
 
 .turn-arrow {
@@ -2526,9 +2527,7 @@ tr td.ui-datepicker-unselectable.ui-state-disabled {
 
 .mobile-back-to-top {
   display: none;
-  text-align: center;
-  width: 100%;
-  height: 50px; }
+  text-align: center; }
   @media (max-width: 760px) {
     .mobile-back-to-top {
       display: -webkit-box;
