@@ -8,7 +8,7 @@
     // options
     wrapAround: true,
     cellAlign: 'center'
-  });
+  }); 
 
   let index = $('.container-carousel').length;
   let i;
