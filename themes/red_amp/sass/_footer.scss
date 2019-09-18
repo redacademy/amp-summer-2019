@@ -99,6 +99,11 @@ footer{
 .gfield_description {
   display: none;
 }
+div.validation_error {
+  padding: 0 !important;
+  margin: 0 !important;
+  content: "This is a test";
+}
 .gform_body {
   width: unset !important;
 }
@@ -113,6 +118,7 @@ footer{
 #gform_wrapper_2 {
   #gform_2 {
   height: 2rem !important;  
+ 
 }
 }
 .gform_footer {
@@ -141,7 +147,7 @@ input[type=submit] {
         width: 260px !important;
       }
     }
-
+    
 
 }
 }
@@ -155,6 +161,7 @@ input[type=submit] {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 
