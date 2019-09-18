@@ -9,9 +9,6 @@
         justify-content: center;
         flex-direction: column;
     }    
-    .thank-you-google-map-location {
-        display: none;
-    }
     .thank-you-title, .thank-you-text {
         text-align: center;
         
@@ -30,24 +27,14 @@
     .front-page-workspace-button {
         padding-bottom: 5rem;
     }
+    .entry-header {
+        display: block;
+        text-align: center;
+    }
 
 @include mobile { ///changed with mobile
     .thank-you-title {
     text-transform: capitalize;
-    }
-    .front-page-workspace-button {
-        display: none;
     }    
-    .thank-you-google-map-location {
-        display: unset;
-        width: 100%;
-    }
-    .thank-you-google-map-holder {
-        padding: 0;
-        margin: 0;
-        width: 100%;
-        padding-top: 5rem;
-    }
-
   }
 }  

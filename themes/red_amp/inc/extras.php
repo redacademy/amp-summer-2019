@@ -25,3 +25,10 @@ function red_starter_body_classes( $classes ) {
 }
 add_filter( 'body_class', 'red_starter_body_classes' );
 
+// Remove "Editor" links from sub-menus
+function red_amp_remove_submenus() {
+    remove_submenu_page( 'themes.php', 'theme-editor.php' );
+    remove_submenu_page( 'plugins.php', 'plugin-editor.php' );
+    remove_menu_page( 'edit.php?post_type=cfs' );
+}
+add_action( 'admin_menu', 'red_amp_remove_submenus', 110 );

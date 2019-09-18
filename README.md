@@ -1,6 +1,6 @@
-# RED Starter
+# AMP
 
-A WordPress starter theme for RED Academy students, forked from Underscores.
+A WordPress starter theme AMP Vancouver, forked from Underscores.
 
 ## Installation
 
@@ -8,7 +8,7 @@ A WordPress starter theme for RED Academy students, forked from Underscores.
 
 Then add me to your `wp-content` directory.
 
-### 2. Rename the `redstarter-master` directory
+### 2. Rename the `red_amp-master` directory
 
 Make sure that the theme directory name is project appropriate!
 
@@ -39,19 +39,22 @@ Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Br
 
 The theme supports carousel images using the flickity plugin and a default menu:
 
-Flickity:
+Flickity: The carousels on the website were done with the Flickity jquery plugin.
 
+Styling for the flickity required use of !importants because the generic styling was very specfic.
 
 Menus:
 The default menu is in header.php, and uses the Menus admin
  
 ### Styling
-Media Quiries for mobile layout.
+There is one general Media Query for mobile layout at 760px. All screens under that threshold will display as mobile.
+
+The max width for all screens is 1400px.
  
 
 ### There are 2 custom post types:
-Workspaces
-Events
+- Workspaces
+- Events
 
 
 ### Workspaces
