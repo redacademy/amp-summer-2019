@@ -24,7 +24,7 @@
         font-size: $bodytext_font_size;
         max-width: 750px;
 
-        text-align: justify;
+        text-align: left;
         margin-left: auto;
         margin-right: auto;
         letter-spacing: 0.9;
@@ -120,7 +120,7 @@
                             margin-bottom: 0;
                             padding-top: 10px;
                             padding-left: 20px;
-                            text-align: justify;
+                            text-align: left;
                             padding-bottom: 1rem;
 
                         }
@@ -187,7 +187,7 @@
         font-family: $font__secondary;
         font-size: $bodytext_font_size;
         width: 750px;
-        text-align: justify;
+        text-align: left;
         margin-left: auto;
         margin-right: auto;
         letter-spacing: 0.9;
@@ -240,7 +240,7 @@
                         font-weight: bold;
              }
              p{
-                text-align: justify;
+                text-align: left;
              }
           }
         }
