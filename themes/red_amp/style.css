@@ -1578,14 +1578,15 @@ object {
     .workspace-wrapper .workspace-details {
       padding-top: 2rem; } }
 
-.page .container {
+.page-contact .container {
   max-width: 1400px; }
-  .page .container .entry-title {
+  .page-contact .container .entry-title {
     text-align: center;
+    display: block;
     font-family: "Bambi"; }
-  .page .container .wp-block-columns {
+  .page-contact .container .wp-block-columns {
     margin: 0 auto; }
-    .page .container .wp-block-columns .wp-block-column .wpcf7 {
+    .page-contact .container .wp-block-columns .wp-block-column .wpcf7 {
       padding-right: none;
       max-width: 510px;
       width: 100%;
@@ -1598,23 +1599,23 @@ object {
               justify-content: center;
       overflow: none;
       margin: auto; }
-      .page .container .wp-block-columns .wp-block-column .wpcf7 form {
+      .page-contact .container .wp-block-columns .wp-block-column .wpcf7 form {
         padding-left: 1rem;
         padding-right: 1rem; }
-      .page .container .wp-block-columns .wp-block-column .wpcf7 form p label {
+      .page-contact .container .wp-block-columns .wp-block-column .wpcf7 form p label {
         color: #393939;
         font-family: "Muli", sans-serif;
         font-weight: bold;
         width: 100%; }
-        .page .container .wp-block-columns .wp-block-column .wpcf7 form p label textarea,
-        .page .container .wp-block-columns .wp-block-column .wpcf7 form p label input {
+        .page-contact .container .wp-block-columns .wp-block-column .wpcf7 form p label textarea,
+        .page-contact .container .wp-block-columns .wp-block-column .wpcf7 form p label input {
           width: 100%;
           padding-left: 0;
           padding-top: 0;
           opacity: 1 !important;
           background-color: #fff !important;
           border: 1px solid #ccc; }
-        .page .container .wp-block-columns .wp-block-column .wpcf7 form p label input {
+        .page-contact .container .wp-block-columns .wp-block-column .wpcf7 form p label input {
           padding-top: 13px;
           padding-bottom: 13px;
           opacity: 0.5;
@@ -1623,7 +1624,7 @@ object {
           font-family: "Muli", sans-serif;
           border-radius: 3px;
           background-color: #fff; }
-        .page .container .wp-block-columns .wp-block-column .wpcf7 form p label textarea {
+        .page-contact .container .wp-block-columns .wp-block-column .wpcf7 form p label textarea {
           padding-left: 20px;
           padding-top: 13px;
           opacity: 0.5;
@@ -1631,7 +1632,7 @@ object {
           font-family: "Muli", sans-serif;
           border-radius: 3px;
           background-color: #fff; }
-      .page .container .wp-block-columns .wp-block-column .wpcf7 .wpcf7-submit {
+      .page-contact .container .wp-block-columns .wp-block-column .wpcf7 .wpcf7-submit {
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -1646,27 +1647,27 @@ object {
         -webkit-box-shadow: none;
                 box-shadow: none;
         padding: 0; }
-        .page .container .wp-block-columns .wp-block-column .wpcf7 .wpcf7-submit:focus {
+        .page-contact .container .wp-block-columns .wp-block-column .wpcf7 .wpcf7-submit:focus {
           outline: none; }
-        .page .container .wp-block-columns .wp-block-column .wpcf7 .wpcf7-submit:hover {
+        .page-contact .container .wp-block-columns .wp-block-column .wpcf7 .wpcf7-submit:hover {
           -webkit-box-shadow: 0 10px 10px 0 #07393c;
                   box-shadow: 0 10px 10px 0 #07393c; }
-    .page .container .wp-block-columns iframe {
+    .page-contact .container .wp-block-columns iframe {
       margin-bottom: 50px;
       width: 100%;
       max-width: 500px; }
     @media (max-width: 760px) {
-      .page .container .wp-block-columns {
+      .page-contact .container .wp-block-columns {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap; }
-        .page .container .wp-block-columns iframe {
+        .page-contact .container .wp-block-columns iframe {
           width: 120%;
           max-width: 760px;
           padding: 0; } }
-    .page .container .wp-block-columns p {
+    .page-contact .container .wp-block-columns p {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -1674,7 +1675,7 @@ object {
           align-content: space-between; }
 
 @media (max-width: 760px) {
-  .page .wp-block-column {
+  .page-contact .wp-block-column {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1682,21 +1683,21 @@ object {
         flex-basis: 100%;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
-    .page .wp-block-column .contact-page-map,
-    .page .wp-block-column .contact-page-form {
+    .page-contact .wp-block-column .contact-page-map,
+    .page-contact .wp-block-column .contact-page-form {
       width: 100%; }
-    .page .wp-block-column .contact-page-form {
+    .page-contact .wp-block-column .contact-page-form {
       margin: 0 !important;
       margin-top: 2rem;
       display: block; }
-  .page .wp-block-column:nth-child(2n) {
+  .page-contact .wp-block-column:nth-child(2n) {
     margin-left: 0; }
-  .page .wp-block-column:nth-child(2n) p {
+  .page-contact .wp-block-column:nth-child(2n) p {
     width: 80%;
     margin: auto;
     line-height: 1;
     padding-bottom: 1rem; }
-  .page form input {
+  .page-contact form input {
     width: 20%; } }
 
 /*--------------------------------------------------------------

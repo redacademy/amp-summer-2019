@@ -1,8 +1,9 @@
-.page {
+.page-contact {
   .container {
     max-width: $body_max_width;
     .entry-title {
       text-align: center;
+      display: block;
 
       font-family: $font__main;
     }
