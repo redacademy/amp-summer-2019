@@ -105,4 +105,29 @@ Steps for creating a new event.
 
 ### Forms
 
+1. GRAVITY FORMS PLUGIN
+2. CONTACT FORM 7 PLUGIN
 
+### GRAVITY FORMS-
+Gravity Forms is a WordPress plugin used originally for forms which are multi-step such as contact forms, but in a more general sense, it allows site owners to create forms to collect information. Gravity Forms can be used for contact forms, WordPress post creation, calculators, employment applications and more.
+
+Written in PHP, Gravity Forms uses many WordPress built-in functions and features to power its form builder. It also uses the same MySQL database system as WordPress, but stores all forms and entries in its own tables.
+
+#### BOOK A TOUR FORM
+
+* It is multi-step form which helps the user to select their preferable date and time for visiting the available workspaces.
+* The user would see the confirmation message after submitting the form.
+* The admin will be notified through an email regarding any new bookings for the tour.
+
+#### NEWSLETTER SUBSCRIPTION FORM
+
+* It is a one field form through which the user would be able to subscribe for any updates from the AMP.
+
+
+### CONTACT FORM 7-
+Contact Form 7 can manage multiple contact forms, plus you can customize the form and the mail contents flexibly with simple markup. The form supports Ajax-powered submitting, CAPTCHA, Akismet spam filtering and so on.
+
+#### LETS GET IN TOUCH FORM
+
+* It is a single page form which give the user to be able to get in touch with the AMP.
+* The user would recieve a confirmation message on successful submission of the form.
