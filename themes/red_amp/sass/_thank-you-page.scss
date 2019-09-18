@@ -11,7 +11,10 @@
     }    
     .thank-you-title, .thank-you-text {
         text-align: center;
-        
+    .entry-title {
+        display: block;
+        text-transform: capitalize;
+    }    
     }
     .wp-block-image {
      display: flex;

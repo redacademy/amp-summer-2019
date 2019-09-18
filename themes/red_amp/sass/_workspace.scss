@@ -411,6 +411,9 @@
         display: flex;
       }
     }
+    .page-title {
+        font-size: $headline_mobile_font_size;
+    }
     } ///changed with mobile
 
     @include tablet-width { ///changed with tablet width
