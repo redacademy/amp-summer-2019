@@ -1,4 +1,4 @@
-(function($) {
+(function ($) {
   console.log('updated test');
   const tabletBreakpoint = 760;
 
@@ -39,12 +39,12 @@
   }
 
   //  Function for open and close the amp community in front page
-  $('.button-arrow-amp-community').on('click', function() {
+  $('.button-arrow-amp-community').on('click', function () {
     $('.front-page-amp-community-logos').toggleClass('is-open');
     $('.front-page-button-arrow').toggleClass('turn-arrow');
   });
 
-  $('.button-arrow-amp-workspace').on('click', function(event) {
+  $('.button-arrow-amp-workspace').on('click', function (event) {
     event.preventDefault();
     $('.workspace-icons-flex-two')
       .find('.workspace-icon-flex-two')
@@ -58,11 +58,11 @@
 
   //Function to open and close the pop up for the Book a Tour
 
-  $(document).on('gform_page_loaded', function() {
+  $(document).on('gform_page_loaded', function () {
     // code to be trigger when next/previous page is loaded
     let $prevInput = $('#gform_previous_button_1').prop('value');
     if ($prevInput === 'Previous') {
-     
+
       $('#gform_previous_button_1').before(
         '<i class="prev-button-arrow fas fa-less-than"></i>'
       );
@@ -79,13 +79,13 @@
   }
 
   function setupGravityModal() {
-    $bookButton.on('click', function(event) {
+    $bookButton.on('click', function (event) {
       // console.log('open the modal');
       event.preventDefault();
       $bookForm.addClass($bookIsOn);
     });
 
-    $bookCloseX.on('click', function(event) {
+    $bookCloseX.on('click', function (event) {
       event.preventDefault();
       $bookForm.removeClass($bookIsOn);
     });
@@ -93,11 +93,11 @@
     // end of function for book a tour button
   }
 
- 
-  
- 
 
-  $('.button-arrow').on('click', function(event) {
+
+
+
+  $('.button-arrow').on('click', function (event) {
     event.preventDefault();
     const $href = $(event.currentTarget).attr('data-scrollto'); // value = #goto
     console.log($($href).offset().top);
@@ -107,7 +107,7 @@
     });
   });
 
-  $('.mobile-back-to-top').on('click', function(event) {
+  $('.mobile-back-to-top').on('click', function (event) {
     event.preventDefault();
     const $href = $(event.currentTarget).attr('data-scrollto');
     console.log($($href).offset().top);
@@ -121,7 +121,7 @@
   $('.menu-item-has-children').prepend(
     '<a href="#" class="mobile-menu-arrow"><i class="fas fa-angle-down"></i></a>'
   );
-  $('.mobile-menu-arrow').on('click', function(event) {
+  $('.mobile-menu-arrow').on('click', function (event) {
     event.preventDefault();
     $('.menu-item-has-children')
       .find('.sub-menu')
@@ -138,7 +138,7 @@
     console.log('desktop');
   }
 
-  $hamburguerMenu.on('click', function() {
+  $hamburguerMenu.on('click', function () {
     $mainMenu.addClass('is-menu-active');
     $hamburguerMenu.addClass('remove-icon');
     $closeHamburguer.removeClass('remove-icon');
@@ -148,7 +148,7 @@
     $('#site-navigation').css('position', 'initial');
   });
 
-  $closeHamburguer.on('click', function() {
+  $closeHamburguer.on('click', function () {
     $mainMenu.removeClass('is-menu-active');
     $hamburguerMenu.removeClass('remove-icon');
     $closeHamburguer.addClass('remove-icon');
@@ -163,7 +163,7 @@
   if ($('.page-contact').length) {
     document.addEventListener(
       'wpcf7mailsent',
-      function(event) {
+      function (event) {
         console.log('form sent?', event.detail.contactFormId);
         if (parseInt(event.detail.contactFormId) === 73) {
           console.log('reload window');
@@ -175,22 +175,24 @@
   }
 
   /*   ABOUT PAGE OPEN/CLOSE FUNCTION */
-$('.button-arrow-community').on('click', function() {
-  $('.about-page-amp-members-logos').toggleClass('is-open');
-  $('.about-page-button-arrow').toggleClass('turn-arrow');
-});
-$('.about-page-button-arrow').on('click', function(event) {
-  event.preventDefault();
-  $('..about-page-amp-members-logo')
-    .find('..about-page-amp-members-logo')
-    .toggleClass('.about-page-amp-members-logo-open');
-  console.log('is this working?');
+  $('.button-arrow-community').on('click', function () {
+    $('.about-page-amp-members-logos').toggleClass('is-open');
+    $('.about-page-button-arrow').toggleClass('turn-arrow');
+  });
+  $('.about-page-button-arrow').on('click', function (event) {
+    event.preventDefault();
+    $('..about-page-amp-members-logo')
+      .find('..about-page-amp-members-logo')
+      .toggleClass('.about-page-amp-members-logo-open');
+    console.log('is this working?');
 
-  $('.about-page-amp-members-logo')
-    .find('.about-page-amp-members-logo')
-    .toggleClass('.about-page-amp-members-logo-open');
-});
+    $('.about-page-amp-members-logo')
+      .find('.about-page-amp-members-logo')
+      .toggleClass('.about-page-amp-members-logo-open');
+  });
 
   // End of contact us page form redirect on form submissions to thank you page
+
+
 })(jQuery);
 

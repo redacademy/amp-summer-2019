@@ -197,6 +197,12 @@
             }
         }
 
+        .current-menu-parent{
+            a {
+                border-bottom: red solid 4px;
+            }
+        }
+
         .current-menu-item {
             li {
                 display: flex;

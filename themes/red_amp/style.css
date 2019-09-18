@@ -1915,11 +1915,14 @@ object {
         outline: none; }
 
 .gform_confirmation_wrapper {
-  max-height: 400px;
+  height: 100%;
+  background: white;
   max-width: 944px;
   margin: 0 auto;
   position: relative;
-  text-align: center; }
+  text-align: center;
+  padding: 0 1rem;
+  border: 1px solid #297373; }
   .gform_confirmation_wrapper .gform_confirmation_message a {
     display: inline-block;
     text-decoration: none;
@@ -1934,12 +1937,7 @@ object {
     background: #297373;
     -webkit-box-shadow: none;
             box-shadow: none;
-    padding: 0;
-    position: absolute;
-    bottom: -4%;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%); }
+    padding: 0; }
     @media (max-width: 760px) {
       .gform_confirmation_wrapper .gform_confirmation_message a {
         border: 1px solid #297373;
@@ -1993,18 +1991,18 @@ tr td.ui-datepicker-unselectable.ui-state-disabled {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: auto;
   width: auto;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: white; }
   @media (max-width: 760px) {
     .gform_confirmation_message_1 {
@@ -2025,6 +2023,7 @@ tr td.ui-datepicker-unselectable.ui-state-disabled {
   left: 50%;
   overflow-y: auto;
   height: 75vh;
+  background-color: #DAEFEC;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%); }
 
@@ -2097,7 +2096,7 @@ tbody {
   font-family: "Muli", sans-serif;
   font-size: 16px;
   max-width: 750px;
-  text-align: justify;
+  text-align: left;
   margin-left: auto;
   margin-right: auto;
   letter-spacing: 0.9;
@@ -2172,7 +2171,7 @@ tbody {
           margin-bottom: 0;
           padding-top: 10px;
           padding-left: 20px;
-          text-align: justify;
+          text-align: left;
           padding-bottom: 1rem; }
         .post-type-archive-event .custom-loop .loop-type-events a .loop-item-container .event-content-wrapper .button-arrow-container {
           width: 100%;
@@ -2219,7 +2218,7 @@ tbody {
   font-family: "Muli", sans-serif;
   font-size: 16px;
   width: 750px;
-  text-align: justify;
+  text-align: left;
   margin-left: auto;
   margin-right: auto;
   letter-spacing: 0.9;
@@ -2265,7 +2264,7 @@ tbody {
     .single-event .single-event-wrap .event-details .events-description-details p:nth-child(1) {
       font-weight: bold; }
     .single-event .single-event-wrap .event-details .events-description-details p {
-      text-align: justify; }
+      text-align: left; }
   .single-event .single-event-wrap .event-location-time-details {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2991,6 +2990,8 @@ tbody {
       @media (max-width: 760px) {
         .main-navigation .menu-menu-1-container a {
           font-size: 14px; } }
+    .main-navigation .menu-menu-1-container .current-menu-parent a {
+      border-bottom: red solid 4px; }
     .main-navigation .menu-menu-1-container .current-menu-item li {
       display: -webkit-box;
       display: -ms-flexbox;
