@@ -137,6 +137,7 @@ div.validation_error {
 ul {
   li.gfield {
     margin-top:unset;
+
   }
 }
 input[type=submit] {
@@ -360,6 +361,12 @@ input[type=submit] {
 .ginput_container_email {
   input {
     line-height: 1 !important;
+  }
+}
+ul {
+  li.gfield {
+    padding-right: none;
+    
   }
 }
 }
