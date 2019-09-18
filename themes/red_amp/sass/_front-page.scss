@@ -64,6 +64,7 @@
     font-weight: 700;
     width: 463px;
     font-family: $headline_font_family;
+    text-shadow: 1px 1px 1px white;
 
     @include mobile {
       top: 50px;
