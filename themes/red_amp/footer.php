@@ -50,12 +50,15 @@
 			<p class="hidden-mobile">Sign up for our Newsletter</p>
 			<p class="show-mobile">Sign up for our newsletter to learn more about our community!</p>
 
-			<form action="/action_page.php">
+			<!-- <form action="/action_page.php">
 
 				<input name="firstname" type="email" id="email-address" placeholder="Enter E-mail">
 
 				<input type="submit" value="OK">
-			</form>
+			</form> -->
+			<!-- BEGIN GRAVITY FORM -->
+			<?php gravity_form( 2, false, false, false, '', false ); ?>
+			<!-- END GRAVITY FORM -->
 		</div>
 		<!-- end of footer-newsletter-form -->
 
@@ -90,6 +93,7 @@
 		<div class="site-rights-mobile hidden-mobile">
 			<p>© All rights reserved - The Amp Vancouver 2019</p>
 		</div>
+		
 		<!-- end of social-icon Mobile -->
 
 	</div>

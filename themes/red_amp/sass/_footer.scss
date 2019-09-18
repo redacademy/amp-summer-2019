@@ -92,6 +92,61 @@ footer{
 
 }
 
+
+// Start Style for footer newsletter gravity form
+.site-footer {
+.gform_wrapper {
+.gfield_description {
+  display: none;
+}
+.gform_body {
+  width: unset !important;
+}
+.gform_footer {
+  width: unset !important;
+  height: auto;
+  padding: unset;
+}
+.gform_button button {
+  height: 411px !important;
+}
+#gform_wrapper_2 {
+  #gform_2 {
+  height: 2rem !important;  
+}
+}
+.gform_footer {
+  margin: unset !important;
+}
+  li.hidden_label {
+    input {
+      margin-top: unset;
+    }
+  }
+  .top_label {
+    div.ginput_container {
+      margin-top: unset;
+    }
+  } 
+ul {
+  li.gfield {
+    margin-top:unset;
+  }
+}
+input[type=submit] {
+      height: auto !important;
+    }
+.ginput_container_email {
+      input {
+        width: 260px !important;
+      }
+    }
+
+
+}
+}
+// End Style for footer newsletter gravity form
+
 .footer-newsletter-form {
   .show-mobile {
     padding-top: 1rem;
@@ -101,6 +156,9 @@ footer{
   align-items: center;
   justify-content: center;
 }
+
+
+
   
 .hidden-mobile {
   text-align: left; 
@@ -110,12 +168,13 @@ footer{
 }
 @include mobile { ///changed with mobile
   .hidden-mobile {
-  
   font-size: $bodytext_font_size;
   }
-  .show-mobile {
-    
+.gform_wrapper  {
+  form {
+    height: 2rem;
   }
+}
 } ///changed with mobile
 
 
@@ -156,7 +215,6 @@ img {
 
 .img-email {
 img {
-  // height: 22px;
   width: 28px;
 }
 @include mobile { ///changed with mobile
@@ -164,12 +222,8 @@ img {
 } ///changed with mobile
 }
 
-
-
 .site-footer {
   width: 100%;
-  // height: 175px;
-
 }
 
 .footer-content {
@@ -210,8 +264,8 @@ img {
   } ///changed with footer-width
 
   @include mobile { ///changed with mobile
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
     .contact {
       width: 100%;
     }
@@ -246,14 +300,12 @@ img {
 
 
 .contact {
-     
     display: flex;
     flex-wrap: wrap; 
     align-items: center;
     justify-content: center;
     @include mobile { ///changed with mobile
       justify-content: space-between;
-      
       width: 100%;
     } ///changed with mobile
   
@@ -269,10 +321,6 @@ img {
   } 
 
 .social-icon {
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
-  // align-content: center;
   align-self: center;
 
 }  
@@ -285,3 +333,27 @@ img {
  width: 33%;
 }
 
+@include mobile { ///changed with mobile
+.site-footer {
+  .footer-newsletter-form {
+    .hidden-mobile {
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+  }
+  .gform_wrapper  {
+  form {
+    height: 2rem;
+  }
+}
+input[type=submit] {
+  margin: 0 0 0 10px !important;
+  line-height: 1 !important;
+}
+.ginput_container_email {
+  input {
+    line-height: 1 !important;
+  }
+}
+}
+} ///changed with mobile

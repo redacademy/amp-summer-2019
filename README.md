@@ -1,6 +1,6 @@
-# RED Starter
+# AMP
 
-A WordPress starter theme for RED Academy students, forked from Underscores.
+A WordPress starter theme AMP Vancouver, forked from Underscores.
 
 ## Installation
 
@@ -8,7 +8,7 @@ A WordPress starter theme for RED Academy students, forked from Underscores.
 
 Then add me to your `wp-content` directory.
 
-### 2. Rename the `redstarter-master` directory
+### 2. Rename the `red_amp-master` directory
 
 Make sure that the theme directory name is project appropriate!
 
@@ -50,8 +50,8 @@ Media Quiries for mobile layout.
  
 
 ### There are 2 custom post types:
-Workspaces
-Events
+- Workspaces
+- Events
 
 
 ### Workspaces
