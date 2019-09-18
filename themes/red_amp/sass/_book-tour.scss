@@ -207,11 +207,15 @@ $pagination_margin: 15vw;
 }
 
 .gform_confirmation_wrapper{
-    max-height: 400px;	
+    height: 100%;
+    background: white;
     max-width: 944px;
     margin:0 auto;
     position:relative;
     text-align: center;
+    padding: 0 1rem;
+    border:1px solid $dark_green;
+
     .gform_confirmation_message{
       a{
           @include mobile{
@@ -240,11 +244,8 @@ $pagination_margin: 15vw;
         background: $dark_green;
         box-shadow: none;
         padding: 0;
-        position: absolute;
-        bottom:-4%;
-        left: 50%;
-        transform: translateX(-50%);
-
+        
+        
         &:focus {
             outline: none;
         }
@@ -321,11 +322,12 @@ tr td.ui-datepicker-unselectable.ui-state-disabled {
     }
    
     display: flex;
+    height: 100%;
     align-items: center;
-    height:auto;
+   
     width:auto;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     background-color: white;
 
     img{
@@ -356,6 +358,7 @@ tr td.ui-datepicker-unselectable.ui-state-disabled {
         left: 50%;
         overflow-y: auto;
         height:75vh;
+        background-color: #DAEFEC;
         
         transform: translateX(-50%);
     }
