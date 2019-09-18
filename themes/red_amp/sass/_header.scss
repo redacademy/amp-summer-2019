@@ -113,8 +113,17 @@
                 flex-flow: column;
                 text-align: left;
                 box-shadow: none;
+                padding-left: 2px;
+                .menu-item {
+                    background: $font_light;
+                    @include mobile{
+                        background: $light_green;
+                    }
+                }
+                
                 @include mobile {
                     display: none;
+                    background: $light_green;
                 }
                 &.mobile-sub-menu {
                     @include mobile {
@@ -194,6 +203,12 @@
 
             @include mobile {
                 font-size: $bodytext_font_size_smaller;
+            }
+        }
+
+        .current-menu-parent{
+            a {
+                border-bottom: red solid 4px;
             }
         }
 
