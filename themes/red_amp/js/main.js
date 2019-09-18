@@ -173,10 +173,8 @@
       false
     );
   }
-  // End of contact us page form redirect on form submissions to thank you page
-})(jQuery);
 
-/*   ABOUT PAGE OPEN/CLOSE FUNCTION */
+  /*   ABOUT PAGE OPEN/CLOSE FUNCTION */
 $('.button-arrow-community').on('click', function() {
   $('.about-page-amp-members-logos').toggleClass('is-open');
   $('.about-page-button-arrow').toggleClass('turn-arrow');
@@ -192,3 +190,7 @@ $('.about-page-button-arrow').on('click', function(event) {
     .find('.about-page-amp-members-logo')
     .toggleClass('.about-page-amp-members-logo-open');
 });
+
+  // End of contact us page form redirect on form submissions to thank you page
+})(jQuery);
+
