@@ -2652,9 +2652,11 @@ object {
           .front-page-workspace .front-page-each-workspace .front-page-workspace-title h1 {
             margin: 20px 0; } }
 
-@media (max-width: 760px) {
-  .front-page-workspace-button button.button-book {
-    font-size: 16px; } }
+.front-page-workspace-button button.button-book {
+  padding: 0; }
+  @media (max-width: 760px) {
+    .front-page-workspace-button button.button-book {
+      font-size: 16px; } }
 
 .front-page-carousel {
   width: 100%; }
