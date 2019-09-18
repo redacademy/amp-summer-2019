@@ -1319,12 +1319,18 @@ object {
   .post-type-archive-workspace .taxonomy-description {
     font-family: "Muli", sans-serif;
     font-size: 16px;
-    text-align: justify;
+    text-align: left;
     max-width: 50%;
     margin: 0 auto;
     letter-spacing: 0.3px; }
     .post-type-archive-workspace .taxonomy-description :last-child {
       text-align: center; }
+    @media (max-width: 760px) {
+      .post-type-archive-workspace .taxonomy-description {
+        text-align: center;
+        max-width: 100%;
+        padding-left: 10px;
+        padding-right: 10px; } }
 
 .primary-cta-block {
   padding-bottom: 100px; }
@@ -1763,9 +1769,9 @@ object {
     Here is where all specific css per page template will go
 --------------------------------------------------------------*/
 /* Book a tour popup */
-.book-tour-form-modal-outer-wrapper {
+.page-book-a-tour .book-tour-form-modal-outer-wrapper {
   display: none; }
-  .book-tour-form-modal-outer-wrapper::before {
+  .page-book-a-tour .book-tour-form-modal-outer-wrapper::before {
     content: "";
     background: rgba(255, 255, 255, 0.45);
     position: fixed;
@@ -1773,26 +1779,26 @@ object {
     left: 0;
     width: 100%;
     height: 100%; }
-  .book-tour-form-modal-outer-wrapper.is-active {
+  .page-book-a-tour .book-tour-form-modal-outer-wrapper.is-active {
     display: block; }
 
-.book-tour-form_wrapper.gform_wrapper {
+.page-book-a-tour .book-tour-form_wrapper.gform_wrapper {
   position: relative;
   max-width: 944px;
   background-color: #DAEFEC;
   margin: 0 auto;
   height: 100%; }
   @media (max-width: 760px) {
-    .book-tour-form_wrapper.gform_wrapper {
+    .page-book-a-tour .book-tour-form_wrapper.gform_wrapper {
       min-height: 100vh;
       width: 100vw;
       background-color: transparent;
       padding-left: 10px;
       padding-right: 10px;
       overflow-y: scroll; } }
-  .book-tour-form_wrapper.gform_wrapper .gf_page_steps {
+  .page-book-a-tour .book-tour-form_wrapper.gform_wrapper .gf_page_steps {
     border-bottom: none; }
-  .book-tour-form_wrapper.gform_wrapper .gf_page_steps {
+  .page-book-a-tour .book-tour-form_wrapper.gform_wrapper .gf_page_steps {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1805,9 +1811,9 @@ object {
             align-items: center;
     padding-top: 50px; }
     @media (max-width: 760px) {
-      .book-tour-form_wrapper.gform_wrapper .gf_page_steps {
+      .page-book-a-tour .book-tour-form_wrapper.gform_wrapper .gf_page_steps {
         display: none; } }
-  .book-tour-form_wrapper.gform_wrapper .gf_step {
+  .page-book-a-tour .book-tour-form_wrapper.gform_wrapper .gf_step {
     background: white;
     border: 1px solid #297373;
     color: white;
@@ -1829,44 +1835,44 @@ object {
     margin: 0 15vw;
     -webkit-transition: background 0.5s;
     transition: background 0.5s; }
-    .book-tour-form_wrapper.gform_wrapper .gf_step .gf_step_number {
+    .page-book-a-tour .book-tour-form_wrapper.gform_wrapper .gf_step .gf_step_number {
       display: none; }
-    .book-tour-form_wrapper.gform_wrapper .gf_step:hover, .book-tour-form_wrapper.gform_wrapper .gf_step.gf_step_active {
+    .page-book-a-tour .book-tour-form_wrapper.gform_wrapper .gf_step:hover, .page-book-a-tour .book-tour-form_wrapper.gform_wrapper .gf_step.gf_step_active {
       background: #297373; }
-    .book-tour-form_wrapper.gform_wrapper .gf_step::after {
+    .page-book-a-tour .book-tour-form_wrapper.gform_wrapper .gf_step::after {
       content: '';
       background: #297373;
       height: 2px;
       width: 30vw;
       position: absolute;
       right: -30vw; }
-    .book-tour-form_wrapper.gform_wrapper .gf_step:nth-of-type(2)::after {
+    .page-book-a-tour .book-tour-form_wrapper.gform_wrapper .gf_step:nth-of-type(2)::after {
       display: none; }
-  .book-tour-form_wrapper.gform_wrapper .gfield_html h1 {
+  .page-book-a-tour .book-tour-form_wrapper.gform_wrapper .gfield_html h1 {
     font-family: "Bambi";
     font-weight: bold; }
-  .book-tour-form_wrapper.gform_wrapper .gform_heading {
+  .page-book-a-tour .book-tour-form_wrapper.gform_wrapper .gform_heading {
     display: none; }
-  .book-tour-form_wrapper.gform_wrapper .gform_page {
+  .page-book-a-tour .book-tour-form_wrapper.gform_wrapper .gform_page {
     height: 100%;
     max-width: 784px;
     margin: 0 auto; }
   @media (max-width: 760px) {
-    .book-tour-form_wrapper.gform_wrapper .ginput_container_name .name_first {
+    .page-book-a-tour .book-tour-form_wrapper.gform_wrapper .ginput_container_name .name_first {
       width: 100%; } }
   @media (max-width: 760px) {
-    .book-tour-form_wrapper.gform_wrapper .ginput_container_name .name_last {
+    .page-book-a-tour .book-tour-form_wrapper.gform_wrapper .ginput_container_name .name_last {
       width: 100%; } }
   @media (max-width: 760px) {
-    .book-tour-form_wrapper.gform_wrapper .ginput_container .medium {
+    .page-book-a-tour .book-tour-form_wrapper.gform_wrapper .ginput_container .medium {
       width: 100%; } }
   @media (max-width: 760px) {
-    .book-tour-form_wrapper.gform_wrapper .ginput_container input.medium.datepicker {
+    .page-book-a-tour .book-tour-form_wrapper.gform_wrapper .ginput_container input.medium.datepicker {
       width: 100%; } }
-  .book-tour-form_wrapper.gform_wrapper .gform_page_footer {
+  .page-book-a-tour .book-tour-form_wrapper.gform_wrapper .gform_page_footer {
     border-top: none;
     position: relative; }
-    .book-tour-form_wrapper.gform_wrapper .gform_page_footer .gform_button, .book-tour-form_wrapper.gform_wrapper .gform_page_footer .gform_next_button {
+    .page-book-a-tour .book-tour-form_wrapper.gform_wrapper .gform_page_footer .gform_button, .page-book-a-tour .book-tour-form_wrapper.gform_wrapper .gform_page_footer .gform_next_button {
       position: absolute;
       right: 15%;
       top: 85%;
@@ -1881,7 +1887,7 @@ object {
               box-shadow: none;
       padding: 0; }
       @media (max-width: 760px) {
-        .book-tour-form_wrapper.gform_wrapper .gform_page_footer .gform_button, .book-tour-form_wrapper.gform_wrapper .gform_page_footer .gform_next_button {
+        .page-book-a-tour .book-tour-form_wrapper.gform_wrapper .gform_page_footer .gform_button, .page-book-a-tour .book-tour-form_wrapper.gform_wrapper .gform_page_footer .gform_next_button {
           height: 50px;
           width: 220px;
           display: block;
@@ -1892,9 +1898,9 @@ object {
           left: 50%;
           -webkit-transform: translateX(-50%);
                   transform: translateX(-50%); } }
-      .book-tour-form_wrapper.gform_wrapper .gform_page_footer .gform_button:focus, .book-tour-form_wrapper.gform_wrapper .gform_page_footer .gform_next_button:focus {
+      .page-book-a-tour .book-tour-form_wrapper.gform_wrapper .gform_page_footer .gform_button:focus, .page-book-a-tour .book-tour-form_wrapper.gform_wrapper .gform_page_footer .gform_next_button:focus {
         outline: none; }
-    .book-tour-form_wrapper.gform_wrapper .gform_page_footer .button.gform_previous_button {
+    .page-book-a-tour .book-tour-form_wrapper.gform_wrapper .gform_page_footer .button.gform_previous_button {
       font-family: "Muli", sans-serif;
       position: absolute;
       left: 15%;
@@ -1909,12 +1915,16 @@ object {
       color: #297373;
       border: none; }
       @media (max-width: 760px) {
-        .book-tour-form_wrapper.gform_wrapper .gform_page_footer .button.gform_previous_button {
+        .page-book-a-tour .book-tour-form_wrapper.gform_wrapper .gform_page_footer .button.gform_previous_button {
           display: none; } }
-      .book-tour-form_wrapper.gform_wrapper .gform_page_footer .button.gform_previous_button:focus {
+      .page-book-a-tour .book-tour-form_wrapper.gform_wrapper .gform_page_footer .button.gform_previous_button:focus {
         outline: none; }
 
+<<<<<<< HEAD
 .gform_confirmation_wrapper {
+=======
+.page-book-a-tour .gform_confirmation_wrapper {
+>>>>>>> 2688f0257d4a80a7a972acdedfd29b0bcaf8f154
   height: 100%;
   background: white;
   max-width: 944px;
@@ -1923,7 +1933,11 @@ object {
   text-align: center;
   padding: 0 1rem;
   border: 1px solid #297373; }
+<<<<<<< HEAD
   .gform_confirmation_wrapper .gform_confirmation_message a {
+=======
+  .page-book-a-tour .gform_confirmation_wrapper .gform_confirmation_message a {
+>>>>>>> 2688f0257d4a80a7a972acdedfd29b0bcaf8f154
     display: inline-block;
     text-decoration: none;
     border: 1px solid #297373;
@@ -1939,7 +1953,7 @@ object {
             box-shadow: none;
     padding: 0; }
     @media (max-width: 760px) {
-      .gform_confirmation_wrapper .gform_confirmation_message a {
+      .page-book-a-tour .gform_confirmation_wrapper .gform_confirmation_message a {
         border: 1px solid #297373;
         font-size: 1.5rem;
         width: 10.5rem;
@@ -1951,14 +1965,14 @@ object {
         left: 50%;
         -webkit-transform: translateX(-50%);
                 transform: translateX(-50%); } }
-    .gform_confirmation_wrapper .gform_confirmation_message a:focus {
+    .page-book-a-tour .gform_confirmation_wrapper .gform_confirmation_message a:focus {
       outline: none; }
 
-.ui-datepicker .ui-datepicker-month, .ui-datepicker .ui-datepicker-year {
+.page-book-a-tour .ui-datepicker .ui-datepicker-month, .page-book-a-tour .ui-datepicker .ui-datepicker-year {
   font-family: "Muli", sans-serif;
   font-weight: 300; }
 
-.gform_wrapper .gform_page_fields ul#gform_fields_1_2 {
+.page-book-a-tour .gform_wrapper .gform_page_fields ul#gform_fields_1_2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1967,27 +1981,27 @@ object {
   -ms-flex-pack: distribute;
       justify-content: space-around; }
   @media (max-width: 760px) {
-    .gform_wrapper .gform_page_fields ul#gform_fields_1_2 {
+    .page-book-a-tour .gform_wrapper .gform_page_fields ul#gform_fields_1_2 {
       display: block; } }
-  .gform_wrapper .gform_page_fields ul#gform_fields_1_2 .custom-form-title-1 {
+  .page-book-a-tour .gform_wrapper .gform_page_fields ul#gform_fields_1_2 .custom-form-title-1 {
     width: 100%; }
 
-.gform_wrapper .gfield .ginput_container .gfield_select {
+.page-book-a-tour .gform_wrapper .gfield .ginput_container .gfield_select {
   width: 13rem;
   height: 2.2rem; }
   @media (max-width: 760px) {
-    .gform_wrapper .gfield .ginput_container .gfield_select {
+    .page-book-a-tour .gform_wrapper .gfield .ginput_container .gfield_select {
       width: 100%; } }
 
-tr td.ui-datepicker-unselectable.ui-state-disabled {
+.page-book-a-tour tr td.ui-datepicker-unselectable.ui-state-disabled {
   background-color: white; }
 
-.ui-datepicker-calendar .ui-state-default.ui-state-active {
+.page-book-a-tour .ui-datepicker-calendar .ui-state-default.ui-state-active {
   background-color: #FF6978;
   border-radius: 50%;
   color: #666; }
 
-.gform_confirmation_message_1 {
+.page-book-a-tour .gform_confirmation_message_1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2005,18 +2019,18 @@ tr td.ui-datepicker-unselectable.ui-state-disabled {
           justify-content: center;
   background-color: white; }
   @media (max-width: 760px) {
-    .gform_confirmation_message_1 {
+    .page-book-a-tour .gform_confirmation_message_1 {
       padding-left: 10px;
       padding-right: 10px; } }
-  .gform_confirmation_message_1 img {
+  .page-book-a-tour .gform_confirmation_message_1 img {
     height: 25vh;
     width: 25vw; }
     @media (max-width: 760px) {
-      .gform_confirmation_message_1 img {
+      .page-book-a-tour .gform_confirmation_message_1 img {
         height: auto;
         width: auto; } }
 
-.is-active .book-tour-form-modal {
+.is-active .page-book-a-tour .book-tour-form-modal {
   position: fixed;
   z-index: 99999;
   top: 7%;
@@ -2027,18 +2041,18 @@ tr td.ui-datepicker-unselectable.ui-state-disabled {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%); }
 
-.prev-button-arrow.fa-less-than {
+.page-book-a-tour .prev-button-arrow.fa-less-than {
   height: 60px;
   display: inline-block;
   position: absolute;
   top: 85%; }
-  .prev-button-arrow.fa-less-than::before {
+  .page-book-a-tour .prev-button-arrow.fa-less-than::before {
     position: absolute;
     top: 50%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%); }
 
-.close-book-tour {
+.page-book-a-tour .close-book-tour {
   right: 3%;
   top: 20px;
   color: #297373;
@@ -2052,24 +2066,24 @@ tr td.ui-datepicker-unselectable.ui-state-disabled {
   display: block;
   position: absolute;
   z-index: 400; }
-  .close-book-tour:focus {
+  .page-book-a-tour .close-book-tour:focus {
     outline: none; }
-  .close-book-tour:hover {
+  .page-book-a-tour .close-book-tour:hover {
     outline: none;
     -webkit-box-shadow: unset;
             box-shadow: unset; }
 
-.prev-button-arrow {
+.page-book-a-tour .prev-button-arrow {
   position: absolute;
   top: 208%;
   left: 15%;
   color: #297373;
   font-size: 1.5rem; }
 
-.entry-header h1 {
+.page-book-a-tour .entry-header h1 {
   display: none; }
 
-tbody {
+.page-book-a-tour tbody {
   background: white; }
 
 @media (max-width: 760px) {
@@ -2105,7 +2119,8 @@ tbody {
     .post-type-archive-event .events-description {
       padding-left: 10px;
       padding-right: 10px;
-      font-size: 14px; } }
+      font-size: 14px;
+      text-align: center; } }
 
 .post-type-archive-event .custom-loop .loop-type-events {
   max-width: 943px;

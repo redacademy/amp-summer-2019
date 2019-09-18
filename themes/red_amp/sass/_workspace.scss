@@ -14,12 +14,18 @@
     .taxonomy-description {
         font-family: $bodytext_font_family;
         font-size: $bodytext_font_size;
-        text-align: justify;
+        text-align: left;
         max-width: 50%;
         margin: 0 auto;
         letter-spacing: 0.3px;
         :last-child{
             text-align: center;
+        }
+        @include mobile{
+            text-align: center;
+            max-width: 100%;
+            padding-left: 10px;
+            padding-right:10px;
         }
     }
 }
