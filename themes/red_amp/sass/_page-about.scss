@@ -21,7 +21,6 @@
     h1 {
       font-family: $headline_font_family;
       text-align: center;
-      // margin-top: 75px;
     }
 
     p {
@@ -81,7 +80,7 @@
 
     img {
       background: $font_light;
-      margin: 15px 0; //remove 0 if needed???
+      margin: 15px 0; //remove 0 if needed?
     }
   }
 
@@ -157,12 +156,14 @@
 
         @media (min-width: $mobileBreakPoint) {
           width: 80%;
-
           margin-left: auto;
           margin-right: 182px;
         }
+<<<<<<< HEAD
 
         // margin-left: 100px;
+=======
+>>>>>>> 3858431691c4c3f8ef219a6f554d17f659e1d532
       }
 
       .carousel-cell {
@@ -243,7 +244,6 @@
 
   /* AMP MEMBERS */
   .about-page-amp-members {
-    // max-width: 60%;
     margin: 0 auto;
     margin-top: -100px;
 
@@ -362,7 +362,7 @@
       width: 100%;
 
       .carousel-cell {
-        width: 100% !important; // todo pleease don't iuse important
+        width: 100% !important;
       }
     }
   }
@@ -434,8 +434,11 @@
     .about-page-amp-member-description-mobile {
       display: block;
       text-align: center;
+<<<<<<< HEAD
 
       // width: 295px;
+=======
+>>>>>>> 3858431691c4c3f8ef219a6f554d17f659e1d532
       p {
         text-align: left;
         padding-left: 10px;
@@ -447,7 +450,6 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 1px;
-    // background: red;
   }
 
   .about-page-amp-member-description {
@@ -497,8 +499,6 @@
 .mobile-back-to-top-button {
   display: none;
   text-align: center;
-  // width: 100%;
-  // height: 50px;
 
   @include mobile {
     display: flex;
