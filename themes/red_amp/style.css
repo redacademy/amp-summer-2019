@@ -712,6 +712,9 @@ a {
     font-family: "Bambi";
     text-align: center;
     margin-bottom: 85px; }
+  @media (max-width: 760px) {
+    .about-content .team-section .desktop-about-carousel {
+      display: none; } }
   .about-content .team-section .desktop-about-carousel .is-selected {
     -webkit-transform: scale(1);
             transform: scale(1); }
@@ -735,15 +738,13 @@ a {
     display: none; }
     @media (max-width: 760px) {
       .about-content .team-section .mobile-about-carousel {
-        display: initial; } }
+        display: block; } }
     .about-content .team-section .mobile-about-carousel .flickity-viewport {
       width: 100%;
       max-width: 1400px; }
-      @media (min-width: 760px) {
+      @media (max-width: 760px) {
         .about-content .team-section .mobile-about-carousel .flickity-viewport {
-          width: 80%;
-          margin-left: auto;
-          margin-right: 182px; } }
+          width: 100%; } }
     .about-content .team-section .mobile-about-carousel .carousel-cell {
       width: 38%;
       text-align: center; }

@@ -55,24 +55,24 @@ get_header(); ?>
                 </div>
                 <div class='item-active desktop-about-carousel front-page-carousel'>
                     <div class='row main-carousel'>
-                    <?php
-                        $fields = CFS()->get('meet_the_team');
-                        $i = 0;
+                        <?php
+                            $fields = CFS()->get('meet_the_team');
+                            $i = 0;
 
-                        if (!empty($fields)) {
-                            foreach ($fields as $i => $field) :
-                                ?>
+                            if (!empty($fields)) {
+                                foreach ($fields as $i => $field) :
+                                    ?>
 
-                            <?php
-                                        $member_image = $field['member_image'];
-                                        $member_name = $field['member_name'];
-                                        $member_position = $field['member_postion'];
-                                        $array[$i] = array(
-                                            $member_image,
-                                            $member_name,
-                                            $member_position,
-                                        );
-                                        ?>
+                                <?php
+                                            $member_image = $field['member_image'];
+                                            $member_name = $field['member_name'];
+                                            $member_position = $field['member_postion'];
+                                            $array[$i] = array(
+                                                $member_image,
+                                                $member_name,
+                                                $member_position,
+                                            );
+                                            ?>
                                 <div class="carousel-cell">
                                     <div class="carousel-content">
                                         <div class="carousel-content-individual carousel-image">
@@ -86,13 +86,14 @@ get_header(); ?>
                                         </div>
 
                                     </div> <!-- carousel-cell-content -->
-                                <?php $i++;
-                                ?>
+                                    <?php $i++;?>
                                 </div><!-- .carousel-cell-container -->
 
-                            <?php endforeach; }?>
+                                    <?php endforeach;
+                            } ?>
                     </div><!-- .row main-carousel -->
-                </div><!-- .item-active -->
+                </div><!--desktop-about-carousel-->
+
                 <div class='mobile-about-carousel'>
                     <?php
                         $fields = CFS()->get('meet_the_team');
@@ -228,5 +229,3 @@ get_header(); ?>
 
 </div>
 <?php get_footer(); ?>
-
-<!-- test commit -->
