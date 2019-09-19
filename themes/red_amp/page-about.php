@@ -53,6 +53,46 @@ get_header(); ?>
                 <div class="Team-title">
                     <h2> Meet the Team </h2>
                 </div>
+                <div class='item-active desktop-about-carousel front-page-carousel'>
+                    <div class='row main-carousel'>
+                    <?php
+                        $fields = CFS()->get('meet_the_team');
+                        $i = 0;
+
+                        if (!empty($fields)) {
+                            foreach ($fields as $i => $field) :
+                                ?>
+
+                            <?php
+                                        $member_image = $field['member_image'];
+                                        $member_name = $field['member_name'];
+                                        $member_position = $field['member_postion'];
+                                        $array[$i] = array(
+                                            $member_image,
+                                            $member_name,
+                                            $member_position,
+                                        );
+                                        ?>
+                                <div class="carousel-cell">
+                                    <div class="carousel-content">
+                                        <div class="carousel-content-individual carousel-image">
+                                            <img src="<?php echo $member_image; ?>" alt="">
+                                        </div>
+                                        <div class="carousel-content-individual carousel-text">
+                                            <?php echo $member_name; ?>
+                                        </div>
+                                        <div class="carousel-content-individual carousel-name">
+                                            <?php echo $member_position; ?>
+                                        </div>
+
+                                    </div> <!-- carousel-cell-content -->
+                                <?php $i++;
+                                ?>
+                                </div><!-- .carousel-cell-container -->
+
+                            <?php endforeach; }?>
+                    </div><!-- .row main-carousel -->
+                </div><!-- .item-active -->
                 <div class='mobile-about-carousel'>
                     <?php
                         $fields = CFS()->get('meet_the_team');
@@ -128,45 +168,45 @@ get_header(); ?>
                         Meet the AMP Members... share the space with like minded people and organizations that focus on positive and social change.
                     </p>
                 </div>
+            </div>
+            <div class="front-page-amp-community-logos">
+                <div>
+                    <img src="<?php echo esc_url(get_template_directory_uri()) . '/images/Member_Logo01.png' ?>" alt="">
                 </div>
-    <div class="front-page-amp-community-logos">
-        <div>
-            <img src="<?php echo esc_url(get_template_directory_uri()) . '/images/Member_Logo01.png' ?>" alt="">
-        </div>
-        <div>
-            <img src="<?php echo esc_url(get_template_directory_uri()) . '/images/Member_Logo02.png' ?>" alt="">
-        </div>
-        <div>
-            <img src="<?php echo esc_url(get_template_directory_uri()) . '/images/Member_Logo03.png' ?>" alt="">
-        </div>
-        <div>
-            <img src="<?php echo esc_url(get_template_directory_uri()) . '/images/Member_Logo04.png' ?>" alt="">
-        </div>
-        <div>
-            <img src="<?php echo esc_url(get_template_directory_uri()) . '/images/Member_Logo05.png' ?>" alt="">
-        </div>
-        <div>
-            <img src="<?php echo esc_url(get_template_directory_uri()) . '/images/Member_Logo06.png' ?>" alt="">
-        </div>
-        <div>
-            <img src="<?php echo esc_url(get_template_directory_uri()) . '/images/Member_Logo07.png' ?>" alt="">
-        </div>
-        <div>
-            <img src="<?php echo esc_url(get_template_directory_uri()) . '/images/Member_Logo08.png' ?>" alt="">
-        </div>
-        <div>
-            <img src="<?php echo esc_url(get_template_directory_uri()) . '/images/Member_Logo09.png' ?>" alt="">
-        </div>
-        <div>
-            <img src="<?php echo esc_url(get_template_directory_uri()) . '/images/Member_Logo10.png' ?>" alt="">
-        </div>
-        <div>
-            <img src="<?php echo esc_url(get_template_directory_uri()) . '/images/Member_Logo11.png' ?>" alt="">
-        </div>
-        <div>
-            <img src="<?php echo esc_url(get_template_directory_uri()) . '/images/Member_Logo12.png' ?>" alt="">
-        </div>
-    </div>
+                <div>
+                    <img src="<?php echo esc_url(get_template_directory_uri()) . '/images/Member_Logo02.png' ?>" alt="">
+                </div>
+                <div>
+                    <img src="<?php echo esc_url(get_template_directory_uri()) . '/images/Member_Logo03.png' ?>" alt="">
+                </div>
+                <div>
+                    <img src="<?php echo esc_url(get_template_directory_uri()) . '/images/Member_Logo04.png' ?>" alt="">
+                </div>
+                <div>
+                    <img src="<?php echo esc_url(get_template_directory_uri()) . '/images/Member_Logo05.png' ?>" alt="">
+                </div>
+                <div>
+                    <img src="<?php echo esc_url(get_template_directory_uri()) . '/images/Member_Logo06.png' ?>" alt="">
+                </div>
+                <div>
+                    <img src="<?php echo esc_url(get_template_directory_uri()) . '/images/Member_Logo07.png' ?>" alt="">
+                </div>
+                <div>
+                    <img src="<?php echo esc_url(get_template_directory_uri()) . '/images/Member_Logo08.png' ?>" alt="">
+                </div>
+                <div>
+                    <img src="<?php echo esc_url(get_template_directory_uri()) . '/images/Member_Logo09.png' ?>" alt="">
+                </div>
+                <div>
+                    <img src="<?php echo esc_url(get_template_directory_uri()) . '/images/Member_Logo10.png' ?>" alt="">
+                </div>
+                <div>
+                    <img src="<?php echo esc_url(get_template_directory_uri()) . '/images/Member_Logo11.png' ?>" alt="">
+                </div>
+                <div>
+                    <img src="<?php echo esc_url(get_template_directory_uri()) . '/images/Member_Logo12.png' ?>" alt="">
+                </div>
+            </div>
 
 </div>
 <div class="front-page-button-arrow">
@@ -174,9 +214,9 @@ get_header(); ?>
 </div>
 <div class="front-page-amp-community-division-line">
 
-            <?php endwhile; // End of the loop. 
-            ?>
-    </main><!-- #main -->
+<?php endwhile; // End of the loop. 
+?>
+</main><!-- #main -->
 </div><!-- #primary -->
 
 <div class="about-page-workspace-button bottom-book-button-about-page" style="text-align: center; margin-bottom: 100px;">

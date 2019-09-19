@@ -9,11 +9,9 @@
 
   /* HEAD OF PAGE SHADOW */
   .about-shadow {
-    background: linear-gradient(
-      to bottom,
-      rgba($dark_green, 0.07),
-      rgba($light_green, 0)
-    );
+    background: linear-gradient(to bottom,
+        rgba($dark_green, 0.07),
+        rgba($light_green, 0));
     height: 20px;
     max-width: $body_max_width;
   }
@@ -25,6 +23,7 @@
       text-align: center;
       // margin-top: 75px;
     }
+
     p {
       text-align: center;
       margin-bottom: 100px;
@@ -32,6 +31,7 @@
       margin-bottom: 100px;
       margin-left: auto;
       margin-right: auto;
+
       @include mobile {
         max-width: 375px;
         text-align: left;
@@ -47,6 +47,7 @@
         font-family: $headline_font_family;
         text-align: center;
       }
+
       p {
         text-align: center;
         text-align: center;
@@ -54,6 +55,7 @@
         margin-bottom: 100px;
         margin-left: 170px;
         margin-right: 190px;
+
         @include mobile {
           margin-left: 1px;
           margin-right: 1px;
@@ -61,6 +63,7 @@
       }
     }
   }
+
   .about-page-values {
     display: flex;
     flex-wrap: wrap;
@@ -91,6 +94,7 @@
       padding-bottom: 50px;
     }
   }
+
   .team-section {
     .main-carousel {
       h2 {
@@ -100,16 +104,64 @@
       }
     }
 
+    .desktop-about-carousel {
+      .is-selected {
+        transform: scale(1);
+      }
+
+      .carousel-cell {
+        border: none;
+        opacity: 1;
+        
+
+        .carousel-image {
+          width: 250px;
+          height: 250px;
+          margin-bottom: 10px;
+        }
+
+        .carousel-text {
+          margin: 0;
+          font-size: 16px;
+        }
+
+        .carousel-name {
+          font-size: 16px;
+        }
+
+      }
+      //.carousel-cell
+
+
+      .flickity-button {
+        display: none;
+      }
+
+      .flickity-page-dots {
+        display: none;
+      }
+    }
+
+    //.desktop-about-carousel
+
     .mobile-about-carousel {
+      display: none;
+
+      @include mobile {
+        display: initial;
+      }
+
       .flickity-viewport {
         width: 100%;
         max-width: 1400px;
+
         @media (min-width: $mobileBreakPoint) {
           width: 80%;
 
           margin-left: auto;
           margin-right: 182px;
         }
+
         // margin-left: 100px;
       }
 
@@ -117,6 +169,7 @@
         width: 38%;
         text-align: center;
       }
+
       .carousel-content-individual,
       .carousel-image {
         img {
@@ -124,8 +177,10 @@
           width: 233px;
           border-radius: 50%;
         }
+
         .individual {
           text-align: center;
+
           p {
             margin-bottom: 1.5rem;
             width: 200px;
@@ -133,6 +188,7 @@
           }
         }
       }
+
       .flickity-button,
       .flickity-page-dots {
         display: none;
@@ -148,6 +204,7 @@
     height: 429px;
     margin-bottom: 429px;
     margin-top: 100px;
+
     .hq-description {
       background-color: #daefec;
       height: 100%;
@@ -160,6 +217,7 @@
         text-align: center;
         padding-top: 30px;
       }
+
       p {
         text-align: center;
         width: 650px;
@@ -177,6 +235,7 @@
         left: 40%;
       }
     }
+
     .amp-building-mobile {
       display: none;
     }
@@ -217,8 +276,10 @@
         height: 150px;
         display: flex;
         align-content: center;
+
         @include mobile {
           width: 50%;
+
           .about-page-amp-community-division-line {
             width: 100%;
             align-items: center;
@@ -248,11 +309,13 @@
       }
     }
   }
+
   .about-page-button-arrow {
     .about-button-arrow-community {
       display: none;
     }
   }
+
   .about-page-amp-member-description-mobile {
     display: none;
   }
@@ -262,6 +325,7 @@
 
 .about-content {
   @include mobile {
+
     h1,
     h2,
     p {
@@ -280,6 +344,7 @@
           margin-left: 0;
           margin-right: 0;
         }
+
         p {
           text-align: left;
           margin-left: 10px;
@@ -301,6 +366,7 @@
       }
     }
   }
+
   @include mobile {
     .team-section .mobile-about-carousel {
       .flickity-button {
@@ -321,14 +387,17 @@
       }
     }
   }
+
   /* MOBILE HQ SECTION */
 
   @include mobile {
     .headquarters {
+
       .hq-description,
       h2 {
         background: white;
         text-align: center;
+
         p {
           text-align: left;
         }
@@ -336,6 +405,7 @@
 
       .hq-description {
         width: 100%;
+
         .amp-building-mobile {
           width: 100%;
         }
@@ -364,6 +434,7 @@
     .about-page-amp-member-description-mobile {
       display: block;
       text-align: center;
+
       // width: 295px;
       p {
         text-align: left;
@@ -371,12 +442,14 @@
       }
     }
   }
+
   .about-page-amp-members-logos {
     display: flex;
     flex-direction: column;
     margin-bottom: 1px;
     // background: red;
   }
+
   .about-page-amp-member-description {
     display: none;
   }
@@ -394,6 +467,7 @@
       border: none;
       background: none;
       box-shadow: none;
+
       button {
         line-height: 1;
         padding: 0.6rem 1rem 0.4rem;
@@ -401,6 +475,7 @@
       }
     }
   }
+
   .about-page-amp-community-division-line {
     border-top: 3px solid $dark_green;
     margin: 0 auto;
