@@ -302,9 +302,14 @@ img {
 }
 
   .social-icon-mobile-image {
-      width: 20px;
+      width: 20px;   
   }
   
+  .social-icon-images {
+    a, a:active, a:focus, a:hover, a:visited {
+      text-decoration: none;
+    }
+  }
 
 
 .contact {
@@ -365,7 +370,7 @@ input[type=submit] {
 }
 ul {
   li.gfield {
-    padding-right: none;
+    margin-right: none;
     
   }
 }

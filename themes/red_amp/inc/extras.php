@@ -27,8 +27,11 @@ add_filter( 'body_class', 'red_starter_body_classes' );
 
 // Remove "Editor" links from sub-menus
 function red_amp_remove_submenus() {
-    remove_submenu_page( 'themes.php', 'theme-editor.php' );
-    remove_submenu_page( 'plugins.php', 'plugin-editor.php' );
-    remove_menu_page( 'edit.php?post_type=cfs' );
+	if (!current_user_can('manage_options')) {
+		// remove_submenu_page( 'themes.php', 'theme-editor.php' );
+		// remove_submenu_page( 'plugins.php', 'plugin-editor.php' );	
+		// remove_submenu_page( 'edit.php', 'edit.php?post_type=cfs' );	
+		remove_menu_page( 'edit.php?post_type=cfs' );
+	}
 }
-add_action( 'admin_menu', 'red_amp_remove_submenus', 110 );
+add_action( 'admin_init', 'red_amp_remove_submenus', 110 );

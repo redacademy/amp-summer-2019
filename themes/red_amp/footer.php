@@ -37,9 +37,23 @@
 				</a>
 
 				<div class="social-icon-mobile hidden-mobile">
-					<span><img class="social-icon-mobile-image" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/Facebook.svg" alt="logo" /></span>
-					<span><img class="social-icon-mobile-image" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/LinkedIn.svg" alt="logo" /></span>
-					<span><img class="social-icon-mobile-image" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/twitter.svg" alt="logo" /></span>
+
+					<span>
+					<a href="https://www.facebook.com/AmpVancouver"  target="_blank">
+						<img class="social-icon-mobile-image" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/Facebook.svg" alt="logo" />
+					</a>
+				</span>
+				<span>
+					<a href="https://www.linkedin.com/company/the-amp-vancouver/"  target="_blank">
+						<img class="social-icon-mobile-image" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/LinkedIn.svg" alt="logo" />
+					</a>
+				</span>
+				<span>
+					<a href="https://twitter.com/AmpVancouver"  target="_blank">
+						<img class="social-icon-mobile-image" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/twitter.svg" alt="logo" />
+					</a>
+				</span>
+				
 				</div>
 			</div>
 		</div>

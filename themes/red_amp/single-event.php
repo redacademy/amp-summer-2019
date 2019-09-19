@@ -74,10 +74,10 @@ get_header(); ?>
 			echo '<br>';
 			echo $event_date_1;
 			echo '<br>';
-			echo CFS()->get('event_start_time'); // we can try to add this as well
+			echo CFS()->get('event_start_time'); 
 			echo '-';
 			echo CFS()->get('event_end_time');
-			echo 'PDT'; // we can try to add this as well
+			echo 'PDT'; 
 			echo '<br>';
 			echo '</div>';
 
@@ -87,12 +87,11 @@ get_header(); ?>
 			
 			
 			
-			// echo $event_date;
+			
 			echo '<br>';
 			$esc_location = explode("<br />", $event_location);
 			$comma_separated = implode(", ", $esc_location);
 
-			// var_dump($comma_separated);
 			echo "<a target='_blank' href='https://www.google.com/calendar/render?
 			action=TEMPLATE&
 			text={$event_title}&
