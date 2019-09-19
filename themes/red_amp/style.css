@@ -1634,7 +1634,9 @@ object {
   .workspace-icon-flex-two-open:nth-child(n+3) {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; } }
+    display: flex; }
+  .page-title {
+    font-size: 24px; } }
 
 @media only screen and (min-width: 760px) and (max-width: 1050px) {
   .workspace-wrapper {
@@ -3165,6 +3167,9 @@ tbody {
 
 .page-thank-you .thank-you-title, .page-thank-you .thank-you-text {
   text-align: center; }
+  .page-thank-you .thank-you-title .entry-title, .page-thank-you .thank-you-text .entry-title {
+    display: block;
+    text-transform: capitalize; }
 
 .page-thank-you .wp-block-image {
   display: -webkit-box;
